@@ -1,38 +1,41 @@
 <!-- create a head for this where the title is the same as what appears in h1-->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UofT Timetable Tracker</title>
-</head  >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UofT Timetable Tracker</title>
+</head>
 
 
 
 <div class="center" style="padding-top: 30px">
 
-<h1 style="font-size: 35px">
-  <strong>
-  UofT Timetable Tracker </strong>
- </h1>
+  <h1 style="font-size: 35px">
+    <strong>
+      UofT Timetable Tracker </strong>
+  </h1>
 
-<p> Track the enrollment for any course
-  offered in the Fall-Winter 2022-2023 term.
-<br> Only St. George ArtSci courses are accepted.
-<br>
-Click on a legend component to hide it.
-</p>
+  <p> Track the enrollment for any course
+    offered in the Fall-Winter 2022-2023 term.
+    <br>
+    Click on a legend component to hide it.
+    <br>
+    Last updated: {{ lastUpdateString }} ET
+  </p>
+
 </div>
 <div class="center">
 
   <div class="flexit01">
+    <div class="shakeable">
+      <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
+        <mat-label>Course code (e.g. MAT137Y1-Y)</mat-label>
 
-    <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
-      <mat-label>Course code (e.g. MAT137Y1-Y)</mat-label>
-
-      <input matInput type="text" [(ngModel)]="inputCourse">
-    </mat-form-field>
-
+        <input matInput type="text" [(ngModel)]="inputCourse">
+      </mat-form-field>
+    </div>
 
     <button id="reloadit" type="button" mat-stroked-button (click)="
 loadCourseData(inputCourse)
@@ -40,27 +43,25 @@ loadCourseData(inputCourse)
 
   </div>
 
-<div style="padding-bottom: 5px">
-  <mat-checkbox [(ngModel)]="showMaxEnrollment"
-  color="primary"
-  >
+  <div style="padding-bottom: 5px">
+    <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary">
       Show maximum enrollments
-  </mat-checkbox>
+    </mat-checkbox>
 
 
-</div>
+  </div>
 
-<div *ngIf="curErrorMessage !== ''" style="padding-bottom: 10px" class="center">
-  <div  class="red" > {{curErrorMessage}} </div>
-</div>
+  <div *ngIf="curErrorMessage !== ''" style="padding-bottom: 10px" class="center">
+    <div class="red"> {{curErrorMessage}} </div>
+  </div>
 </div>
 
 <div *ngIf="searched" class="chRegion" style="display: block;">
   <canvas baseChart [datasets]="scatterChartData" [options]="scatterChartOptions" [type]="scatterChartType"
     [plugins]="chartPlugins">
   </canvas>
-  
-  <div *ngIf="false">
+
+  <div style="padding-top: 25px;" *ngIf="true">
     <!-- <p class="center4">
       Enrollment: {{currentEnrollment}}/{{cap}}
       <br>
@@ -72,29 +73,37 @@ loadCourseData(inputCourse)
 
     </p> -->
 
-   <table style="
+    <table style="
     margin-left: auto;
     margin-right: auto;
     ">
       <tr>
         <td>
-          Enrolls
+          Enrolled
         </td>
         <td>
           {{ currentEnrollment }}/{{cap}}
         </td>
       </tr>
       <tr>
-        <td> F. Enrolls </td>
+        <td style="width: 75px;"
+        matTooltip="Enrollment the day after the last day to enroll in this course"
+        [matTooltipPosition]="'left'"
+        > F. Enrolled </td>
         <td> {{finalEnrollment}} </td>
       </tr>
       <tr>
-        <td> Drops  </td>
-        <td> {{drops}} </td>
+        <td
+        matTooltip="Drops after the day after the last day to enroll in this course"
+        [matTooltipPosition]="'left'"
+        
+        > Drops </td>
+        <td> {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
+        </td>
       </tr>
       <tr>
         <td> LWDs </td>
-        <td> {{lwds}} </td>
+        <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
       </tr>
     </table>
   </div>

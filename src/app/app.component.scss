@@ -53,3 +53,23 @@ td {
     width: 50px;
     white-space: nowrap;
 }
+
+// create a class centering a div without aligning the text
+.center4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: space-between;
+    align-items: center;
+    // place the elements in this class at the horizontal center of the screen
+    justify-content: center;
+}
+
+.shake {
+    // this class shakes the moment it is applied
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    
+}
