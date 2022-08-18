@@ -22,7 +22,7 @@
     <br>
     Click on a legend component to hide it.
     <br>
-    Last updated: {{ lastUpdateString }} ET
+    Last updated: {{ lastUpdateString }}
   </p>
 
 </div>
@@ -31,7 +31,7 @@
   <div class="flexit01">
     <div class="shakeable">
       <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
-        <mat-label>Course code (e.g. MAT137Y1-Y)</mat-label>
+        <mat-label>Course code</mat-label>
 
         <input matInput type="text" [(ngModel)]="inputCourse">
       </mat-form-field>
@@ -43,9 +43,32 @@ loadCourseData(inputCourse)
 
   </div>
 
-  <div style="padding-bottom: 5px">
-    <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary">
+  <div class="flexit03" style="padding-bottom: 5px">
+    <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary"
+    matTooltip="Determines whether maximum enrollment lines should be visible"
+        [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700"
+    
+    >
       Show maximum enrollments
+    </mat-checkbox>
+
+    <mat-checkbox [(ngModel)]="hideSpecial" color="primary"
+    matTooltip="Prevents LEC2000-LEC2999 sections from showing"
+        [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700"
+    
+    >
+      Hide special sections
+    </mat-checkbox>
+
+    <mat-checkbox [(ngModel)]="autoFormat" color="primary"
+    matTooltip="If this is on, input course codes will be formatted when a search is done. Use this for screenshots."
+        [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700"
+    
+    >
+      Autoformat course codes
     </mat-checkbox>
 
 
@@ -78,7 +101,10 @@ loadCourseData(inputCourse)
     margin-right: auto;
     ">
       <tr>
-        <td>
+        <td
+        matTooltip="Students who are enrolled and waitlisted in this course. Note: Students can waitlist multiple lecture sections at once."
+        [matTooltipPosition]="'left'"
+        >
           Enrolled
         </td>
         <td>
@@ -94,7 +120,7 @@ loadCourseData(inputCourse)
       </tr>
       <tr>
         <td
-        matTooltip="Drops after the day after the last day to enroll in this course"
+        matTooltip="Drops the day after the last day to enroll in this course"
         [matTooltipPosition]="'left'"
         
         > Drops </td>
@@ -102,7 +128,10 @@ loadCourseData(inputCourse)
         </td>
       </tr>
       <tr>
-        <td> LWDs </td>
+        <td
+        matTooltip="Drops the day after the last day to drop this course"
+        [matTooltipPosition]="'left'"
+        > LWDs </td>
         <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
       </tr>
     </table>

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
-import { ChartOptions, ChartDataset, ChartType } from 'chart.js';
-import { Course } from './cinterfaces';
-import { CrsgetterService } from './crsgetter.service';
+import {Component, HostListener} from '@angular/core';
+import {ChartOptions, ChartDataset, ChartType} from 'chart.js';
+import {Course} from './cinterfaces';
+import {CrsgetterService} from './crsgetter.service';
 import * as pluginAnnotation from 'chartjs-plugin-annotation';
+import { AllCoursesService } from './all-courses.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,28 @@ import * as pluginAnnotation from 'chartjs-plugin-annotation';
 })
 export class AppComponent {
   title = 'timetabletracker';
+
+  private _smallScreen: boolean = false;
+  public get smallScreen(): boolean {
+    return this._smallScreen;
+  }
+  public set smallScreen(value: boolean) {
+    let switched = value !== this.smallScreen;
+
+    this._smallScreen = value;
+    if(switched)
+      this._loadCourseDataHelper();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(){
+    if(window.innerWidth < 480){
+      this.smallScreen = true;
+    } else {
+      this.smallScreen = false;
+    }
+  }
+
 
   public chartPlugins = [pluginAnnotation];
 
@@ -46,13 +69,13 @@ export class AppComponent {
   inputCourse: string = 'MAT137Y1-Y';
 
   data = [
-    { x: 0, y: 1 },
-    { x: 1, y: 2 },
+    {x: 0, y: 1},
+    {x: 1, y: 2},
   ];
 
   data2 = [
-    { x: 0, y: 0 },
-    { x: 1, y: 1 },
+    {x: 0, y: 0},
+    {x: 1, y: 1},
   ];
 
   public scatterChartData: ChartDataset[] = [
@@ -75,9 +98,13 @@ export class AppComponent {
   ];
   public scatterChartType: ChartType = 'scatter';
 
-  constructor(private crsgetter: CrsgetterService) {}
+  constructor(private crsgetter: CrsgetterService,
+    private ac: AllCoursesService) {
+  }
+
   ngOnInit() {
     this.loadCourseData(this.inputCourse);
+    this.smallScreen = window.innerWidth < 768;
   }
 
   keyDownFunction(event: { keyCode: number }) {
@@ -98,10 +125,11 @@ export class AppComponent {
   public get curErrorMessage(): string {
     return this._curErrorMessage;
   }
+
   public set curErrorMessage(value: string) {
     // if all characters of this._curErrorMessage before the first "!" match value, and it isn't empty, then append a ! to the end of this._curErrorMessage
     let exclamIndex = this._curErrorMessage.indexOf('!');
-    if(exclamIndex === -1) exclamIndex = this._curErrorMessage.length;
+    if (exclamIndex === -1) exclamIndex = this._curErrorMessage.length;
     if (
       this._curErrorMessage.length > 0 &&
       this._curErrorMessage.substring(0, exclamIndex) === value) {
@@ -110,11 +138,12 @@ export class AppComponent {
       this._curErrorMessage = value;
     }
     this.hasFailed = value !== '';
-    console.log(this.hasFailed);
+    // console.log(this.hasFailed);
     if (this.hasFailed) {
       this.shakeClass();
     }
   }
+
   hasFailed: boolean = false;
 
   shakeClass() {
@@ -142,6 +171,19 @@ export class AppComponent {
     return (num * 100).toFixed(2) + '%';
   }
 
+  private previousCourse: string = "";
+  previousCourseInfo: Course | null = null;
+
+  autoFormat: boolean = true;
+  private _hideSpecial: boolean = false;
+  public get hideSpecial(): boolean {
+    return this._hideSpecial;
+  }
+  public set hideSpecial(value: boolean) {
+    this._hideSpecial = value;
+    this.loadCourseData(this.inputCourse);
+  }
+
   /**
    * Reloads the course and presents it to the screen,
    * done by updating scatterChartData.
@@ -154,39 +196,37 @@ export class AppComponent {
     // remove all spaces from courseCode
     courseCode = courseCode.replace(/\s/g, '');
     courseCode = courseCode.trim();
-    // if courseCode's second last index isn't a "-", then make it so
-    if (courseCode.length === 9 && courseCode[courseCode.length - 2] !== '-') {
-      courseCode =
-        courseCode.slice(0, courseCode.length - 1) +
-        '-' +
-        courseCode.charAt(courseCode.length - 1);
-    }
 
-    // check if courseCode matches this regex:
-    // [A-Z]{3}[0-9]{3}[HY]{1}[0-9]{1}-[FYS]{1}
-    if (!courseCode.match(/[A-Z]{3}[0-9]{3}[HY]{1}[01]{1}-[FYS]{1}/)) {
-      if (courseCode.match(/[A-Z]{3}[A-D0-9][0-9]{2}[HY]{1}/)) {
-        
-        if  (courseCode.length >= 8 && courseCode[7] === '3' || courseCode[7] === '5') {
+    // console.log(courseCode);
+    if(!courseCode.match(/^[A-Z]{3}[0-9]{3}.*/)){
+      if(courseCode.match(/^[A-Z]{3}[A-D].*/)){
+        this.curErrorMessage = "UTSC courses are not supported";
+        return;
 
-          this.curErrorMessage = this.utmUtsc;
-        
-      } else this.curErrorMessage = this.missingSuffix;
-
-
-      }  else if (courseCode.match(/[A-Z]{3}[0-9]{3}/)) {
-        this.curErrorMessage = this.missingHY;
-      } else {
-        // if courseCode is 7 or more characters long and the 6th character is a 3 or 5
-        
-        
-
-        this.curErrorMessage = this.invalidCourseRegexWarning;
-        
       }
-      // alert("Invalid course code: " + courseCode);
+
+
+      this.curErrorMessage = "That's not a proper course code";
       return;
     }
+
+    let tempCourse = this.ac.autoCorrectCourse(courseCode);
+    if(tempCourse === ""){
+      this.curErrorMessage = "Course doesn't exist or is not offered in this term";
+      return;
+    }
+
+
+    if(this.autoFormat)
+      this.inputCourse = tempCourse;
+
+    courseCode = tempCourse;
+    if(this.crsgetter.checkJustSearched(courseCode)){
+      if(this.previousCourseInfo !== null)
+        this._loadCourseDataHelper(this.previousCourseInfo);
+      return;
+    }
+    this.previousCourse = courseCode;
     let courseInfo: Course;
     this.crsgetter.getCourse(courseCode).subscribe(
       (data) => {
@@ -200,8 +240,10 @@ export class AppComponent {
         this.curErrorMessage = '';
         // console.log("attempting to redraw the graph");
         this._loadCourseDataHelper(courseInfo);
+        this.previousCourseInfo = courseInfo;
       }
     );
+
   }
 
   searched = false;
@@ -209,21 +251,29 @@ export class AppComponent {
   public get showMaxEnrollment() {
     return this._showMaxEnrollment;
   }
+
   public set showMaxEnrollment(value) {
     this._showMaxEnrollment = value;
     this.loadCourseData(this.inputCourse);
   }
+
   // make a setter for showMaxEnrollment
 
   /**
    * A helper to the method above so
-   * I don't need to have to type the smae
+   * I don't need to have to type the same
    * thing exactly twice.
    *
    * @param course the course information.
    */
-  private _loadCourseDataHelper(course: Course): void {
-    if (course === null || course === undefined) {
+  private _loadCourseDataHelper(course: Course | null = null): void {
+    if (course === undefined) {
+      return;
+    }
+    if(course === null){
+      course = this.previousCourseInfo;
+    }
+    if(course === null){
       return;
     }
 
@@ -234,25 +284,31 @@ export class AppComponent {
 
     const earliest: number = timings[0];
     const latest: number = timings[timings.length - 1];
-    this.lastUpdateString = // latest is the seconds since jan 1 1970, so represent that as a user friendly string 
+    this.lastUpdateString = // latest is the seconds since jan 1 1970, so represent that as a user friendly string
       new Date(latest * 1000).toLocaleString();
-    console.log(this.lastUpdateString);
+    // console.log(this.lastUpdateString);
 
     const maxEnrollmentsSoFar: ChartDataset[] = [];
     let iterations = 0;
     for (let mtt of course.meetings) {
+
+      if(this.hideSpecial && mtt.isSpecial){
+        continue;
+      }
+
       let tempBordercolor = this._getColorSeries(iterations);
       // let tempBackgroundColor = 'rgba(120, 0, 0, 0)';
       let tempShowLine = true;
       let tempPointRadius = 0;
-      let tempLabel = `${mtt.meetingNumber} - ${mtt.instructor}`;
+      let tempLabel = this.smallScreen ? `L${mtt.meetingNumber.substring(3)}` :
+      `${mtt.meetingNumber} - ${mtt.instructor}`;
       let chartPoints: { x: number; y: number }[] = [];
 
       // loops over a strip of enrollment numbers
       for (let i = 0; i < mtt.enrollmentLogs.length; i++) {
         let enrollment = mtt.enrollmentLogs[i];
         let timeOfEnrollment = timings[i];
-        chartPoints.push({ x: timeOfEnrollment * 1000, y: enrollment });
+        chartPoints.push({x: timeOfEnrollment * 1000, y: enrollment});
       }
 
       // chartPoints is our data so far
@@ -266,18 +322,17 @@ export class AppComponent {
       });
 
       if (this._showMaxEnrollment) {
-        // dead code for displaying maximum enrollments
         maxEnrollmentsSoFar.push({
           data: [
-            { x: earliest * 1000, y: mtt.enrollmentCap },
-            { x: latest * 1000, y: mtt.enrollmentCap },
+            {x: earliest * 1000, y: mtt.enrollmentCap},
+            {x: latest * 1000, y: mtt.enrollmentCap},
           ],
           showLine: true,
           pointRadius: 0,
           backgroundColor: tempBordercolor,
           borderColor: tempBordercolor,
           borderDash: [10, 5],
-          label: `${mtt.meetingNumber} - MAX`,
+          label: this.smallScreen ? `M${mtt.meetingNumber.substring(3)}` : `${mtt.meetingNumber} - MAX`,
         });
       }
 
@@ -300,7 +355,6 @@ export class AppComponent {
   cap: number = 0;
 
   lastUpdateString: string = "";
-
 
 
   colors: string[] = [

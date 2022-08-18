@@ -18,6 +18,21 @@ export class CrsgetterService {
   }
 
 
+  private _previousCourse: string = "";
+
+
+  /**
+   * For use right before querying, check if
+   * I was about to query the same thing twice.
+   * 
+   * @param crsCode the course code to check
+   * @returns whether crsCode === _previousCourse
+   */
+  checkJustSearched(crsCode: string): boolean {
+    return crsCode === this._previousCourse;
+  }
+
+
   /**
    * A JSON loader for any course.
    * 
@@ -25,6 +40,7 @@ export class CrsgetterService {
    * @returns an observable of the course data
    */
   getCourse(crsCode: string): Observable<Course> {
+    this._previousCourse = crsCode;
     const cPath = this.crsToPath(crsCode);
     return this.http.get<Course>(cPath);
   }
