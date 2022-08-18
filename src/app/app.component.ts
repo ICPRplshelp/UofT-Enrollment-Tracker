@@ -224,6 +224,8 @@ export class AppComponent {
     if(this.crsgetter.checkJustSearched(courseCode)){
       if(this.previousCourseInfo !== null)
         this._loadCourseDataHelper(this.previousCourseInfo);
+        this.curErrorMessage = "";
+
       return;
     }
     this.previousCourse = courseCode;
