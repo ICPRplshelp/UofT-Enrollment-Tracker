@@ -80,6 +80,18 @@ loadCourseData(inputCourse)
 </div>
 
 <div *ngIf="searched" class="chRegion" style="display: block;">
+
+  <div class="crstitle" style="font-size: 18px;
+  ">
+  
+  <div style="padding-bottom: 5px;">Enrollment over time for </div>
+    <!-- {{previousFullCourseCode}} -->
+    <div style="font-size: 22px; font-weight: bold;
+    padding-bottom: 5px;
+    line-height: 1.2;">
+      {{courseTitle}} ({{previousFullCourseCode.replace("-", "")}})</div>
+  </div>
+
   <canvas baseChart [datasets]="scatterChartData" [options]="scatterChartOptions" [type]="scatterChartType"
     [plugins]="chartPlugins">
   </canvas>
@@ -136,6 +148,17 @@ loadCourseData(inputCourse)
       </tr>
     </table>
   </div>
+
+<p style="padding-top: 10px; max-width: 500px; margin: auto;">
+  Most undergraduate courses are supported. All dates and 
+  deadlines are based of the dates specified in the Faculty 
+  of Arts and Science, even if the course isn't offered by FAS.
+If a course isn't offered by the Faculty of Arts and Science, 
+you must type the entire code. For FAS courses, you can type
+ part of the course code and this site will attempt to 
+ autocomplete it for you.
+</p>
+  
 
 
 </div>

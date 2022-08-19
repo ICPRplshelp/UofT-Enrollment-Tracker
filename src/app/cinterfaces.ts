@@ -1,18 +1,14 @@
 export interface Course {
+    title: string,
     code: string,
+    faculty: string,
     timeIntervals: number[],
     meetings: Meeting[],
-    currentEnrollment: number,
-    finalEnrollment: number,
-    drops: number,
-    lwds: number,
-    cap: number
 }
 
 export interface Meeting{
     meetingNumber: string,
-    instructor: string,
-    isSpecial: string
+    instructors: string[][],
     enrollmentLogs: number[],
     enrollmentCap: number
 }

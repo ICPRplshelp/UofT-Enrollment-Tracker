@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import 'chartjs-adapter-moment';
 import 'chartjs-plugin-annotation';
@@ -24,6 +25,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
   ],
   imports: [
     MatInputModule,
+    MatSnackBarModule,
     FormsModule,
     MatButtonModule,
     MatCheckboxModule,

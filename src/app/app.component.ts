@@ -1,9 +1,10 @@
 import {Component, HostListener} from '@angular/core';
 import {ChartOptions, ChartDataset, ChartType} from 'chart.js';
-import {Course} from './cinterfaces';
+import {Course, ImportantTimestamps} from './cinterfaces';
 import {CrsgetterService} from './crsgetter.service';
 import * as pluginAnnotation from 'chartjs-plugin-annotation';
 import { AllCoursesService } from './all-courses.service';
+import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,55 @@ import { AllCoursesService } from './all-courses.service';
 })
 export class AppComponent {
   title = 'timetabletracker';
+
+  constructor(private crsgetter: CrsgetterService,
+    private ac: AllCoursesService,
+    private _snackBar: MatSnackBar) {
+  }
+
+
+  myFavCourses: string[] = ['EAS110Y1-Y', 'POL222H1-F', 'LIN101H1-F', 'CSC384H1-S', 'CHM247H1-S', 'LIN102H1-S', 'POL107H1-F', 'ENV200H1-S', 'FSL100H1-F', 'RSM333H1-S', 'RSM250H1-S', 'MAT237Y1-Y', 'SPA100Y1-Y', 'ENV100H1-F', 'EAS120Y1-Y', 'POL109H1-S', 'RSM222H1-F', 'POL106H1-F', 'SOC100H1-S', 'PSY100H1-F', 'MAT244H1-F', 'GGR124H1-S', 'CSC343H1-S', 'RSM219H1-F', 'PSY100H1-S', 'ECO202Y1-Y', 'POL200Y1-Y', 'ECO200Y1-Y', 'ECO105Y1-Y', 'MAT223H1-S', 'CSC263H1-S', 'STA130H1-S', 'CSC236H1-F', 'ECO204Y1-Y', 'PHY132H1-S', 'STA130H1-F', 'POL101H1-F', 'MAT224H1-S', 'CSC209H1-S', 'ANT100Y1-Y', 'CSC207H1-F', 'SOC150H1-S', 'STA238H1-S', 'PHY131H1-F', 'STA237H1-F', 'PSL301H1-S', 'ECO220Y1-Y', 'CSC108H1-S', 'AST201H1-S', 'BIO220H1-S', 'PSL300H1-F', 'MAT133Y1-Y', 'HMB265H1-F', 'MAT235Y1-Y', 'BCH210H1-F', 'BIO230H1-F', 'AST101H1-F', 'MAT223H1-F', 'MAT137Y1-Y', 'SOC100H1-F', 'CHM135H1-F', 'CSC148H1-S', 'BIO130H1-S', 'CHM136H1-S', 'BIO120H1-F', 'CSC108H1-F', 'ECO101H1-F', 'ECO102H1-S', 'MAT136H1-S', 'MAT135H1-F']
+  ;
+
+  courseTitle: string = "TITLE";
+
+  smallMessage = "Your screen is small. Lecture sections are compressed. M#### means the maximum enrollment for that section. Consider rotating your device.";
+  importantDates: ImportantTimestamps | null = null; 
+  
+  
+  ngOnInit() {
+
+        // code that grabs the important timestamps
+    // and assigns it to this.importantDates
+    let tempData: ImportantTimestamps;
+    this.crsgetter.getImportantDates().subscribe(
+      (data) => {tempData = data},
+      () => { console.log("Couldn't load important timestamps") },
+      () => {
+        // console.log("Updated important dates");
+        this.importantDates = tempData;
+      }
+    );
+
+    // pick something random from myFavCourses
+    this.inputCourse = this.myFavCourses[Math.floor(Math.random() * this.myFavCourses.length)];
+
+
+    this.loadCourseData(this.inputCourse);
+    this.smallScreen = window.innerWidth < 768;
+    let ref: any;
+    if(this.smallScreen){
+      ref = this._snackBar.open(this.smallMessage, "GOT IT", {
+        duration: 7000
+      });
+      this.ref = ref;
+    }
+
+
+  }
+  ref: any;
+
+
 
   private _smallScreen: boolean = false;
   public get smallScreen(): boolean {
@@ -25,11 +75,25 @@ export class AppComponent {
       this._loadCourseDataHelper();
   }
 
+  smallActivated = 0;
+
   @HostListener('window:resize', ['$event'])
   onWindowResize(){
     if(window.innerWidth < 480){
+      let originalState = this.smallScreen;
       this.smallScreen = true;
+      let ref: any;
+      if(this.smallScreen && !originalState && this.smallActivated <= 0){
+        this.smallActivated++;
+        ref = this._snackBar.open(this.smallMessage, "GOT IT", {
+          duration: 5000
+        });
+        this.ref = ref;
+      }
     } else {
+      if(this.smallScreen){
+        this.ref.dismiss();
+      }
       this.smallScreen = false;
     }
   }
@@ -98,14 +162,9 @@ export class AppComponent {
   ];
   public scatterChartType: ChartType = 'scatter';
 
-  constructor(private crsgetter: CrsgetterService,
-    private ac: AllCoursesService) {
-  }
+  
 
-  ngOnInit() {
-    this.loadCourseData(this.inputCourse);
-    this.smallScreen = window.innerWidth < 768;
-  }
+
 
   keyDownFunction(event: { keyCode: number }) {
     if (event.keyCode === 13) {
@@ -160,6 +219,8 @@ export class AppComponent {
     }, 1000);
   }
 
+  previousFullCourseCode = "";
+
 
   fmtNumAsPercent(num: number): string {
 // if num is NaN or any infinity then it is a 0
@@ -184,6 +245,35 @@ export class AppComponent {
     this.loadCourseData(this.inputCourse);
   }
 
+
+  formatInstructors(ins: string[][]): string {
+    let names: string[] = [];
+    for(let fl of ins){
+      names.push(`${fl[0]} ${fl[1]}`);
+    }
+    let cand = names.join(", ");
+    return cand !== "" ? cand : "TBA";
+  }
+
+
+  determineCourseCode(crsCode: string): string {
+    if(crsCode.match(/^[A-Z]{3}[A-D0-9]\d{2}[HY]\d-?[FYS]$/)){
+
+      if(crsCode.match(/^[A-Z]{3}[A-D0-9]\d{2}[HY]\d[FYS]$/)){
+        crsCode = crsCode.substring(0, 8) + "-" + crsCode.substring(8);
+      }
+      if(crsCode.match(/^[A-Z]{3}[A-D]\d{2}[HY]\d[FYS]$/)){
+        crsCode = crsCode.substring(0, 7) + "3" + crsCode.substring(8);
+      }
+
+      return crsCode;
+    } else if (crsCode.match(/^[A-Z]{3}[0-9]{3}.*/)){
+      // console.log("Autocorrecting...");
+      return this.ac.autoCorrectCourse(crsCode);
+    }
+    return "";
+  }
+
   /**
    * Reloads the course and presents it to the screen,
    * done by updating scatterChartData.
@@ -198,19 +288,8 @@ export class AppComponent {
     courseCode = courseCode.trim();
 
     // console.log(courseCode);
-    if(!courseCode.match(/^[A-Z]{3}[0-9]{3}.*/)){
-      if(courseCode.match(/^[A-Z]{3}[A-D].*/)){
-        this.curErrorMessage = "UTSC courses are not supported";
-        return;
 
-      }
-
-
-      this.curErrorMessage = "That's not a proper course code";
-      return;
-    }
-
-    let tempCourse = this.ac.autoCorrectCourse(courseCode);
+    let tempCourse = this.determineCourseCode(courseCode);
     if(tempCourse === ""){
       this.curErrorMessage = "Course doesn't exist or is not offered in this term";
       return;
@@ -218,16 +297,10 @@ export class AppComponent {
 
 
     if(this.autoFormat)
-      this.inputCourse = tempCourse;
+      this.inputCourse = tempCourse.replace("-", "");
 
     courseCode = tempCourse;
-    if(this.crsgetter.checkJustSearched(courseCode)){
-      if(this.previousCourseInfo !== null)
-        this._loadCourseDataHelper(this.previousCourseInfo);
-        this.curErrorMessage = "";
-
-      return;
-    }
+    
     this.previousCourse = courseCode;
     let courseInfo: Course;
     this.crsgetter.getCourse(courseCode).subscribe(
@@ -243,6 +316,9 @@ export class AppComponent {
         // console.log("attempting to redraw the graph");
         this._loadCourseDataHelper(courseInfo);
         this.previousCourseInfo = courseInfo;
+        this.previousFullCourseCode = tempCourse;
+        this.courseTitle = courseInfo.title;
+
       }
     );
 
@@ -260,6 +336,20 @@ export class AppComponent {
   }
 
   // make a setter for showMaxEnrollment
+
+  /**
+   * 
+   * @param meetingNumber the meeting number, such as LEC0101
+   * @returns whether the meeting is special.
+   */
+  private _isSpecialMeeting(meetingNumber: string): boolean {
+    if(!meetingNumber.match(/LEC\d+/)) return false;
+    let numbersString = meetingNumber.substring(3);
+    let numbersNumber = parseInt(numbersString);
+    if(numbersNumber === NaN) return false;
+    return 2000 <= numbersNumber && numbersNumber < 3000;
+  }
+
 
   /**
    * A helper to the method above so
@@ -292,9 +382,12 @@ export class AppComponent {
 
     const maxEnrollmentsSoFar: ChartDataset[] = [];
     let iterations = 0;
+    this.updateImportantCounts(course);
+    // let fys = course.code[course.code.length - 1];
     for (let mtt of course.meetings) {
-
-      if(this.hideSpecial && mtt.isSpecial){
+      
+      // hide all special meetings
+      if(this.hideSpecial && this._isSpecialMeeting(mtt.meetingNumber)){
         continue;
       }
 
@@ -303,7 +396,7 @@ export class AppComponent {
       let tempShowLine = true;
       let tempPointRadius = 0;
       let tempLabel = this.smallScreen ? `L${mtt.meetingNumber.substring(3)}` :
-      `${mtt.meetingNumber} - ${mtt.instructor}`;
+      `${mtt.meetingNumber} - ${this.formatInstructors(mtt.instructors)}`;
       let chartPoints: { x: number; y: number }[] = [];
 
       // loops over a strip of enrollment numbers
@@ -343,11 +436,110 @@ export class AppComponent {
     // add all of maxEnrollmentsSoFar to chartDatasetSoFar
     chartDatasetSoFar.push(...maxEnrollmentsSoFar);
     this.scatterChartData = chartDatasetSoFar;
-    this.currentEnrollment = course.currentEnrollment;
-    this.finalEnrollment = course.finalEnrollment;
-    this.drops = course.drops;
-    this.lwds = course.lwds;
-    this.cap = course.cap;
+    // this.currentEnrollment = 4;
+    // this.finalEnrollment = 4;
+    // this.drops = 2;
+    // this.lwds = 1;
+    // this.cap = 9;
+  }
+
+  /**
+   * Updates all important counts attached to crs
+   * @param crs the course information to be passed in
+   * 
+   */
+  updateImportantCounts(crs: Course): void {
+    // console.log("Updating important counts");
+    let fys = crs.code[crs.code.length - 1];
+    // console.log(fys);
+    if(!fys.match(/[FYS]/)){
+      return;
+    }
+    const aggEnrollments: number[] = [];
+    const enrollmentCollection: number[][] = [];
+    let cap = 0;
+    for(let met of crs.meetings){
+      // use a continue condition here to skip
+      // courses that we do not want to count
+
+
+      enrollmentCollection.push(met.enrollmentLogs);
+      cap += met.enrollmentCap;
+    }
+    // enrollmentCollection is a 2x2 array of all meetings.
+    // transpose it, then for each element in transposed,
+    // sum all the numbers within
+    for(let i = 0; i < enrollmentCollection[0].length; i++){
+      let sum = 0;
+      for(let j = 0; j < enrollmentCollection.length; j++){
+        sum += enrollmentCollection[j][i];
+      }
+      aggEnrollments.push(sum);
+    }
+    this.currentEnrollment = aggEnrollments[aggEnrollments.length - 1];
+    this.cap = cap;
+    
+    let startingTermIndex: number = 0;
+    let dropDateIndex: number = 0;
+    let lwdDateIndex: number = 0;
+
+    if(this.importantDates === null){
+      console.log("Important dates are not loaded yet!");
+      return;
+    }
+
+    if(fys === "F"){
+      startingTermIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.fallEnrollmentEnd);
+      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.fallDrop);
+      lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals, 
+        this.importantDates.fallLWD);
+    }
+    else if (fys === "S") {
+      // that is winter
+      startingTermIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.winterEnrollmentEnd);
+      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.winterDrop);
+      lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.winterLWD);
+    }
+    else if (fys === "Y") {
+      startingTermIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.fallEnrollmentEnd);
+      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.yearDrop);
+      lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals,
+        this.importantDates.winterLWD);
+    }
+
+    this.finalEnrollment = startingTermIndex === -1 ? this.currentEnrollment
+    : aggEnrollments[startingTermIndex];
+    let enrolsAtDropDate = dropDateIndex === -1 ? this.currentEnrollment : aggEnrollments[dropDateIndex];
+    let enrolsAtLwdDate = lwdDateIndex === -1 ? this.currentEnrollment :
+    aggEnrollments[lwdDateIndex];
+
+    this.drops = this.finalEnrollment - enrolsAtDropDate;
+    this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
+
+  }
+
+  /**
+   * Returns the first index in timings where timingCap is
+   * greater or equal to timings at index.
+   * 
+   * @param timings a list of timings
+   * @param timingCap the first to detect
+   */
+  findIndexFirstDay(timings: number[], timingCap: number): number {
+    for(let i = 0; i < timings.length; i++){
+      if(timings[i] >= timingCap){
+        return i;
+      }
+    }
+    return -1;
+
   }
 
   currentEnrollment: number = 0;
@@ -367,7 +559,7 @@ export class AppComponent {
     '#D48A35',
     '#3CABB5',
     '#48ce00',
-    '#a622d3',
+    '#d32295',
     '#2d89d3',
     '#6b4a32',
     '#505050',
