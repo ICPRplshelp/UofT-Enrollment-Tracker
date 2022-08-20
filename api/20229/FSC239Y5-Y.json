@@ -1,1 +1,53 @@
-{"title": "(1) Introduction to Forensic Science", "code": "FSC239Y5-Y", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Vivienne", "Luk"], ["Frank", "Wendt"]], "enrollmentLogs": [0, 405, 405, 405, 405, 405, 405, 406, 406], "enrollmentCap": 375}]}
+{
+"code": "FSC239Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 375,
+"enrollmentLogs": [
+0,
+405,
+405,
+405,
+405,
+405,
+405,
+406,
+406,
+406,
+406,
+406,
+406,
+406
+],
+"instructors": [
+[
+"Vivienne",
+"Luk"
+],
+[
+"Frank",
+"Wendt"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "(1) Introduction to Forensic Science"
+}

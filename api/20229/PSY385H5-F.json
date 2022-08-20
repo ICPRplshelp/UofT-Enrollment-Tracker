@@ -1,1 +1,49 @@
-{"title": "Human Factors: Applying Perceptual and Cognitive Research to the World", "code": "PSY385H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Benjamin Arthur", "Wolfe"]], "enrollmentLogs": [0, 20, 20, 20, 20, 20, 20, 21, 21], "enrollmentCap": 65}]}
+{
+"code": "PSY385H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 65,
+"enrollmentLogs": [
+0,
+20,
+20,
+20,
+20,
+20,
+20,
+21,
+21,
+21,
+21,
+21,
+21,
+21
+],
+"instructors": [
+[
+"Benjamin Arthur",
+"Wolfe"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Human Factors: Applying Perceptual and Cognitive Research to the World"
+}

@@ -1,1 +1,49 @@
-{"title": "Special Seminar: Philosophical Problems", "code": "PHL495H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Andrew", "Sepielli"]], "enrollmentLogs": [0, 9, 9, 9, 9, 9, 9, 10, 10], "enrollmentCap": 20}]}
+{
+"code": "PHL495H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+9,
+9,
+9,
+9,
+9,
+9,
+10,
+10,
+10,
+10,
+10,
+10,
+10
+],
+"instructors": [
+[
+"Andrew",
+"Sepielli"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Special Seminar: Philosophical Problems"
+}

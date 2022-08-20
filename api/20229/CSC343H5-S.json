@@ -1,1 +1,101 @@
-{"title": "Introduction to Databases", "code": "CSC343H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Michael", "Liut"]], "enrollmentLogs": [0, 77, 77, 77, 77, 77, 77, 77, 77], "enrollmentCap": 100}, {"meetingNumber": "LEC0102", "instructors": [["Michael", "Liut"]], "enrollmentLogs": [0, 72, 72, 72, 72, 72, 72, 72, 72], "enrollmentCap": 100}, {"meetingNumber": "LEC0103", "instructors": [["Michael", "Liut"]], "enrollmentLogs": [0, 65, 65, 65, 65, 65, 65, 65, 65], "enrollmentCap": 100}]}
+{
+"code": "CSC343H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77
+],
+"instructors": [
+[
+"Michael",
+"Liut"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+72,
+72,
+72,
+72,
+72,
+72,
+72,
+72,
+72,
+72,
+72,
+72,
+72
+],
+"instructors": [
+[
+"Michael",
+"Liut"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+65,
+65,
+65,
+65,
+65,
+65,
+65,
+65,
+65,
+65,
+65,
+65,
+65
+],
+"instructors": [
+[
+"Michael",
+"Liut"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introduction to Databases"
+}

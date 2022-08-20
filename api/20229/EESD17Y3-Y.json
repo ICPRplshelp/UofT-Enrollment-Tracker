@@ -1,1 +1,49 @@
-{"title": "Cohort Capstone Course in Environmental Studies", "code": "EESD17Y3-Y", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC30", "instructors": [["James", "MacLellan"]], "enrollmentLogs": [0, 3, 3, 3, 3, 3, 3, 3, 3], "enrollmentCap": 10}]}
+{
+"code": "EESD17Y3-Y",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 10,
+"enrollmentLogs": [
+0,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3
+],
+"instructors": [
+[
+"James",
+"MacLellan"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Cohort Capstone Course in Environmental Studies"
+}

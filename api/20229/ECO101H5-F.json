@@ -1,1 +1,179 @@
-{"title": "Principles of Microeconomics", "code": "ECO101H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["W Lee", "Bailey"]], "enrollmentLogs": [0, 269, 269, 269, 269, 269, 269, 271, 271], "enrollmentCap": 300}, {"meetingNumber": "LEC0102", "instructors": [["W Lee", "Bailey"]], "enrollmentLogs": [0, 150, 150, 150, 150, 150, 150, 149, 149], "enrollmentCap": 300}, {"meetingNumber": "LEC0103", "instructors": [["W Lee", "Bailey"]], "enrollmentLogs": [0, 163, 163, 163, 163, 163, 163, 163, 163], "enrollmentCap": 300}, {"meetingNumber": "LEC0201", "instructors": [["Aaron", "Weisbrod"]], "enrollmentLogs": [0, 241, 241, 241, 241, 241, 241, 240, 240], "enrollmentCap": 300}, {"meetingNumber": "LEC0202", "instructors": [["Aaron", "Weisbrod"]], "enrollmentLogs": [0, 300, 300, 300, 300, 300, 300, 300, 300], "enrollmentCap": 300}, {"meetingNumber": "LEC0203", "instructors": [["Aaron", "Weisbrod"]], "enrollmentLogs": [0, 165, 165, 165, 165, 165, 165, 166, 166], "enrollmentCap": 300}]}
+{
+"code": "ECO101H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+269,
+269,
+269,
+269,
+269,
+269,
+271,
+271,
+271,
+271,
+271,
+271,
+271
+],
+"instructors": [
+[
+"W Lee",
+"Bailey"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+150,
+150,
+150,
+150,
+150,
+150,
+149,
+149,
+149,
+149,
+149,
+149,
+149
+],
+"instructors": [
+[
+"W Lee",
+"Bailey"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163
+],
+"instructors": [
+[
+"W Lee",
+"Bailey"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+241,
+241,
+241,
+241,
+241,
+241,
+240,
+240,
+240,
+240,
+240,
+240,
+240
+],
+"instructors": [
+[
+"Aaron",
+"Weisbrod"
+]
+],
+"meetingNumber": "LEC0201"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+300,
+300,
+300,
+300,
+300,
+300,
+300,
+300,
+300,
+300,
+300,
+300,
+300
+],
+"instructors": [
+[
+"Aaron",
+"Weisbrod"
+]
+],
+"meetingNumber": "LEC0202"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+165,
+165,
+165,
+165,
+165,
+165,
+166,
+166,
+166,
+166,
+166,
+166,
+166
+],
+"instructors": [
+[
+"Aaron",
+"Weisbrod"
+]
+],
+"meetingNumber": "LEC0203"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Principles of Microeconomics"
+}

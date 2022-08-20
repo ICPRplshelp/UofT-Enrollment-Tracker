@@ -1,1 +1,179 @@
-{"title": "Music Theory I", "code": "TMU130H1-F", "faculty": "MUSIC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Mark", "Sallmen"]], "enrollmentLogs": [0, 21, 21, 21, 21, 21, 21, 21, 21], "enrollmentCap": 180}, {"meetingNumber": "LEC0201", "instructors": [["Mark", "Sallmen"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 45}, {"meetingNumber": "LEC0301", "instructors": [["Mark", "Sallmen"]], "enrollmentLogs": [0, 17, 17, 17, 17, 17, 17, 17, 17], "enrollmentCap": 30}, {"meetingNumber": "LEC0401", "instructors": [["Mark", "Sallmen"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 45}, {"meetingNumber": "LEC0501", "instructors": [["Mark", "Sallmen"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 32}, {"meetingNumber": "LEC0601", "instructors": [["Emma", "Soldaat"]], "enrollmentLogs": [0, 9, 9, 9, 9, 9, 9, 9, 9], "enrollmentCap": 30}]}
+{
+"code": "TMU130H1-F",
+"faculty": "MUSIC",
+"meetings": [
+{
+"enrollmentCap": 180,
+"enrollmentLogs": [
+0,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21
+],
+"instructors": [
+[
+"Mark",
+"Sallmen"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 45,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Mark",
+"Sallmen"
+]
+],
+"meetingNumber": "LEC0201"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17
+],
+"instructors": [
+[
+"Mark",
+"Sallmen"
+]
+],
+"meetingNumber": "LEC0301"
+},
+{
+"enrollmentCap": 45,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Mark",
+"Sallmen"
+]
+],
+"meetingNumber": "LEC0401"
+},
+{
+"enrollmentCap": 32,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Mark",
+"Sallmen"
+]
+],
+"meetingNumber": "LEC0501"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9
+],
+"instructors": [
+[
+"Emma",
+"Soldaat"
+]
+],
+"meetingNumber": "LEC0601"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Music Theory I"
+}

@@ -1,1 +1,143 @@
-{"title": "Linear Algebra I", "code": "MAT223H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Ivan", "Khatchatourian"]], "enrollmentLogs": [0, 117, 117, 117, 117, 117, 117, 118, 118], "enrollmentCap": 130}, {"meetingNumber": "LEC0102", "instructors": [["Ivan", "Khatchatourian"]], "enrollmentLogs": [0, 81, 81, 81, 81, 81, 81, 82, 82], "enrollmentCap": 130}, {"meetingNumber": "LEC0103", "instructors": [["Ali", "Feizmohammadi"]], "enrollmentLogs": [0, 85, 85, 85, 85, 85, 85, 85, 85], "enrollmentCap": 130}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 124, 124, 124, 124, 124, 124, 123, 123], "enrollmentCap": 130}, {"meetingNumber": "LEC0105", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 130}]}
+{
+"code": "MAT223H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 130,
+"enrollmentLogs": [
+0,
+117,
+117,
+117,
+117,
+117,
+117,
+118,
+118,
+118,
+118,
+118,
+118,
+118
+],
+"instructors": [
+[
+"Ivan",
+"Khatchatourian"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 130,
+"enrollmentLogs": [
+0,
+81,
+81,
+81,
+81,
+81,
+81,
+82,
+82,
+82,
+82,
+82,
+82,
+82
+],
+"instructors": [
+[
+"Ivan",
+"Khatchatourian"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 130,
+"enrollmentLogs": [
+0,
+85,
+85,
+85,
+85,
+85,
+85,
+85,
+85,
+85,
+85,
+85,
+85,
+85
+],
+"instructors": [
+[
+"Ali",
+"Feizmohammadi"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 130,
+"enrollmentLogs": [
+0,
+124,
+124,
+124,
+124,
+124,
+124,
+123,
+123,
+123,
+123,
+123,
+123,
+123
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 130,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0105"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Linear Algebra I"
+}

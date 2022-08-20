@@ -1,1 +1,75 @@
-{"title": "Personality Disorders", "code": "PSYD32H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Michael", "Bagby"]], "enrollmentLogs": [0, 34, 34, 34, 34, 34, 34, 34, 34], "enrollmentCap": 24}, {"meetingNumber": "LEC02", "instructors": [["Anthony Charles", "Ruocco"]], "enrollmentLogs": [0, 35, 35, 35, 35, 35, 35, 34, 34], "enrollmentCap": 24}]}
+{
+"code": "PSYD32H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 24,
+"enrollmentLogs": [
+0,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34
+],
+"instructors": [
+[
+"Michael",
+"Bagby"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 24,
+"enrollmentLogs": [
+0,
+35,
+35,
+35,
+35,
+35,
+35,
+34,
+34,
+34,
+34,
+34,
+34,
+34
+],
+"instructors": [
+[
+"Anthony Charles",
+"Ruocco"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Personality Disorders"
+}

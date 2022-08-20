@@ -1,1 +1,44 @@
-{"title": "Social Media, Platform Politics and Digital Cultures", "code": "MDSB15H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC30", "instructors": [], "enrollmentLogs": [0, 77, 77, 77, 77, 77, 77, 78, 78], "enrollmentCap": 80}]}
+{
+"code": "MDSB15H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+77,
+77,
+77,
+77,
+77,
+77,
+78,
+78,
+78,
+78,
+78,
+78,
+78
+],
+"instructors": [],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Social Media, Platform Politics and Digital Cultures"
+}

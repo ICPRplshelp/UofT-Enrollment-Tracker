@@ -1,1 +1,96 @@
-{"title": "Introduction to Probability", "code": "STAB52H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Sotirios", "Damouras"]], "enrollmentLogs": [0, 174, 174, 174, 174, 174, 174, 175, 175], "enrollmentCap": 175}, {"meetingNumber": "LEC02", "instructors": [], "enrollmentLogs": [0, 138, 138, 138, 138, 138, 138, 139, 139], "enrollmentCap": 175}, {"meetingNumber": "LEC30", "instructors": [["Sotirios", "Damouras"]], "enrollmentLogs": [0, 76, 76, 76, 76, 76, 76, 75, 75], "enrollmentCap": 175}]}
+{
+"code": "STAB52H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 175,
+"enrollmentLogs": [
+0,
+174,
+174,
+174,
+174,
+174,
+174,
+175,
+175,
+175,
+175,
+175,
+175,
+175
+],
+"instructors": [
+[
+"Sotirios",
+"Damouras"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 175,
+"enrollmentLogs": [
+0,
+138,
+138,
+138,
+138,
+138,
+138,
+139,
+139,
+139,
+139,
+139,
+139,
+139
+],
+"instructors": [],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 175,
+"enrollmentLogs": [
+0,
+76,
+76,
+76,
+76,
+76,
+76,
+75,
+75,
+75,
+75,
+75,
+75,
+75
+],
+"instructors": [
+[
+"Sotirios",
+"Damouras"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to Probability"
+}

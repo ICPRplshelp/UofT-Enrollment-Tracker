@@ -1,1 +1,49 @@
-{"title": "Structures, Building Systems, and Environments II", "code": "ARC382H1-F", "faculty": "ARCLA", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Bomani Ajamu", "Khemet"]], "enrollmentLogs": [0, 122, 122, 122, 122, 122, 122, 122, 122], "enrollmentCap": 150}]}
+{
+"code": "ARC382H1-F",
+"faculty": "ARCLA",
+"meetings": [
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122
+],
+"instructors": [
+[
+"Bomani Ajamu",
+"Khemet"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Structures, Building Systems, and Environments II"
+}

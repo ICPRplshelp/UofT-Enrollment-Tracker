@@ -1,1 +1,96 @@
-{"title": "Effective Writing", "code": "ENG100H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 100}, {"meetingNumber": "LEC0102", "instructors": [["Chester Norman", "Scoville"]], "enrollmentLogs": [0, 118, 118, 118, 118, 118, 118, 116, 116], "enrollmentCap": 100}, {"meetingNumber": "LEC0103", "instructors": [["Mitchell", "Johnston"]], "enrollmentLogs": [0, 117, 117, 117, 117, 117, 117, 117, 117], "enrollmentCap": 100}]}
+{
+"code": "ENG100H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+118,
+118,
+118,
+118,
+118,
+118,
+116,
+116,
+116,
+116,
+116,
+116,
+116
+],
+"instructors": [
+[
+"Chester Norman",
+"Scoville"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+117,
+117,
+117,
+117,
+117,
+117,
+117,
+117,
+117,
+117,
+117,
+117,
+117
+],
+"instructors": [
+[
+"Mitchell",
+"Johnston"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Effective Writing"
+}

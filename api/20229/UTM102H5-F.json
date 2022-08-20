@@ -1,1 +1,233 @@
-{"title": "LAUNCH: Science, Mathematics and Psychology", "code": "UTM102H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 25}, {"meetingNumber": "LEC0102", "instructors": [], "enrollmentLogs": [0, 15, 15, 15, 15, 15, 15, 15, 15], "enrollmentCap": 25}, {"meetingNumber": "LEC0103", "instructors": [], "enrollmentLogs": [0, 24, 24, 24, 24, 24, 24, 24, 24], "enrollmentCap": 25}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 9, 9, 9, 9, 9, 9, 9, 9], "enrollmentCap": 25}, {"meetingNumber": "LEC0105", "instructors": [], "enrollmentLogs": [0, 22, 22, 22, 22, 22, 22, 23, 23], "enrollmentCap": 25}, {"meetingNumber": "LEC0106", "instructors": [], "enrollmentLogs": [0, 10, 10, 10, 10, 10, 10, 10, 10], "enrollmentCap": 25}, {"meetingNumber": "LEC0107", "instructors": [], "enrollmentLogs": [0, 7, 7, 7, 7, 7, 7, 6, 6], "enrollmentCap": 25}, {"meetingNumber": "LEC0108", "instructors": [], "enrollmentLogs": [0, 19, 19, 19, 19, 19, 19, 19, 19], "enrollmentCap": 25}, {"meetingNumber": "LEC0109", "instructors": [], "enrollmentLogs": [0, 9, 9, 9, 9, 9, 9, 9, 9], "enrollmentCap": 25}, {"meetingNumber": "LEC0110", "instructors": [], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 25}]}
+{
+"code": "UTM102H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15
+],
+"instructors": [],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24
+],
+"instructors": [],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+22,
+22,
+22,
+22,
+22,
+22,
+23,
+23,
+23,
+23,
+23,
+23,
+23
+],
+"instructors": [],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10
+],
+"instructors": [],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+7,
+7,
+7,
+7,
+7,
+7,
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"instructors": [],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19
+],
+"instructors": [],
+"meetingNumber": "LEC0108"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9,
+9
+],
+"instructors": [],
+"meetingNumber": "LEC0109"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [],
+"meetingNumber": "LEC0110"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "LAUNCH: Science, Mathematics and Psychology"
+}

@@ -1,1 +1,96 @@
-{"title": "Foundation Studies in Studio", "code": "VPSA62H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Obinnamaka Emmanuel", "Osahor"]], "enrollmentLogs": [0, 40, 40, 40, 40, 40, 40, 41, 41], "enrollmentCap": 20}, {"meetingNumber": "LEC02", "instructors": [], "enrollmentLogs": [0, 42, 42, 42, 42, 42, 42, 42, 42], "enrollmentCap": 20}, {"meetingNumber": "LEC03", "instructors": [["Patrick", "Cruz"]], "enrollmentLogs": [0, 37, 37, 37, 37, 37, 37, 37, 37], "enrollmentCap": 20}]}
+{
+"code": "VPSA62H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+40,
+40,
+40,
+40,
+40,
+40,
+41,
+41,
+41,
+41,
+41,
+41,
+41
+],
+"instructors": [
+[
+"Obinnamaka Emmanuel",
+"Osahor"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42
+],
+"instructors": [],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37
+],
+"instructors": [
+[
+"Patrick",
+"Cruz"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Foundation Studies in Studio"
+}

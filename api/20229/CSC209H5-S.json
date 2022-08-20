@@ -1,1 +1,122 @@
-{"title": "Software Tools and Systems Programming", "code": "CSC209H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 63, 63, 63, 63, 63, 63, 65, 65], "enrollmentCap": 140}, {"meetingNumber": "LEC0102", "instructors": [["Arnold", "Rosenbloom"]], "enrollmentLogs": [0, 176, 176, 176, 176, 176, 176, 174, 174], "enrollmentCap": 140}, {"meetingNumber": "LEC0103", "instructors": [["Bahar", "Aameri"]], "enrollmentLogs": [0, 158, 158, 158, 158, 158, 158, 158, 158], "enrollmentCap": 140}, {"meetingNumber": "LEC0104", "instructors": [["Arnold", "Rosenbloom"]], "enrollmentLogs": [0, 157, 157, 157, 157, 157, 157, 157, 157], "enrollmentCap": 140}]}
+{
+"code": "CSC209H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+63,
+63,
+63,
+63,
+63,
+63,
+65,
+65,
+65,
+65,
+65,
+65,
+65
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+176,
+176,
+176,
+176,
+176,
+176,
+174,
+174,
+174,
+174,
+174,
+174,
+174
+],
+"instructors": [
+[
+"Arnold",
+"Rosenbloom"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+158,
+158,
+158,
+158,
+158,
+158,
+158,
+158,
+158,
+158,
+158,
+158,
+158
+],
+"instructors": [
+[
+"Bahar",
+"Aameri"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+157,
+157,
+157,
+157,
+157,
+157,
+157,
+157,
+157,
+157,
+157,
+157,
+157
+],
+"instructors": [
+[
+"Arnold",
+"Rosenbloom"
+]
+],
+"meetingNumber": "LEC0104"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Software Tools and Systems Programming"
+}

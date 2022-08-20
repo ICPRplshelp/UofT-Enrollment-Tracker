@@ -1,1 +1,49 @@
-{"title": "Immigration and Canadian Political Development", "code": "POLD52H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Julian", "Campisi"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 28, 28], "enrollmentCap": 25}]}
+{
+"code": "POLD52H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28
+],
+"instructors": [
+[
+"Julian",
+"Campisi"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Immigration and Canadian Political Development"
+}

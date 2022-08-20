@@ -1,1 +1,96 @@
-{"title": "Linear Algebra I for Mathematical Sciences", "code": "MATA22H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [], "enrollmentLogs": [0, 277, 277, 277, 277, 277, 277, 275, 275], "enrollmentCap": 350}, {"meetingNumber": "LEC02", "instructors": [["Parker", "Glynn-Adey"]], "enrollmentLogs": [0, 321, 321, 321, 321, 321, 321, 322, 322], "enrollmentCap": 350}, {"meetingNumber": "LEC03", "instructors": [["Parker", "Glynn-Adey"]], "enrollmentLogs": [0, 205, 205, 205, 205, 205, 205, 206, 206], "enrollmentCap": 207}]}
+{
+"code": "MATA22H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 350,
+"enrollmentLogs": [
+0,
+277,
+277,
+277,
+277,
+277,
+277,
+275,
+275,
+275,
+275,
+275,
+275,
+275
+],
+"instructors": [],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 350,
+"enrollmentLogs": [
+0,
+321,
+321,
+321,
+321,
+321,
+321,
+322,
+322,
+322,
+322,
+322,
+322,
+322
+],
+"instructors": [
+[
+"Parker",
+"Glynn-Adey"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 207,
+"enrollmentLogs": [
+0,
+205,
+205,
+205,
+205,
+205,
+205,
+206,
+206,
+206,
+206,
+206,
+206,
+206
+],
+"instructors": [
+[
+"Parker",
+"Glynn-Adey"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Linear Algebra I for Mathematical Sciences"
+}

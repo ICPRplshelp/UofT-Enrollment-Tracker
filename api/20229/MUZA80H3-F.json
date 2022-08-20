@@ -1,1 +1,112 @@
-{"title": "Foundations in Musicianship", "code": "MUZA80H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [], "enrollmentLogs": [0, 32, 32, 32, 32, 32, 32, 32, 32], "enrollmentCap": 25}, {"meetingNumber": "LEC02", "instructors": [], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 25, 25], "enrollmentCap": 25}, {"meetingNumber": "LEC03", "instructors": [["Laura Jenny", "Risk"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 25}, {"meetingNumber": "LEC04", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 25}]}
+{
+"code": "MUZA80H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32
+],
+"instructors": [],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Laura Jenny",
+"Risk"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC04"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Foundations in Musicianship"
+}

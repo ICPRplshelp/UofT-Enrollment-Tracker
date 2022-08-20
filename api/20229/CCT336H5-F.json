@@ -1,1 +1,75 @@
-{"title": "Comics and Digital Culture (SH)", "code": "CCT336H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["MICHAEL", "JONES"]], "enrollmentLogs": [0, 37, 37, 37, 37, 37, 37, 37, 37], "enrollmentCap": 30}, {"meetingNumber": "LEC0102", "instructors": [["MICHAEL", "JONES"]], "enrollmentLogs": [0, 41, 41, 41, 41, 41, 41, 41, 41], "enrollmentCap": 30}]}
+{
+"code": "CCT336H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37
+],
+"instructors": [
+[
+"MICHAEL",
+"JONES"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+41,
+41,
+41,
+41,
+41,
+41,
+41,
+41,
+41,
+41,
+41,
+41,
+41
+],
+"instructors": [
+[
+"MICHAEL",
+"JONES"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Comics and Digital Culture (SH)"
+}

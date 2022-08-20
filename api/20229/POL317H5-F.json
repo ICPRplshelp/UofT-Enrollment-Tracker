@@ -1,1 +1,44 @@
-{"title": "Comparative Public Policy and Administration", "code": "POL317H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 66, 66, 66, 66, 66, 66, 68, 68], "enrollmentCap": 80}]}
+{
+"code": "POL317H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+66,
+66,
+66,
+66,
+66,
+66,
+68,
+68,
+68,
+68,
+68,
+68,
+68
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Comparative Public Policy and Administration"
+}

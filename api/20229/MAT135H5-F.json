@@ -1,1 +1,352 @@
-{"title": "Differential Calculus", "code": "MAT135H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Nadya", "Askaripour"]], "enrollmentLogs": [0, 145, 145, 145, 145, 145, 145, 145, 145], "enrollmentCap": 140}, {"meetingNumber": "LEC0102", "instructors": [["Maria", "Wesslen"]], "enrollmentLogs": [0, 170, 170, 170, 170, 170, 170, 169, 169], "enrollmentCap": 140}, {"meetingNumber": "LEC0103", "instructors": [["Marcu-Antone", "Orsoni"]], "enrollmentLogs": [0, 143, 143, 143, 143, 143, 143, 141, 141], "enrollmentCap": 140}, {"meetingNumber": "LEC0104", "instructors": [["Maria", "Wesslen"]], "enrollmentLogs": [0, 157, 157, 157, 157, 157, 157, 158, 158], "enrollmentCap": 140}, {"meetingNumber": "LEC0105", "instructors": [["Ehsaan", "Hossain"]], "enrollmentLogs": [0, 146, 146, 146, 146, 146, 146, 146, 146], "enrollmentCap": 140}, {"meetingNumber": "LEC0106", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0107", "instructors": [["Serhii", "Avvakumov"]], "enrollmentLogs": [0, 124, 124, 124, 124, 124, 124, 130, 130], "enrollmentCap": 140}, {"meetingNumber": "LEC0108", "instructors": [["Jonathan", "Herman"]], "enrollmentLogs": [0, 144, 144, 144, 144, 144, 144, 144, 144], "enrollmentCap": 140}, {"meetingNumber": "LEC0109", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0110", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0111", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0112", "instructors": [], "enrollmentLogs": [0, 143, 143, 143, 143, 143, 143, 144, 144], "enrollmentCap": 140}, {"meetingNumber": "LEC0113", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0114", "instructors": [], "enrollmentLogs": [0, 149, 149, 149, 149, 149, 149, 151, 151], "enrollmentCap": 140}]}
+{
+"code": "MAT135H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145
+],
+"instructors": [
+[
+"Nadya",
+"Askaripour"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+170,
+170,
+170,
+170,
+170,
+170,
+169,
+169,
+169,
+169,
+169,
+169,
+169
+],
+"instructors": [
+[
+"Maria",
+"Wesslen"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+143,
+143,
+143,
+143,
+143,
+143,
+141,
+141,
+141,
+141,
+141,
+141,
+141
+],
+"instructors": [
+[
+"Marcu-Antone",
+"Orsoni"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+157,
+157,
+157,
+157,
+157,
+157,
+158,
+158,
+158,
+158,
+158,
+158,
+158
+],
+"instructors": [
+[
+"Maria",
+"Wesslen"
+]
+],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+146,
+146,
+146,
+146,
+146,
+146,
+146,
+146,
+146,
+146,
+146,
+146,
+146
+],
+"instructors": [
+[
+"Ehsaan",
+"Hossain"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+124,
+124,
+124,
+124,
+124,
+124,
+130,
+130,
+130,
+130,
+130,
+130,
+130
+],
+"instructors": [
+[
+"Serhii",
+"Avvakumov"
+]
+],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+144,
+144,
+144,
+144,
+144,
+144,
+144,
+144,
+144,
+144,
+144,
+144,
+144
+],
+"instructors": [
+[
+"Jonathan",
+"Herman"
+]
+],
+"meetingNumber": "LEC0108"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0109"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0110"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0111"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+143,
+143,
+143,
+143,
+143,
+143,
+144,
+144,
+144,
+144,
+144,
+144,
+144
+],
+"instructors": [],
+"meetingNumber": "LEC0112"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0113"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+149,
+149,
+149,
+149,
+149,
+149,
+151,
+151,
+151,
+151,
+151,
+151,
+151
+],
+"instructors": [],
+"meetingNumber": "LEC0114"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Differential Calculus"
+}

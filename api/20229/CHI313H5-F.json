@@ -1,1 +1,49 @@
-{"title": "The Wisdom of Life in Traditional Chinese Culture", "code": "CHI313H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Derong", "Chen"]], "enrollmentLogs": [0, 45, 45, 45, 45, 45, 45, 44, 44], "enrollmentCap": 35}]}
+{
+"code": "CHI313H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 35,
+"enrollmentLogs": [
+0,
+45,
+45,
+45,
+45,
+45,
+45,
+44,
+44,
+44,
+44,
+44,
+44,
+44
+],
+"instructors": [
+[
+"Derong",
+"Chen"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "The Wisdom of Life in Traditional Chinese Culture"
+}

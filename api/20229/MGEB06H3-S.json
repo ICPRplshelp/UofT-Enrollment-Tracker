@@ -1,1 +1,153 @@
-{"title": "Macroeconomic Theory and Policy: A Mathematical Approach", "code": "MGEB06H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 89, 89, 89, 89, 89, 89, 88, 88], "enrollmentCap": 80}, {"meetingNumber": "LEC02", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 84, 84, 84, 84, 84, 84, 84, 84], "enrollmentCap": 80}, {"meetingNumber": "LEC03", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 80, 80, 80, 80, 80, 80, 80, 80], "enrollmentCap": 80}, {"meetingNumber": "LEC04", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 86, 86, 86, 86, 86, 86, 86, 86], "enrollmentCap": 80}, {"meetingNumber": "LEC05", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 80}]}
+{
+"code": "MGEB06H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+89,
+89,
+89,
+89,
+89,
+89,
+88,
+88,
+88,
+88,
+88,
+88,
+88
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+84,
+84,
+84,
+84,
+84,
+84,
+84,
+84,
+84,
+84,
+84,
+84,
+84
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+80,
+80,
+80,
+80,
+80,
+80,
+80,
+80,
+80,
+80,
+80,
+80,
+80
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+86,
+86,
+86,
+86,
+86,
+86,
+86,
+86,
+86,
+86,
+86,
+86,
+86
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC05"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Macroeconomic Theory and Policy: A Mathematical Approach"
+}

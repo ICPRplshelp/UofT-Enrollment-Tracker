@@ -1,1 +1,75 @@
-{"title": "Translation for Business", "code": "ECTD68H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Rui", "Wang"]], "enrollmentLogs": [0, 15, 15, 15, 15, 15, 15, 15, 15], "enrollmentCap": 30}, {"meetingNumber": "LEC30", "instructors": [["Zijiang", "Song"]], "enrollmentLogs": [0, 12, 12, 12, 12, 12, 12, 12, 12], "enrollmentCap": 30}]}
+{
+"code": "ECTD68H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15
+],
+"instructors": [
+[
+"Rui",
+"Wang"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12
+],
+"instructors": [
+[
+"Zijiang",
+"Song"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Translation for Business"
+}

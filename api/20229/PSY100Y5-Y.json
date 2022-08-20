@@ -1,1 +1,101 @@
-{"title": "Introductory Psychology", "code": "PSY100Y5-Y", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Dax", "Urbszat"]], "enrollmentLogs": [0, 491, 491, 491, 491, 491, 491, 491, 491], "enrollmentCap": 500}, {"meetingNumber": "LEC0102", "instructors": [["Dax", "Urbszat"]], "enrollmentLogs": [0, 409, 409, 409, 409, 409, 409, 409, 409], "enrollmentCap": 500}, {"meetingNumber": "LEC0103", "instructors": [["Dax", "Urbszat"]], "enrollmentLogs": [0, 276, 276, 276, 276, 276, 276, 275, 275], "enrollmentCap": 460}]}
+{
+"code": "PSY100Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+491,
+491,
+491,
+491,
+491,
+491,
+491,
+491,
+491,
+491,
+491,
+491,
+491
+],
+"instructors": [
+[
+"Dax",
+"Urbszat"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+409,
+409,
+409,
+409,
+409,
+409,
+409,
+409,
+409,
+409,
+409,
+409,
+409
+],
+"instructors": [
+[
+"Dax",
+"Urbszat"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 460,
+"enrollmentLogs": [
+0,
+276,
+276,
+276,
+276,
+276,
+276,
+275,
+275,
+275,
+275,
+275,
+275,
+275
+],
+"instructors": [
+[
+"Dax",
+"Urbszat"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introductory Psychology"
+}

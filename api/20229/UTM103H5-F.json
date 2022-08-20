@@ -1,1 +1,149 @@
-{"title": "LAUNCH: Humanities and Social Sciences", "code": "UTM103H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 23, 23, 23, 23, 23, 23, 23, 23], "enrollmentCap": 25}, {"meetingNumber": "LEC0102", "instructors": [], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 26, 26], "enrollmentCap": 25}, {"meetingNumber": "LEC0103", "instructors": [], "enrollmentLogs": [0, 16, 16, 16, 16, 16, 16, 16, 16], "enrollmentCap": 25}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 18, 18, 18, 18, 18, 18, 18, 18], "enrollmentCap": 25}, {"meetingNumber": "LEC0105", "instructors": [], "enrollmentLogs": [0, 17, 17, 17, 17, 17, 17, 17, 17], "enrollmentCap": 25}, {"meetingNumber": "LEC0106", "instructors": [], "enrollmentLogs": [0, 17, 17, 17, 17, 17, 17, 17, 17], "enrollmentCap": 25}]}
+{
+"code": "UTM103H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26
+],
+"instructors": [],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16
+],
+"instructors": [],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17
+],
+"instructors": [],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17
+],
+"instructors": [],
+"meetingNumber": "LEC0106"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "LAUNCH: Humanities and Social Sciences"
+}

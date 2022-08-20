@@ -1,1 +1,101 @@
-{"title": "Principles of Marketing", "code": "MGT252H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Peter", "Landry"]], "enrollmentLogs": [0, 17, 17, 17, 17, 17, 17, 17, 17], "enrollmentCap": 60}, {"meetingNumber": "LEC0102", "instructors": [["Peter", "Landry"]], "enrollmentLogs": [0, 59, 59, 59, 59, 59, 59, 59, 59], "enrollmentCap": 60}, {"meetingNumber": "LEC0103", "instructors": [["Peter", "Landry"]], "enrollmentLogs": [0, 11, 11, 11, 11, 11, 11, 11, 11], "enrollmentCap": 60}]}
+{
+"code": "MGT252H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17
+],
+"instructors": [
+[
+"Peter",
+"Landry"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59
+],
+"instructors": [
+[
+"Peter",
+"Landry"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11
+],
+"instructors": [
+[
+"Peter",
+"Landry"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Principles of Marketing"
+}

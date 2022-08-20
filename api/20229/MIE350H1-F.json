@@ -1,1 +1,49 @@
-{"title": "Design and Analysis of Information Systems", "code": "MIE350H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Eldan", "Cohen"]], "enrollmentLogs": [0, 112, 112, 112, 112, 112, 112, 112, 112], "enrollmentCap": 135}]}
+{
+"code": "MIE350H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 135,
+"enrollmentLogs": [
+0,
+112,
+112,
+112,
+112,
+112,
+112,
+112,
+112,
+112,
+112,
+112,
+112,
+112
+],
+"instructors": [
+[
+"Eldan",
+"Cohen"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Design and Analysis of Information Systems"
+}

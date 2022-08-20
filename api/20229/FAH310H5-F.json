@@ -1,1 +1,49 @@
-{"title": "Curating Matters: Contexts and Issues in Contemporary Curatorial Practice", "code": "FAH310H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Ellyn Elizabeth", "Walker"]], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 25, 25], "enrollmentCap": 35}]}
+{
+"code": "FAH310H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 35,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [
+[
+"Ellyn Elizabeth",
+"Walker"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Curating Matters: Contexts and Issues in Contemporary Curatorial Practice"
+}

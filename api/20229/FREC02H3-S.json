@@ -1,1 +1,101 @@
-{"title": "Language Practice VI", "code": "FREC02H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Jeri", "English"]], "enrollmentLogs": [0, 19, 19, 19, 19, 19, 19, 21, 21], "enrollmentCap": 25}, {"meetingNumber": "LEC02", "instructors": [["Maud", "Pillet"]], "enrollmentLogs": [0, 16, 16, 16, 16, 16, 16, 16, 16], "enrollmentCap": 25}, {"meetingNumber": "LEC03", "instructors": [["Maud", "Pillet"]], "enrollmentLogs": [0, 10, 10, 10, 10, 10, 10, 10, 10], "enrollmentCap": 25}]}
+{
+"code": "FREC02H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+19,
+19,
+19,
+19,
+19,
+19,
+21,
+21,
+21,
+21,
+21,
+21,
+21
+],
+"instructors": [
+[
+"Jeri",
+"English"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16
+],
+"instructors": [
+[
+"Maud",
+"Pillet"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10,
+10
+],
+"instructors": [
+[
+"Maud",
+"Pillet"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Language Practice VI"
+}

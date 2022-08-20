@@ -1,1 +1,153 @@
-{"title": "Critical Writing About Literature", "code": "ENGA02H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Ryan", "Stafford"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 30, 30], "enrollmentCap": 25}, {"meetingNumber": "LEC02", "instructors": [["Rachel", "Windsor"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 28, 28], "enrollmentCap": 25}, {"meetingNumber": "LEC03", "instructors": [["Nicole", "Dufoe"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 29, 29], "enrollmentCap": 25}, {"meetingNumber": "LEC04", "instructors": [["Emily", "Halliwell-MacDonald"]], "enrollmentLogs": [0, 33, 33, 33, 33, 33, 33, 34, 34], "enrollmentCap": 25}, {"meetingNumber": "LEC05", "instructors": [["Mitchell", "Johnston"]], "enrollmentLogs": [0, 34, 34, 34, 34, 34, 34, 34, 34], "enrollmentCap": 25}]}
+{
+"code": "ENGA02H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Ryan",
+"Stafford"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28
+],
+"instructors": [
+[
+"Rachel",
+"Windsor"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Nicole",
+"Dufoe"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+33,
+33,
+33,
+33,
+33,
+33,
+34,
+34,
+34,
+34,
+34,
+34,
+34
+],
+"instructors": [
+[
+"Emily",
+"Halliwell-MacDonald"
+]
+],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34
+],
+"instructors": [
+[
+"Mitchell",
+"Johnston"
+]
+],
+"meetingNumber": "LEC05"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Critical Writing About Literature"
+}

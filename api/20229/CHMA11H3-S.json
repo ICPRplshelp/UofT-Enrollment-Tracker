@@ -1,1 +1,125 @@
-{"title": "Introductory Chemistry II: Reactions and Mechanisms", "code": "CHMA11H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Ruby May", "Sullan"], ["Oleksandr", "Voznyy"], ["Nirusha", "Thavarajah"]], "enrollmentLogs": [0, 559, 559, 559, 559, 559, 559, 560, 560], "enrollmentCap": 500}, {"meetingNumber": "LEC02", "instructors": [["Ruby May", "Sullan"], ["Oleksandr", "Voznyy"], ["Nirusha", "Thavarajah"]], "enrollmentLogs": [0, 559, 559, 559, 559, 559, 559, 557, 557], "enrollmentCap": 500}, {"meetingNumber": "LEC03", "instructors": [["Ruby May", "Sullan"], ["Oleksandr", "Voznyy"], ["Nirusha", "Thavarajah"]], "enrollmentLogs": [0, 177, 177, 177, 177, 177, 177, 180, 180], "enrollmentCap": 200}]}
+{
+"code": "CHMA11H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+559,
+559,
+559,
+559,
+559,
+559,
+560,
+560,
+560,
+560,
+560,
+560,
+560
+],
+"instructors": [
+[
+"Ruby May",
+"Sullan"
+],
+[
+"Oleksandr",
+"Voznyy"
+],
+[
+"Nirusha",
+"Thavarajah"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+559,
+559,
+559,
+559,
+559,
+559,
+557,
+557,
+557,
+557,
+557,
+557,
+557
+],
+"instructors": [
+[
+"Ruby May",
+"Sullan"
+],
+[
+"Oleksandr",
+"Voznyy"
+],
+[
+"Nirusha",
+"Thavarajah"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 200,
+"enrollmentLogs": [
+0,
+177,
+177,
+177,
+177,
+177,
+177,
+180,
+180,
+180,
+180,
+180,
+180,
+180
+],
+"instructors": [
+[
+"Ruby May",
+"Sullan"
+],
+[
+"Oleksandr",
+"Voznyy"
+],
+[
+"Nirusha",
+"Thavarajah"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introductory Chemistry II: Reactions and Mechanisms"
+}

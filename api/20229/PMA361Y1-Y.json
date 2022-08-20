@@ -1,1 +1,49 @@
-{"title": "Voice Pedagogy", "code": "PMA361Y1-Y", "faculty": "MUSIC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Shannon", "Coates"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 2}]}
+{
+"code": "PMA361Y1-Y",
+"faculty": "MUSIC",
+"meetings": [
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Shannon",
+"Coates"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Voice Pedagogy"
+}

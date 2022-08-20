@@ -1,1 +1,127 @@
-{"title": "Music Theory IV", "code": "TMU231H1-S", "faculty": "MUSIC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Daphne", "Tan"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 31}, {"meetingNumber": "LEC0201", "instructors": [["Daphne", "Tan"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 31}, {"meetingNumber": "LEC0301", "instructors": [["Daphne", "Tan"]], "enrollmentLogs": [0, 20, 20, 20, 20, 20, 20, 20, 20], "enrollmentCap": 31}, {"meetingNumber": "LEC0401", "instructors": [["Daphne", "Tan"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 31}]}
+{
+"code": "TMU231H1-S",
+"faculty": "MUSIC",
+"meetings": [
+{
+"enrollmentCap": 31,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Daphne",
+"Tan"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 31,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Daphne",
+"Tan"
+]
+],
+"meetingNumber": "LEC0201"
+},
+{
+"enrollmentCap": 31,
+"enrollmentLogs": [
+0,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20
+],
+"instructors": [
+[
+"Daphne",
+"Tan"
+]
+],
+"meetingNumber": "LEC0301"
+},
+{
+"enrollmentCap": 31,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Daphne",
+"Tan"
+]
+],
+"meetingNumber": "LEC0401"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Music Theory IV"
+}

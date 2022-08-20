@@ -1,1 +1,127 @@
-{"title": "Management Skills", "code": "MGHC02H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Phanikiran", "Radhakrishnan"]], "enrollmentLogs": [0, 44, 44, 44, 44, 44, 44, 44, 44], "enrollmentCap": 40}, {"meetingNumber": "LEC02", "instructors": [["Joanna", "Heathcote"]], "enrollmentLogs": [0, 56, 56, 56, 56, 56, 56, 56, 56], "enrollmentCap": 40}, {"meetingNumber": "LEC03", "instructors": [["Phanikiran", "Radhakrishnan"]], "enrollmentLogs": [0, 42, 42, 42, 42, 42, 42, 42, 42], "enrollmentCap": 40}, {"meetingNumber": "LEC04", "instructors": [["Phanikiran", "Radhakrishnan"]], "enrollmentLogs": [0, 42, 42, 42, 42, 42, 42, 42, 42], "enrollmentCap": 40}]}
+{
+"code": "MGHC02H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44
+],
+"instructors": [
+[
+"Phanikiran",
+"Radhakrishnan"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56
+],
+"instructors": [
+[
+"Joanna",
+"Heathcote"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42
+],
+"instructors": [
+[
+"Phanikiran",
+"Radhakrishnan"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42
+],
+"instructors": [
+[
+"Phanikiran",
+"Radhakrishnan"
+]
+],
+"meetingNumber": "LEC04"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Management Skills"
+}

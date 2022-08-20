@@ -1,1 +1,53 @@
-{"title": "Canadian Government and Politics", "code": "POLB50Y3-Y", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Robert Stephen", "Schertzer"], ["Andrew Wilson", "McDougall"]], "enrollmentLogs": [0, 206, 206, 206, 206, 206, 206, 205, 205], "enrollmentCap": 230}]}
+{
+"code": "POLB50Y3-Y",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 230,
+"enrollmentLogs": [
+0,
+206,
+206,
+206,
+206,
+206,
+206,
+205,
+205,
+205,
+205,
+205,
+205,
+205
+],
+"instructors": [
+[
+"Robert Stephen",
+"Schertzer"
+],
+[
+"Andrew Wilson",
+"McDougall"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Canadian Government and Politics"
+}

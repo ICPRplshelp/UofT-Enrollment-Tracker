@@ -1,1 +1,96 @@
-{"title": "Principles of Programming Languages", "code": "CSC324H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Lisa Chenxue", "Zhang"]], "enrollmentLogs": [0, 78, 78, 78, 78, 78, 78, 77, 77], "enrollmentCap": 80}, {"meetingNumber": "LEC0102", "instructors": [["Louisa", "Harutyunyan"]], "enrollmentLogs": [0, 74, 74, 74, 74, 74, 74, 75, 75], "enrollmentCap": 80}, {"meetingNumber": "LEC0103", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 80}]}
+{
+"code": "CSC324H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+78,
+78,
+78,
+78,
+78,
+78,
+77,
+77,
+77,
+77,
+77,
+77,
+77
+],
+"instructors": [
+[
+"Lisa Chenxue",
+"Zhang"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+74,
+74,
+74,
+74,
+74,
+74,
+75,
+75,
+75,
+75,
+75,
+75,
+75
+],
+"instructors": [
+[
+"Louisa",
+"Harutyunyan"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Principles of Programming Languages"
+}

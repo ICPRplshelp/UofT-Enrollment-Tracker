@@ -1,1 +1,75 @@
-{"title": "Techniques of the Calculus of Several Variables I", "code": "MATB41H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Parker", "Glynn-Adey"]], "enrollmentLogs": [0, 244, 244, 244, 244, 244, 244, 242, 242], "enrollmentCap": 230}, {"meetingNumber": "LEC02", "instructors": [["Andras", "Meszaros"]], "enrollmentLogs": [0, 160, 160, 160, 160, 160, 160, 161, 161], "enrollmentCap": 230}]}
+{
+"code": "MATB41H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 230,
+"enrollmentLogs": [
+0,
+244,
+244,
+244,
+244,
+244,
+244,
+242,
+242,
+242,
+242,
+242,
+242,
+242
+],
+"instructors": [
+[
+"Parker",
+"Glynn-Adey"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 230,
+"enrollmentLogs": [
+0,
+160,
+160,
+160,
+160,
+160,
+160,
+161,
+161,
+161,
+161,
+161,
+161,
+161
+],
+"instructors": [
+[
+"Andras",
+"Meszaros"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Techniques of the Calculus of Several Variables I"
+}

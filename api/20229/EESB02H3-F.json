@@ -1,1 +1,49 @@
-{"title": "Principles of Geomorphology", "code": "EESB02H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Mandana", "Meriano"]], "enrollmentLogs": [0, 55, 55, 55, 55, 55, 55, 55, 55], "enrollmentCap": 80}]}
+{
+"code": "EESB02H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+55,
+55,
+55,
+55,
+55,
+55,
+55,
+55,
+55,
+55,
+55,
+55,
+55
+],
+"instructors": [
+[
+"Mandana",
+"Meriano"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Principles of Geomorphology"
+}

@@ -1,1 +1,211 @@
-{"title": "Calculus I", "code": "MAT186H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 145, 145, 145, 145, 145, 145, 144, 144], "enrollmentCap": 150}, {"meetingNumber": "LEC0102", "instructors": [["Sadiyya", "Parnell-Hendrickson"]], "enrollmentLogs": [0, 137, 137, 137, 137, 137, 137, 135, 135], "enrollmentCap": 145}, {"meetingNumber": "LEC0103", "instructors": [["Alvin", "Sukmadji"]], "enrollmentLogs": [0, 140, 140, 140, 140, 140, 140, 139, 139], "enrollmentCap": 150}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 139, 139, 139, 139, 139, 139, 138, 138], "enrollmentCap": 148}, {"meetingNumber": "LEC0105", "instructors": [["Sean", "Uppal"]], "enrollmentLogs": [0, 141, 141, 141, 141, 141, 141, 140, 140], "enrollmentCap": 150}, {"meetingNumber": "LEC0106", "instructors": [], "enrollmentLogs": [0, 143, 143, 143, 143, 143, 143, 140, 140], "enrollmentCap": 149}, {"meetingNumber": "LEC0107", "instructors": [], "enrollmentLogs": [0, 120, 120, 120, 120, 120, 120, 119, 119], "enrollmentCap": 129}, {"meetingNumber": "LEC0108", "instructors": [["Sean", "Uppal"]], "enrollmentLogs": [0, 126, 126, 126, 126, 126, 126, 125, 125], "enrollmentCap": 132}]}
+{
+"code": "MAT186H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+145,
+145,
+145,
+145,
+145,
+145,
+144,
+144,
+144,
+144,
+144,
+144,
+144
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 145,
+"enrollmentLogs": [
+0,
+137,
+137,
+137,
+137,
+137,
+137,
+135,
+135,
+135,
+135,
+135,
+135,
+135
+],
+"instructors": [
+[
+"Sadiyya",
+"Parnell-Hendrickson"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+140,
+140,
+140,
+140,
+140,
+140,
+139,
+139,
+139,
+139,
+139,
+139,
+139
+],
+"instructors": [
+[
+"Alvin",
+"Sukmadji"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 148,
+"enrollmentLogs": [
+0,
+139,
+139,
+139,
+139,
+139,
+139,
+138,
+138,
+138,
+138,
+138,
+138,
+138
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+141,
+141,
+141,
+141,
+141,
+141,
+140,
+140,
+140,
+140,
+140,
+140,
+140
+],
+"instructors": [
+[
+"Sean",
+"Uppal"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 149,
+"enrollmentLogs": [
+0,
+143,
+143,
+143,
+143,
+143,
+143,
+140,
+140,
+140,
+140,
+140,
+140,
+140
+],
+"instructors": [],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 129,
+"enrollmentLogs": [
+0,
+120,
+120,
+120,
+120,
+120,
+120,
+119,
+119,
+119,
+119,
+119,
+119,
+119
+],
+"instructors": [],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 132,
+"enrollmentLogs": [
+0,
+126,
+126,
+126,
+126,
+126,
+126,
+125,
+125,
+125,
+125,
+125,
+125,
+125
+],
+"instructors": [
+[
+"Sean",
+"Uppal"
+]
+],
+"meetingNumber": "LEC0108"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Calculus I"
+}

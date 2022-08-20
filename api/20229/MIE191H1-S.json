@@ -1,1 +1,49 @@
-{"title": "Seminar Course: Introduction to Mechanical and Industrial Engineering", "code": "MIE191H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Markus", "Bussmann"]], "enrollmentLogs": [0, 250, 250, 250, 250, 250, 250, 246, 246], "enrollmentCap": 266}]}
+{
+"code": "MIE191H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 266,
+"enrollmentLogs": [
+0,
+250,
+250,
+250,
+250,
+250,
+250,
+246,
+246,
+246,
+246,
+246,
+246,
+246
+],
+"instructors": [
+[
+"Markus",
+"Bussmann"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Seminar Course: Introduction to Mechanical and Industrial Engineering"
+}

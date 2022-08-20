@@ -1,1 +1,49 @@
-{"title": "Introduction to Greek and Roman Literature", "code": "CLA207H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Martin", "Revermann"]], "enrollmentLogs": [0, 19, 19, 19, 19, 19, 19, 20, 20], "enrollmentCap": 50}]}
+{
+"code": "CLA207H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+19,
+19,
+19,
+19,
+19,
+19,
+20,
+20,
+20,
+20,
+20,
+20,
+20
+],
+"instructors": [
+[
+"Martin",
+"Revermann"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introduction to Greek and Roman Literature"
+}

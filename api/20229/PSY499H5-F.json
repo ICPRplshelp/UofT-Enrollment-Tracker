@@ -1,1 +1,309 @@
-{"title": "Research Opportunity Program", "code": "PSY499H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Ulrich", "Schimmack"]], "enrollmentLogs": [0, 7, 7, 7, 7, 7, 7, 7, 7], "enrollmentCap": 10}, {"meetingNumber": "LEC0201", "instructors": [["Erika Nicole", "Carlson"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 3}, {"meetingNumber": "LEC0301", "instructors": [["Judith", "Andersen"]], "enrollmentLogs": [0, 5, 5, 5, 5, 5, 5, 5, 5], "enrollmentCap": 5}, {"meetingNumber": "LEC0401", "instructors": [["Christina M Vanden Bosc", "der Nederlanden"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 1}, {"meetingNumber": "LEC0402", "instructors": [["Christina M Vanden Bosc", "der Nederlanden"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 1}, {"meetingNumber": "LEC0501", "instructors": [["Benjamin Arthur", "Wolfe"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 2}, {"meetingNumber": "LEC0601", "instructors": [["Melissa", "Holmes"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 2}, {"meetingNumber": "LEC0602", "instructors": [["Melissa", "Holmes"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 2}, {"meetingNumber": "LEC0603", "instructors": [["Melissa", "Holmes"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 2}, {"meetingNumber": "LEC0701", "instructors": [["Jennifer", "Stellar"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 1}, {"meetingNumber": "LEC0801", "instructors": [["Doug", "VanderLaan"]], "enrollmentLogs": [0, 12, 12, 12, 12, 12, 12, 12, 12], "enrollmentCap": 12}]}
+{
+"code": "PSY499H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 10,
+"enrollmentLogs": [
+0,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7
+],
+"instructors": [
+[
+"Ulrich",
+"Schimmack"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 3,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Erika Nicole",
+"Carlson"
+]
+],
+"meetingNumber": "LEC0201"
+},
+{
+"enrollmentCap": 5,
+"enrollmentLogs": [
+0,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"instructors": [
+[
+"Judith",
+"Andersen"
+]
+],
+"meetingNumber": "LEC0301"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Christina M Vanden Bosc",
+"der Nederlanden"
+]
+],
+"meetingNumber": "LEC0401"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Christina M Vanden Bosc",
+"der Nederlanden"
+]
+],
+"meetingNumber": "LEC0402"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Benjamin Arthur",
+"Wolfe"
+]
+],
+"meetingNumber": "LEC0501"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Melissa",
+"Holmes"
+]
+],
+"meetingNumber": "LEC0601"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Melissa",
+"Holmes"
+]
+],
+"meetingNumber": "LEC0602"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Melissa",
+"Holmes"
+]
+],
+"meetingNumber": "LEC0603"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Jennifer",
+"Stellar"
+]
+],
+"meetingNumber": "LEC0701"
+},
+{
+"enrollmentCap": 12,
+"enrollmentLogs": [
+0,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12,
+12
+],
+"instructors": [
+[
+"Doug",
+"VanderLaan"
+]
+],
+"meetingNumber": "LEC0801"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Research Opportunity Program"
+}

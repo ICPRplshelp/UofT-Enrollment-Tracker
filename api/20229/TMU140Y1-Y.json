@@ -1,1 +1,49 @@
-{"title": "Music Theory I & II", "code": "TMU140Y1-Y", "faculty": "MUSIC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Mark", "Sallmen"]], "enrollmentLogs": [0, 2, 2, 2, 2, 2, 2, 2, 2], "enrollmentCap": 15}]}
+{
+"code": "TMU140Y1-Y",
+"faculty": "MUSIC",
+"meetings": [
+{
+"enrollmentCap": 15,
+"enrollmentLogs": [
+0,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2
+],
+"instructors": [
+[
+"Mark",
+"Sallmen"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Music Theory I & II"
+}

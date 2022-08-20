@@ -1,1 +1,75 @@
-{"title": "Diversity of Organisms", "code": "BIO153H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Christoph", "Richter"]], "enrollmentLogs": [0, 497, 497, 497, 497, 497, 497, 499, 499], "enrollmentCap": 500}, {"meetingNumber": "LEC0102", "instructors": [["Christoph", "Richter"]], "enrollmentLogs": [0, 409, 409, 409, 409, 409, 409, 407, 407], "enrollmentCap": 500}]}
+{
+"code": "BIO153H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+497,
+497,
+497,
+497,
+497,
+497,
+499,
+499,
+499,
+499,
+499,
+499,
+499
+],
+"instructors": [
+[
+"Christoph",
+"Richter"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+409,
+409,
+409,
+409,
+409,
+409,
+407,
+407,
+407,
+407,
+407,
+407,
+407
+],
+"instructors": [
+[
+"Christoph",
+"Richter"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Diversity of Organisms"
+}

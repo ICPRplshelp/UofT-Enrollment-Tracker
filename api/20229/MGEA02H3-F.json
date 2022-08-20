@@ -1,1 +1,101 @@
-{"title": "Introduction to Microeconomics: A Mathematical Approach", "code": "MGEA02H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 402, 402, 402, 402, 402, 402, 400, 400], "enrollmentCap": 350}, {"meetingNumber": "LEC02", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 381, 381, 381, 381, 381, 381, 379, 379], "enrollmentCap": 350}, {"meetingNumber": "LEC03", "instructors": [["Jack", "Parkinson"]], "enrollmentLogs": [0, 386, 386, 386, 386, 386, 386, 384, 384], "enrollmentCap": 350}]}
+{
+"code": "MGEA02H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 350,
+"enrollmentLogs": [
+0,
+402,
+402,
+402,
+402,
+402,
+402,
+400,
+400,
+400,
+400,
+400,
+400,
+400
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 350,
+"enrollmentLogs": [
+0,
+381,
+381,
+381,
+381,
+381,
+381,
+379,
+379,
+379,
+379,
+379,
+379,
+379
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 350,
+"enrollmentLogs": [
+0,
+386,
+386,
+386,
+386,
+386,
+386,
+384,
+384,
+384,
+384,
+384,
+384,
+384
+],
+"instructors": [
+[
+"Jack",
+"Parkinson"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to Microeconomics: A Mathematical Approach"
+}

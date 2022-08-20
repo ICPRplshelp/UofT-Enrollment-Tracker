@@ -1,1 +1,49 @@
-{"title": "Forensic Pathology", "code": "FSC401H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Lilianna Ulana", "Watamaniuk"]], "enrollmentLogs": [0, 62, 62, 62, 62, 62, 62, 61, 61], "enrollmentCap": 40}]}
+{
+"code": "FSC401H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+62,
+62,
+62,
+62,
+62,
+62,
+61,
+61,
+61,
+61,
+61,
+61,
+61
+],
+"instructors": [
+[
+"Lilianna Ulana",
+"Watamaniuk"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Forensic Pathology"
+}

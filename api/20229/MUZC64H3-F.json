@@ -1,1 +1,49 @@
-{"title": "String Orchestra IIIa", "code": "MUZC64H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC30", "instructors": [["Tony", "Leong"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 6}]}
+{
+"code": "MUZC64H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 6,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Tony",
+"Leong"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "String Orchestra IIIa"
+}

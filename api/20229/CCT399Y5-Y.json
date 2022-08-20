@@ -1,1 +1,101 @@
-{"title": "Research Opportunity Program (ROP)", "code": "CCT399Y5-Y", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Bree", "McEwan"]], "enrollmentLogs": [0, 5, 5, 5, 5, 5, 5, 5, 5], "enrollmentCap": 5}, {"meetingNumber": "LEC0201", "instructors": [["Sarah", "Cherki El Idrissi"]], "enrollmentLogs": [0, 5, 5, 5, 5, 5, 5, 5, 5], "enrollmentCap": 5}, {"meetingNumber": "LEC0301", "instructors": [["Jeffrey", "Boase"]], "enrollmentLogs": [0, 6, 6, 6, 6, 6, 6, 6, 6], "enrollmentCap": 6}]}
+{
+"code": "CCT399Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 5,
+"enrollmentLogs": [
+0,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"instructors": [
+[
+"Bree",
+"McEwan"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 5,
+"enrollmentLogs": [
+0,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"instructors": [
+[
+"Sarah",
+"Cherki El Idrissi"
+]
+],
+"meetingNumber": "LEC0201"
+},
+{
+"enrollmentCap": 6,
+"enrollmentLogs": [
+0,
+6,
+6,
+6,
+6,
+6,
+6,
+6,
+6,
+6,
+6,
+6,
+6,
+6
+],
+"instructors": [
+[
+"Jeffrey",
+"Boase"
+]
+],
+"meetingNumber": "LEC0301"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Research Opportunity Program (ROP)"
+}

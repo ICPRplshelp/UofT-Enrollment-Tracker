@@ -1,1 +1,49 @@
-{"title": "PHASE TRANSFORMATIONS", "code": "MSE218H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Glenn", "Hibbard"]], "enrollmentLogs": [0, 75, 75, 75, 75, 75, 75, 75, 75], "enrollmentCap": 82}]}
+{
+"code": "MSE218H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 82,
+"enrollmentLogs": [
+0,
+75,
+75,
+75,
+75,
+75,
+75,
+75,
+75,
+75,
+75,
+75,
+75,
+75
+],
+"instructors": [
+[
+"Glenn",
+"Hibbard"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "PHASE TRANSFORMATIONS"
+}

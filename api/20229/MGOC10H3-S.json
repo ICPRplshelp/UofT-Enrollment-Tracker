@@ -1,1 +1,101 @@
-{"title": "Analytics for Decision Making", "code": "MGOC10H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Vinh", "Quan"]], "enrollmentLogs": [0, 71, 71, 71, 71, 71, 71, 71, 71], "enrollmentCap": 60}, {"meetingNumber": "LEC02", "instructors": [["Vinh", "Quan"]], "enrollmentLogs": [0, 69, 69, 69, 69, 69, 69, 69, 69], "enrollmentCap": 60}, {"meetingNumber": "LEC03", "instructors": [["Vinh", "Quan"]], "enrollmentLogs": [0, 20, 20, 20, 20, 20, 20, 20, 20], "enrollmentCap": 60}]}
+{
+"code": "MGOC10H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71
+],
+"instructors": [
+[
+"Vinh",
+"Quan"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69
+],
+"instructors": [
+[
+"Vinh",
+"Quan"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20,
+20
+],
+"instructors": [
+[
+"Vinh",
+"Quan"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Analytics for Decision Making"
+}

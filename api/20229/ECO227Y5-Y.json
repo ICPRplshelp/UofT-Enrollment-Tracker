@@ -1,1 +1,49 @@
-{"title": "Foundations of Econometrics", "code": "ECO227Y5-Y", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Jiaying", "Gu"]], "enrollmentLogs": [0, 44, 44, 44, 44, 44, 44, 44, 44], "enrollmentCap": 55}]}
+{
+"code": "ECO227Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 55,
+"enrollmentLogs": [
+0,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44
+],
+"instructors": [
+[
+"Jiaying",
+"Gu"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Foundations of Econometrics"
+}

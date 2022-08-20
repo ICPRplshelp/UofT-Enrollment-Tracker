@@ -1,1 +1,101 @@
-{"title": "Algorithms and Data Structures", "code": "ECE345H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Sidi Mohamed", "Beillahi"]], "enrollmentLogs": [0, 104, 104, 104, 104, 104, 104, 104, 104], "enrollmentCap": 100}, {"meetingNumber": "LEC0102", "instructors": [["Malik", "Khan"]], "enrollmentLogs": [0, 102, 102, 102, 102, 102, 102, 102, 102], "enrollmentCap": 100}, {"meetingNumber": "LEC0103", "instructors": [["Zisis", "Poulos"]], "enrollmentLogs": [0, 105, 105, 105, 105, 105, 105, 105, 105], "enrollmentCap": 100}]}
+{
+"code": "ECE345H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+104,
+104,
+104,
+104,
+104,
+104,
+104,
+104,
+104,
+104,
+104,
+104,
+104
+],
+"instructors": [
+[
+"Sidi Mohamed",
+"Beillahi"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102
+],
+"instructors": [
+[
+"Malik",
+"Khan"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+105,
+105,
+105,
+105,
+105,
+105,
+105,
+105,
+105,
+105,
+105,
+105,
+105
+],
+"instructors": [
+[
+"Zisis",
+"Poulos"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Algorithms and Data Structures"
+}

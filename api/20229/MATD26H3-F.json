@@ -1,1 +1,49 @@
-{"title": "Geometric Analysis and Relativity", "code": "MATD26H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Stefanos", "Aretakis"]], "enrollmentLogs": [0, 2, 2, 2, 2, 2, 2, 2, 2], "enrollmentCap": 20}]}
+{
+"code": "MATD26H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2
+],
+"instructors": [
+[
+"Stefanos",
+"Aretakis"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Geometric Analysis and Relativity"
+}

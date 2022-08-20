@@ -1,1 +1,75 @@
-{"title": "English and Chinese Translation: Theory and Practice", "code": "ECTB61H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Jingsong", "Ma"]], "enrollmentLogs": [0, 48, 48, 48, 48, 48, 48, 48, 48], "enrollmentCap": 30}, {"meetingNumber": "LEC02", "instructors": [["Jingsong", "Ma"]], "enrollmentLogs": [0, 46, 46, 46, 46, 46, 46, 46, 46], "enrollmentCap": 30}]}
+{
+"code": "ECTB61H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48
+],
+"instructors": [
+[
+"Jingsong",
+"Ma"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+46,
+46,
+46,
+46,
+46,
+46,
+46,
+46,
+46,
+46,
+46,
+46,
+46
+],
+"instructors": [
+[
+"Jingsong",
+"Ma"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "English and Chinese Translation: Theory and Practice"
+}

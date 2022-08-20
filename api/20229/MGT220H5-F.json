@@ -1,1 +1,127 @@
-{"title": "Intermediate Accounting I", "code": "MGT220H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Kathy", "Falk"]], "enrollmentLogs": [0, 69, 69, 69, 69, 69, 69, 70, 70], "enrollmentCap": 75}, {"meetingNumber": "LEC0102", "instructors": [["Akash", "Chattopadhyay"]], "enrollmentLogs": [0, 37, 37, 37, 37, 37, 37, 36, 36], "enrollmentCap": 75}, {"meetingNumber": "LEC0103", "instructors": [["Akash", "Chattopadhyay"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 75}, {"meetingNumber": "LEC0104", "instructors": [["Kathy", "Falk"]], "enrollmentLogs": [0, 61, 61, 61, 61, 61, 61, 61, 61], "enrollmentCap": 75}]}
+{
+"code": "MGT220H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+69,
+69,
+69,
+69,
+69,
+69,
+70,
+70,
+70,
+70,
+70,
+70,
+70
+],
+"instructors": [
+[
+"Kathy",
+"Falk"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+37,
+37,
+37,
+37,
+37,
+37,
+36,
+36,
+36,
+36,
+36,
+36,
+36
+],
+"instructors": [
+[
+"Akash",
+"Chattopadhyay"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Akash",
+"Chattopadhyay"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61
+],
+"instructors": [
+[
+"Kathy",
+"Falk"
+]
+],
+"meetingNumber": "LEC0104"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Intermediate Accounting I"
+}

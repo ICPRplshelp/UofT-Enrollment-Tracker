@@ -1,1 +1,75 @@
-{"title": "Groups and Symmetries", "code": "MAT301H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Ali", "Mousavidehshikh"]], "enrollmentLogs": [0, 82, 82, 82, 82, 82, 82, 82, 82], "enrollmentCap": 75}, {"meetingNumber": "LEC0102", "instructors": [["Julie", "Desjardins"]], "enrollmentLogs": [0, 69, 69, 69, 69, 69, 69, 69, 69], "enrollmentCap": 75}]}
+{
+"code": "MAT301H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82
+],
+"instructors": [
+[
+"Ali",
+"Mousavidehshikh"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69,
+69
+],
+"instructors": [
+[
+"Julie",
+"Desjardins"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Groups and Symmetries"
+}

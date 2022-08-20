@@ -1,1 +1,200 @@
-{"title": "Introduction to Computer Programming", "code": "CSC108H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Daniel", "Zingaro"]], "enrollmentLogs": [0, 188, 188, 188, 188, 188, 188, 185, 185], "enrollmentCap": 160}, {"meetingNumber": "LEC0102", "instructors": [["Louisa", "Harutyunyan"]], "enrollmentLogs": [0, 177, 177, 177, 177, 177, 177, 178, 178], "enrollmentCap": 160}, {"meetingNumber": "LEC0103", "instructors": [["Louisa", "Harutyunyan"]], "enrollmentLogs": [0, 178, 178, 178, 178, 178, 178, 178, 178], "enrollmentCap": 160}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 160}, {"meetingNumber": "LEC0105", "instructors": [["Daniel", "Zingaro"]], "enrollmentLogs": [0, 183, 183, 183, 183, 183, 183, 182, 182], "enrollmentCap": 160}, {"meetingNumber": "LEC0106", "instructors": [["Rutwa", "Engineer"]], "enrollmentLogs": [0, 127, 127, 127, 127, 127, 127, 133, 133], "enrollmentCap": 160}, {"meetingNumber": "LEC0107", "instructors": [["Angela M.", "Zavaleta Bernuy"]], "enrollmentLogs": [0, 161, 161, 161, 161, 161, 161, 161, 161], "enrollmentCap": 160}]}
+{
+"code": "CSC108H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+188,
+188,
+188,
+188,
+188,
+188,
+185,
+185,
+185,
+185,
+185,
+185,
+185
+],
+"instructors": [
+[
+"Daniel",
+"Zingaro"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+177,
+177,
+177,
+177,
+177,
+177,
+178,
+178,
+178,
+178,
+178,
+178,
+178
+],
+"instructors": [
+[
+"Louisa",
+"Harutyunyan"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+178,
+178,
+178,
+178,
+178,
+178,
+178,
+178,
+178,
+178,
+178,
+178,
+178
+],
+"instructors": [
+[
+"Louisa",
+"Harutyunyan"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+183,
+183,
+183,
+183,
+183,
+183,
+182,
+182,
+182,
+182,
+182,
+182,
+182
+],
+"instructors": [
+[
+"Daniel",
+"Zingaro"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+127,
+127,
+127,
+127,
+127,
+127,
+133,
+133,
+133,
+133,
+133,
+133,
+133
+],
+"instructors": [
+[
+"Rutwa",
+"Engineer"
+]
+],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 160,
+"enrollmentLogs": [
+0,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161
+],
+"instructors": [
+[
+"Angela M.",
+"Zavaleta Bernuy"
+]
+],
+"meetingNumber": "LEC0107"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introduction to Computer Programming"
+}

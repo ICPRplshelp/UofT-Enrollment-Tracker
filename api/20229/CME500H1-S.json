@@ -1,1 +1,49 @@
-{"title": "FUND. OF ACID ROCK DRAINAGE", "code": "CME500H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Lesley Alice", "Warren"]], "enrollmentLogs": [0, 3, 3, 3, 3, 3, 3, 3, 3], "enrollmentCap": 20}]}
+{
+"code": "CME500H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3
+],
+"instructors": [
+[
+"Lesley Alice",
+"Warren"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "FUND. OF ACID ROCK DRAINAGE"
+}

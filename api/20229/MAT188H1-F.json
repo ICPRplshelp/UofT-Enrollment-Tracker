@@ -1,1 +1,221 @@
-{"title": "Linear Algebra", "code": "MAT188H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 145, 145, 145, 145, 145, 145, 144, 144], "enrollmentCap": 151}, {"meetingNumber": "LEC0102", "instructors": [["Arthur", "Chan"]], "enrollmentLogs": [0, 138, 138, 138, 138, 138, 138, 136, 136], "enrollmentCap": 146}, {"meetingNumber": "LEC0103", "instructors": [["Geoffrey", "McGregor"]], "enrollmentLogs": [0, 141, 141, 141, 141, 141, 141, 140, 140], "enrollmentCap": 150}, {"meetingNumber": "LEC0104", "instructors": [["Camelia", "Karimian Pour"]], "enrollmentLogs": [0, 141, 141, 141, 141, 141, 141, 140, 140], "enrollmentCap": 148}, {"meetingNumber": "LEC0105", "instructors": [["Camelia", "Karimian Pour"]], "enrollmentLogs": [0, 146, 146, 146, 146, 146, 146, 144, 144], "enrollmentCap": 150}, {"meetingNumber": "LEC0106", "instructors": [], "enrollmentLogs": [0, 144, 144, 144, 144, 144, 144, 142, 142], "enrollmentCap": 150}, {"meetingNumber": "LEC0107", "instructors": [["Daniel", "Johnstone"]], "enrollmentLogs": [0, 121, 121, 121, 121, 121, 121, 120, 120], "enrollmentCap": 129}, {"meetingNumber": "LEC0108", "instructors": [["Vardan", "Papyan"]], "enrollmentLogs": [0, 127, 127, 127, 127, 127, 127, 126, 126], "enrollmentCap": 129}]}
+{
+"code": "MAT188H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 151,
+"enrollmentLogs": [
+0,
+145,
+145,
+145,
+145,
+145,
+145,
+144,
+144,
+144,
+144,
+144,
+144,
+144
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 146,
+"enrollmentLogs": [
+0,
+138,
+138,
+138,
+138,
+138,
+138,
+136,
+136,
+136,
+136,
+136,
+136,
+136
+],
+"instructors": [
+[
+"Arthur",
+"Chan"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+141,
+141,
+141,
+141,
+141,
+141,
+140,
+140,
+140,
+140,
+140,
+140,
+140
+],
+"instructors": [
+[
+"Geoffrey",
+"McGregor"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 148,
+"enrollmentLogs": [
+0,
+141,
+141,
+141,
+141,
+141,
+141,
+140,
+140,
+140,
+140,
+140,
+140,
+140
+],
+"instructors": [
+[
+"Camelia",
+"Karimian Pour"
+]
+],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+146,
+146,
+146,
+146,
+146,
+146,
+144,
+144,
+144,
+144,
+144,
+144,
+144
+],
+"instructors": [
+[
+"Camelia",
+"Karimian Pour"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+144,
+144,
+144,
+144,
+144,
+144,
+142,
+142,
+142,
+142,
+142,
+142,
+142
+],
+"instructors": [],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 129,
+"enrollmentLogs": [
+0,
+121,
+121,
+121,
+121,
+121,
+121,
+120,
+120,
+120,
+120,
+120,
+120,
+120
+],
+"instructors": [
+[
+"Daniel",
+"Johnstone"
+]
+],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 129,
+"enrollmentLogs": [
+0,
+127,
+127,
+127,
+127,
+127,
+127,
+126,
+126,
+126,
+126,
+126,
+126,
+126
+],
+"instructors": [
+[
+"Vardan",
+"Papyan"
+]
+],
+"meetingNumber": "LEC0108"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Linear Algebra"
+}

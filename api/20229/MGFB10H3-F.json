@@ -1,1 +1,101 @@
-{"title": "Principles of Finance", "code": "MGFB10H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Syed", "Ahmed"]], "enrollmentLogs": [0, 54, 54, 54, 54, 54, 54, 54, 54], "enrollmentCap": 60}, {"meetingNumber": "LEC02", "instructors": [["Syed", "Ahmed"]], "enrollmentLogs": [0, 61, 61, 61, 61, 61, 61, 61, 61], "enrollmentCap": 60}, {"meetingNumber": "LEC03", "instructors": [["Syed", "Ahmed"]], "enrollmentLogs": [0, 39, 39, 39, 39, 39, 39, 39, 39], "enrollmentCap": 60}]}
+{
+"code": "MGFB10H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+54,
+54,
+54,
+54,
+54,
+54,
+54,
+54,
+54,
+54,
+54,
+54,
+54
+],
+"instructors": [
+[
+"Syed",
+"Ahmed"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61
+],
+"instructors": [
+[
+"Syed",
+"Ahmed"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39
+],
+"instructors": [
+[
+"Syed",
+"Ahmed"
+]
+],
+"meetingNumber": "LEC03"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Principles of Finance"
+}

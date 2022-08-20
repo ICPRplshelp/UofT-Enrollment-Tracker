@@ -1,1 +1,49 @@
-{"title": "Topics in Communication, Culture, Information & Technology", "code": "CCT495H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Lucas", "Thung"]], "enrollmentLogs": [0, 4, 4, 4, 4, 4, 4, 4, 4], "enrollmentCap": 30}]}
+{
+"code": "CCT495H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+4,
+4,
+4,
+4,
+4,
+4,
+4,
+4,
+4,
+4,
+4,
+4,
+4
+],
+"instructors": [
+[
+"Lucas",
+"Thung"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Topics in Communication, Culture, Information & Technology"
+}

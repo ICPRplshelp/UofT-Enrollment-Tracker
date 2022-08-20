@@ -1,1 +1,393 @@
-{"title": "Visual Strategies", "code": "JAV130H1-S", "faculty": "ARCLA", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Morris", "Lum"]], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 25}, {"meetingNumber": "LEC0102", "instructors": [["June", "Pak"]], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 26, 26], "enrollmentCap": 25}, {"meetingNumber": "LEC0103", "instructors": [["Sam", "Cotter"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 28, 28], "enrollmentCap": 25}, {"meetingNumber": "LEC0104", "instructors": [["Zinnia", "Naqvi"]], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 25}, {"meetingNumber": "LEC0105", "instructors": [["Jenine", "Marsh"]], "enrollmentLogs": [0, 24, 24, 24, 24, 24, 24, 24, 24], "enrollmentCap": 25}, {"meetingNumber": "LEC0106", "instructors": [["June", "Pak"]], "enrollmentLogs": [0, 27, 27, 27, 27, 27, 27, 27, 27], "enrollmentCap": 25}, {"meetingNumber": "LEC0107", "instructors": [["Jenine", "Marsh"]], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 24, 24], "enrollmentCap": 25}, {"meetingNumber": "LEC0108", "instructors": [["Christophe", "Barbeau"]], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 25}, {"meetingNumber": "LEC0109", "instructors": [["Sam", "Cotter"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 25}, {"meetingNumber": "LEC0110", "instructors": [["Zinnia", "Naqvi"]], "enrollmentLogs": [0, 27, 27, 27, 27, 27, 27, 27, 27], "enrollmentCap": 25}, {"meetingNumber": "LEC0111", "instructors": [["Vanessa", "Godden"]], "enrollmentLogs": [0, 24, 24, 24, 24, 24, 24, 24, 24], "enrollmentCap": 25}, {"meetingNumber": "LEC0112", "instructors": [], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 25}, {"meetingNumber": "LEC0113", "instructors": [], "enrollmentLogs": [0, 19, 19, 19, 19, 19, 19, 19, 19], "enrollmentCap": 25}, {"meetingNumber": "LEC0114", "instructors": [], "enrollmentLogs": [0, 21, 21, 21, 21, 21, 21, 21, 21], "enrollmentCap": 25}, {"meetingNumber": "LEC0115", "instructors": [], "enrollmentLogs": [0, 18, 18, 18, 18, 18, 18, 18, 18], "enrollmentCap": 25}]}
+{
+"code": "JAV130H1-S",
+"faculty": "ARCLA",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [
+[
+"Morris",
+"Lum"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26
+],
+"instructors": [
+[
+"June",
+"Pak"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28
+],
+"instructors": [
+[
+"Sam",
+"Cotter"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [
+[
+"Zinnia",
+"Naqvi"
+]
+],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24
+],
+"instructors": [
+[
+"Jenine",
+"Marsh"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27
+],
+"instructors": [
+[
+"June",
+"Pak"
+]
+],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+24,
+24,
+24,
+24,
+24,
+24,
+24
+],
+"instructors": [
+[
+"Jenine",
+"Marsh"
+]
+],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [
+[
+"Christophe",
+"Barbeau"
+]
+],
+"meetingNumber": "LEC0108"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Sam",
+"Cotter"
+]
+],
+"meetingNumber": "LEC0109"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27
+],
+"instructors": [
+[
+"Zinnia",
+"Naqvi"
+]
+],
+"meetingNumber": "LEC0110"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24
+],
+"instructors": [
+[
+"Vanessa",
+"Godden"
+]
+],
+"meetingNumber": "LEC0111"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [],
+"meetingNumber": "LEC0112"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19
+],
+"instructors": [],
+"meetingNumber": "LEC0113"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21,
+21
+],
+"instructors": [],
+"meetingNumber": "LEC0114"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18,
+18
+],
+"instructors": [],
+"meetingNumber": "LEC0115"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Visual Strategies"
+}

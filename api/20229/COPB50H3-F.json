@@ -1,1 +1,75 @@
-{"title": "Foundations for Success in Art and Science Co-op", "code": "COPB50H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Kiran", "Heer"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 5}, {"meetingNumber": "LEC02", "instructors": [["Kiran", "Heer"]], "enrollmentLogs": [0, 352, 352, 352, 352, 352, 352, 352, 352], "enrollmentCap": 320}]}
+{
+"code": "COPB50H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 5,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Kiran",
+"Heer"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 320,
+"enrollmentLogs": [
+0,
+352,
+352,
+352,
+352,
+352,
+352,
+352,
+352,
+352,
+352,
+352,
+352,
+352
+],
+"instructors": [
+[
+"Kiran",
+"Heer"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Foundations for Success in Art and Science Co-op"
+}

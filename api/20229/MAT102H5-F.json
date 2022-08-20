@@ -1,1 +1,232 @@
-{"title": "Introduction to Mathematical Proofs", "code": "MAT102H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Jaimal", "Thind"]], "enrollmentLogs": [0, 163, 163, 163, 163, 163, 163, 163, 163], "enrollmentCap": 140}, {"meetingNumber": "LEC0102", "instructors": [["Shay", "Fuchs"]], "enrollmentLogs": [0, 152, 152, 152, 152, 152, 152, 153, 153], "enrollmentCap": 140}, {"meetingNumber": "LEC0103", "instructors": [], "enrollmentLogs": [0, 166, 166, 166, 166, 166, 166, 165, 165], "enrollmentCap": 140}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 153, 153, 153, 153, 153, 153, 154, 154], "enrollmentCap": 140}, {"meetingNumber": "LEC0105", "instructors": [["Jamie", "de Jong"]], "enrollmentLogs": [0, 153, 153, 153, 153, 153, 153, 153, 153], "enrollmentCap": 140}, {"meetingNumber": "LEC0106", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0107", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0108", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}, {"meetingNumber": "LEC0109", "instructors": [["Shaun", "Allison"]], "enrollmentLogs": [0, 156, 156, 156, 156, 156, 156, 156, 156], "enrollmentCap": 140}]}
+{
+"code": "MAT102H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163,
+163
+],
+"instructors": [
+[
+"Jaimal",
+"Thind"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+152,
+152,
+152,
+152,
+152,
+152,
+153,
+153,
+153,
+153,
+153,
+153,
+153
+],
+"instructors": [
+[
+"Shay",
+"Fuchs"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+166,
+166,
+166,
+166,
+166,
+166,
+165,
+165,
+165,
+165,
+165,
+165,
+165
+],
+"instructors": [],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+153,
+153,
+153,
+153,
+153,
+153,
+154,
+154,
+154,
+154,
+154,
+154,
+154
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+153,
+153,
+153,
+153,
+153,
+153,
+153,
+153,
+153,
+153,
+153,
+153,
+153
+],
+"instructors": [
+[
+"Jamie",
+"de Jong"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0108"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+156,
+156,
+156,
+156,
+156,
+156,
+156,
+156,
+156,
+156,
+156,
+156,
+156
+],
+"instructors": [
+[
+"Shaun",
+"Allison"
+]
+],
+"meetingNumber": "LEC0109"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to Mathematical Proofs"
+}

@@ -1,1 +1,75 @@
-{"title": "Principles of Programming Languages", "code": "CSCC24H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Anya", "Tafliovich"]], "enrollmentLogs": [0, 100, 100, 100, 100, 100, 100, 100, 100], "enrollmentCap": 100}, {"meetingNumber": "LEC02", "instructors": [["Anya", "Tafliovich"]], "enrollmentLogs": [0, 74, 74, 74, 74, 74, 74, 74, 74], "enrollmentCap": 80}]}
+{
+"code": "CSCC24H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100
+],
+"instructors": [
+[
+"Anya",
+"Tafliovich"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+74,
+74,
+74,
+74,
+74,
+74,
+74,
+74,
+74,
+74,
+74,
+74,
+74
+],
+"instructors": [
+[
+"Anya",
+"Tafliovich"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Principles of Programming Languages"
+}

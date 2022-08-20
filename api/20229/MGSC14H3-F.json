@@ -1,1 +1,75 @@
-{"title": "Management Ethics", "code": "MGSC14H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Andrew", "Stark"]], "enrollmentLogs": [0, 71, 71, 71, 71, 71, 71, 71, 71], "enrollmentCap": 60}, {"meetingNumber": "LEC30", "instructors": [["Peter", "Constantinou"]], "enrollmentLogs": [0, 66, 66, 66, 66, 66, 66, 65, 65], "enrollmentCap": 60}]}
+{
+"code": "MGSC14H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71,
+71
+],
+"instructors": [
+[
+"Andrew",
+"Stark"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+66,
+66,
+66,
+66,
+66,
+66,
+65,
+65,
+65,
+65,
+65,
+65,
+65
+],
+"instructors": [
+[
+"Peter",
+"Constantinou"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Management Ethics"
+}

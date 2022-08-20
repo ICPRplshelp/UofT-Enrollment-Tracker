@@ -1,1 +1,96 @@
-{"title": "Calculus for Management II", "code": "MATA33H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [], "enrollmentLogs": [0, 322, 322, 322, 322, 322, 322, 320, 320], "enrollmentCap": 300}, {"meetingNumber": "LEC02", "instructors": [["Michael Scott", "Cavers"]], "enrollmentLogs": [0, 335, 335, 335, 335, 335, 335, 335, 335], "enrollmentCap": 300}, {"meetingNumber": "LEC30", "instructors": [["Michael Scott", "Cavers"]], "enrollmentLogs": [0, 317, 317, 317, 317, 317, 317, 319, 319], "enrollmentCap": 300}]}
+{
+"code": "MATA33H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+322,
+322,
+322,
+322,
+322,
+322,
+320,
+320,
+320,
+320,
+320,
+320,
+320
+],
+"instructors": [],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+335,
+335,
+335,
+335,
+335,
+335,
+335,
+335,
+335,
+335,
+335,
+335,
+335
+],
+"instructors": [
+[
+"Michael Scott",
+"Cavers"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+317,
+317,
+317,
+317,
+317,
+317,
+319,
+319,
+319,
+319,
+319,
+319,
+319
+],
+"instructors": [
+[
+"Michael Scott",
+"Cavers"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Calculus for Management II"
+}

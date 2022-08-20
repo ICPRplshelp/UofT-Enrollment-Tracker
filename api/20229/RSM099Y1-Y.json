@@ -1,1 +1,485 @@
-{"title": "First-Year Learning Community", "code": "RSM099Y1-Y", "faculty": "ARTSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0111", "instructors": [], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 50}, {"meetingNumber": "LEC0211", "instructors": [], "enrollmentLogs": [0, 39, 39, 39, 39, 39, 39, 39, 39], "enrollmentCap": 50}, {"meetingNumber": "LEC0212", "instructors": [], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 50}, {"meetingNumber": "LEC0213", "instructors": [], "enrollmentLogs": [0, 33, 33, 33, 33, 33, 33, 33, 33], "enrollmentCap": 50}, {"meetingNumber": "LEC0214", "instructors": [], "enrollmentLogs": [0, 34, 34, 34, 34, 34, 34, 34, 34], "enrollmentCap": 50}, {"meetingNumber": "LEC0221", "instructors": [], "enrollmentLogs": [0, 33, 33, 33, 33, 33, 33, 33, 33], "enrollmentCap": 50}, {"meetingNumber": "LEC0222", "instructors": [], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 50}, {"meetingNumber": "LEC0223", "instructors": [], "enrollmentLogs": [0, 35, 35, 35, 35, 35, 35, 35, 35], "enrollmentCap": 50}, {"meetingNumber": "LEC0311", "instructors": [], "enrollmentLogs": [0, 45, 45, 45, 45, 45, 45, 45, 45], "enrollmentCap": 50}, {"meetingNumber": "LEC0312", "instructors": [], "enrollmentLogs": [0, 50, 50, 50, 50, 50, 50, 50, 50], "enrollmentCap": 50}, {"meetingNumber": "LEC0313", "instructors": [], "enrollmentLogs": [0, 49, 49, 49, 49, 49, 49, 49, 49], "enrollmentCap": 50}, {"meetingNumber": "LEC0314", "instructors": [], "enrollmentLogs": [0, 50, 50, 50, 50, 50, 50, 50, 50], "enrollmentCap": 50}, {"meetingNumber": "LEC0315", "instructors": [], "enrollmentLogs": [0, 49, 49, 49, 49, 49, 49, 49, 49], "enrollmentCap": 50}, {"meetingNumber": "LEC0321", "instructors": [], "enrollmentLogs": [0, 48, 48, 48, 48, 48, 48, 48, 48], "enrollmentCap": 50}, {"meetingNumber": "LEC0322", "instructors": [], "enrollmentLogs": [0, 50, 50, 50, 50, 50, 50, 50, 50], "enrollmentCap": 50}, {"meetingNumber": "LEC0323", "instructors": [], "enrollmentLogs": [0, 49, 49, 49, 49, 49, 49, 49, 49], "enrollmentCap": 50}, {"meetingNumber": "LEC0324", "instructors": [], "enrollmentLogs": [0, 44, 44, 44, 44, 44, 44, 44, 44], "enrollmentCap": 50}, {"meetingNumber": "LEC0325", "instructors": [], "enrollmentLogs": [0, 42, 42, 42, 42, 42, 42, 42, 42], "enrollmentCap": 50}, {"meetingNumber": "LEC5111", "instructors": [], "enrollmentLogs": [0, 33, 33, 33, 33, 33, 33, 33, 33], "enrollmentCap": 50}, {"meetingNumber": "LEC5121", "instructors": [], "enrollmentLogs": [0, 33, 33, 33, 33, 33, 33, 33, 33], "enrollmentCap": 50}, {"meetingNumber": "LEC5215", "instructors": [], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 32, 32], "enrollmentCap": 50}, {"meetingNumber": "LEC5225", "instructors": [], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 30, 30], "enrollmentCap": 50}]}
+{
+"code": "RSM099Y1-Y",
+"faculty": "ARTSC",
+"meetings": [
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [],
+"meetingNumber": "LEC0111"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39,
+39
+],
+"instructors": [],
+"meetingNumber": "LEC0211"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [],
+"meetingNumber": "LEC0212"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33
+],
+"instructors": [],
+"meetingNumber": "LEC0213"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34
+],
+"instructors": [],
+"meetingNumber": "LEC0214"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33
+],
+"instructors": [],
+"meetingNumber": "LEC0221"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [],
+"meetingNumber": "LEC0222"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+35,
+35,
+35,
+35,
+35,
+35,
+35,
+35,
+35,
+35,
+35,
+35,
+35
+],
+"instructors": [],
+"meetingNumber": "LEC0223"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+45,
+45,
+45,
+45,
+45,
+45,
+45,
+45,
+45,
+45,
+45,
+45,
+45
+],
+"instructors": [],
+"meetingNumber": "LEC0311"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50
+],
+"instructors": [],
+"meetingNumber": "LEC0312"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49
+],
+"instructors": [],
+"meetingNumber": "LEC0313"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50
+],
+"instructors": [],
+"meetingNumber": "LEC0314"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49
+],
+"instructors": [],
+"meetingNumber": "LEC0315"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48
+],
+"instructors": [],
+"meetingNumber": "LEC0321"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50,
+50
+],
+"instructors": [],
+"meetingNumber": "LEC0322"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49,
+49
+],
+"instructors": [],
+"meetingNumber": "LEC0323"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44,
+44
+],
+"instructors": [],
+"meetingNumber": "LEC0324"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42,
+42
+],
+"instructors": [],
+"meetingNumber": "LEC0325"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33
+],
+"instructors": [],
+"meetingNumber": "LEC5111"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33
+],
+"instructors": [],
+"meetingNumber": "LEC5121"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+32,
+32,
+32,
+32,
+32,
+32,
+32
+],
+"instructors": [],
+"meetingNumber": "LEC5215"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [],
+"meetingNumber": "LEC5225"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "First-Year Learning Community"
+}

@@ -1,1 +1,403 @@
-{"title": "Research Opportunity Program", "code": "PSY399Y5-Y", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Ulrich", "Schimmack"]], "enrollmentLogs": [0, 3, 3, 3, 3, 3, 3, 3, 3], "enrollmentCap": 10}, {"meetingNumber": "LEC0201", "instructors": [["Emily", "Impett"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 2}, {"meetingNumber": "LEC0301", "instructors": [["Erika Nicole", "Carlson"]], "enrollmentLogs": [0, 2, 2, 2, 2, 2, 2, 2, 2], "enrollmentCap": 4}, {"meetingNumber": "LEC0302", "instructors": [["Erika Nicole", "Carlson"]], "enrollmentLogs": [0, 3, 3, 3, 3, 3, 3, 3, 3], "enrollmentCap": 4}, {"meetingNumber": "LEC0401", "instructors": [["Judith", "Andersen"]], "enrollmentLogs": [0, 3, 3, 3, 3, 3, 3, 3, 3], "enrollmentCap": 4}, {"meetingNumber": "LEC0402", "instructors": [["Judith", "Andersen"]], "enrollmentLogs": [0, 11, 11, 11, 11, 11, 11, 11, 11], "enrollmentCap": 11}, {"meetingNumber": "LEC0501", "instructors": [["Keisuke", "Fukuda"]], "enrollmentLogs": [0, 5, 5, 5, 5, 5, 5, 5, 5], "enrollmentCap": 5}, {"meetingNumber": "LEC0601", "instructors": [["Elizabeth", "Johnson"]], "enrollmentLogs": [0, 3, 3, 3, 3, 3, 3, 3, 3], "enrollmentCap": 3}, {"meetingNumber": "LEC0602", "instructors": [["Elizabeth", "Johnson"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 1}, {"meetingNumber": "LEC0701", "instructors": [["Christina M Vanden Bosc", "der Nederlanden"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 1}, {"meetingNumber": "LEC0702", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 1}, {"meetingNumber": "LEC0901", "instructors": [["Anna Alexandrovna", "Kosovicheva"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 1}, {"meetingNumber": "LEC1001", "instructors": [["Melissa", "Holmes"]], "enrollmentLogs": [0, 1, 1, 1, 1, 1, 1, 1, 1], "enrollmentCap": 2}, {"meetingNumber": "LEC1002", "instructors": [["Melissa", "Holmes"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 2}, {"meetingNumber": "LEC1101", "instructors": [], "enrollmentLogs": [0, 2, 2, 2, 2, 2, 2, 2, 2], "enrollmentCap": 2}]}
+{
+"code": "PSY399Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 10,
+"enrollmentLogs": [
+0,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3
+],
+"instructors": [
+[
+"Ulrich",
+"Schimmack"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Emily",
+"Impett"
+]
+],
+"meetingNumber": "LEC0201"
+},
+{
+"enrollmentCap": 4,
+"enrollmentLogs": [
+0,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2
+],
+"instructors": [
+[
+"Erika Nicole",
+"Carlson"
+]
+],
+"meetingNumber": "LEC0301"
+},
+{
+"enrollmentCap": 4,
+"enrollmentLogs": [
+0,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3
+],
+"instructors": [
+[
+"Erika Nicole",
+"Carlson"
+]
+],
+"meetingNumber": "LEC0302"
+},
+{
+"enrollmentCap": 4,
+"enrollmentLogs": [
+0,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3
+],
+"instructors": [
+[
+"Judith",
+"Andersen"
+]
+],
+"meetingNumber": "LEC0401"
+},
+{
+"enrollmentCap": 11,
+"enrollmentLogs": [
+0,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11,
+11
+],
+"instructors": [
+[
+"Judith",
+"Andersen"
+]
+],
+"meetingNumber": "LEC0402"
+},
+{
+"enrollmentCap": 5,
+"enrollmentLogs": [
+0,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"instructors": [
+[
+"Keisuke",
+"Fukuda"
+]
+],
+"meetingNumber": "LEC0501"
+},
+{
+"enrollmentCap": 3,
+"enrollmentLogs": [
+0,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3,
+3
+],
+"instructors": [
+[
+"Elizabeth",
+"Johnson"
+]
+],
+"meetingNumber": "LEC0601"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Elizabeth",
+"Johnson"
+]
+],
+"meetingNumber": "LEC0602"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Christina M Vanden Bosc",
+"der Nederlanden"
+]
+],
+"meetingNumber": "LEC0701"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0702"
+},
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Anna Alexandrovna",
+"Kosovicheva"
+]
+],
+"meetingNumber": "LEC0901"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"instructors": [
+[
+"Melissa",
+"Holmes"
+]
+],
+"meetingNumber": "LEC1001"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Melissa",
+"Holmes"
+]
+],
+"meetingNumber": "LEC1002"
+},
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2,
+2
+],
+"instructors": [],
+"meetingNumber": "LEC1101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Research Opportunity Program"
+}

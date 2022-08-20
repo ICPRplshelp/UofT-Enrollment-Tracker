@@ -1,1 +1,44 @@
-{"title": "Modern Japan and the Colonial Question", "code": "EAS374H1-S", "faculty": "ARTSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 51, 51, 51, 51, 51, 51, 50, 50], "enrollmentCap": 45}]}
+{
+"code": "EAS374H1-S",
+"faculty": "ARTSC",
+"meetings": [
+{
+"enrollmentCap": 45,
+"enrollmentLogs": [
+0,
+51,
+51,
+51,
+51,
+51,
+51,
+50,
+50,
+50,
+50,
+50,
+50,
+50
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Modern Japan and the Colonial Question"
+}

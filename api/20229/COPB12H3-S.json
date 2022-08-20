@@ -1,1 +1,143 @@
-{"title": "Advancing Your Career Exploration Part II", "code": "COPB12H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Arjuna", "Thaskaran"]], "enrollmentLogs": [0, 76, 76, 76, 76, 76, 76, 74, 74], "enrollmentCap": 80}, {"meetingNumber": "LEC02", "instructors": [["Arjuna", "Thaskaran"]], "enrollmentLogs": [0, 75, 75, 75, 75, 75, 75, 76, 76], "enrollmentCap": 80}, {"meetingNumber": "LEC03", "instructors": [["Nicole", "Amiri"]], "enrollmentLogs": [0, 79, 79, 79, 79, 79, 79, 79, 79], "enrollmentCap": 80}, {"meetingNumber": "LEC04", "instructors": [], "enrollmentLogs": [0, 102, 102, 102, 102, 102, 102, 102, 102], "enrollmentCap": 113}, {"meetingNumber": "LEC05", "instructors": [], "enrollmentLogs": [0, 48, 48, 48, 48, 48, 48, 48, 48], "enrollmentCap": 60}]}
+{
+"code": "COPB12H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+76,
+76,
+76,
+76,
+76,
+76,
+74,
+74,
+74,
+74,
+74,
+74,
+74
+],
+"instructors": [
+[
+"Arjuna",
+"Thaskaran"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+75,
+75,
+75,
+75,
+75,
+75,
+76,
+76,
+76,
+76,
+76,
+76,
+76
+],
+"instructors": [
+[
+"Arjuna",
+"Thaskaran"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+79,
+79,
+79,
+79,
+79,
+79,
+79,
+79,
+79,
+79,
+79,
+79,
+79
+],
+"instructors": [
+[
+"Nicole",
+"Amiri"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 113,
+"enrollmentLogs": [
+0,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102
+],
+"instructors": [],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48,
+48
+],
+"instructors": [],
+"meetingNumber": "LEC05"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Advancing Your Career Exploration Part II"
+}

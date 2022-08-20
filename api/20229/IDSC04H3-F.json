@@ -1,1 +1,49 @@
-{"title": "Project Management I", "code": "IDSC04H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC30", "instructors": [["Iraz", "Soyalp Gulcugil"]], "enrollmentLogs": [0, 82, 82, 82, 82, 82, 82, 82, 82], "enrollmentCap": 80}]}
+{
+"code": "IDSC04H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82,
+82
+],
+"instructors": [
+[
+"Iraz",
+"Soyalp Gulcugil"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Project Management I"
+}

@@ -1,1 +1,44 @@
-{"title": "First-Year Learning Community", "code": "UNI099Y1-Y", "faculty": "ARTSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0201", "instructors": [], "enrollmentLogs": [0, 37, 37, 37, 37, 37, 37, 37, 37], "enrollmentCap": 40}]}
+{
+"code": "UNI099Y1-Y",
+"faculty": "ARTSC",
+"meetings": [
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37
+],
+"instructors": [],
+"meetingNumber": "LEC0201"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "First-Year Learning Community"
+}

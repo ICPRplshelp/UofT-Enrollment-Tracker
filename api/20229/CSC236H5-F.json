@@ -1,1 +1,122 @@
-{"title": "Introduction to the Theory of Computation", "code": "CSC236H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Michael", "Liut"]], "enrollmentLogs": [0, 190, 190, 190, 190, 190, 190, 190, 190], "enrollmentCap": 140}, {"meetingNumber": "LEC0102", "instructors": [["Ahmed Umer", "Ashraf"]], "enrollmentLogs": [0, 148, 148, 148, 148, 148, 148, 149, 149], "enrollmentCap": 140}, {"meetingNumber": "LEC0103", "instructors": [["Ahmed Umer", "Ashraf"]], "enrollmentLogs": [0, 162, 162, 162, 162, 162, 162, 161, 161], "enrollmentCap": 140}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 140}]}
+{
+"code": "CSC236H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190
+],
+"instructors": [
+[
+"Michael",
+"Liut"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+148,
+148,
+148,
+148,
+148,
+148,
+149,
+149,
+149,
+149,
+149,
+149,
+149
+],
+"instructors": [
+[
+"Ahmed Umer",
+"Ashraf"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+162,
+162,
+162,
+162,
+162,
+162,
+161,
+161,
+161,
+161,
+161,
+161,
+161
+],
+"instructors": [
+[
+"Ahmed Umer",
+"Ashraf"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 140,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introduction to the Theory of Computation"
+}

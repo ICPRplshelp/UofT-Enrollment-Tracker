@@ -1,1 +1,75 @@
-{"title": "French Language Skills and Learning Strategies for University Study", "code": "FRE180H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Magda", "Tigchelaar"]], "enrollmentLogs": [0, 23, 23, 23, 23, 23, 23, 23, 23], "enrollmentCap": 50}, {"meetingNumber": "LEC0102", "instructors": [["Magda", "Tigchelaar"]], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 26, 26], "enrollmentCap": 50}]}
+{
+"code": "FRE180H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23,
+23
+],
+"instructors": [
+[
+"Magda",
+"Tigchelaar"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 50,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26
+],
+"instructors": [
+[
+"Magda",
+"Tigchelaar"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "French Language Skills and Learning Strategies for University Study"
+}

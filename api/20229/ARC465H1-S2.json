@@ -1,1 +1,49 @@
-{"title": "Advanced Topics in Architecture", "code": "ARC465H1-S2", "faculty": "ARCLA", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0103", "instructors": [["Brian", "Boigon"]], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 26, 26], "enrollmentCap": 20}]}
+{
+"code": "ARC465H1-S2",
+"faculty": "ARCLA",
+"meetings": [
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26
+],
+"instructors": [
+[
+"Brian",
+"Boigon"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Advanced Topics in Architecture"
+}

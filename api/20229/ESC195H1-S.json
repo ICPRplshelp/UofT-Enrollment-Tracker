@@ -1,1 +1,75 @@
-{"title": "Calculus II", "code": "ESC195H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["James", "Davis"]], "enrollmentLogs": [0, 180, 180, 180, 180, 180, 180, 178, 178], "enrollmentCap": 191}, {"meetingNumber": "LEC0102", "instructors": [["James", "Davis"]], "enrollmentLogs": [0, 182, 182, 182, 182, 182, 182, 182, 182], "enrollmentCap": 188}]}
+{
+"code": "ESC195H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 191,
+"enrollmentLogs": [
+0,
+180,
+180,
+180,
+180,
+180,
+180,
+178,
+178,
+178,
+178,
+178,
+178,
+178
+],
+"instructors": [
+[
+"James",
+"Davis"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 188,
+"enrollmentLogs": [
+0,
+182,
+182,
+182,
+182,
+182,
+182,
+182,
+182,
+182,
+182,
+182,
+182,
+182
+],
+"instructors": [
+[
+"James",
+"Davis"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Calculus II"
+}

@@ -1,1 +1,49 @@
-{"title": "Communicating in a World of Data", "code": "WRI363H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Kate", "Maddalena"]], "enrollmentLogs": [0, 24, 24, 24, 24, 24, 24, 24, 24], "enrollmentCap": 35}]}
+{
+"code": "WRI363H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 35,
+"enrollmentLogs": [
+0,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24
+],
+"instructors": [
+[
+"Kate",
+"Maddalena"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Communicating in a World of Data"
+}

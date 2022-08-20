@@ -1,1 +1,75 @@
-{"title": "Introduction to Clinical, Developmental, Personality and Social Psychology", "code": "PSYA02H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Kyle", "Danielson"]], "enrollmentLogs": [0, 711, 711, 711, 711, 711, 711, 711, 711], "enrollmentCap": 500}, {"meetingNumber": "LEC02", "instructors": [["Kyle", "Danielson"]], "enrollmentLogs": [0, 1061, 1061, 1061, 1061, 1061, 1061, 1064, 1064], "enrollmentCap": 9999}]}
+{
+"code": "PSYA02H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 500,
+"enrollmentLogs": [
+0,
+711,
+711,
+711,
+711,
+711,
+711,
+711,
+711,
+711,
+711,
+711,
+711,
+711
+],
+"instructors": [
+[
+"Kyle",
+"Danielson"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 9999,
+"enrollmentLogs": [
+0,
+1061,
+1061,
+1061,
+1061,
+1061,
+1061,
+1064,
+1064,
+1064,
+1064,
+1064,
+1064,
+1064
+],
+"instructors": [
+[
+"Kyle",
+"Danielson"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to Clinical, Developmental, Personality and Social Psychology"
+}

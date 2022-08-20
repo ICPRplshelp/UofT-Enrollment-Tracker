@@ -1,1 +1,75 @@
-{"title": "Introduction to Financial Accounting", "code": "MGT120H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Catherine", "Seguin"]], "enrollmentLogs": [0, 154, 154, 154, 154, 154, 154, 155, 155], "enrollmentCap": 150}, {"meetingNumber": "LEC0102", "instructors": [["Catherine", "Seguin"]], "enrollmentLogs": [0, 161, 161, 161, 161, 161, 161, 161, 161], "enrollmentCap": 150}]}
+{
+"code": "MGT120H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+154,
+154,
+154,
+154,
+154,
+154,
+155,
+155,
+155,
+155,
+155,
+155,
+155
+],
+"instructors": [
+[
+"Catherine",
+"Seguin"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161,
+161
+],
+"instructors": [
+[
+"Catherine",
+"Seguin"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to Financial Accounting"
+}

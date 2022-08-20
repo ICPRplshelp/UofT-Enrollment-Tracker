@@ -1,1 +1,226 @@
-{"title": "Mechanics", "code": "CIV100H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Oya", "Mercan"]], "enrollmentLogs": [0, 146, 146, 146, 146, 146, 146, 145, 145], "enrollmentCap": 151}, {"meetingNumber": "LEC0102", "instructors": [["Jeffrey", "Packer"]], "enrollmentLogs": [0, 140, 140, 140, 140, 140, 140, 138, 138], "enrollmentCap": 146}, {"meetingNumber": "LEC0103", "instructors": [["Xiao Ding", "Bu"]], "enrollmentLogs": [0, 142, 142, 142, 142, 142, 142, 141, 141], "enrollmentCap": 150}, {"meetingNumber": "LEC0104", "instructors": [], "enrollmentLogs": [0, 141, 141, 141, 141, 141, 141, 140, 140], "enrollmentCap": 148}, {"meetingNumber": "LEC0105", "instructors": [["Michael", "Seica"]], "enrollmentLogs": [0, 141, 141, 141, 141, 141, 141, 139, 139], "enrollmentCap": 150}, {"meetingNumber": "LEC0106", "instructors": [["Jeffrey", "Packer"]], "enrollmentLogs": [0, 145, 145, 145, 145, 145, 145, 145, 145], "enrollmentCap": 150}, {"meetingNumber": "LEC0107", "instructors": [["Mohammad Faizus", "Salehin"]], "enrollmentLogs": [0, 121, 121, 121, 121, 121, 121, 120, 120], "enrollmentCap": 129}, {"meetingNumber": "LEC0108", "instructors": [["Michael", "Seica"]], "enrollmentLogs": [0, 126, 126, 126, 126, 126, 126, 125, 125], "enrollmentCap": 129}]}
+{
+"code": "CIV100H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 151,
+"enrollmentLogs": [
+0,
+146,
+146,
+146,
+146,
+146,
+146,
+145,
+145,
+145,
+145,
+145,
+145,
+145
+],
+"instructors": [
+[
+"Oya",
+"Mercan"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 146,
+"enrollmentLogs": [
+0,
+140,
+140,
+140,
+140,
+140,
+140,
+138,
+138,
+138,
+138,
+138,
+138,
+138
+],
+"instructors": [
+[
+"Jeffrey",
+"Packer"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+142,
+142,
+142,
+142,
+142,
+142,
+141,
+141,
+141,
+141,
+141,
+141,
+141
+],
+"instructors": [
+[
+"Xiao Ding",
+"Bu"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 148,
+"enrollmentLogs": [
+0,
+141,
+141,
+141,
+141,
+141,
+141,
+140,
+140,
+140,
+140,
+140,
+140,
+140
+],
+"instructors": [],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+141,
+141,
+141,
+141,
+141,
+141,
+139,
+139,
+139,
+139,
+139,
+139,
+139
+],
+"instructors": [
+[
+"Michael",
+"Seica"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145,
+145
+],
+"instructors": [
+[
+"Jeffrey",
+"Packer"
+]
+],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 129,
+"enrollmentLogs": [
+0,
+121,
+121,
+121,
+121,
+121,
+121,
+120,
+120,
+120,
+120,
+120,
+120,
+120
+],
+"instructors": [
+[
+"Mohammad Faizus",
+"Salehin"
+]
+],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 129,
+"enrollmentLogs": [
+0,
+126,
+126,
+126,
+126,
+126,
+126,
+125,
+125,
+125,
+125,
+125,
+125,
+125
+],
+"instructors": [
+[
+"Michael",
+"Seica"
+]
+],
+"meetingNumber": "LEC0108"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Mechanics"
+}

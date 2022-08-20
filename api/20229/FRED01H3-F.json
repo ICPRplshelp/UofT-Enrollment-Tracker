@@ -1,1 +1,75 @@
-{"title": "Language practice VII: Written French", "code": "FRED01H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Malama", "Tsimenis"]], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 26, 26], "enrollmentCap": 25}, {"meetingNumber": "LEC02", "instructors": [["Marie-theres", "Ballin"]], "enrollmentLogs": [0, 24, 24, 24, 24, 24, 24, 24, 24], "enrollmentCap": 25}]}
+{
+"code": "FRED01H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26
+],
+"instructors": [
+[
+"Malama",
+"Tsimenis"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24,
+24
+],
+"instructors": [
+[
+"Marie-theres",
+"Ballin"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Language practice VII: Written French"
+}

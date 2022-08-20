@@ -1,1 +1,101 @@
-{"title": "Positive Psychology for Engineers", "code": "TEP444H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Robin", "Sacks"]], "enrollmentLogs": [0, 130, 130, 130, 130, 130, 130, 130, 130], "enrollmentCap": 72}, {"meetingNumber": "LEC0102", "instructors": [["Robin", "Sacks"]], "enrollmentLogs": [0, 134, 134, 134, 134, 134, 134, 134, 134], "enrollmentCap": 72}, {"meetingNumber": "LEC0103", "instructors": [["Robin", "Sacks"]], "enrollmentLogs": [0, 95, 95, 95, 95, 95, 95, 96, 96], "enrollmentCap": 80}]}
+{
+"code": "TEP444H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 72,
+"enrollmentLogs": [
+0,
+130,
+130,
+130,
+130,
+130,
+130,
+130,
+130,
+130,
+130,
+130,
+130,
+130
+],
+"instructors": [
+[
+"Robin",
+"Sacks"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 72,
+"enrollmentLogs": [
+0,
+134,
+134,
+134,
+134,
+134,
+134,
+134,
+134,
+134,
+134,
+134,
+134,
+134
+],
+"instructors": [
+[
+"Robin",
+"Sacks"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+95,
+95,
+95,
+95,
+95,
+95,
+96,
+96,
+96,
+96,
+96,
+96,
+96
+],
+"instructors": [
+[
+"Robin",
+"Sacks"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Positive Psychology for Engineers"
+}

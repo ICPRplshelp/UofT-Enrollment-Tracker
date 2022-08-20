@@ -1,1 +1,75 @@
-{"title": "Introduction to Numerical Algorithms for Computational Mathematics", "code": "CSCC37H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Richard", "Pancer"]], "enrollmentLogs": [0, 180, 180, 180, 180, 180, 180, 180, 180], "enrollmentCap": 175}, {"meetingNumber": "LEC02", "instructors": [["Richard", "Pancer"]], "enrollmentLogs": [0, 103, 103, 103, 103, 103, 103, 102, 102], "enrollmentCap": 175}]}
+{
+"code": "CSCC37H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 175,
+"enrollmentLogs": [
+0,
+180,
+180,
+180,
+180,
+180,
+180,
+180,
+180,
+180,
+180,
+180,
+180,
+180
+],
+"instructors": [
+[
+"Richard",
+"Pancer"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 175,
+"enrollmentLogs": [
+0,
+103,
+103,
+103,
+103,
+103,
+103,
+102,
+102,
+102,
+102,
+102,
+102,
+102
+],
+"instructors": [
+[
+"Richard",
+"Pancer"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introduction to Numerical Algorithms for Computational Mathematics"
+}

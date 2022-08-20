@@ -1,1 +1,49 @@
-{"title": "Advanced Topics in the Technology of Architecture", "code": "ARC480H1-F1", "faculty": "ARCLA", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0102", "instructors": [["Maria", "Yablonina"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 28, 28], "enrollmentCap": 40}]}
+{
+"code": "ARC480H1-F1",
+"faculty": "ARCLA",
+"meetings": [
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28,
+28
+],
+"instructors": [
+[
+"Maria",
+"Yablonina"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Advanced Topics in the Technology of Architecture"
+}

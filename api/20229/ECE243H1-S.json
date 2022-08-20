@@ -1,1 +1,101 @@
-{"title": "Computer Organization", "code": "ECE243H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Stephen", "Brown"]], "enrollmentLogs": [0, 142, 142, 142, 142, 142, 142, 142, 142], "enrollmentCap": 143}, {"meetingNumber": "LEC0102", "instructors": [["Stephen", "Brown"]], "enrollmentLogs": [0, 141, 141, 141, 141, 141, 141, 141, 141], "enrollmentCap": 141}, {"meetingNumber": "LEC0103", "instructors": [["Jonathan", "Rose"]], "enrollmentLogs": [0, 127, 127, 127, 127, 127, 127, 127, 127], "enrollmentCap": 196}]}
+{
+"code": "ECE243H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 143,
+"enrollmentLogs": [
+0,
+142,
+142,
+142,
+142,
+142,
+142,
+142,
+142,
+142,
+142,
+142,
+142,
+142
+],
+"instructors": [
+[
+"Stephen",
+"Brown"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 141,
+"enrollmentLogs": [
+0,
+141,
+141,
+141,
+141,
+141,
+141,
+141,
+141,
+141,
+141,
+141,
+141,
+141
+],
+"instructors": [
+[
+"Stephen",
+"Brown"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 196,
+"enrollmentLogs": [
+0,
+127,
+127,
+127,
+127,
+127,
+127,
+127,
+127,
+127,
+127,
+127,
+127,
+127
+],
+"instructors": [
+[
+"Jonathan",
+"Rose"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Computer Organization"
+}

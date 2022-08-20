@@ -1,1 +1,101 @@
-{"title": "Calculus", "code": "MAT137Y5-Y", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Jaimal", "Thind"]], "enrollmentLogs": [0, 91, 91, 91, 91, 91, 91, 92, 92], "enrollmentCap": 100}, {"meetingNumber": "LEC0102", "instructors": [["Ivan", "Khatchatourian"]], "enrollmentLogs": [0, 90, 90, 90, 90, 90, 90, 92, 92], "enrollmentCap": 100}, {"meetingNumber": "LEC0103", "instructors": [["Ali", "Mousavidehshikh"]], "enrollmentLogs": [0, 67, 67, 67, 67, 67, 67, 67, 67], "enrollmentCap": 100}]}
+{
+"code": "MAT137Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+91,
+91,
+91,
+91,
+91,
+91,
+92,
+92,
+92,
+92,
+92,
+92,
+92
+],
+"instructors": [
+[
+"Jaimal",
+"Thind"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+90,
+90,
+90,
+90,
+90,
+90,
+92,
+92,
+92,
+92,
+92,
+92,
+92
+],
+"instructors": [
+[
+"Ivan",
+"Khatchatourian"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 100,
+"enrollmentLogs": [
+0,
+67,
+67,
+67,
+67,
+67,
+67,
+67,
+67,
+67,
+67,
+67,
+67,
+67
+],
+"instructors": [
+[
+"Ali",
+"Mousavidehshikh"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Calculus"
+}

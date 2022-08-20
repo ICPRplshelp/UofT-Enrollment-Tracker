@@ -1,1 +1,101 @@
-{"title": "Critical Thinking, Analysis and Decision Making II", "code": "MGT420H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Eckhard", "Schumann"]], "enrollmentLogs": [0, 40, 40, 40, 40, 40, 40, 40, 40], "enrollmentCap": 40}, {"meetingNumber": "LEC0102", "instructors": [["Eckhard", "Schumann"]], "enrollmentLogs": [0, 15, 15, 15, 15, 15, 15, 15, 15], "enrollmentCap": 40}, {"meetingNumber": "LEC0103", "instructors": [["Eckhard", "Schumann"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 40}]}
+{
+"code": "MGT420H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+40,
+40,
+40,
+40,
+40,
+40,
+40,
+40,
+40,
+40,
+40,
+40,
+40
+],
+"instructors": [
+[
+"Eckhard",
+"Schumann"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15,
+15
+],
+"instructors": [
+[
+"Eckhard",
+"Schumann"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 40,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Eckhard",
+"Schumann"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Critical Thinking, Analysis and Decision Making II"
+}

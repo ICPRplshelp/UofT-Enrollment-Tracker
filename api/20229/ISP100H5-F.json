@@ -1,1 +1,830 @@
-{"title": "Writing for University and Beyond: Writing About Writing", "code": "ISP100H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Mark", "Blaauw-Hara"]], "enrollmentLogs": [0, 36, 36, 36, 36, 36, 36, 36, 36], "enrollmentCap": 30}, {"meetingNumber": "LEC0102", "instructors": [["Christopher", "Eaton"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0103", "instructors": [["Sarah", "Seeley"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0104", "instructors": [["Jonathan", "Vroom"]], "enrollmentLogs": [0, 36, 36, 36, 36, 36, 36, 36, 36], "enrollmentCap": 30}, {"meetingNumber": "LEC0105", "instructors": [["Janine", "Rose"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0106", "instructors": [["Christopher", "Eaton"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0107", "instructors": [["Mark", "Blaauw-Hara"]], "enrollmentLogs": [0, 32, 32, 32, 32, 32, 32, 32, 32], "enrollmentCap": 30}, {"meetingNumber": "LEC0108", "instructors": [["Amanda", "Paxton"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0109", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 30}, {"meetingNumber": "LEC0110", "instructors": [["Jonathan", "Vroom"]], "enrollmentLogs": [0, 34, 34, 34, 34, 34, 34, 33, 33], "enrollmentCap": 30}, {"meetingNumber": "LEC0111", "instructors": [["Janine", "Rose"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0112", "instructors": [["Zhaozhe", "Wang"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0113", "instructors": [["Christopher", "Eaton"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0114", "instructors": [["Sheila", "Stewart"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0115", "instructors": [["Amanda", "Paxton"]], "enrollmentLogs": [0, 17, 17, 17, 17, 17, 17, 18, 18], "enrollmentCap": 30}, {"meetingNumber": "LEC0116", "instructors": [["Sheila", "Stewart"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 30}, {"meetingNumber": "LEC0117", "instructors": [["Zhaozhe", "Wang"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0118", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 30}, {"meetingNumber": "LEC0119", "instructors": [["Phoebe", "Kang"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 30}, {"meetingNumber": "LEC0120", "instructors": [["Michael", "Kaler"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0121", "instructors": [["Sarah", "Seeley"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 29, 29], "enrollmentCap": 30}, {"meetingNumber": "LEC0122", "instructors": [["Tyler", "Evans-Tokaryk"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0123", "instructors": [["Mark", "Blaauw-Hara"]], "enrollmentLogs": [0, 33, 33, 33, 33, 33, 33, 33, 33], "enrollmentCap": 30}, {"meetingNumber": "LEC0124", "instructors": [["Michael", "Kaler"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0125", "instructors": [], "enrollmentLogs": [0, 25, 25, 25, 25, 25, 25, 25, 25], "enrollmentCap": 30}, {"meetingNumber": "LEC0126", "instructors": [["Phoebe", "Kang"]], "enrollmentLogs": [0, 32, 32, 32, 32, 32, 32, 32, 32], "enrollmentCap": 30}, {"meetingNumber": "LEC0127", "instructors": [], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0128", "instructors": [["Janine", "Rose"]], "enrollmentLogs": [0, 31, 31, 31, 31, 31, 31, 31, 31], "enrollmentCap": 30}, {"meetingNumber": "LEC0129", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 30}, {"meetingNumber": "LEC0130", "instructors": [["Tyler", "Evans-Tokaryk"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 30}, {"meetingNumber": "LEC0131", "instructors": [["Michael", "Kaler"]], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 30}, {"meetingNumber": "LEC0132", "instructors": [["Phoebe", "Kang"]], "enrollmentLogs": [0, 28, 28, 28, 28, 28, 28, 27, 27], "enrollmentCap": 30}]}
+{
+"code": "ISP100H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36
+],
+"instructors": [
+[
+"Mark",
+"Blaauw-Hara"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Christopher",
+"Eaton"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Sarah",
+"Seeley"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36,
+36
+],
+"instructors": [
+[
+"Jonathan",
+"Vroom"
+]
+],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Janine",
+"Rose"
+]
+],
+"meetingNumber": "LEC0105"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Christopher",
+"Eaton"
+]
+],
+"meetingNumber": "LEC0106"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32
+],
+"instructors": [
+[
+"Mark",
+"Blaauw-Hara"
+]
+],
+"meetingNumber": "LEC0107"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Amanda",
+"Paxton"
+]
+],
+"meetingNumber": "LEC0108"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0109"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+34,
+34,
+34,
+34,
+34,
+34,
+33,
+33,
+33,
+33,
+33,
+33,
+33
+],
+"instructors": [
+[
+"Jonathan",
+"Vroom"
+]
+],
+"meetingNumber": "LEC0110"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Janine",
+"Rose"
+]
+],
+"meetingNumber": "LEC0111"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Zhaozhe",
+"Wang"
+]
+],
+"meetingNumber": "LEC0112"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Christopher",
+"Eaton"
+]
+],
+"meetingNumber": "LEC0113"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Sheila",
+"Stewart"
+]
+],
+"meetingNumber": "LEC0114"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+17,
+17,
+17,
+17,
+17,
+17,
+18,
+18,
+18,
+18,
+18,
+18,
+18
+],
+"instructors": [
+[
+"Amanda",
+"Paxton"
+]
+],
+"meetingNumber": "LEC0115"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Sheila",
+"Stewart"
+]
+],
+"meetingNumber": "LEC0116"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Zhaozhe",
+"Wang"
+]
+],
+"meetingNumber": "LEC0117"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0118"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Phoebe",
+"Kang"
+]
+],
+"meetingNumber": "LEC0119"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Michael",
+"Kaler"
+]
+],
+"meetingNumber": "LEC0120"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Sarah",
+"Seeley"
+]
+],
+"meetingNumber": "LEC0121"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Tyler",
+"Evans-Tokaryk"
+]
+],
+"meetingNumber": "LEC0122"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33,
+33
+],
+"instructors": [
+[
+"Mark",
+"Blaauw-Hara"
+]
+],
+"meetingNumber": "LEC0123"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Michael",
+"Kaler"
+]
+],
+"meetingNumber": "LEC0124"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25,
+25
+],
+"instructors": [],
+"meetingNumber": "LEC0125"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32,
+32
+],
+"instructors": [
+[
+"Phoebe",
+"Kang"
+]
+],
+"meetingNumber": "LEC0126"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [],
+"meetingNumber": "LEC0127"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31,
+31
+],
+"instructors": [
+[
+"Janine",
+"Rose"
+]
+],
+"meetingNumber": "LEC0128"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0129"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Tyler",
+"Evans-Tokaryk"
+]
+],
+"meetingNumber": "LEC0130"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [
+[
+"Michael",
+"Kaler"
+]
+],
+"meetingNumber": "LEC0131"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+28,
+28,
+28,
+28,
+28,
+28,
+27,
+27,
+27,
+27,
+27,
+27,
+27
+],
+"instructors": [
+[
+"Phoebe",
+"Kang"
+]
+],
+"meetingNumber": "LEC0132"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Writing for University and Beyond: Writing About Writing"
+}

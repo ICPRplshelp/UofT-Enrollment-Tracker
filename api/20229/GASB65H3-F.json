@@ -1,1 +1,49 @@
-{"title": "West Asia and the Modern World", "code": "GASB65H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Esmat", "Elhalaby"]], "enrollmentLogs": [0, 19, 19, 19, 19, 19, 19, 19, 19], "enrollmentCap": 30}]}
+{
+"code": "GASB65H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19,
+19
+],
+"instructors": [
+[
+"Esmat",
+"Elhalaby"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "West Asia and the Modern World"
+}

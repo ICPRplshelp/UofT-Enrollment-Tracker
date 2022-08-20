@@ -1,1 +1,175 @@
-{"title": "Critical Writing About Literature", "code": "ENGA02H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Sarah", "King"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 25}, {"meetingNumber": "LEC02", "instructors": [], "enrollmentLogs": [0, 34, 34, 34, 34, 34, 34, 34, 34], "enrollmentCap": 25}, {"meetingNumber": "LEC03", "instructors": [], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 25}, {"meetingNumber": "LEC04", "instructors": [], "enrollmentLogs": [0, 16, 16, 16, 16, 16, 16, 16, 16], "enrollmentCap": 25}, {"meetingNumber": "LEC05", "instructors": [], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 30, 30], "enrollmentCap": 25}, {"meetingNumber": "LEC06", "instructors": [], "enrollmentLogs": [0, 30, 30, 30, 30, 30, 30, 30, 30], "enrollmentCap": 25}, {"meetingNumber": "LEC07", "instructors": [], "enrollmentLogs": [0, 26, 26, 26, 26, 26, 26, 26, 26], "enrollmentCap": 25}]}
+{
+"code": "ENGA02H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Sarah",
+"King"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34,
+34
+],
+"instructors": [],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16,
+16
+],
+"instructors": [],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [],
+"meetingNumber": "LEC05"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30,
+30
+],
+"instructors": [],
+"meetingNumber": "LEC06"
+},
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26,
+26
+],
+"instructors": [],
+"meetingNumber": "LEC07"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Critical Writing About Literature"
+}

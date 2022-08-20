@@ -1,1 +1,49 @@
-{"title": "Geological Remote Sensing", "code": "ERS304H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Xiaoyong", "Xu"]], "enrollmentLogs": [0, 22, 22, 22, 22, 22, 22, 22, 22], "enrollmentCap": 25}]}
+{
+"code": "ERS304H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 25,
+"enrollmentLogs": [
+0,
+22,
+22,
+22,
+22,
+22,
+22,
+22,
+22,
+22,
+22,
+22,
+22,
+22
+],
+"instructors": [
+[
+"Xiaoyong",
+"Xu"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Geological Remote Sensing"
+}

@@ -1,1 +1,65 @@
-{"title": "Small Ensembles IIa", "code": "MUZB66H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC30", "instructors": [], "enrollmentLogs": [0, 7, 7, 7, 7, 7, 7, 7, 7], "enrollmentCap": 3}, {"meetingNumber": "LEC31", "instructors": [], "enrollmentLogs": [0, 5, 5, 5, 5, 5, 5, 5, 5], "enrollmentCap": 3}]}
+{
+"code": "MUZB66H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 3,
+"enrollmentLogs": [
+0,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+7
+],
+"instructors": [],
+"meetingNumber": "LEC30"
+},
+{
+"enrollmentCap": 3,
+"enrollmentLogs": [
+0,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5,
+5
+],
+"instructors": [],
+"meetingNumber": "LEC31"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Small Ensembles IIa"
+}

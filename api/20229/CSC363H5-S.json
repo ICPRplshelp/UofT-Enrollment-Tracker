@@ -1,1 +1,96 @@
-{"title": "Computational Complexity and Computability", "code": "CSC363H5-S", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 80}, {"meetingNumber": "LEC0102", "instructors": [["Mohammad", "Mahmoud"]], "enrollmentLogs": [0, 93, 93, 93, 93, 93, 93, 93, 93], "enrollmentCap": 80}, {"meetingNumber": "LEC0103", "instructors": [["Mohammad", "Mahmoud"]], "enrollmentLogs": [0, 91, 91, 91, 91, 91, 91, 91, 91], "enrollmentCap": 80}]}
+{
+"code": "CSC363H5-S",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+93,
+93,
+93,
+93,
+93,
+93,
+93,
+93,
+93,
+93,
+93,
+93,
+93
+],
+"instructors": [
+[
+"Mohammad",
+"Mahmoud"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+91,
+91,
+91,
+91,
+91,
+91,
+91,
+91,
+91,
+91,
+91,
+91,
+91
+],
+"instructors": [
+[
+"Mohammad",
+"Mahmoud"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Computational Complexity and Computability"
+}

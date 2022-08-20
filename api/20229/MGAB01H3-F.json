@@ -1,1 +1,309 @@
-{"title": "Introductory Financial Accounting I", "code": "MGAB01H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["George", "Quan Fun"]], "enrollmentLogs": [0, 61, 61, 61, 61, 61, 61, 61, 61], "enrollmentCap": 60}, {"meetingNumber": "LEC02", "instructors": [["George", "Quan Fun"]], "enrollmentLogs": [0, 63, 63, 63, 63, 63, 63, 63, 63], "enrollmentCap": 60}, {"meetingNumber": "LEC03", "instructors": [["Ron", "Shalev"]], "enrollmentLogs": [0, 58, 58, 58, 58, 58, 58, 58, 58], "enrollmentCap": 60}, {"meetingNumber": "LEC04", "instructors": [["Ron", "Shalev"]], "enrollmentLogs": [0, 60, 60, 60, 60, 60, 60, 60, 60], "enrollmentCap": 60}, {"meetingNumber": "LEC05", "instructors": [["Andrea", "Down"]], "enrollmentLogs": [0, 58, 58, 58, 58, 58, 58, 58, 58], "enrollmentCap": 60}, {"meetingNumber": "LEC06", "instructors": [["Ron", "Shalev"]], "enrollmentLogs": [0, 60, 60, 60, 60, 60, 60, 59, 59], "enrollmentCap": 60}, {"meetingNumber": "LEC07", "instructors": [["Andrea", "Down"]], "enrollmentLogs": [0, 59, 59, 59, 59, 59, 59, 60, 60], "enrollmentCap": 60}, {"meetingNumber": "LEC08", "instructors": [["Andrea", "Down"]], "enrollmentLogs": [0, 59, 59, 59, 59, 59, 59, 58, 58], "enrollmentCap": 60}, {"meetingNumber": "LEC11", "instructors": [["Douglas", "Kong"]], "enrollmentLogs": [0, 59, 59, 59, 59, 59, 59, 59, 59], "enrollmentCap": 60}, {"meetingNumber": "LEC30", "instructors": [["George", "Quan Fun"]], "enrollmentLogs": [0, 62, 62, 62, 62, 62, 62, 62, 62], "enrollmentCap": 60}, {"meetingNumber": "LEC31", "instructors": [["Douglas", "Kong"]], "enrollmentLogs": [0, 56, 56, 56, 56, 56, 56, 56, 56], "enrollmentCap": 60}]}
+{
+"code": "MGAB01H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61
+],
+"instructors": [
+[
+"George",
+"Quan Fun"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+63,
+63,
+63,
+63,
+63,
+63,
+63,
+63,
+63,
+63,
+63,
+63,
+63
+],
+"instructors": [
+[
+"George",
+"Quan Fun"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58
+],
+"instructors": [
+[
+"Ron",
+"Shalev"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60
+],
+"instructors": [
+[
+"Ron",
+"Shalev"
+]
+],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58
+],
+"instructors": [
+[
+"Andrea",
+"Down"
+]
+],
+"meetingNumber": "LEC05"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+60,
+60,
+60,
+60,
+60,
+60,
+59,
+59,
+59,
+59,
+59,
+59,
+59
+],
+"instructors": [
+[
+"Ron",
+"Shalev"
+]
+],
+"meetingNumber": "LEC06"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+59,
+59,
+59,
+59,
+59,
+59,
+60,
+60,
+60,
+60,
+60,
+60,
+60
+],
+"instructors": [
+[
+"Andrea",
+"Down"
+]
+],
+"meetingNumber": "LEC07"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+59,
+59,
+59,
+59,
+59,
+59,
+58,
+58,
+58,
+58,
+58,
+58,
+58
+],
+"instructors": [
+[
+"Andrea",
+"Down"
+]
+],
+"meetingNumber": "LEC08"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59
+],
+"instructors": [
+[
+"Douglas",
+"Kong"
+]
+],
+"meetingNumber": "LEC11"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+62,
+62,
+62,
+62,
+62,
+62,
+62,
+62,
+62,
+62,
+62,
+62,
+62
+],
+"instructors": [
+[
+"George",
+"Quan Fun"
+]
+],
+"meetingNumber": "LEC30"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56,
+56
+],
+"instructors": [
+[
+"Douglas",
+"Kong"
+]
+],
+"meetingNumber": "LEC31"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introductory Financial Accounting I"
+}

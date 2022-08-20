@@ -1,1 +1,101 @@
-{"title": "Calculus II", "code": "MAT187H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Camelia", "Karimian Pour"]], "enrollmentLogs": [0, 305, 305, 305, 305, 305, 305, 301, 301], "enrollmentCap": 459}, {"meetingNumber": "LEC0102", "instructors": [["Camelia", "Karimian Pour"]], "enrollmentLogs": [0, 319, 319, 319, 319, 319, 319, 316, 316], "enrollmentCap": 343}, {"meetingNumber": "LEC0103", "instructors": [["Geoffrey", "McGregor"]], "enrollmentLogs": [0, 474, 474, 474, 474, 474, 474, 470, 470], "enrollmentCap": 493}]}
+{
+"code": "MAT187H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 459,
+"enrollmentLogs": [
+0,
+305,
+305,
+305,
+305,
+305,
+305,
+301,
+301,
+301,
+301,
+301,
+301,
+301
+],
+"instructors": [
+[
+"Camelia",
+"Karimian Pour"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 343,
+"enrollmentLogs": [
+0,
+319,
+319,
+319,
+319,
+319,
+319,
+316,
+316,
+316,
+316,
+316,
+316,
+316
+],
+"instructors": [
+[
+"Camelia",
+"Karimian Pour"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 493,
+"enrollmentLogs": [
+0,
+474,
+474,
+474,
+474,
+474,
+474,
+470,
+470,
+470,
+470,
+470,
+470,
+470
+],
+"instructors": [
+[
+"Geoffrey",
+"McGregor"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Calculus II"
+}

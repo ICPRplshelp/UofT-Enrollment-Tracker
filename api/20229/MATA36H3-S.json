@@ -1,1 +1,75 @@
-{"title": "Calculus II for Physical Sciences", "code": "MATA36H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Raymond", "Grinnell"]], "enrollmentLogs": [0, 345, 345, 345, 345, 345, 345, 348, 348], "enrollmentCap": 300}, {"meetingNumber": "LEC02", "instructors": [["Raymond", "Grinnell"]], "enrollmentLogs": [0, 124, 124, 124, 124, 124, 124, 126, 126], "enrollmentCap": 80}]}
+{
+"code": "MATA36H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+345,
+345,
+345,
+345,
+345,
+345,
+348,
+348,
+348,
+348,
+348,
+348,
+348
+],
+"instructors": [
+[
+"Raymond",
+"Grinnell"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+124,
+124,
+124,
+124,
+124,
+124,
+126,
+126,
+126,
+126,
+126,
+126,
+126
+],
+"instructors": [
+[
+"Raymond",
+"Grinnell"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Calculus II for Physical Sciences"
+}

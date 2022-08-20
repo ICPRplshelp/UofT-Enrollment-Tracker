@@ -1,1 +1,101 @@
-{"title": "Orientation to Engineering", "code": "APS100H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Micah", "Stickel"]], "enrollmentLogs": [0, 361, 361, 361, 361, 361, 361, 357, 357], "enrollmentCap": 383}, {"meetingNumber": "LEC0102", "instructors": [["Chirag", "Variawa"]], "enrollmentLogs": [0, 363, 363, 363, 363, 363, 363, 360, 360], "enrollmentCap": 386}, {"meetingNumber": "LEC0103", "instructors": [["Dawn", "Kilkenny Rocheleau"]], "enrollmentLogs": [0, 371, 371, 371, 371, 371, 371, 366, 366], "enrollmentCap": 385}]}
+{
+"code": "APS100H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 383,
+"enrollmentLogs": [
+0,
+361,
+361,
+361,
+361,
+361,
+361,
+357,
+357,
+357,
+357,
+357,
+357,
+357
+],
+"instructors": [
+[
+"Micah",
+"Stickel"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 386,
+"enrollmentLogs": [
+0,
+363,
+363,
+363,
+363,
+363,
+363,
+360,
+360,
+360,
+360,
+360,
+360,
+360
+],
+"instructors": [
+[
+"Chirag",
+"Variawa"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 385,
+"enrollmentLogs": [
+0,
+371,
+371,
+371,
+371,
+371,
+371,
+366,
+366,
+366,
+366,
+366,
+366,
+366
+],
+"instructors": [
+[
+"Dawn",
+"Kilkenny Rocheleau"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Orientation to Engineering"
+}

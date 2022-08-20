@@ -1,1 +1,49 @@
-{"title": "Financial Distress and Insolvency", "code": "MGT442H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Dushyantkumar", "Vyas"]], "enrollmentLogs": [0, 61, 61, 61, 61, 61, 61, 61, 61], "enrollmentCap": 55}]}
+{
+"code": "MGT442H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 55,
+"enrollmentLogs": [
+0,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61
+],
+"instructors": [
+[
+"Dushyantkumar",
+"Vyas"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Financial Distress and Insolvency"
+}

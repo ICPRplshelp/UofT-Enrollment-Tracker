@@ -1,1 +1,49 @@
-{"title": "Intro to Music Education", "code": "EMU130Y1-Y", "faculty": "MUSIC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Lori Anne", "Dolloff"]], "enrollmentLogs": [0, 58, 58, 58, 58, 58, 58, 58, 58], "enrollmentCap": 75}]}
+{
+"code": "EMU130Y1-Y",
+"faculty": "MUSIC",
+"meetings": [
+{
+"enrollmentCap": 75,
+"enrollmentLogs": [
+0,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58,
+58
+],
+"instructors": [
+[
+"Lori Anne",
+"Dolloff"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Intro to Music Education"
+}

@@ -1,1 +1,75 @@
-{"title": "utmONE: Special Topics at the Intersection of Science and Social Science", "code": "UTM108H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Sheliza", "Ibrahim"]], "enrollmentLogs": [0, 29, 29, 29, 29, 29, 29, 29, 29], "enrollmentCap": 55}, {"meetingNumber": "LEC0201", "instructors": [["Sheliza", "Ibrahim"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 24}]}
+{
+"code": "UTM108H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 55,
+"enrollmentLogs": [
+0,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29,
+29
+],
+"instructors": [
+[
+"Sheliza",
+"Ibrahim"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 24,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Sheliza",
+"Ibrahim"
+]
+],
+"meetingNumber": "LEC0201"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "utmONE: Special Topics at the Intersection of Science and Social Science"
+}

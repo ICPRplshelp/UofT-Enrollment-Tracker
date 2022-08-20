@@ -1,1 +1,127 @@
-{"title": "Management Communications for non Co-op", "code": "MGTA35H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Joanna", "Heathcote"]], "enrollmentLogs": [0, 27, 27, 27, 27, 27, 27, 27, 27], "enrollmentCap": 30}, {"meetingNumber": "LEC02", "instructors": [["Sandra", "Daga"]], "enrollmentLogs": [0, 24, 24, 24, 24, 24, 24, 23, 23], "enrollmentCap": 30}, {"meetingNumber": "LEC03", "instructors": [["Sandra", "Daga"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 30}, {"meetingNumber": "LEC04", "instructors": [["Joanna", "Heathcote"]], "enrollmentLogs": [0, 17, 17, 17, 17, 17, 17, 17, 17], "enrollmentCap": 30}]}
+{
+"code": "MGTA35H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27,
+27
+],
+"instructors": [
+[
+"Joanna",
+"Heathcote"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+24,
+24,
+24,
+24,
+24,
+24,
+23,
+23,
+23,
+23,
+23,
+23,
+23
+],
+"instructors": [
+[
+"Sandra",
+"Daga"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Sandra",
+"Daga"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17,
+17
+],
+"instructors": [
+[
+"Joanna",
+"Heathcote"
+]
+],
+"meetingNumber": "LEC04"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Management Communications for non Co-op"
+}

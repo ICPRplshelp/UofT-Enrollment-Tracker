@@ -1,1 +1,49 @@
-{"title": "Process Engineering", "code": "CHE208H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872752, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Jay", "Werber"]], "enrollmentLogs": [0, 136, 136, 136, 136, 136, 136, 136, 136], "enrollmentCap": 142}]}
+{
+"code": "CHE208H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 142,
+"enrollmentLogs": [
+0,
+136,
+136,
+136,
+136,
+136,
+136,
+136,
+136,
+136,
+136,
+136,
+136,
+136
+],
+"instructors": [
+[
+"Jay",
+"Werber"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872752,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945336,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Process Engineering"
+}

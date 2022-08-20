@@ -1,1 +1,153 @@
-{"title": "Principles of Finance", "code": "MGFB10H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Derek", "Chau"]], "enrollmentLogs": [0, 53, 53, 53, 53, 53, 53, 53, 53], "enrollmentCap": 60}, {"meetingNumber": "LEC02", "instructors": [["Jincheng", "Tong"]], "enrollmentLogs": [0, 63, 63, 63, 63, 63, 63, 62, 62], "enrollmentCap": 60}, {"meetingNumber": "LEC03", "instructors": [["Jincheng", "Tong"]], "enrollmentLogs": [0, 60, 60, 60, 60, 60, 60, 60, 60], "enrollmentCap": 60}, {"meetingNumber": "LEC04", "instructors": [["Jincheng", "Tong"]], "enrollmentLogs": [0, 65, 65, 65, 65, 65, 65, 63, 63], "enrollmentCap": 60}, {"meetingNumber": "LEC05", "instructors": [["Derek", "Chau"]], "enrollmentLogs": [0, 37, 37, 37, 37, 37, 37, 37, 37], "enrollmentCap": 60}]}
+{
+"code": "MGFB10H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+53,
+53,
+53,
+53,
+53,
+53,
+53,
+53,
+53,
+53,
+53,
+53,
+53
+],
+"instructors": [
+[
+"Derek",
+"Chau"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+63,
+63,
+63,
+63,
+63,
+63,
+62,
+62,
+62,
+62,
+62,
+62,
+62
+],
+"instructors": [
+[
+"Jincheng",
+"Tong"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60,
+60
+],
+"instructors": [
+[
+"Jincheng",
+"Tong"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+65,
+65,
+65,
+65,
+65,
+65,
+63,
+63,
+63,
+63,
+63,
+63,
+63
+],
+"instructors": [
+[
+"Jincheng",
+"Tong"
+]
+],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37,
+37
+],
+"instructors": [
+[
+"Derek",
+"Chau"
+]
+],
+"meetingNumber": "LEC05"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Principles of Finance"
+}

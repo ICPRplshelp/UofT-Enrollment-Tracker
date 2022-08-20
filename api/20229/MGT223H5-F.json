@@ -1,1 +1,75 @@
-{"title": "Management Accounting I", "code": "MGT223H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Minlei", "Ye"]], "enrollmentLogs": [0, 47, 47, 47, 47, 47, 47, 47, 47], "enrollmentCap": 55}, {"meetingNumber": "LEC0102", "instructors": [["Minlei", "Ye"]], "enrollmentLogs": [0, 61, 61, 61, 61, 61, 61, 61, 61], "enrollmentCap": 55}]}
+{
+"code": "MGT223H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 55,
+"enrollmentLogs": [
+0,
+47,
+47,
+47,
+47,
+47,
+47,
+47,
+47,
+47,
+47,
+47,
+47,
+47
+],
+"instructors": [
+[
+"Minlei",
+"Ye"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 55,
+"enrollmentLogs": [
+0,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61,
+61
+],
+"instructors": [
+[
+"Minlei",
+"Ye"
+]
+],
+"meetingNumber": "LEC0102"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Management Accounting I"
+}

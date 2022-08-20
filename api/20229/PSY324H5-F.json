@@ -1,1 +1,49 @@
-{"title": "The Science of Wellbeing", "code": "PSY324H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Simone", "Walker"]], "enrollmentLogs": [0, 83, 83, 83, 83, 83, 83, 82, 82], "enrollmentCap": 130}]}
+{
+"code": "PSY324H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 130,
+"enrollmentLogs": [
+0,
+83,
+83,
+83,
+83,
+83,
+83,
+82,
+82,
+82,
+82,
+82,
+82,
+82
+],
+"instructors": [
+[
+"Simone",
+"Walker"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "The Science of Wellbeing"
+}

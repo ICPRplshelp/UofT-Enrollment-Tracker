@@ -1,1 +1,179 @@
-{"title": "Price Theory: A Mathematical Approach", "code": "MGEB02H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Ataollah", "Mazaheri"]], "enrollmentLogs": [0, 111, 111, 111, 111, 111, 111, 111, 111], "enrollmentCap": 80}, {"meetingNumber": "LEC02", "instructors": [["Ataollah", "Mazaheri"]], "enrollmentLogs": [0, 106, 106, 106, 106, 106, 106, 106, 106], "enrollmentCap": 80}, {"meetingNumber": "LEC03", "instructors": [["Ataollah", "Mazaheri"]], "enrollmentLogs": [0, 102, 102, 102, 102, 102, 102, 102, 102], "enrollmentCap": 80}, {"meetingNumber": "LEC04", "instructors": [["Ataollah", "Mazaheri"]], "enrollmentLogs": [0, 106, 106, 106, 106, 106, 106, 106, 106], "enrollmentCap": 80}, {"meetingNumber": "LEC05", "instructors": [["Ataollah", "Mazaheri"]], "enrollmentLogs": [0, 100, 100, 100, 100, 100, 100, 100, 100], "enrollmentCap": 80}, {"meetingNumber": "LEC30", "instructors": [["Ataollah", "Mazaheri"]], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 80}]}
+{
+"code": "MGEB02H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+111,
+111,
+111,
+111,
+111,
+111,
+111,
+111,
+111,
+111,
+111,
+111,
+111
+],
+"instructors": [
+[
+"Ataollah",
+"Mazaheri"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106
+],
+"instructors": [
+[
+"Ataollah",
+"Mazaheri"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102,
+102
+],
+"instructors": [
+[
+"Ataollah",
+"Mazaheri"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106,
+106
+],
+"instructors": [
+[
+"Ataollah",
+"Mazaheri"
+]
+],
+"meetingNumber": "LEC04"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100,
+100
+],
+"instructors": [
+[
+"Ataollah",
+"Mazaheri"
+]
+],
+"meetingNumber": "LEC05"
+},
+{
+"enrollmentCap": 80,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [
+[
+"Ataollah",
+"Mazaheri"
+]
+],
+"meetingNumber": "LEC30"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Price Theory: A Mathematical Approach"
+}

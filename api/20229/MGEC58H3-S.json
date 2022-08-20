@@ -1,1 +1,49 @@
-{"title": "Economics of Human Resource Management", "code": "MGEC58H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Laura", "Turner"]], "enrollmentLogs": [0, 58, 58, 58, 58, 58, 58, 59, 59], "enrollmentCap": 60}]}
+{
+"code": "MGEC58H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 60,
+"enrollmentLogs": [
+0,
+58,
+58,
+58,
+58,
+58,
+58,
+59,
+59,
+59,
+59,
+59,
+59,
+59
+],
+"instructors": [
+[
+"Laura",
+"Turner"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Economics of Human Resource Management"
+}

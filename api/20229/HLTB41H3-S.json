@@ -1,1 +1,49 @@
-{"title": "Introduction to the Social Determinants of Health", "code": "HLTB41H3-S", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Notisha", "Massaquoi"]], "enrollmentLogs": [0, 169, 169, 169, 169, 169, 169, 169, 169], "enrollmentCap": 300}]}
+{
+"code": "HLTB41H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 300,
+"enrollmentLogs": [
+0,
+169,
+169,
+169,
+169,
+169,
+169,
+169,
+169,
+169,
+169,
+169,
+169,
+169
+],
+"instructors": [
+[
+"Notisha",
+"Massaquoi"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to the Social Determinants of Health"
+}

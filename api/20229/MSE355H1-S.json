@@ -1,1 +1,49 @@
-{"title": "Materials Production", "code": "MSE355H1-S", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Mansoor", "Barati Sedeh"]], "enrollmentLogs": [0, 59, 59, 59, 59, 59, 59, 59, 59], "enrollmentCap": 72}]}
+{
+"code": "MSE355H1-S",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 72,
+"enrollmentLogs": [
+0,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59,
+59
+],
+"instructors": [
+[
+"Mansoor",
+"Barati Sedeh"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Materials Production"
+}

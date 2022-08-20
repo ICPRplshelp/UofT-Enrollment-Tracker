@@ -1,1 +1,75 @@
-{"title": "Introduction to Sociology", "code": "SOCA03Y3-Y", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Kathy", "Liddle"]], "enrollmentLogs": [0, 242, 242, 242, 242, 242, 242, 243, 243], "enrollmentCap": 225}, {"meetingNumber": "LEC02", "instructors": [["Kathy", "Liddle"]], "enrollmentLogs": [0, 267, 267, 267, 267, 267, 267, 267, 267], "enrollmentCap": 250}]}
+{
+"code": "SOCA03Y3-Y",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 225,
+"enrollmentLogs": [
+0,
+242,
+242,
+242,
+242,
+242,
+242,
+243,
+243,
+243,
+243,
+243,
+243,
+243
+],
+"instructors": [
+[
+"Kathy",
+"Liddle"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 250,
+"enrollmentLogs": [
+0,
+267,
+267,
+267,
+267,
+267,
+267,
+267,
+267,
+267,
+267,
+267,
+267,
+267
+],
+"instructors": [
+[
+"Kathy",
+"Liddle"
+]
+],
+"meetingNumber": "LEC02"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Introduction to Sociology"
+}

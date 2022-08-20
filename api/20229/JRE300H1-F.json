@@ -1,1 +1,101 @@
-{"title": "Fundamentals of Accounting and Finance", "code": "JRE300H1-F", "faculty": "APSC", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [["Scott", "Douglas"]], "enrollmentLogs": [0, 78, 78, 78, 78, 78, 78, 77, 77], "enrollmentCap": 70}, {"meetingNumber": "LEC0102", "instructors": [["Scott", "Douglas"]], "enrollmentLogs": [0, 77, 77, 77, 77, 77, 77, 77, 77], "enrollmentCap": 70}, {"meetingNumber": "LEC0103", "instructors": [["Scott", "Douglas"]], "enrollmentLogs": [0, 38, 38, 38, 38, 38, 38, 37, 37], "enrollmentCap": 30}]}
+{
+"code": "JRE300H1-F",
+"faculty": "APSC",
+"meetings": [
+{
+"enrollmentCap": 70,
+"enrollmentLogs": [
+0,
+78,
+78,
+78,
+78,
+78,
+78,
+77,
+77,
+77,
+77,
+77,
+77,
+77
+],
+"instructors": [
+[
+"Scott",
+"Douglas"
+]
+],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 70,
+"enrollmentLogs": [
+0,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77,
+77
+],
+"instructors": [
+[
+"Scott",
+"Douglas"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 30,
+"enrollmentLogs": [
+0,
+38,
+38,
+38,
+38,
+38,
+38,
+37,
+37,
+37,
+37,
+37,
+37,
+37
+],
+"instructors": [
+[
+"Scott",
+"Douglas"
+]
+],
+"meetingNumber": "LEC0103"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Fundamentals of Accounting and Finance"
+}

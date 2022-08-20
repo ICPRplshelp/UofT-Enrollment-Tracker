@@ -1,1 +1,148 @@
-{"title": "Calculus of Several Variables", "code": "MAT232H5-F", "faculty": "ERIN", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC0101", "instructors": [], "enrollmentLogs": [0, 0, 0, 0, 0, 0, 0, 0, 0], "enrollmentCap": 110}, {"meetingNumber": "LEC0102", "instructors": [["Andrijana", "Burazin"]], "enrollmentLogs": [0, 57, 57, 57, 57, 57, 57, 64, 64], "enrollmentCap": 110}, {"meetingNumber": "LEC0103", "instructors": [["Yevgeny", "Liokumovich"]], "enrollmentLogs": [0, 124, 124, 124, 124, 124, 124, 123, 123], "enrollmentCap": 110}, {"meetingNumber": "LEC0104", "instructors": [["Andrijana", "Burazin"]], "enrollmentLogs": [0, 121, 121, 121, 121, 121, 121, 119, 119], "enrollmentCap": 110}, {"meetingNumber": "LEC0105", "instructors": [["Qun", "Wang"]], "enrollmentLogs": [0, 122, 122, 122, 122, 122, 122, 122, 122], "enrollmentCap": 110}]}
+{
+"code": "MAT232H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 110,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+},
+{
+"enrollmentCap": 110,
+"enrollmentLogs": [
+0,
+57,
+57,
+57,
+57,
+57,
+57,
+64,
+64,
+64,
+64,
+64,
+64,
+64
+],
+"instructors": [
+[
+"Andrijana",
+"Burazin"
+]
+],
+"meetingNumber": "LEC0102"
+},
+{
+"enrollmentCap": 110,
+"enrollmentLogs": [
+0,
+124,
+124,
+124,
+124,
+124,
+124,
+123,
+123,
+123,
+123,
+123,
+123,
+123
+],
+"instructors": [
+[
+"Yevgeny",
+"Liokumovich"
+]
+],
+"meetingNumber": "LEC0103"
+},
+{
+"enrollmentCap": 110,
+"enrollmentLogs": [
+0,
+121,
+121,
+121,
+121,
+121,
+121,
+119,
+119,
+119,
+119,
+119,
+119,
+119
+],
+"instructors": [
+[
+"Andrijana",
+"Burazin"
+]
+],
+"meetingNumber": "LEC0104"
+},
+{
+"enrollmentCap": 110,
+"enrollmentLogs": [
+0,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122,
+122
+],
+"instructors": [
+[
+"Qun",
+"Wang"
+]
+],
+"meetingNumber": "LEC0105"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945478,
+1660970506,
+1661022636,
+1661024921
+],
+"title": "Calculus of Several Variables"
+}

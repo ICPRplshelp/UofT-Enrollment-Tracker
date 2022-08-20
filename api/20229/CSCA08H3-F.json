@@ -1,1 +1,127 @@
-{"title": "Introduction to Computer Science I", "code": "CSCA08H3-F", "faculty": "SCAR", "timeIntervals": [1660867317, 1660867318, 1660867354, 1660872753, 1660873124, 1660895763, 1660895850, 1660944253, 1660944956], "meetings": [{"meetingNumber": "LEC01", "instructors": [["Anya", "Tafliovich"]], "enrollmentLogs": [0, 211, 211, 211, 211, 211, 211, 211, 211], "enrollmentCap": 125}, {"meetingNumber": "LEC02", "instructors": [["Anya", "Tafliovich"]], "enrollmentLogs": [0, 206, 206, 206, 206, 206, 206, 206, 206], "enrollmentCap": 125}, {"meetingNumber": "LEC03", "instructors": [["Purva Rajendra", "Gawde"]], "enrollmentLogs": [0, 193, 193, 193, 193, 193, 193, 193, 193], "enrollmentCap": 125}, {"meetingNumber": "LEC04", "instructors": [["Purva Rajendra", "Gawde"]], "enrollmentLogs": [0, 190, 190, 190, 190, 190, 190, 190, 190], "enrollmentCap": 125}]}
+{
+"code": "CSCA08H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 125,
+"enrollmentLogs": [
+0,
+211,
+211,
+211,
+211,
+211,
+211,
+211,
+211,
+211,
+211,
+211,
+211,
+211
+],
+"instructors": [
+[
+"Anya",
+"Tafliovich"
+]
+],
+"meetingNumber": "LEC01"
+},
+{
+"enrollmentCap": 125,
+"enrollmentLogs": [
+0,
+206,
+206,
+206,
+206,
+206,
+206,
+206,
+206,
+206,
+206,
+206,
+206,
+206
+],
+"instructors": [
+[
+"Anya",
+"Tafliovich"
+]
+],
+"meetingNumber": "LEC02"
+},
+{
+"enrollmentCap": 125,
+"enrollmentLogs": [
+0,
+193,
+193,
+193,
+193,
+193,
+193,
+193,
+193,
+193,
+193,
+193,
+193,
+193
+],
+"instructors": [
+[
+"Purva Rajendra",
+"Gawde"
+]
+],
+"meetingNumber": "LEC03"
+},
+{
+"enrollmentCap": 125,
+"enrollmentLogs": [
+0,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190,
+190
+],
+"instructors": [
+[
+"Purva Rajendra",
+"Gawde"
+]
+],
+"meetingNumber": "LEC04"
+}
+],
+"timeIntervals": [
+1660867317,
+1660867318,
+1660867354,
+1660872753,
+1660873124,
+1660895763,
+1660895850,
+1660944253,
+1660944956,
+1660945337,
+1660945477,
+1660970505,
+1661022636,
+1661024920
+],
+"title": "Introduction to Computer Science I"
+}
