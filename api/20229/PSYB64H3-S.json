@@ -18,6 +18,7 @@
 258,
 258,
 258,
+258,
 258
 ],
 "instructors": [
@@ -32,6 +33,7 @@
 "enrollmentCap": 234,
 "enrollmentLogs": [
 0,
+130,
 130,
 130,
 130,
@@ -69,7 +71,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "Introduction to Behavioural Neuroscience"
 }

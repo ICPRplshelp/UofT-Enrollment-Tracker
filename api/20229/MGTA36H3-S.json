@@ -18,6 +18,7 @@
 40,
 40,
 40,
+40,
 40
 ],
 "instructors": [],
@@ -27,6 +28,7 @@
 "enrollmentCap": 40,
 "enrollmentLogs": [
 0,
+40,
 40,
 40,
 40,
@@ -60,6 +62,7 @@
 40,
 40,
 40,
+40,
 40
 ],
 "instructors": [],
@@ -69,6 +72,7 @@
 "enrollmentCap": 40,
 "enrollmentLogs": [
 0,
+40,
 40,
 40,
 40,
@@ -102,6 +106,7 @@
 38,
 38,
 38,
+38,
 38
 ],
 "instructors": [],
@@ -111,6 +116,7 @@
 "enrollmentCap": 40,
 "enrollmentLogs": [
 0,
+40,
 40,
 40,
 40,
@@ -143,7 +149,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "Management Communications for Co-op"
 }

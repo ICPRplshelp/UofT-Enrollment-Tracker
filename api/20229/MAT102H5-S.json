@@ -18,6 +18,7 @@
 78,
 78,
 78,
+78,
 78
 ],
 "instructors": [],
@@ -39,6 +40,7 @@
 87,
 87,
 87,
+87,
 87
 ],
 "instructors": [
@@ -53,6 +55,7 @@
 "enrollmentCap": 140,
 "enrollmentLogs": [
 0,
+63,
 63,
 63,
 63,
@@ -91,6 +94,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -100,6 +104,7 @@
 "enrollmentCap": 140,
 "enrollmentLogs": [
 0,
+53,
 53,
 53,
 53,
@@ -137,7 +142,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "Introduction to Mathematical Proofs"
 }

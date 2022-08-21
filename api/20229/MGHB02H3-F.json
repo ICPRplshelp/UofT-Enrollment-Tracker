@@ -18,6 +18,7 @@
 78,
 78,
 78,
+78,
 78
 ],
 "instructors": [
@@ -44,6 +45,7 @@
 77,
 77,
 77,
+77,
 77
 ],
 "instructors": [
@@ -58,6 +60,7 @@
 "enrollmentCap": 60,
 "enrollmentLogs": [
 0,
+77,
 77,
 77,
 77,
@@ -95,7 +98,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "Managing People and Groups in Organizations"
 }

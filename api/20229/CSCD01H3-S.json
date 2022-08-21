@@ -18,6 +18,7 @@
 100,
 100,
 100,
+100,
 100
 ],
 "instructors": [],
@@ -27,6 +28,7 @@
 "enrollmentCap": 100,
 "enrollmentLogs": [
 0,
+84,
 84,
 84,
 84,
@@ -59,7 +61,8 @@
 1660945477,
 1660970505,
 1661022636,
-1661024920
+1661024920,
+1661058988
 ],
 "title": "Engineering Large Software Systems"
 }

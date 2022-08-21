@@ -18,6 +18,7 @@
 25,
 25,
 25,
+25,
 25
 ],
 "instructors": [],
@@ -27,6 +28,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+15,
 15,
 15,
 15,
@@ -60,6 +62,7 @@
 24,
 24,
 24,
+24,
 24
 ],
 "instructors": [],
@@ -69,6 +72,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+9,
 9,
 9,
 9,
@@ -102,6 +106,7 @@
 23,
 23,
 23,
+23,
 23
 ],
 "instructors": [],
@@ -111,6 +116,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+10,
 10,
 10,
 10,
@@ -144,6 +150,7 @@
 6,
 6,
 6,
+6,
 6
 ],
 "instructors": [],
@@ -153,6 +160,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+19,
 19,
 19,
 19,
@@ -186,6 +194,7 @@
 9,
 9,
 9,
+9,
 9
 ],
 "instructors": [],
@@ -195,6 +204,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+25,
 25,
 25,
 25,
@@ -227,7 +237,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "LAUNCH: Science, Mathematics and Psychology"
 }

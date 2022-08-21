@@ -18,6 +18,7 @@
 36,
 36,
 36,
+36,
 36
 ],
 "instructors": [
@@ -32,6 +33,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+34,
 34,
 34,
 34,
@@ -70,6 +72,7 @@
 32,
 32,
 32,
+32,
 32
 ],
 "instructors": [],
@@ -79,6 +82,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+32,
 32,
 32,
 32,
@@ -111,7 +115,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "Management Communications for non Co-op"
 }

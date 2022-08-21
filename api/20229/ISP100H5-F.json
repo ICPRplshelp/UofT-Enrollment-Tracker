@@ -18,6 +18,7 @@
 36,
 36,
 36,
+36,
 36
 ],
 "instructors": [
@@ -32,6 +33,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+31,
 31,
 31,
 31,
@@ -70,6 +72,7 @@
 31,
 31,
 31,
+31,
 31
 ],
 "instructors": [
@@ -84,6 +87,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+36,
 36,
 36,
 36,
@@ -122,6 +126,7 @@
 30,
 30,
 30,
+30,
 30
 ],
 "instructors": [
@@ -136,6 +141,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+31,
 31,
 31,
 31,
@@ -174,6 +180,7 @@
 32,
 32,
 32,
+32,
 32
 ],
 "instructors": [
@@ -188,6 +195,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+30,
 30,
 30,
 30,
@@ -226,6 +234,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -247,6 +256,7 @@
 33,
 33,
 33,
+33,
 33
 ],
 "instructors": [
@@ -261,6 +271,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+30,
 30,
 30,
 30,
@@ -299,6 +310,7 @@
 30,
 30,
 30,
+30,
 30
 ],
 "instructors": [
@@ -313,6 +325,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+30,
 30,
 30,
 30,
@@ -351,6 +364,7 @@
 30,
 30,
 30,
+30,
 30
 ],
 "instructors": [
@@ -377,6 +391,7 @@
 18,
 18,
 18,
+18,
 18
 ],
 "instructors": [
@@ -391,6 +406,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+29,
 29,
 29,
 29,
@@ -429,6 +445,7 @@
 30,
 30,
 30,
+30,
 30
 ],
 "instructors": [
@@ -455,6 +472,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -464,6 +482,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+29,
 29,
 29,
 29,
@@ -502,6 +521,7 @@
 31,
 31,
 31,
+31,
 31
 ],
 "instructors": [
@@ -528,6 +548,7 @@
 29,
 29,
 29,
+29,
 29
 ],
 "instructors": [
@@ -542,6 +563,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+30,
 30,
 30,
 30,
@@ -580,6 +602,7 @@
 33,
 33,
 33,
+33,
 33
 ],
 "instructors": [
@@ -594,6 +617,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+31,
 31,
 31,
 31,
@@ -632,6 +656,7 @@
 25,
 25,
 25,
+25,
 25
 ],
 "instructors": [],
@@ -641,6 +666,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+32,
 32,
 32,
 32,
@@ -679,6 +705,7 @@
 31,
 31,
 31,
+31,
 31
 ],
 "instructors": [],
@@ -688,6 +715,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+31,
 31,
 31,
 31,
@@ -726,6 +754,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -735,6 +764,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+29,
 29,
 29,
 29,
@@ -773,6 +803,7 @@
 30,
 30,
 30,
+30,
 30
 ],
 "instructors": [
@@ -793,6 +824,7 @@
 28,
 28,
 28,
+27,
 27,
 27,
 27,
@@ -824,7 +856,8 @@
 1660945478,
 1660970506,
 1661022636,
-1661024921
+1661024921,
+1661058988
 ],
 "title": "Writing for University and Beyond: Writing About Writing"
 }

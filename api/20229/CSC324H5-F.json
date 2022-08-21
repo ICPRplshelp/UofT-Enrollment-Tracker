@@ -18,6 +18,7 @@
 77,
 77,
 77,
+77,
 77
 ],
 "instructors": [
@@ -44,6 +45,7 @@
 75,
 75,
 75,
+75,
 75
 ],
 "instructors": [
@@ -57,6 +59,7 @@
 {
 "enrollmentCap": 80,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -90,7 +93,8 @@
 1660945477,
 1660970505,
 1661022636,
-1661024920
+1661024920,
+1661058988
 ],
 "title": "Principles of Programming Languages"
 }

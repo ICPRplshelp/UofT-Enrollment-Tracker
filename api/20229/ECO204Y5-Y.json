@@ -18,6 +18,7 @@
 47,
 47,
 47,
+47,
 47
 ],
 "instructors": [
@@ -32,6 +33,7 @@
 "enrollmentCap": 100,
 "enrollmentLogs": [
 0,
+100,
 100,
 100,
 100,
@@ -70,6 +72,7 @@
 40,
 40,
 40,
+40,
 40
 ],
 "instructors": [
@@ -95,7 +98,8 @@
 1660945477,
 1660970505,
 1661022636,
-1661024920
+1661024920,
+1661058988
 ],
 "title": "Microeconomic Theory and Applications (for Commerce)"
 }
