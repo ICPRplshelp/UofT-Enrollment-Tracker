@@ -19,6 +19,8 @@
 174,
 174,
 174,
+174,
+174,
 174
 ],
 "instructors": [
@@ -33,6 +35,8 @@
 "enrollmentCap": 188,
 "enrollmentLogs": [
 0,
+182,
+182,
 182,
 182,
 182,
@@ -72,7 +76,9 @@
 1660970505,
 1661022636,
 1661024920,
-1661058988
+1661058988,
+1661115258,
+1661138418
 ],
 "title": "Structures and Materials - An Introduction to Engineering Design"
 }

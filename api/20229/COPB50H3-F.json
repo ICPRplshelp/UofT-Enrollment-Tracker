@@ -19,6 +19,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -33,6 +35,8 @@
 "enrollmentCap": 320,
 "enrollmentLogs": [
 0,
+352,
+352,
 352,
 352,
 352,
@@ -72,7 +76,9 @@
 1660970505,
 1661022636,
 1661024920,
-1661058988
+1661058988,
+1661115258,
+1661138418
 ],
 "title": "Foundations for Success in Art and Science Co-op"
 }

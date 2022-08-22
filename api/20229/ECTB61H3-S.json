@@ -19,6 +19,8 @@
 30,
 30,
 30,
+30,
+30,
 30
 ],
 "instructors": [
@@ -33,6 +35,8 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+27,
+27,
 27,
 27,
 27,
@@ -72,7 +76,9 @@
 1660970505,
 1661022636,
 1661024920,
-1661058988
+1661058988,
+1661115258,
+1661138418
 ],
 "title": "English and Chinese Translation: Theory and Practice"
 }

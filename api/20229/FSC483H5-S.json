@@ -19,6 +19,8 @@
 2,
 2,
 2,
+2,
+2,
 2
 ],
 "instructors": [
@@ -33,6 +35,8 @@
 "enrollmentCap": 5,
 "enrollmentLogs": [
 0,
+3,
+3,
 3,
 3,
 3,
@@ -73,6 +77,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -81,6 +87,8 @@
 {
 "enrollmentCap": 5,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -116,7 +124,9 @@
 1660970505,
 1661022636,
 1661024920,
-1661058988
+1661058988,
+1661115258,
+1661138418
 ],
 "title": "Collaborative Research Internship"
 }

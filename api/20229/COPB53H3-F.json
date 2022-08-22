@@ -19,6 +19,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -32,6 +34,8 @@
 {
 "enrollmentCap": 55,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -72,7 +76,9 @@
 1660970505,
 1661022636,
 1661024920,
-1661058988
+1661058988,
+1661115258,
+1661138418
 ],
 "title": "Managing Your Ongoing Work Term Job Search"
 }

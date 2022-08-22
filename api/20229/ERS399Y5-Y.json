@@ -19,6 +19,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -27,6 +29,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -63,6 +67,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -72,6 +78,8 @@
 "enrollmentCap": 2,
 "enrollmentLogs": [
 0,
+1,
+1,
 1,
 1,
 1,
@@ -107,6 +115,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -116,6 +126,8 @@
 "enrollmentCap": 3,
 "enrollmentLogs": [
 0,
+2,
+2,
 2,
 2,
 2,
@@ -150,7 +162,9 @@
 1660970505,
 1661022636,
 1661024920,
-1661058988
+1661058988,
+1661115258,
+1661138418
 ],
 "title": "Research Opportunity Program"
 }
