@@ -156,9 +156,15 @@
 45,
 45,
 45,
-45
+45,
+46
 ],
-"instructors": [],
+"instructors": [
+[
+"Laura",
+"Turner"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Special Topics in Economics with Data Analytics"
 }

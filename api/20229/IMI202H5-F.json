@@ -21,7 +21,8 @@
 35,
 35,
 35,
-35
+35,
+36
 ],
 "instructors": [
 [
@@ -35,6 +36,7 @@
 "enrollmentCap": 50,
 "enrollmentLogs": [
 0,
+23,
 23,
 23,
 23,
@@ -78,7 +80,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Principles of Human Resource Management"
 }

@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 6,
+"enrollmentCap": 5,
 "enrollmentLogs": [
 0,
 0,
@@ -24,6 +24,7 @@
 0,
 0,
 0,
+5,
 5,
 5,
 5,
@@ -319,7 +320,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Advanced Directing"
 }

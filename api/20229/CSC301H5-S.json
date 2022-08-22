@@ -21,6 +21,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -29,6 +30,7 @@
 {
 "enrollmentCap": 80,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -69,7 +71,8 @@
 69,
 69,
 69,
-69
+69,
+70
 ],
 "instructors": [],
 "meetingNumber": "LEC0103"
@@ -92,7 +95,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Software Engineering"
 }

@@ -21,9 +21,15 @@
 135,
 135,
 135,
-135
+135,
+137
 ],
-"instructors": [],
+"instructors": [
+[
+"Rawad",
+"Abou Assi"
+]
+],
 "meetingNumber": "LEC01"
 },
 {
@@ -45,9 +51,15 @@
 49,
 49,
 49,
-49
+49,
+51
 ],
-"instructors": [],
+"instructors": [
+[
+"Rawad",
+"Abou Assi"
+]
+],
 "meetingNumber": "LEC30"
 }
 ],
@@ -68,7 +80,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Software Design"
 }

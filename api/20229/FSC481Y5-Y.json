@@ -21,16 +21,17 @@
 63,
 63,
 63,
+63,
 63
 ],
 "instructors": [
 [
-"Karen",
-"Woodall"
-],
-[
 "Tracy",
 "Rogers"
+],
+[
+"Karen",
+"Woodall"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -53,7 +54,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Internship in Forensic Science"
 }

@@ -21,7 +21,8 @@
 84,
 84,
 84,
-84
+84,
+83
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -45,6 +46,7 @@
 91,
 91,
 91,
+91,
 91
 ],
 "instructors": [],
@@ -54,6 +56,7 @@
 "enrollmentCap": 100,
 "enrollmentLogs": [
 0,
+74,
 74,
 74,
 74,
@@ -92,7 +95,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Applied Fundamentals of Deep Learning"
 }

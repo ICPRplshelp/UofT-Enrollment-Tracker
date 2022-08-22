@@ -21,6 +21,7 @@
 88,
 88,
 88,
+88,
 88
 ],
 "instructors": [
@@ -50,7 +51,8 @@
 84,
 84,
 84,
-84
+84,
+83
 ],
 "instructors": [
 [
@@ -79,7 +81,8 @@
 80,
 80,
 80,
-80
+80,
+79
 ],
 "instructors": [
 [
@@ -93,6 +96,7 @@
 "enrollmentCap": 80,
 "enrollmentLogs": [
 0,
+86,
 86,
 86,
 86,
@@ -137,6 +141,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [
@@ -165,7 +170,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Macroeconomic Theory and Policy: A Mathematical Approach"
 }

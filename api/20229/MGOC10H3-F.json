@@ -21,7 +21,8 @@
 57,
 57,
 57,
-57
+57,
+56
 ],
 "instructors": [
 [
@@ -35,6 +36,7 @@
 "enrollmentCap": 60,
 "enrollmentLogs": [
 0,
+46,
 46,
 46,
 46,
@@ -79,6 +81,7 @@
 50,
 50,
 50,
+50,
 50
 ],
 "instructors": [
@@ -93,6 +96,7 @@
 "enrollmentCap": 60,
 "enrollmentLogs": [
 0,
+57,
 57,
 57,
 57,
@@ -136,7 +140,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Analytics for Decision Making"
 }

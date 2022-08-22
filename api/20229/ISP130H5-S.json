@@ -21,7 +21,8 @@
 7,
 7,
 7,
-7
+7,
+6
 ],
 "instructors": [
 [
@@ -50,6 +51,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -59,6 +61,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+3,
 3,
 3,
 3,
@@ -103,6 +106,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -112,6 +116,7 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+11,
 11,
 11,
 11,
@@ -155,7 +160,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Numeracy for University and Beyond"
 }

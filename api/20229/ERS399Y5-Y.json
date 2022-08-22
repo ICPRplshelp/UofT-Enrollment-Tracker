@@ -21,9 +21,15 @@
 0,
 0,
 0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Jochen",
+"Halfar"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -45,14 +51,21 @@
 0,
 0,
 0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Jochen",
+"Halfar"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
 "enrollmentCap": 5,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -93,9 +106,15 @@
 1,
 1,
 1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Lindsay",
+"Schoenbohm"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -117,9 +136,15 @@
 1,
 1,
 1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Lindsay",
+"Schoenbohm"
+]
+],
 "meetingNumber": "LEC0202"
 },
 {
@@ -141,9 +166,15 @@
 2,
 2,
 2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Marc",
+"Laflamme"
+]
+],
 "meetingNumber": "LEC0301"
 }
 ],
@@ -164,7 +195,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Research Opportunity Program"
 }

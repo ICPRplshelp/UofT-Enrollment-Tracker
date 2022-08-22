@@ -156,9 +156,15 @@
 18,
 18,
 18,
+18,
 18
 ],
-"instructors": [],
+"instructors": [
+[
+"Mohammad",
+"Jamali"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "\u201cThe Most Beautiful Language\u201d: Italian between Past, Present and Future Challenges"
 }

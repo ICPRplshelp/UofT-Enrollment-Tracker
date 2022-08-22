@@ -21,6 +21,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -29,6 +30,7 @@
 {
 "enrollmentCap": 125,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -68,7 +70,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Managing Your Job Search and Transition to Work"
 }

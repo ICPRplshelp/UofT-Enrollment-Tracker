@@ -21,9 +21,15 @@
 110,
 110,
 110,
+110,
 110
 ],
-"instructors": [],
+"instructors": [
+[
+"Xiaoyue",
+"Cui"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -45,9 +51,15 @@
 100,
 100,
 100,
+100,
 100
 ],
-"instructors": [],
+"instructors": [
+[
+"Daniel",
+"Johnstone"
+]
+],
 "meetingNumber": "LEC0102"
 }
 ],
@@ -68,7 +80,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Differential Equations"
 }

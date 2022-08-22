@@ -21,7 +21,8 @@
 3,
 3,
 3,
-3
+3,
+4
 ],
 "instructors": [],
 "meetingNumber": "LEC30"
@@ -30,6 +31,7 @@
 "enrollmentCap": 3,
 "enrollmentLogs": [
 0,
+3,
 3,
 3,
 3,
@@ -68,7 +70,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Small Ensembles IIa"
 }

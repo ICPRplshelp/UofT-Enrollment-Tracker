@@ -21,9 +21,15 @@
 64,
 64,
 64,
-64
+64,
+63
 ],
-"instructors": [],
+"instructors": [
+[
+"Goldie",
+"Nejat"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -44,7 +50,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "* Mechatronics Systems: Design and Integration"
 }

@@ -21,7 +21,8 @@
 24,
 24,
 24,
-24
+24,
+23
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -29,6 +30,7 @@
 {
 "enrollmentCap": 25,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -69,6 +71,7 @@
 4,
 4,
 4,
+4,
 4
 ],
 "instructors": [],
@@ -93,7 +96,8 @@
 20,
 20,
 20,
-20
+20,
+21
 ],
 "instructors": [],
 "meetingNumber": "LEC0104"
@@ -102,6 +106,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+21,
 21,
 21,
 21,
@@ -141,6 +146,7 @@
 7,
 7,
 7,
+7,
 7
 ],
 "instructors": [],
@@ -164,7 +170,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "LAUNCH: Business, Commerce and Management"
 }

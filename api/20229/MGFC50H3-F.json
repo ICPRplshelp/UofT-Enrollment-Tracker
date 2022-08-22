@@ -21,6 +21,7 @@
 42,
 42,
 42,
+42,
 42
 ],
 "instructors": [
@@ -35,6 +36,7 @@
 "enrollmentCap": 50,
 "enrollmentLogs": [
 0,
+44,
 44,
 44,
 44,
@@ -78,7 +80,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "International Financial Management"
 }

@@ -21,14 +21,10 @@
 9,
 9,
 9,
-9
+9,
+8
 ],
-"instructors": [
-[
-"Patrick",
-"O'Reilly-Fleming"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -49,7 +45,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Jazz Theory"
 }

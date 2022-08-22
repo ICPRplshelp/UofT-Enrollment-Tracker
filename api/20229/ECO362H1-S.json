@@ -21,9 +21,15 @@
 24,
 24,
 24,
-24
+24,
+25
 ],
-"instructors": [],
+"instructors": [
+[
+"Diego",
+"Restuccia"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -44,7 +50,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Economic Growth"
 }

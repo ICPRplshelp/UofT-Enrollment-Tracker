@@ -21,14 +21,10 @@
 17,
 17,
 17,
+17,
 17
 ],
-"instructors": [
-[
-"Nasim",
-"Niknafs"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -49,7 +45,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Multimodal Approach-Mus Training"
 }

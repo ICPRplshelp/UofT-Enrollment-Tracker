@@ -156,9 +156,15 @@
 153,
 153,
 153,
-153
+153,
+151
 ],
-"instructors": [],
+"instructors": [
+[
+"George",
+"Georgopoulos"
+]
+],
 "meetingNumber": "LEC5101"
 },
 {
@@ -315,9 +321,15 @@
 120,
 120,
 120,
-120
+120,
+121
 ],
-"instructors": [],
+"instructors": [
+[
+"George",
+"Georgopoulos"
+]
+],
 "meetingNumber": "LEC5201"
 }
 ],
@@ -473,7 +485,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "International Monetary Economics"
 }

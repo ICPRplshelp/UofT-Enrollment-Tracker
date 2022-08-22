@@ -21,7 +21,8 @@
 163,
 163,
 163,
-163
+163,
+167
 ],
 "instructors": [
 [
@@ -50,7 +51,8 @@
 153,
 153,
 153,
-153
+153,
+157
 ],
 "instructors": [
 [
@@ -79,7 +81,8 @@
 165,
 165,
 165,
-165
+165,
+163
 ],
 "instructors": [],
 "meetingNumber": "LEC0103"
@@ -103,7 +106,8 @@
 154,
 154,
 154,
-154
+154,
+156
 ],
 "instructors": [],
 "meetingNumber": "LEC0104"
@@ -127,7 +131,8 @@
 153,
 153,
 153,
-153
+153,
+156
 ],
 "instructors": [
 [
@@ -140,6 +145,7 @@
 {
 "enrollmentCap": 140,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -180,6 +186,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -188,6 +195,7 @@
 {
 "enrollmentCap": 140,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -213,6 +221,7 @@
 "enrollmentCap": 140,
 "enrollmentLogs": [
 0,
+156,
 156,
 156,
 156,
@@ -256,7 +265,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Mathematical Proofs"
 }

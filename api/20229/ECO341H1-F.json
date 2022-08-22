@@ -156,9 +156,15 @@
 94,
 94,
 94,
-94
+94,
+95
 ],
-"instructors": [],
+"instructors": [
+[
+"Jon",
+"Cohen"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "The Economic History of the 20th Century: Trade, Migration, Money and Finance before 1945"
 }

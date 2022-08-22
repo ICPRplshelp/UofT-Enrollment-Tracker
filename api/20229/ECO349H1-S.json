@@ -156,6 +156,7 @@
 72,
 72,
 72,
+72,
 72
 ],
 "instructors": [
@@ -320,9 +321,15 @@
 138,
 138,
 138,
-138
+138,
+140
 ],
-"instructors": [],
+"instructors": [
+[
+"George",
+"Georgopoulos"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -479,9 +486,15 @@
 102,
 102,
 102,
+102,
 102
 ],
-"instructors": [],
+"instructors": [
+[
+"George",
+"Georgopoulos"
+]
+],
 "meetingNumber": "LEC5101"
 }
 ],
@@ -637,7 +650,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Money, Banking and Financial Markets"
 }

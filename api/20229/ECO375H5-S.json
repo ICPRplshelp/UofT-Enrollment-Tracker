@@ -21,7 +21,8 @@
 47,
 47,
 47,
-47
+47,
+46
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -30,6 +31,7 @@
 "enrollmentCap": 65,
 "enrollmentLogs": [
 0,
+39,
 39,
 39,
 39,
@@ -68,7 +70,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Applied Econometrics I"
 }

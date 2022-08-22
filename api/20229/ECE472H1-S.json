@@ -21,7 +21,8 @@
 107,
 107,
 107,
-107
+107,
+108
 ],
 "instructors": [
 [
@@ -35,6 +36,7 @@
 "enrollmentCap": 110,
 "enrollmentLogs": [
 0,
+105,
 105,
 105,
 105,
@@ -78,7 +80,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Engineering Economic Analysis & Entrepreneurship"
 }

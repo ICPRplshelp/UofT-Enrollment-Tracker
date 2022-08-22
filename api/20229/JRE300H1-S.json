@@ -21,7 +21,8 @@
 75,
 75,
 75,
-75
+75,
+76
 ],
 "instructors": [
 [
@@ -35,6 +36,7 @@
 "enrollmentCap": 70,
 "enrollmentLogs": [
 0,
+80,
 80,
 80,
 80,
@@ -79,7 +81,8 @@
 81,
 81,
 81,
-81
+81,
+82
 ],
 "instructors": [],
 "meetingNumber": "LEC0103"
@@ -102,7 +105,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Fundamentals of Accounting and Finance"
 }

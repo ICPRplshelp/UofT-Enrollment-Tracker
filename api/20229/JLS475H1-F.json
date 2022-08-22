@@ -156,9 +156,15 @@
 23,
 23,
 23,
+23,
 23
 ],
-"instructors": [],
+"instructors": [
+[
+"Regina",
+"Jokel"
+]
+],
 "meetingNumber": "LEC5101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Literacy and Reading Disorders"
 }

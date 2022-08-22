@@ -21,7 +21,8 @@
 98,
 98,
 98,
-98
+98,
+99
 ],
 "instructors": [
 [
@@ -35,6 +36,7 @@
 "enrollmentCap": 72,
 "enrollmentLogs": [
 0,
+94,
 94,
 94,
 94,
@@ -79,7 +81,8 @@
 108,
 108,
 108,
-108
+108,
+109
 ],
 "instructors": [],
 "meetingNumber": "LEC0103"
@@ -103,7 +106,8 @@
 95,
 95,
 95,
-95
+95,
+96
 ],
 "instructors": [],
 "meetingNumber": "LEC0104"
@@ -126,7 +130,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "People Management and Organizational Behaviour"
 }

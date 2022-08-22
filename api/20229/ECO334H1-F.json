@@ -156,9 +156,15 @@
 72,
 72,
 72,
-72
+72,
+71
 ],
-"instructors": [],
+"instructors": [
+[
+"Tianyi",
+"Wang"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "The Political Economy of Media"
 }

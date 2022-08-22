@@ -21,9 +21,15 @@
 2,
 2,
 2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Josh",
+"Milstein"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -45,14 +51,21 @@
 1,
 1,
 1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Josh",
+"Milstein"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
 "enrollmentCap": 5,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -93,6 +106,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -117,9 +131,15 @@
 0,
 0,
 0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Sarah",
+"Rauscher"
+]
+],
 "meetingNumber": "LEC0201"
 }
 ],
@@ -140,7 +160,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Research Opportunity Program"
 }

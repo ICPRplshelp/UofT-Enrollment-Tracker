@@ -156,6 +156,7 @@
 3,
 3,
 3,
+3,
 3
 ],
 "instructors": [
@@ -249,6 +250,7 @@
 0,
 0,
 0,
+2,
 2,
 2,
 2,
@@ -484,6 +486,7 @@
 1,
 1,
 1,
+1,
 1
 ],
 "instructors": [
@@ -497,6 +500,7 @@
 {
 "enrollmentCap": 6,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -812,6 +816,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [
@@ -825,6 +830,7 @@
 {
 "enrollmentCap": 6,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -1139,7 +1145,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Japanese I for Students with Prior Background"
 }

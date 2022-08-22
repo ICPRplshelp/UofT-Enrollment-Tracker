@@ -21,9 +21,15 @@
 34,
 34,
 34,
-34
+34,
+35
 ],
-"instructors": [],
+"instructors": [
+[
+"VLADIMIR",
+"VINOGRADOV (NOUTORID)"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -44,7 +50,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Probability and Stochastic Processes II"
 }

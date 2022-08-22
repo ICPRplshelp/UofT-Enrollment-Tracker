@@ -3,9 +3,10 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 40,
+"enrollmentCap": 50,
 "enrollmentLogs": [
 0,
+49,
 49,
 49,
 49,
@@ -49,7 +50,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Methods in Arts Based Health Research"
 }

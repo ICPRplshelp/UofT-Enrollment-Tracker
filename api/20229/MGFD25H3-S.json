@@ -21,7 +21,8 @@
 60,
 60,
 60,
-60
+60,
+61
 ],
 "instructors": [],
 "meetingNumber": "LEC30"
@@ -29,6 +30,7 @@
 {
 "enrollmentCap": 40,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -68,7 +70,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Financial Technologies and Applications (FinTech)"
 }

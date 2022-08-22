@@ -3,7 +3,7 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 185,
+"enrollmentCap": 186,
 "enrollmentLogs": [
 0,
 185,
@@ -21,7 +21,8 @@
 185,
 185,
 185,
-185
+185,
+186
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -44,7 +45,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Pro Experience Year"
 }

@@ -21,7 +21,8 @@
 268,
 268,
 268,
-268
+268,
+270
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
@@ -30,6 +31,7 @@
 "enrollmentCap": 300,
 "enrollmentLogs": [
 0,
+308,
 308,
 308,
 308,
@@ -68,7 +70,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Managing the Business Organization"
 }

@@ -21,7 +21,8 @@
 154,
 154,
 154,
-154
+154,
+153
 ],
 "instructors": [
 [
@@ -34,6 +35,7 @@
 {
 "enrollmentCap": 150,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -74,7 +76,8 @@
 79,
 79,
 79,
-79
+79,
+81
 ],
 "instructors": [
 [
@@ -88,6 +91,7 @@
 "enrollmentCap": 150,
 "enrollmentLogs": [
 0,
+150,
 150,
 150,
 150,
@@ -131,7 +135,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Calculus and Linear Algebra for Commerce"
 }

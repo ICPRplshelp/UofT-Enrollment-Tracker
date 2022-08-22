@@ -21,9 +21,15 @@
 42,
 42,
 42,
-42
+42,
+43
 ],
-"instructors": [],
+"instructors": [
+[
+"Banu",
+"Kaygusuz Tezel"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -44,7 +50,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Visual Culture and Colonialism"
 }

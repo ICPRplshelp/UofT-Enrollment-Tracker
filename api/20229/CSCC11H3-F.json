@@ -21,9 +21,15 @@
 64,
 64,
 64,
-64
+64,
+65
 ],
-"instructors": [],
+"instructors": [
+[
+"Rawad",
+"Abou Assi"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -44,7 +50,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Machine Learning and Data Mining"
 }

@@ -156,12 +156,21 @@
 88,
 88,
 88,
-88
+88,
+89
 ],
 "instructors": [
 [
 "Adam",
 "Hammond"
+],
+[
+"Mary",
+"Pugh"
+],
+[
+"David",
+"Liu"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -319,7 +328,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Literature and Data"
 }

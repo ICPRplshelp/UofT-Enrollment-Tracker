@@ -21,9 +21,15 @@
 63,
 63,
 63,
-63
+63,
+64
 ],
-"instructors": [],
+"instructors": [
+[
+"Mimi",
+"Guo"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -44,7 +50,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Health and Science Communication Design"
 }

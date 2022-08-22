@@ -21,7 +21,8 @@
 78,
 78,
 78,
-78
+78,
+77
 ],
 "instructors": [
 [
@@ -35,6 +36,7 @@
 "enrollmentCap": 80,
 "enrollmentLogs": [
 0,
+34,
 34,
 34,
 34,
@@ -78,7 +80,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Artificial Intelligence"
 }

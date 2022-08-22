@@ -21,9 +21,15 @@
 56,
 56,
 56,
-56
+56,
+58
 ],
-"instructors": [],
+"instructors": [
+[
+"Stefanos",
+"Aretakis"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -44,7 +50,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Analysis"
 }

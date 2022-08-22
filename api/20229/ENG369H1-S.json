@@ -156,9 +156,15 @@
 97,
 97,
 97,
-97
+97,
+98
 ],
-"instructors": [],
+"instructors": [
+[
+"Raji",
+"Soni"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "South Asian Literatures in English"
 }

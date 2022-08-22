@@ -156,7 +156,8 @@
 690,
 690,
 690,
-690
+690,
+699
 ],
 "instructors": [
 [
@@ -167,7 +168,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 260,
+"enrollmentCap": 265,
 "enrollmentLogs": [
 0,
 0,
@@ -320,7 +321,8 @@
 263,
 263,
 263,
-263
+263,
+264
 ],
 "instructors": [
 [
@@ -463,6 +465,7 @@
 9,
 9,
 9,
+10,
 10,
 10,
 10,
@@ -647,7 +650,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Sociology II: Sociological Inquiries"
 }

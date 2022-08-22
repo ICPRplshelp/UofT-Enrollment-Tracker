@@ -156,7 +156,8 @@
 165,
 165,
 165,
-165
+165,
+164
 ],
 "instructors": [
 [
@@ -311,6 +312,7 @@
 133,
 133,
 133,
+136,
 136,
 136,
 136,
@@ -484,9 +486,15 @@
 102,
 102,
 102,
-102
+102,
+101
 ],
-"instructors": [],
+"instructors": [
+[
+"Masoud",
+"Anjomshoa"
+]
+],
 "meetingNumber": "LEC5101"
 },
 {
@@ -643,9 +651,15 @@
 111,
 111,
 111,
-111
+111,
+113
 ],
-"instructors": [],
+"instructors": [
+[
+"Masoud",
+"Anjomshoa"
+]
+],
 "meetingNumber": "LEC5201"
 },
 {
@@ -802,9 +816,15 @@
 128,
 128,
 128,
-128
+128,
+126
 ],
-"instructors": [],
+"instructors": [
+[
+"Masoud",
+"Anjomshoa"
+]
+],
 "meetingNumber": "LEC5301"
 }
 ],
@@ -960,7 +980,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Macroeconomic Theory and Policy"
 }

@@ -1,6 +1,6 @@
 {
 "code": "MATD11H3-F",
-"faculty": "SCAR",
+"faculty": "UNKNOWN",
 "meetings": [
 {
 "enrollmentCap": 15,
@@ -23,12 +23,7 @@
 1,
 1
 ],
-"instructors": [
-[
-"John",
-"Friedlander"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC01"
 }
 ],

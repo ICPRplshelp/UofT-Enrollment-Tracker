@@ -21,7 +21,8 @@
 59,
 59,
 59,
-59
+59,
+57
 ],
 "instructors": [
 [
@@ -34,6 +35,7 @@
 {
 "enrollmentCap": 140,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -73,7 +75,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Differential Calculus for Life Sciences"
 }

@@ -156,9 +156,15 @@
 51,
 51,
 51,
+51,
 51
 ],
-"instructors": [],
+"instructors": [
+[
+"Kieran",
+"Furlong"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -314,7 +320,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Twentieth Century Economic History: Institutions, Growth and Inequality"
 }

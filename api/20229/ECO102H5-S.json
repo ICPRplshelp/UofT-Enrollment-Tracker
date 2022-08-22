@@ -21,7 +21,8 @@
 308,
 308,
 308,
-308
+308,
+307
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -45,7 +46,8 @@
 310,
 310,
 310,
-310
+310,
+309
 ],
 "instructors": [],
 "meetingNumber": "LEC0102"
@@ -53,6 +55,7 @@
 {
 "enrollmentCap": 300,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -93,7 +96,8 @@
 307,
 307,
 307,
-307
+307,
+308
 ],
 "instructors": [],
 "meetingNumber": "LEC0202"
@@ -117,7 +121,8 @@
 304,
 304,
 304,
-304
+304,
+303
 ],
 "instructors": [],
 "meetingNumber": "LEC0203"
@@ -140,7 +145,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Principles of Macroeconomics"
 }

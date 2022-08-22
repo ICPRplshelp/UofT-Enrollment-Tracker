@@ -1,6 +1,6 @@
 {
 "code": "MATD26H3-F",
-"faculty": "SCAR",
+"faculty": "UNKNOWN",
 "meetings": [
 {
 "enrollmentCap": 20,
@@ -23,12 +23,7 @@
 2,
 2
 ],
-"instructors": [
-[
-"Stefanos",
-"Aretakis"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC01"
 }
 ],

@@ -21,6 +21,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -45,9 +46,15 @@
 1,
 1,
 1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Philip",
+"Oreopoulos"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
@@ -69,9 +76,15 @@
 0,
 0,
 0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Philip",
+"Oreopoulos"
+]
+],
 "meetingNumber": "LEC0103"
 }
 ],
@@ -92,7 +105,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Research Opportunity Program"
 }

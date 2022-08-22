@@ -21,6 +21,7 @@
 17,
 17,
 17,
+17,
 17
 ],
 "instructors": [],
@@ -30,6 +31,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+13,
 13,
 13,
 13,
@@ -68,7 +70,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Critical Writing and Research for Historians"
 }

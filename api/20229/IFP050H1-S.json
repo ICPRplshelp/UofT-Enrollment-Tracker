@@ -156,6 +156,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -164,6 +165,7 @@
 {
 "enrollmentCap": 60,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -473,7 +475,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Reading and Writing in Mathematics"
 }

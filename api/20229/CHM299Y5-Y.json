@@ -21,14 +21,21 @@
 1,
 1,
 1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Ulrich",
+"Fekl"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -69,6 +76,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [],
@@ -92,7 +100,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Research Opportunity Program"
 }

@@ -21,9 +21,15 @@
 1,
 1,
 1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Philip",
+"Oreopoulos"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -45,9 +51,15 @@
 2,
 2,
 2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Roman Andres",
+"Zarate Vasquez"
+]
+],
 "meetingNumber": "LEC0201"
 }
 ],
@@ -68,7 +80,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Research Opportunity Program"
 }

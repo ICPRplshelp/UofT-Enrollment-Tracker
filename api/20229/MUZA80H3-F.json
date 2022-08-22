@@ -21,7 +21,8 @@
 32,
 32,
 32,
-32
+32,
+35
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
@@ -45,7 +46,8 @@
 25,
 25,
 25,
-25
+25,
+0
 ],
 "instructors": [],
 "meetingNumber": "LEC02"
@@ -69,7 +71,8 @@
 31,
 31,
 31,
-31
+31,
+33
 ],
 "instructors": [
 [
@@ -98,7 +101,8 @@
 0,
 0,
 0,
-0
+0,
+24
 ],
 "instructors": [],
 "meetingNumber": "LEC04"
@@ -121,7 +125,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Foundations in Musicianship"
 }

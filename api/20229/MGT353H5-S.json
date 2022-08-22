@@ -21,6 +21,7 @@
 61,
 61,
 61,
+61,
 61
 ],
 "instructors": [],
@@ -30,6 +31,7 @@
 "enrollmentCap": 60,
 "enrollmentLogs": [
 0,
+24,
 24,
 24,
 24,
@@ -68,7 +70,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Introduction to Marketing Management"
 }

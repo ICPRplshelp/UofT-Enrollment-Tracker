@@ -21,9 +21,15 @@
 2,
 2,
 2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Andrew",
+"Petersen"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -45,9 +51,15 @@
 2,
 2,
 2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Andrew",
+"Petersen"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
@@ -69,9 +81,15 @@
 0,
 0,
 0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Jessica",
+"Burgner-Kahrs"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -93,9 +111,15 @@
 0,
 0,
 0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Katharina",
+"Braeutigam"
+]
+],
 "meetingNumber": "LEC0301"
 }
 ],
@@ -116,7 +140,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Research Opportunity Program"
 }

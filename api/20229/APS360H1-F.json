@@ -21,9 +21,15 @@
 97,
 97,
 97,
-97
+97,
+100
 ],
-"instructors": [],
+"instructors": [
+[
+"Kaveh",
+"Hassani"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -45,9 +51,15 @@
 78,
 78,
 78,
+78,
 78
 ],
-"instructors": [],
+"instructors": [
+[
+"Kaveh",
+"Hassani"
+]
+],
 "meetingNumber": "LEC0102"
 }
 ],
@@ -68,7 +80,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Applied Fundamentals of Deep Learning"
 }

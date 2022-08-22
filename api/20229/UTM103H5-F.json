@@ -21,6 +21,7 @@
 23,
 23,
 23,
+23,
 23
 ],
 "instructors": [],
@@ -30,6 +31,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+26,
 26,
 26,
 26,
@@ -69,6 +71,7 @@
 16,
 16,
 16,
+16,
 16
 ],
 "instructors": [],
@@ -93,7 +96,8 @@
 18,
 18,
 18,
-18
+18,
+19
 ],
 "instructors": [],
 "meetingNumber": "LEC0104"
@@ -117,7 +121,8 @@
 17,
 17,
 17,
-17
+17,
+16
 ],
 "instructors": [],
 "meetingNumber": "LEC0105"
@@ -126,6 +131,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+17,
 17,
 17,
 17,
@@ -164,7 +170,8 @@
 1661024921,
 1661058988,
 1661115259,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "LAUNCH: Humanities and Social Sciences"
 }

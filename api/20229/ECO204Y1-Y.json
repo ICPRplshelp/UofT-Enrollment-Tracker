@@ -156,7 +156,8 @@
 133,
 133,
 133,
-133
+133,
+135
 ],
 "instructors": [
 [
@@ -294,6 +295,7 @@
 45,
 45,
 45,
+44,
 44,
 44,
 44,
@@ -484,6 +486,7 @@
 61,
 61,
 61,
+61,
 61
 ],
 "instructors": [
@@ -648,7 +651,8 @@
 40,
 40,
 40,
-40
+40,
+41
 ],
 "instructors": [
 [
@@ -812,12 +816,17 @@
 235,
 235,
 235,
-235
+235,
+232
 ],
 "instructors": [
 [
 "Michael",
 "Baker"
+],
+[
+"Lucas",
+"Alves Estevam De Lima"
 ]
 ],
 "meetingNumber": "LEC0501"
@@ -976,12 +985,17 @@
 236,
 236,
 236,
-236
+236,
+235
 ],
 "instructors": [
 [
 "Michael",
 "Baker"
+],
+[
+"Lucas",
+"Alves Estevam De Lima"
 ]
 ],
 "meetingNumber": "LEC0601"
@@ -1139,7 +1153,8 @@
 1661024920,
 1661058988,
 1661115258,
-1661138418
+1661138418,
+1661202399
 ],
 "title": "Microeconomic Theory and Applications (for Commerce)"
 }
