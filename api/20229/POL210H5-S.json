@@ -22,7 +22,9 @@
 127,
 127,
 127,
-127
+127,
+128,
+128
 ],
 "instructors": [
 [
@@ -36,6 +38,8 @@
 "enrollmentCap": 150,
 "enrollmentLogs": [
 0,
+82,
+82,
 82,
 82,
 82,
@@ -76,7 +80,9 @@
 1661058988,
 1661115259,
 1661138418,
-1661202399
+1661202399,
+1661214086,
+1661224037
 ],
 "title": "Contemporary Challenges in International Relations"
 }

@@ -22,6 +22,8 @@
 70,
 70,
 70,
+72,
+72,
 72
 ],
 "instructors": [],
@@ -31,6 +33,8 @@
 "enrollmentCap": 80,
 "enrollmentLogs": [
 0,
+39,
+39,
 39,
 39,
 39,
@@ -71,7 +75,9 @@
 1661058988,
 1661115258,
 1661138418,
-1661202399
+1661202399,
+1661214086,
+1661224037
 ],
 "title": "Introduction to Machine Learning and Data Mining"
 }

@@ -22,6 +22,8 @@
 34,
 34,
 34,
+34,
+34,
 34
 ],
 "instructors": [
@@ -36,6 +38,8 @@
 "enrollmentCap": 50,
 "enrollmentLogs": [
 0,
+17,
+17,
 17,
 17,
 17,
@@ -81,7 +85,9 @@
 1661058988,
 1661115259,
 1661138418,
-1661202399
+1661202399,
+1661214086,
+1661224037
 ],
 "title": "Managing Projects, Operations & Preparing a Business Plan"
 }

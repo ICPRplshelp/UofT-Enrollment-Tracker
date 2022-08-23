@@ -22,6 +22,8 @@
 47,
 47,
 47,
+47,
+47,
 47
 ],
 "instructors": [
@@ -35,6 +37,8 @@
 {
 "enrollmentCap": 35,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -76,7 +80,9 @@
 1661058988,
 1661115258,
 1661138418,
-1661202399
+1661202399,
+1661214086,
+1661224037
 ],
 "title": "Influence of Confucianism on Chinese Culture"
 }

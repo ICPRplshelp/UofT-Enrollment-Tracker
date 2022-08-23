@@ -22,6 +22,8 @@
 6,
 6,
 6,
+6,
+6,
 6
 ],
 "instructors": [
@@ -36,6 +38,8 @@
 "enrollmentCap": 2,
 "enrollmentLogs": [
 0,
+1,
+1,
 1,
 1,
 1,
@@ -82,6 +86,8 @@
 4,
 4,
 4,
+4,
+4,
 4
 ],
 "instructors": [
@@ -96,6 +102,8 @@
 "enrollmentCap": 3,
 "enrollmentLogs": [
 0,
+2,
+2,
 2,
 2,
 2,
@@ -142,6 +150,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -156,6 +166,8 @@
 "enrollmentCap": 3,
 "enrollmentLogs": [
 0,
+2,
+2,
 2,
 2,
 2,
@@ -202,6 +214,8 @@
 2,
 2,
 2,
+2,
+2,
 2
 ],
 "instructors": [
@@ -232,6 +246,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -245,6 +261,8 @@
 {
 "enrollmentCap": 1,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -292,6 +310,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -301,6 +321,8 @@
 "enrollmentCap": 1,
 "enrollmentLogs": [
 0,
+1,
+1,
 1,
 1,
 1,
@@ -347,6 +369,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -361,6 +385,8 @@
 "enrollmentCap": 2,
 "enrollmentLogs": [
 0,
+2,
+2,
 2,
 2,
 2,
@@ -406,7 +432,9 @@
 1661058988,
 1661115259,
 1661138418,
-1661202399
+1661202399,
+1661214086,
+1661224037
 ],
 "title": "Research Opportunity Program"
 }

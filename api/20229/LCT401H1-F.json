@@ -157,6 +157,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -170,6 +172,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -487,6 +491,8 @@
 2,
 2,
 2,
+2,
+2,
 2
 ],
 "instructors": [
@@ -500,6 +506,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -817,6 +825,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -830,6 +840,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -1575,7 +1587,9 @@
 1661058988,
 1661115259,
 1661138418,
-1661202399
+1661202399,
+1661214086,
+1661224037
 ],
 "title": "Seminar in Comparative Literature"
 }
