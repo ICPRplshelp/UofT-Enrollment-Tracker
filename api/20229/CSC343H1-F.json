@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 234,
+"enrollmentCap": 246,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 233,
 234,
 234,
-234
+234,
+234,
+235,
+236,
+236,
+236
 ],
 "instructors": [
 [
@@ -326,6 +331,11 @@
 86,
 89,
 89,
+89,
+89,
+89,
+89,
+89,
 89
 ],
 "instructors": [
@@ -337,7 +347,7 @@
 "meetingNumber": "LEC0102"
 },
 {
-"enrollmentCap": 96,
+"enrollmentCap": 103,
 "enrollmentLogs": [
 0,
 0,
@@ -493,7 +503,12 @@
 99,
 99,
 99,
-99
+99,
+99,
+99,
+98,
+98,
+98
 ],
 "instructors": [
 [
@@ -504,7 +519,7 @@
 "meetingNumber": "LEC0201"
 },
 {
-"enrollmentCap": 60,
+"enrollmentCap": 48,
 "enrollmentLogs": [
 0,
 0,
@@ -660,7 +675,12 @@
 49,
 49,
 49,
-49
+49,
+49,
+49,
+48,
+48,
+48
 ],
 "instructors": [
 [
@@ -671,7 +691,7 @@
 "meetingNumber": "LEC2001"
 },
 {
-"enrollmentCap": 30,
+"enrollmentCap": 23,
 "enrollmentLogs": [
 0,
 0,
@@ -808,6 +828,11 @@
 24,
 24,
 24,
+22,
+22,
+22,
+22,
+22,
 22,
 22,
 22,
@@ -993,7 +1018,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266671,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Introduction to Databases"
 }

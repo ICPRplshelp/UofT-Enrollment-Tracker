@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 27,
+"enrollmentCap": 29,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 37,
 35,
 35,
-35
+35,
+35,
+35,
+36,
+36,
+36
 ],
 "instructors": [
 [
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 3,
+"enrollmentCap": 1,
 "enrollmentLogs": [
 0,
 0,
@@ -294,6 +299,11 @@
 2,
 2,
 2,
+1,
+1,
+1,
+1,
+1,
 1,
 1,
 1,
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266671,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Proteomics in Systems Biology"
 }

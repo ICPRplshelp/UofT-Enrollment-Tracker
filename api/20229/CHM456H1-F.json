@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 30,
+"enrollmentCap": 33,
 "enrollmentLogs": [
 0,
 0,
@@ -118,6 +118,11 @@
 12,
 12,
 12,
+11,
+11,
+11,
+11,
+11,
 11,
 11,
 11,
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 5,
+"enrollmentCap": 2,
 "enrollmentLogs": [
 0,
 0,
@@ -200,6 +205,11 @@
 0,
 0,
 0,
+2,
+2,
+2,
+2,
+2,
 2,
 2,
 2,
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266671,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Organic Materials Chemistry"
 }

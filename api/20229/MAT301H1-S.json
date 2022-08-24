@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 145,
+"enrollmentCap": 149,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 181,
 182,
 183,
-183
+183,
+183,
+184,
+186,
+186,
+186
 ],
 "instructors": [
 [
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 5,
+"enrollmentCap": 1,
 "enrollmentLogs": [
 0,
 0,
@@ -273,6 +278,11 @@
 2,
 2,
 2,
+1,
+1,
+1,
+1,
+1,
 1,
 1,
 1,
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Groups and Symmetries"
 }

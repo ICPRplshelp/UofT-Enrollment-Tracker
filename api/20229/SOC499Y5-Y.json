@@ -24,6 +24,11 @@
 6,
 6,
 6,
+6,
+6,
+6,
+6,
+6,
 6
 ],
 "instructors": [
@@ -37,6 +42,11 @@
 {
 "enrollmentCap": 1,
 "enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
 0,
 0,
 0,
@@ -83,15 +93,30 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Luisa",
+"Farah Schwartzman"
+]
+],
 "meetingNumber": "LEC0202"
 },
 {
 "enrollmentCap": 1,
 "enrollmentLogs": [
 0,
+1,
+1,
+1,
+1,
+1,
 1,
 1,
 1,
@@ -142,6 +167,11 @@
 6,
 6,
 6,
+6,
+6,
+6,
+6,
+6,
 6
 ],
 "instructors": [
@@ -173,7 +203,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Research Opportunity Program"
 }

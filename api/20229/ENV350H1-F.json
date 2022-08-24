@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 50,
+"enrollmentCap": 46,
 "enrollmentLogs": [
 0,
 0,
@@ -159,13 +159,18 @@
 46,
 46,
 46,
+46,
+46,
+46,
+46,
+46,
 46
 ],
 "instructors": [],
 "meetingNumber": "LEC2501"
 },
 {
-"enrollmentCap": 80,
+"enrollmentCap": 84,
 "enrollmentLogs": [
 0,
 0,
@@ -321,7 +326,12 @@
 74,
 74,
 74,
-74
+74,
+74,
+75,
+75,
+75,
+75
 ],
 "instructors": [],
 "meetingNumber": "LEC5101"
@@ -482,7 +492,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266671,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Energy Policy and Environment"
 }

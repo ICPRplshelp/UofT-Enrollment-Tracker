@@ -159,9 +159,19 @@
 55,
 55,
 55,
+55,
+55,
+55,
+55,
+55,
 55
 ],
-"instructors": [],
+"instructors": [
+[
+"Kevin",
+"White"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -321,7 +331,12 @@
 3,
 3,
 3,
-3
+3,
+3,
+3,
+5,
+5,
+5
 ],
 "instructors": [
 [
@@ -487,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Introduction to Indigenous Studies: Foundations, History and Politics"
 }

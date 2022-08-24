@@ -1,0 +1,24 @@
+{
+"code": "VPAB10H3-S",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 70,
+"enrollmentLogs": [
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1661301364,
+1661301365,
+1661312788,
+1661326098
+],
+"title": "Equity and Inclusivity in Arts and Media Organizations"
+}

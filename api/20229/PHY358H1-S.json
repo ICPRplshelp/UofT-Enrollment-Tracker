@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 70,
+"enrollmentCap": 78,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 25,
 25,
 25,
-25
+25,
+25,
+25,
+26,
+26,
+26
 ],
 "instructors": [
 [
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 15,
+"enrollmentCap": 7,
 "enrollmentLogs": [
 0,
 0,
@@ -294,6 +299,11 @@
 6,
 6,
 6,
+7,
+7,
+7,
+7,
+7,
 7,
 7,
 7,
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Atoms, Molecules and Solids"
 }

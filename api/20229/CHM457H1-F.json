@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 5,
+"enrollmentCap": 8,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 0,
 0,
 0,
-0
+0,
+0,
+0,
+8,
+8,
+8
 ],
 "instructors": [
 [
@@ -174,7 +179,7 @@
 "meetingNumber": "LEC2501"
 },
 {
-"enrollmentCap": 35,
+"enrollmentCap": 27,
 "enrollmentLogs": [
 0,
 0,
@@ -330,7 +335,12 @@
 23,
 22,
 22,
-22
+22,
+22,
+24,
+24,
+24,
+24
 ],
 "instructors": [
 [
@@ -500,7 +510,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266671,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Polymer Chemistry"
 }

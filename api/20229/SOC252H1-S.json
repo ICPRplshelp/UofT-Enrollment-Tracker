@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 70,
+"enrollmentCap": 80,
 "enrollmentLogs": [
 0,
 0,
@@ -157,6 +157,11 @@
 78,
 78,
 78,
+79,
+79,
+79,
+79,
+79,
 79,
 79,
 79
@@ -325,7 +330,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Intermediate Quantitative Methods in Sociology"
 }

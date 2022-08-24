@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 50,
+"enrollmentCap": 51,
 "enrollmentLogs": [
 0,
 0,
@@ -157,6 +157,11 @@
 20,
 20,
 20,
+21,
+21,
+21,
+21,
+21,
 21,
 21,
 21
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 6,
+"enrollmentCap": 5,
 "enrollmentLogs": [
 0,
 0,
@@ -206,6 +211,11 @@
 4,
 4,
 4,
+5,
+5,
+5,
+5,
+5,
 5,
 5,
 5,
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Environmental and Archaeological Geophysics"
 }

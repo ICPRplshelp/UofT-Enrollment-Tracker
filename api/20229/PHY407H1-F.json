@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 85,
+"enrollmentCap": 87,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 107,
 106,
 106,
-106
+106,
+106,
+106,
+105,
+105,
+105
 ],
 "instructors": [
 [
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 10,
+"enrollmentCap": 8,
 "enrollmentLogs": [
 0,
 0,
@@ -326,7 +331,12 @@
 8,
 8,
 8,
-8
+8,
+8,
+8,
+7,
+7,
+7
 ],
 "instructors": [
 [
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Computational Physics"
 }

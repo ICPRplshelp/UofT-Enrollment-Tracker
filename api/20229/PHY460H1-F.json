@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 75,
+"enrollmentCap": 83,
 "enrollmentLogs": [
 0,
 0,
@@ -159,7 +159,12 @@
 27,
 27,
 27,
-27
+27,
+27,
+28,
+29,
+29,
+29
 ],
 "instructors": [
 [
@@ -170,7 +175,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 13,
+"enrollmentCap": 5,
 "enrollmentLogs": [
 0,
 0,
@@ -237,6 +242,11 @@
 6,
 6,
 6,
+5,
+5,
+5,
+5,
+5,
 5,
 5,
 5,
@@ -492,7 +502,12 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672,
+1661301365,
+1661312788,
+1661326098
 ],
 "title": "Nonlinear Physics"
 }

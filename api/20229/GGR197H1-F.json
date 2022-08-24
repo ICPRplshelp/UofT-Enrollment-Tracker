@@ -1,6 +1,6 @@
 {
 "code": "GGR197H1-F",
-"faculty": "ARTSC",
+"faculty": "UNKNOWN",
 "meetings": [
 {
 "enrollmentCap": 25,
@@ -159,14 +159,11 @@
 29,
 29,
 29,
-29
+29,
+29,
+30
 ],
-"instructors": [
-[
-"Neera",
-"Singh"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -325,7 +322,9 @@
 1661138418,
 1661202399,
 1661214086,
-1661224037
+1661224037,
+1661235880,
+1661266672
 ],
 "title": "Nature, Conservation and Justice"
 }
