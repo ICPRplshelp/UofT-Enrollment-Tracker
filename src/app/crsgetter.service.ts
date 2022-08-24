@@ -32,7 +32,6 @@ export class CrsgetterService {
     return crsCode === this._previousCourse;
   }
 
-
   /**
    * A JSON loader for any course.
    * 

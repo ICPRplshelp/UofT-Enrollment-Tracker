@@ -269,8 +269,15 @@ export class AppComponent {
       return crsCode;
     } else if (crsCode.match(/^[A-Z]{3}[0-9]{3}.*/)){
       // console.log("Autocorrecting...");
-      return this.ac.autoCorrectCourse(crsCode);
+      let temp = this.ac.autoCorrectCourse(crsCode);
+      if(temp === ""){
+        this.curErrorMessage = "This course doesn't exist or is not offered in this term";
+      }
+      return temp;
     }
+    if(!crsCode.match(/^[A-Z]{3}[A-D\d]\d{2}/))
+      this.curErrorMessage = "That doesn't look like a course";
+    else this.curErrorMessage = "You didn't provide enough information about your course, or it doesn't exist"
     return "";
   }
 
@@ -291,7 +298,7 @@ export class AppComponent {
 
     let tempCourse = this.determineCourseCode(courseCode);
     if(tempCourse === ""){
-      this.curErrorMessage = "Course doesn't exist or is not offered in this term";
+      // this.curErrorMessage = "Course doesn't exist or is not offered in this term";
       return;
     }
 
@@ -301,7 +308,17 @@ export class AppComponent {
 
     courseCode = tempCourse;
     
-    this.previousCourse = courseCode;
+    if(this.previousCourse === courseCode){
+      if(!this.previousWasError){
+        this._loadCourseDataHelper();}
+      else {
+        this._curErrorMessage += "!";
+      }  
+      return;
+    }
+
+
+    
     let courseInfo: Course;
     this.crsgetter.getCourse(courseCode).subscribe(
       (data) => {
@@ -309,6 +326,8 @@ export class AppComponent {
       },
       () => {
         this.curErrorMessage = this.courseDoesNotExist;
+        this.previousWasError = true;
+        this.previousCourse = courseCode;
         // console.log("this course never existed");
       },
       () => {
@@ -318,12 +337,14 @@ export class AppComponent {
         this.previousCourseInfo = courseInfo;
         this.previousFullCourseCode = tempCourse;
         this.courseTitle = courseInfo.title;
-
+        this.previousCourse = courseCode;
+        this.previousWasError = false;
       }
     );
 
   }
 
+  previousWasError = false;
   searched = false;
   private _showMaxEnrollment = true;
   public get showMaxEnrollment() {
@@ -462,9 +483,14 @@ export class AppComponent {
       // use a continue condition here to skip
       // courses that we do not want to count
 
-
+      if(this.hideSpecial && this._isSpecialMeeting(met.meetingNumber)){
+        // console.log("Special meeting " + met.meetingNumber);
+        continue;
+      }
       enrollmentCollection.push(met.enrollmentLogs);
       cap += met.enrollmentCap;
+
+      
     }
     // enrollmentCollection is a 2x2 array of all meetings.
     // transpose it, then for each element in transposed,
@@ -515,7 +541,9 @@ export class AppComponent {
     }
 
     this.finalEnrollment = startingTermIndex === -1 ? this.currentEnrollment
-    : aggEnrollments[startingTermIndex];
+    : this.findMaxAfterIndex(aggEnrollments, startingTermIndex);
+    // : aggEnrollments[startingTermIndex];
+
     let enrolsAtDropDate = dropDateIndex === -1 ? this.currentEnrollment : aggEnrollments[dropDateIndex];
     let enrolsAtLwdDate = lwdDateIndex === -1 ? this.currentEnrollment :
     aggEnrollments[lwdDateIndex];
@@ -523,6 +551,22 @@ export class AppComponent {
     this.drops = this.finalEnrollment - enrolsAtDropDate;
     this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
 
+  }
+
+  /**
+   * Finds the maximum value of the array[index:].
+   * @param arr the array
+   * @param index the index to start looking for
+   * @returns the max, or 0 if the array is too short
+   */
+  findMaxAfterIndex(arr: number[], index: number): number {
+    let max = 0;
+    for(let i = index; i < arr.length; i++){
+      if(arr[i] > max){
+        max = arr[i];
+      }
+    }
+    return max;
   }
 
   /**
