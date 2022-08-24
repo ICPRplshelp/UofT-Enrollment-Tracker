@@ -45,34 +45,33 @@ loadCourseData(inputCourse)
 
   <div class="flexit03" style="padding-bottom: 5px">
     <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary"
-    matTooltip="Determines whether maximum enrollment lines should be visible"
-        [matTooltipPosition]="'below'"
-        matTooltipShowDelay="700"
-    
-    >
+      matTooltip="Determines whether maximum enrollment lines should be visible" [matTooltipPosition]="'below'"
+      matTooltipShowDelay="700">
       Show maximum enrollments
     </mat-checkbox>
-
-    <mat-checkbox [(ngModel)]="hideSpecial" color="primary"
-    matTooltip="Prevents LEC2000-LEC2999 sections from showing"
-        [matTooltipPosition]="'below'"
-        matTooltipShowDelay="700"
-    
-    >
+    <mat-checkbox [(ngModel)]="autoFormat" color="primary"
+      matTooltip="Input course codes will be formatted when a search is done. Use this for screenshots."
+      [matTooltipPosition]="'below'" matTooltipShowDelay="700">
+      Autoformat course codes
+    </mat-checkbox>
+    <mat-checkbox [(ngModel)]="hideSpecial" color="primary" matTooltip="Prevents LEC2000-LEC2999 sections from showing"
+      [matTooltipPosition]="'below'" matTooltipShowDelay="700">
       Hide special sections
     </mat-checkbox>
 
-    <mat-checkbox [(ngModel)]="autoFormat" color="primary"
-    matTooltip="If this is on, input course codes will be formatted when a search is done. Use this for screenshots."
-        [matTooltipPosition]="'below'"
-        matTooltipShowDelay="700"
-    
-    >
-      Autoformat course codes
+
+
+    <mat-checkbox [(ngModel)]="combineAll" color="primary"
+      matTooltip="Combine all lecture sections normally visible on the graph into one" [matTooltipPosition]="'below'"
+      matTooltipShowDelay="700">
+      Combine all sections
     </mat-checkbox>
 
 
   </div>
+
+
+  <!-- combineAll -->
 
   <div *ngIf="curErrorMessage !== ''" style="padding-bottom: 10px" class="center">
     <div class="red"> {{curErrorMessage}} </div>
@@ -83,8 +82,8 @@ loadCourseData(inputCourse)
 
   <div class="crstitle" style="font-size: 18px;
   ">
-  
-  <div style="padding-bottom: 5px;">Enrollment over time for </div>
+
+    <div style="padding-bottom: 5px;">Enrollment over time for </div>
     <!-- {{previousFullCourseCode}} -->
     <div style="font-size: 22px; font-weight: bold;
     padding-bottom: 5px;
@@ -114,9 +113,8 @@ loadCourseData(inputCourse)
     ">
       <tr>
         <td
-        matTooltip="Students who are enrolled and waitlisted in this course. Note: Students can waitlist multiple lecture sections at once."
-        [matTooltipPosition]="'left'"
-        >
+          matTooltip="Students who are enrolled and waitlisted in this course. Note: Students can waitlist multiple lecture sections at once."
+          [matTooltipPosition]="'left'">
           Enrolled
         </td>
         <td>
@@ -124,41 +122,33 @@ loadCourseData(inputCourse)
         </td>
       </tr>
       <tr>
-        <td style="width: 75px;"
-        matTooltip="Enrollment the day after the last day to enroll in this course."
-        [matTooltipPosition]="'left'"
-        > F. Enrolled </td>
+        <td style="width: 75px;" matTooltip="Enrollment the day after the last day to enroll in this course."
+          [matTooltipPosition]="'left'"> F. Enrolled </td>
         <td> {{finalEnrollment}} </td>
       </tr>
       <tr>
-        <td
-        matTooltip="Drops the day after the last day to enroll in this course"
-        [matTooltipPosition]="'left'"
-        
-        > Drops </td>
+        <td matTooltip="Drops the day after the last day to enroll in this course" [matTooltipPosition]="'left'"> Drops
+        </td>
         <td> {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
         </td>
       </tr>
       <tr>
-        <td
-        matTooltip="Drops the day after the last day to drop this course"
-        [matTooltipPosition]="'left'"
-        > LWDs </td>
+        <td matTooltip="Drops the day after the last day to drop this course" [matTooltipPosition]="'left'"> LWDs </td>
         <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
       </tr>
     </table>
   </div>
 
-<p style="padding-top: 10px; max-width: 500px; margin: auto;">
-  Most undergraduate courses are supported. All dates and 
-  deadlines are based of the dates specified in the Faculty 
-  of Arts and Science, even if the course isn't offered by FAS.
-If a course isn't offered by the Faculty of Arts and Science, 
-you must type the entire code. For FAS courses, you can type
- part of the course code and this site will attempt to 
- autocomplete it for you.
-</p>
-  
+  <p style="padding-top: 10px; max-width: 500px; margin: auto;">
+    Most undergraduate courses are supported. All dates and
+    deadlines are based of the dates specified in the Faculty
+    of Arts and Science, even if the course isn't offered by FAS.
+    If a course isn't offered by the Faculty of Arts and Science,
+    you must type the entire code. For FAS courses, you can type
+    part of the course code and this site will attempt to
+    autocomplete it for you.
+  </p>
+
 
 
 </div>

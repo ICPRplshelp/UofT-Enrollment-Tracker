@@ -88,9 +88,10 @@ td {
 
 // create a flexbox class that groups elements horizontally with some gap in between
 .flexit03 {
+    padding: 0px min(20px, 20%);
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 6px 15px;
     align-content: space-between;
     align-items: center;
     // place the elements in this class at the horizontal center of the screen

@@ -1,6 +1,6 @@
 import {Component, HostListener} from '@angular/core';
 import {ChartOptions, ChartDataset, ChartType} from 'chart.js';
-import {Course, ImportantTimestamps} from './cinterfaces';
+import {Course, ImportantTimestamps, Meeting} from './cinterfaces';
 import {CrsgetterService} from './crsgetter.service';
 import * as pluginAnnotation from 'chartjs-plugin-annotation';
 import { AllCoursesService } from './all-courses.service';
@@ -405,7 +405,42 @@ export class AppComponent {
     let iterations = 0;
     this.updateImportantCounts(course);
     // let fys = course.code[course.code.length - 1];
-    for (let mtt of course.meetings) {
+
+    let targetMeetings = course.meetings;
+
+    if(this.combineAll){
+      let capSoFar = 0;
+      let doubleArr: number[][] = [];
+      for(let mtt of course.meetings){
+        if(this.hideSpecial && this._isSpecialMeeting(mtt.meetingNumber)){
+        continue;
+      }
+
+
+        doubleArr.push(mtt.enrollmentLogs);
+        capSoFar += mtt.enrollmentCap;
+      }
+      const aggEnrollments: number[] = [];
+      for(let i = 0; i < doubleArr[0].length; i++){
+        let sum = 0;
+        for(let j = 0; j < doubleArr.length; j++){
+          sum += doubleArr[j][i];
+        }
+        aggEnrollments.push(sum);
+      }
+
+      let fakeMeeting: Meeting = {
+        meetingNumber: "ALL",
+        instructors: [["", ""]],
+        enrollmentLogs: aggEnrollments,
+        enrollmentCap: capSoFar
+      }
+
+      targetMeetings = [fakeMeeting];
+    }
+
+
+    for (let mtt of targetMeetings) {
       
       // hide all special meetings
       if(this.hideSpecial && this._isSpecialMeeting(mtt.meetingNumber)){
@@ -416,8 +451,9 @@ export class AppComponent {
       // let tempBackgroundColor = 'rgba(120, 0, 0, 0)';
       let tempShowLine = true;
       let tempPointRadius = 0;
+      let insStr = this.formatInstructors(mtt.instructors);
       let tempLabel = this.smallScreen ? `L${mtt.meetingNumber.substring(3)}` :
-      `${mtt.meetingNumber} - ${this.formatInstructors(mtt.instructors)}`;
+      `${mtt.meetingNumber} ${insStr.trim() === "" ? "" : "-"} ${insStr}`;
       let chartPoints: { x: number; y: number }[] = [];
 
       // loops over a strip of enrollment numbers
@@ -462,6 +498,15 @@ export class AppComponent {
     // this.drops = 2;
     // this.lwds = 1;
     // this.cap = 9;
+  }
+
+  private _combineAll: boolean = false;
+  public get combineAll(): boolean {
+    return this._combineAll;
+  }
+  public set combineAll(value: boolean) {
+    this._combineAll = value;
+    this._loadCourseDataHelper();
   }
 
   /**
