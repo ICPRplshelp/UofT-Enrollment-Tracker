@@ -1,0 +1,20 @@
+{
+"code": "ITA425H1-F",
+"faculty": "ARTSC",
+"meetings": [
+{
+"enrollmentCap": 10,
+"enrollmentLogs": [
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1661440154,
+1661440155
+],
+"title": "Special Topics in Italian Studies"
+}

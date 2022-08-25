@@ -31,9 +31,17 @@
 60,
 60,
 59,
-59
+59,
+59,
+59,
+60
 ],
-"instructors": [],
+"instructors": [
+[
+"Patrick",
+"Blanchenay"
+]
+],
 "meetingNumber": "LEC01"
 },
 {
@@ -65,9 +73,17 @@
 45,
 45,
 46,
+46,
+46,
+46,
 46
 ],
-"instructors": [],
+"instructors": [
+[
+"Patrick",
+"Blanchenay"
+]
+],
 "meetingNumber": "LEC02"
 }
 ],
@@ -98,7 +114,10 @@
 1661312788,
 1661326098,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440155
 ],
 "title": "Topics in Price Theory"
 }

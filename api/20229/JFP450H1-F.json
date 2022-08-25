@@ -166,9 +166,17 @@
 23,
 23,
 23,
+23,
+23,
+23,
 23
 ],
-"instructors": [],
+"instructors": [
+[
+"David",
+"Burman"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -334,7 +342,10 @@
 1661312788,
 1661326098,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440155
 ],
 "title": "Indigenous Issues in Health and Healing"
 }

@@ -31,9 +31,17 @@
 12,
 12,
 12,
+12,
+12,
+12,
 12
 ],
-"instructors": [],
+"instructors": [
+[
+"Alan",
+"Lambden"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -64,7 +72,10 @@
 1661312788,
 1661326098,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440155
 ],
 "title": "Mineral Reserve and Mineral Resource Estimation"
 }

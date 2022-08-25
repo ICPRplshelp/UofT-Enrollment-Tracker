@@ -31,6 +31,9 @@
 7,
 7,
 7,
+7,
+7,
+7,
 7
 ],
 "instructors": [
@@ -44,6 +47,9 @@
 {
 "enrollmentCap": 3,
 "enrollmentLogs": [
+0,
+0,
+0,
 0,
 0,
 0,
@@ -109,6 +115,9 @@
 5,
 5,
 5,
+5,
+5,
+5,
 5
 ],
 "instructors": [
@@ -122,6 +131,9 @@
 {
 "enrollmentCap": 1,
 "enrollmentLogs": [
+0,
+0,
+0,
 0,
 0,
 0,
@@ -187,6 +199,9 @@
 1,
 1,
 1,
+1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -201,6 +216,9 @@
 "enrollmentCap": 2,
 "enrollmentLogs": [
 0,
+1,
+1,
+1,
 1,
 1,
 1,
@@ -265,6 +283,9 @@
 1,
 1,
 1,
+1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -278,6 +299,9 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
+0,
 0,
 0,
 0,
@@ -343,6 +367,9 @@
 1,
 1,
 1,
+1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -382,6 +409,9 @@
 1,
 1,
 1,
+1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -393,7 +423,7 @@
 "meetingNumber": "LEC0701"
 },
 {
-"enrollmentCap": 12,
+"enrollmentCap": 13,
 "enrollmentLogs": [
 0,
 12,
@@ -421,7 +451,10 @@
 12,
 12,
 12,
-12
+12,
+12,
+12,
+13
 ],
 "instructors": [
 [
@@ -459,7 +492,10 @@
 1661312788,
 1661326098,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440155
 ],
 "title": "Research Opportunity Program"
 }

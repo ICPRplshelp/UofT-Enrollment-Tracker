@@ -31,7 +31,10 @@
 6,
 6,
 6,
-6
+6,
+6,
+6,
+8
 ],
 "instructors": [
 [
@@ -44,6 +47,9 @@
 {
 "enrollmentCap": 1,
 "enrollmentLogs": [
+0,
+0,
+0,
 0,
 0,
 0,
@@ -104,6 +110,9 @@
 1,
 1,
 1,
+1,
+1,
+1,
 1
 ],
 "instructors": [
@@ -115,7 +124,7 @@
 "meetingNumber": "LEC0202"
 },
 {
-"enrollmentCap": 1,
+"enrollmentCap": 2,
 "enrollmentLogs": [
 0,
 1,
@@ -143,7 +152,10 @@
 1,
 1,
 1,
-1
+1,
+1,
+1,
+2
 ],
 "instructors": [
 [
@@ -157,6 +169,9 @@
 "enrollmentCap": 6,
 "enrollmentLogs": [
 0,
+6,
+6,
+6,
 6,
 6,
 6,
@@ -220,7 +235,10 @@
 1661312788,
 1661326098,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440155
 ],
 "title": "Research Opportunity Program"
 }

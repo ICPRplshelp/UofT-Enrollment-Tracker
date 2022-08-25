@@ -7,7 +7,10 @@
 "enrollmentLogs": [
 0,
 0,
-0
+0,
+0,
+0,
+2
 ],
 "instructors": [
 [
@@ -21,7 +24,10 @@
 "timeIntervals": [
 1661384302,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440154
 ],
 "title": "Topics in Computer Science"
 }

@@ -31,9 +31,17 @@
 24,
 24,
 25,
+25,
+25,
+25,
 25
 ],
-"instructors": [],
+"instructors": [
+[
+"Eilia",
+"Yazdanian"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -64,7 +72,10 @@
 1661312788,
 1661326098,
 1661384303,
-1661398005
+1661398005,
+1661405181,
+1661412225,
+1661440155
 ],
 "title": "Principles of Corporate Social Responsibility"
 }
