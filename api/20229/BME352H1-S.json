@@ -29,12 +29,14 @@
 34,
 34,
 34,
+34,
+34,
 34
 ],
 "instructors": [
 [
-"Michael",
-"Sefton"
+"Omar F.",
+"Khan"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -65,7 +67,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Biomaterials and Biocompatibility"
 }

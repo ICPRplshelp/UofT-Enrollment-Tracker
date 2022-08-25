@@ -29,6 +29,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -38,6 +40,8 @@
 "enrollmentCap": 2,
 "enrollmentLogs": [
 0,
+1,
+1,
 1,
 1,
 1,
@@ -93,6 +97,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -102,6 +108,8 @@
 "enrollmentCap": 1,
 "enrollmentLogs": [
 0,
+1,
+1,
 1,
 1,
 1,
@@ -157,6 +165,8 @@
 4,
 4,
 4,
+4,
+4,
 4
 ],
 "instructors": [],
@@ -166,6 +176,8 @@
 "enrollmentCap": 2,
 "enrollmentLogs": [
 0,
+2,
+2,
 2,
 2,
 2,
@@ -221,6 +233,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -229,6 +243,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -285,6 +301,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -293,6 +311,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -349,6 +369,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -358,6 +380,8 @@
 "enrollmentCap": 7,
 "enrollmentLogs": [
 0,
+7,
+7,
 7,
 7,
 7,
@@ -413,6 +437,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -421,6 +447,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -477,6 +505,8 @@
 1,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -485,6 +515,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -541,6 +573,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -550,6 +584,8 @@
 "enrollmentCap": 1,
 "enrollmentLogs": [
 0,
+1,
+1,
 1,
 1,
 1,
@@ -605,6 +641,8 @@
 2,
 2,
 2,
+2,
+2,
 2
 ],
 "instructors": [],
@@ -613,6 +651,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -668,7 +708,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Research Opportunity Program"
 }

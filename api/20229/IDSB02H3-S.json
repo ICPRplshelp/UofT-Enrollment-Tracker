@@ -29,9 +29,16 @@
 125,
 125,
 125,
+125,
+125,
 125
 ],
-"instructors": [],
+"instructors": [
+[
+"Siera",
+"Vercillo"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -60,7 +67,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Development and Environment"
 }

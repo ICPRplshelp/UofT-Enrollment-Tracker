@@ -29,12 +29,14 @@
 28,
 28,
 28,
-28
+28,
+29,
+29
 ],
 "instructors": [
 [
-"Lucan Alan",
-"Way"
+"Salam",
+"Alsaadi"
 ]
 ],
 "meetingNumber": "LEC01"
@@ -65,7 +67,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Survival and Demise of Dictatorships"
 }

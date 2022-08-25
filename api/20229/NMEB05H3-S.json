@@ -29,6 +29,8 @@
 23,
 23,
 23,
+23,
+23,
 23
 ],
 "instructors": [
@@ -43,6 +45,8 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+24,
+24,
 24,
 24,
 24,
@@ -102,7 +106,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Interface Design, Navigation and Interaction II"
 }

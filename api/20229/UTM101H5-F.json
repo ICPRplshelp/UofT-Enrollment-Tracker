@@ -29,9 +29,16 @@
 23,
 23,
 23,
-23
+23,
+22,
+22
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -61,9 +68,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
@@ -93,9 +107,16 @@
 4,
 4,
 4,
+4,
+4,
 4
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0103"
 },
 {
@@ -125,9 +146,16 @@
 20,
 20,
 20,
+20,
+20,
 20
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0104"
 },
 {
@@ -157,9 +185,16 @@
 21,
 21,
 21,
+21,
+21,
 21
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0105"
 },
 {
@@ -189,9 +224,16 @@
 7,
 7,
 7,
+7,
+7,
 7
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0106"
 }
 ],
@@ -220,7 +262,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "LAUNCH: Business, Commerce and Management"
 }

@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 1160,
+"enrollmentCap": 1162,
 "enrollmentLogs": [
 0,
 0,
@@ -164,7 +164,9 @@
 1133,
 1135,
 1135,
-1135
+1135,
+1133,
+1133
 ],
 "instructors": [
 [
@@ -340,6 +342,8 @@
 14,
 19,
 19,
+19,
+19,
 19
 ],
 "instructors": [
@@ -355,7 +359,7 @@
 "meetingNumber": "LEC2000"
 },
 {
-"enrollmentCap": 10,
+"enrollmentCap": 8,
 "enrollmentLogs": [
 0,
 0,
@@ -493,6 +497,8 @@
 9,
 9,
 9,
+8,
+8,
 8,
 8,
 8,
@@ -692,7 +698,9 @@
 669,
 670,
 670,
-670
+670,
+673,
+673
 ],
 "instructors": [
 [
@@ -866,6 +874,8 @@
 15,
 15,
 15,
+16,
+16,
 16,
 16,
 16
@@ -1043,7 +1053,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Introduction to Sociology I: Sociological Perspectives"
 }

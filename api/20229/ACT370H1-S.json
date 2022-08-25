@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 115,
+"enrollmentCap": 120,
 "enrollmentLogs": [
 0,
 0,
@@ -164,13 +164,15 @@
 70,
 70,
 70,
+70,
+70,
 70
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 30,
+"enrollmentCap": 25,
 "enrollmentLogs": [
 0,
 0,
@@ -314,6 +316,8 @@
 24,
 24,
 24,
+25,
+25,
 25,
 25,
 25,
@@ -497,7 +501,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Financial Principles for Actuarial Science II"
 }

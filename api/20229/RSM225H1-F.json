@@ -164,9 +164,16 @@
 45,
 45,
 45,
+45,
+45,
 45
 ],
-"instructors": [],
+"instructors": [
+[
+"Rajvinder",
+"Sahni"
+]
+],
 "meetingNumber": "LEC5101"
 },
 {
@@ -325,6 +332,8 @@
 33,
 33,
 31,
+32,
+32,
 32,
 32,
 32,
@@ -503,9 +512,16 @@
 34,
 34,
 34,
+34,
+34,
 34
 ],
-"instructors": [],
+"instructors": [
+[
+"Jaclyn",
+"Seidman"
+]
+],
 "meetingNumber": "LEC5301"
 }
 ],
@@ -669,7 +685,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Legal Environment of Business I"
 }

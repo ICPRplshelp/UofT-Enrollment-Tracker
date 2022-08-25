@@ -1,6 +1,6 @@
 {
 "code": "MGFD60H3-S",
-"faculty": "UNKNOWN",
+"faculty": "SCAR",
 "meetings": [
 {
 "enrollmentCap": 40,
@@ -26,7 +26,9 @@
 54,
 54,
 54,
-54
+54,
+0,
+0
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
@@ -54,7 +56,9 @@
 1661214086,
 1661224037,
 1661235880,
-1661266672
+1661266672,
+1661384303,
+1661398005
 ],
 "title": "Financial Modeling and Trading Strategies"
 }

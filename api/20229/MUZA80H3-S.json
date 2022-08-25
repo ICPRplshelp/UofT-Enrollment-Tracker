@@ -29,7 +29,9 @@
 42,
 42,
 42,
-42
+42,
+41,
+41
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
@@ -61,7 +63,9 @@
 39,
 39,
 39,
-39
+39,
+38,
+38
 ],
 "instructors": [],
 "meetingNumber": "LEC02"
@@ -69,6 +73,8 @@
 {
 "enrollmentCap": 25,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -125,6 +131,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -156,7 +164,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Foundations in Musicianship"
 }

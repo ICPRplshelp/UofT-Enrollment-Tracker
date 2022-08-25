@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 80,
+"enrollmentCap": 83,
 "enrollmentLogs": [
 0,
 0,
@@ -164,7 +164,9 @@
 83,
 83,
 83,
-83
+83,
+84,
+84
 ],
 "instructors": [
 [
@@ -335,7 +337,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Histories of the Horn of Africa"
 }

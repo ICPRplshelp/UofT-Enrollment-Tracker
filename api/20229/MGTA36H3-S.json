@@ -29,6 +29,8 @@
 40,
 40,
 40,
+40,
+40,
 40
 ],
 "instructors": [],
@@ -38,6 +40,8 @@
 "enrollmentCap": 40,
 "enrollmentLogs": [
 0,
+40,
+40,
 40,
 40,
 40,
@@ -93,6 +97,8 @@
 40,
 40,
 40,
+40,
+40,
 40
 ],
 "instructors": [],
@@ -125,7 +131,9 @@
 39,
 39,
 39,
-39
+39,
+40,
+40
 ],
 "instructors": [],
 "meetingNumber": "LEC04"
@@ -134,6 +142,8 @@
 "enrollmentCap": 40,
 "enrollmentLogs": [
 0,
+38,
+38,
 38,
 38,
 38,
@@ -189,7 +199,9 @@
 40,
 40,
 40,
-40
+40,
+39,
+39
 ],
 "instructors": [],
 "meetingNumber": "LEC30"
@@ -220,7 +232,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Management Communications for Co-op"
 }

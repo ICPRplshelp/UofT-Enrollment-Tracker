@@ -29,6 +29,8 @@
 56,
 56,
 56,
+56,
+56,
 56
 ],
 "instructors": [
@@ -43,6 +45,8 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+54,
+54,
 54,
 54,
 54,
@@ -102,7 +106,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Design and Implementation of Multimedia Documents (SH)"
 }

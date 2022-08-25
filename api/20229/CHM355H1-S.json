@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 5,
+"enrollmentCap": 3,
 "enrollmentLogs": [
 0,
 0,
@@ -127,6 +127,8 @@
 2,
 2,
 2,
+3,
+3,
 3,
 3,
 3,
@@ -170,7 +172,7 @@
 "meetingNumber": "LEC2501"
 },
 {
-"enrollmentCap": 60,
+"enrollmentCap": 62,
 "enrollmentLogs": [
 0,
 0,
@@ -314,6 +316,8 @@
 36,
 36,
 36,
+37,
+37,
 37,
 37,
 37,
@@ -497,7 +501,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Introduction to Inorganic and Polymer Materials Chemistry"
 }

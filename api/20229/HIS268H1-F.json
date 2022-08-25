@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 225,
+"enrollmentCap": 260,
 "enrollmentLogs": [
 0,
 0,
@@ -164,7 +164,9 @@
 252,
 252,
 252,
-252
+252,
+254,
+254
 ],
 "instructors": [
 [
@@ -335,7 +337,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Law and History"
 }

@@ -29,9 +29,16 @@
 30,
 30,
 30,
+30,
+30,
 30
 ],
-"instructors": [],
+"instructors": [
+[
+"Zahra",
+"Ebrahim"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -60,7 +67,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "City Studies Workshop I"
 }

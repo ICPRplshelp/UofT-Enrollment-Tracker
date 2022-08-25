@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 30,
+"enrollmentCap": 32,
 "enrollmentLogs": [
 0,
 0,
@@ -157,6 +157,8 @@
 58,
 58,
 58,
+57,
+57,
 57,
 57,
 57,
@@ -335,7 +337,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Understanding the Role of Pharmacology and Toxicology in Society"
 }

@@ -29,12 +29,18 @@
 276,
 276,
 276,
-276
+276,
+277,
+277
 ],
 "instructors": [
 [
 "Vaughn",
 "Betz"
+],
+[
+"Alan",
+"Chong"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -65,7 +71,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Software Communication and Design"
 }

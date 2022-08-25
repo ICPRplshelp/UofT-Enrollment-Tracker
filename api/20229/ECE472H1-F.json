@@ -29,9 +29,16 @@
 95,
 95,
 95,
+95,
+95,
 95
 ],
-"instructors": [],
+"instructors": [
+[
+"Mike",
+"Xue"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -60,7 +67,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Engineering Economic Analysis & Entrepreneurship"
 }

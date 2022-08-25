@@ -1,0 +1,27 @@
+{
+"code": "CSCD71H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 20,
+"enrollmentLogs": [
+0,
+0,
+0
+],
+"instructors": [
+[
+"Thierry",
+"Sans"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1661384302,
+1661384303,
+1661398005
+],
+"title": "Topics in Computer Science"
+}

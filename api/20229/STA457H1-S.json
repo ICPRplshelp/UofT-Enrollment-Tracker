@@ -164,13 +164,15 @@
 165,
 165,
 165,
+165,
+165,
 165
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 190,
+"enrollmentCap": 192,
 "enrollmentLogs": [
 0,
 0,
@@ -324,6 +326,8 @@
 183,
 183,
 183,
+182,
+182,
 182,
 182,
 182,
@@ -337,7 +341,7 @@
 "meetingNumber": "LEC0201"
 },
 {
-"enrollmentCap": 5,
+"enrollmentCap": 3,
 "enrollmentLogs": [
 0,
 0,
@@ -440,6 +444,8 @@
 6,
 6,
 6,
+3,
+3,
 3,
 3,
 3,
@@ -664,7 +670,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Time Series Analysis"
 }

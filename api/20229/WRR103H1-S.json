@@ -164,6 +164,8 @@
 30,
 30,
 30,
+30,
+30,
 30
 ],
 "instructors": [
@@ -313,6 +315,8 @@
 33,
 33,
 33,
+32,
+32,
 32,
 32,
 32,
@@ -508,12 +512,14 @@
 0,
 1,
 1,
+1,
+1,
 1
 ],
 "instructors": [
 [
-"Joanne",
-"Valin"
+"Marci",
+"Prescott-Brown"
 ]
 ],
 "meetingNumber": "LEC2000"
@@ -680,12 +686,14 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
 [
-"Marci",
-"Prescott-Brown"
+"James",
+"Hahn"
 ]
 ],
 "meetingNumber": "LEC2100"
@@ -693,6 +701,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -1019,9 +1029,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Joanne",
+"Valin"
+]
+],
 "meetingNumber": "LEC2300"
 }
 ],
@@ -1185,7 +1202,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Writing Essays"
 }

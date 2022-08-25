@@ -29,6 +29,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -43,6 +45,8 @@
 "enrollmentCap": 44,
 "enrollmentLogs": [
 0,
+50,
+50,
 50,
 50,
 50,
@@ -102,7 +106,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Coding and Data Management for Business Analytics"
 }

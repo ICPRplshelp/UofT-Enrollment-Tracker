@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 200,
+"enrollmentCap": 210,
 "enrollmentLogs": [
 0,
 215,
@@ -29,13 +29,15 @@
 216,
 215,
 215,
-215
+215,
+216,
+216
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 200,
+"enrollmentCap": 210,
 "enrollmentLogs": [
 0,
 217,
@@ -61,7 +63,9 @@
 219,
 219,
 219,
-219
+219,
+215,
+215
 ],
 "instructors": [
 [
@@ -72,7 +76,7 @@
 "meetingNumber": "LEC02"
 },
 {
-"enrollmentCap": 200,
+"enrollmentCap": 210,
 "enrollmentLogs": [
 0,
 219,
@@ -98,7 +102,9 @@
 219,
 219,
 219,
-219
+219,
+214,
+214
 ],
 "instructors": [
 [
@@ -134,7 +140,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Calculus II for Mathematical Sciences"
 }

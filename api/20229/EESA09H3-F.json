@@ -29,9 +29,16 @@
 255,
 255,
 255,
-255
+255,
+258,
+258
 ],
-"instructors": [],
+"instructors": [
+[
+"Ana",
+"Zaknic-Catovic"
+]
+],
 "meetingNumber": "LEC01"
 },
 {
@@ -61,9 +68,16 @@
 43,
 43,
 43,
+43,
+43,
 43
 ],
-"instructors": [],
+"instructors": [
+[
+"Ana",
+"Zaknic-Catovic"
+]
+],
 "meetingNumber": "LEC30"
 }
 ],
@@ -92,7 +106,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Wind"
 }

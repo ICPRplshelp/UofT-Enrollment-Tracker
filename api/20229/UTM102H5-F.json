@@ -29,9 +29,16 @@
 25,
 25,
 25,
+25,
+25,
 25
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -61,9 +68,16 @@
 13,
 13,
 13,
+13,
+13,
 13
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
@@ -93,9 +107,16 @@
 25,
 25,
 25,
+25,
+25,
 25
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0103"
 },
 {
@@ -125,9 +146,16 @@
 9,
 9,
 9,
+9,
+9,
 9
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0104"
 },
 {
@@ -157,9 +185,16 @@
 23,
 23,
 23,
+23,
+23,
 23
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0105"
 },
 {
@@ -189,9 +224,16 @@
 10,
 10,
 10,
+10,
+10,
 10
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0106"
 },
 {
@@ -221,9 +263,16 @@
 6,
 6,
 6,
+6,
+6,
 6
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0107"
 },
 {
@@ -253,9 +302,16 @@
 19,
 19,
 19,
+19,
+19,
 19
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0108"
 },
 {
@@ -285,9 +341,16 @@
 9,
 9,
 9,
+9,
+9,
 9
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0109"
 },
 {
@@ -317,9 +380,16 @@
 25,
 25,
 25,
+25,
+25,
 25
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Danahy"
+]
+],
 "meetingNumber": "LEC0110"
 }
 ],
@@ -348,7 +418,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "LAUNCH: Science, Mathematics and Psychology"
 }

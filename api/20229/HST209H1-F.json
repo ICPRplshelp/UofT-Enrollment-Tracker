@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 87,
+"enrollmentCap": 88,
 "enrollmentLogs": [
 0,
 0,
@@ -164,7 +164,9 @@
 101,
 101,
 101,
-101
+101,
+102,
+102
 ],
 "instructors": [
 [
@@ -175,7 +177,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 3,
+"enrollmentCap": 2,
 "enrollmentLogs": [
 0,
 0,
@@ -278,6 +280,8 @@
 1,
 1,
 1,
+2,
+2,
 2,
 2,
 2,
@@ -507,7 +511,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Introduction to Health: Determinants of Health & Health Care"
 }

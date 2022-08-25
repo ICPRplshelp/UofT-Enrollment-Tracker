@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 180,
+"enrollmentCap": 193,
 "enrollmentLogs": [
 0,
 0,
@@ -140,6 +140,8 @@
 49,
 49,
 49,
+50,
+50,
 50,
 50,
 50,
@@ -170,7 +172,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 15,
+"enrollmentCap": 2,
 "enrollmentLogs": [
 0,
 0,
@@ -281,6 +283,8 @@
 3,
 3,
 3,
+2,
+2,
 2,
 2,
 2,
@@ -497,7 +501,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Stochastic Processes"
 }

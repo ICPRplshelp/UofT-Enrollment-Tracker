@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 180,
+"enrollmentCap": 186,
 "enrollmentLogs": [
 0,
 0,
@@ -164,7 +164,9 @@
 157,
 158,
 158,
-158
+158,
+156,
+156
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -331,13 +333,15 @@
 118,
 119,
 119,
+119,
+119,
 119
 ],
 "instructors": [],
 "meetingNumber": "LEC0201"
 },
 {
-"enrollmentCap": 30,
+"enrollmentCap": 24,
 "enrollmentLogs": [
 0,
 0,
@@ -481,6 +485,8 @@
 23,
 23,
 23,
+24,
+24,
 24,
 24,
 24,
@@ -664,7 +670,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Probability"
 }

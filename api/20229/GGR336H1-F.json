@@ -164,9 +164,16 @@
 95,
 95,
 95,
-95
+95,
+96,
+96
 ],
-"instructors": [],
+"instructors": [
+[
+"Nicholas",
+"Lombardo"
+]
+],
 "meetingNumber": "LEC5101"
 }
 ],
@@ -330,7 +337,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Urban Historical Geography of North America"
 }

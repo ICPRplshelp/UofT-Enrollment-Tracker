@@ -29,9 +29,16 @@
 79,
 78,
 78,
-78
+78,
+77,
+77
 ],
-"instructors": [],
+"instructors": [
+[
+"Kianoosh",
+"Abbasi"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -61,9 +68,16 @@
 71,
 71,
 71,
-71
+71,
+72,
+72
 ],
-"instructors": [],
+"instructors": [
+[
+"Kianoosh",
+"Abbasi"
+]
+],
 "meetingNumber": "LEC0102"
 }
 ],
@@ -92,7 +106,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Programming on the Web"
 }

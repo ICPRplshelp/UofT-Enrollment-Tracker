@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 56,
+"enrollmentCap": 59,
 "enrollmentLogs": [
 0,
 0,
@@ -164,7 +164,9 @@
 27,
 27,
 27,
-27
+27,
+28,
+28
 ],
 "instructors": [
 [
@@ -175,8 +177,10 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 3,
+"enrollmentCap": 0,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -507,7 +511,9 @@
 1661266672,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Population Health"
 }

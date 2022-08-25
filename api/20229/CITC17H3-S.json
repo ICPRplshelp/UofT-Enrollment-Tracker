@@ -29,9 +29,16 @@
 42,
 42,
 42,
-42
+42,
+43,
+43
 ],
-"instructors": [],
+"instructors": [
+[
+"Killian",
+"McCormack"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -60,7 +67,9 @@
 1661266671,
 1661301365,
 1661312788,
-1661326098
+1661326098,
+1661384303,
+1661398005
 ],
 "title": "Civic Engagement in Urban Politics"
 }
