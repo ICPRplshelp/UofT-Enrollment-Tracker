@@ -1,0 +1,28 @@
+{
+"code": "ANT498H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1661460199,
+1661460200,
+1661473530,
+1661489189,
+1661499870,
+1661558028
+],
+"title": "Advanced Independent Reading"
+}

@@ -169,12 +169,21 @@
 100,
 100,
 100,
-99
+99,
+97,
+97,
+97,
+97,
+97
 ],
 "instructors": [
 [
 "John",
 "Sievenpiper"
+],
+[
+"Laura",
+"Chiavaroli"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -345,7 +354,12 @@
 1661398005,
 1661405181,
 1661412225,
-1661440155
+1661440155,
+1661460200,
+1661473530,
+1661489190,
+1661499870,
+1661558028
 ],
 "title": "Nutrition Literacy: Sorting Science from Snake Oil"
 }

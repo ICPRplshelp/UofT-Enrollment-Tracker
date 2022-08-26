@@ -6,6 +6,11 @@
 "enrollmentCap": 1,
 "enrollmentLogs": [
 0,
+1,
+1,
+1,
+1,
+1,
 1
 ],
 "instructors": [],
@@ -14,7 +19,12 @@
 ],
 "timeIntervals": [
 1661440154,
-1661440155
+1661440155,
+1661460200,
+1661473531,
+1661489190,
+1661499870,
+1661558028
 ],
 "title": "Research Opportunity Program"
 }

@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 310,
+"enrollmentCap": 330,
 "enrollmentLogs": [
 0,
 330,
@@ -34,7 +34,12 @@
 331,
 331,
 331,
-332
+332,
+331,
+330,
+330,
+330,
+335
 ],
 "instructors": [
 [
@@ -45,7 +50,7 @@
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 1000,
+"enrollmentCap": 1025,
 "enrollmentLogs": [
 0,
 1019,
@@ -76,6 +81,11 @@
 1024,
 1024,
 1024,
+1024,
+1024,
+1026,
+1026,
+1026,
 1024
 ],
 "instructors": [
@@ -117,7 +127,12 @@
 1661398005,
 1661405181,
 1661412225,
-1661440155
+1661440155,
+1661460200,
+1661473530,
+1661489190,
+1661499870,
+1661558028
 ],
 "title": "Introduction to Linguistics"
 }

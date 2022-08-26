@@ -6,15 +6,30 @@
 "enrollmentCap": 10,
 "enrollmentLogs": [
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Laura",
+"Ingallinella"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
 "timeIntervals": [
 1661440154,
-1661440155
+1661440155,
+1661460200,
+1661473530,
+1661489190,
+1661499870,
+1661558028
 ],
 "title": "Special Topics in Italian Studies"
 }

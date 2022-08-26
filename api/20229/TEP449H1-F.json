@@ -1,6 +1,6 @@
 {
 "code": "TEP449H1-F",
-"faculty": "APSC",
+"faculty": "UNKNOWN",
 "meetings": [
 {
 "enrollmentCap": 30,
@@ -34,14 +34,13 @@
 3,
 3,
 3,
-3
+3,
+2,
+1,
+1,
+1
 ],
-"instructors": [
-[
-"Penny",
-"Kinnear"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -75,7 +74,11 @@
 1661398005,
 1661405181,
 1661412225,
-1661440155
+1661440155,
+1661460200,
+1661473531,
+1661489190,
+1661499870
 ],
 "title": "Intercult. Comm. & Leadership"
 }

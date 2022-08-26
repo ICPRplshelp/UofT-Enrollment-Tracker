@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 300,
+"enrollmentCap": 310,
 "enrollmentLogs": [
 0,
 322,
@@ -34,13 +34,18 @@
 319,
 319,
 319,
-320
+320,
+316,
+315,
+315,
+315,
+314
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 300,
+"enrollmentCap": 310,
 "enrollmentLogs": [
 0,
 335,
@@ -71,7 +76,12 @@
 336,
 336,
 336,
-337
+337,
+327,
+327,
+327,
+327,
+330
 ],
 "instructors": [
 [
@@ -82,7 +92,7 @@
 "meetingNumber": "LEC02"
 },
 {
-"enrollmentCap": 300,
+"enrollmentCap": 310,
 "enrollmentLogs": [
 0,
 317,
@@ -113,7 +123,12 @@
 323,
 323,
 323,
-323
+323,
+316,
+317,
+317,
+317,
+317
 ],
 "instructors": [
 [
@@ -154,7 +169,12 @@
 1661398005,
 1661405181,
 1661412225,
-1661440155
+1661440155,
+1661460200,
+1661473530,
+1661489190,
+1661499870,
+1661558028
 ],
 "title": "Calculus for Management II"
 }

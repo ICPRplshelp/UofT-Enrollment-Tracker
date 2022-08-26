@@ -34,9 +34,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Mark Allister",
+"Currie"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -71,9 +81,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Sasa",
+"Stefanovic"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -108,9 +128,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Fiona",
+"Rawle"
+]
+],
 "meetingNumber": "LEC0301"
 },
 {
@@ -145,9 +175,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Alex",
+"Nguyen Ba"
+]
+],
 "meetingNumber": "LEC0401"
 },
 {
@@ -182,9 +222,19 @@
 4,
 4,
 4,
+4,
+4,
+4,
+4,
+4,
 4
 ],
-"instructors": [],
+"instructors": [
+[
+"Christoph",
+"Richter"
+]
+],
 "meetingNumber": "LEC0501"
 },
 {
@@ -219,9 +269,19 @@
 2,
 2,
 2,
+2,
+2,
+2,
+2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Christoph",
+"Richter"
+]
+],
 "meetingNumber": "LEC0502"
 },
 {
@@ -256,9 +316,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Peter",
+"Kotanen"
+]
+],
 "meetingNumber": "LEC0601"
 },
 {
@@ -293,9 +363,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Helene",
+"Wagner"
+]
+],
 "meetingNumber": "LEC0701"
 },
 {
@@ -330,9 +410,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Helene",
+"Wagner"
+]
+],
 "meetingNumber": "LEC0702"
 },
 {
@@ -367,9 +457,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Rosalind",
+"Murray"
+]
+],
 "meetingNumber": "LEC0801"
 },
 {
@@ -404,9 +504,19 @@
 0,
 0,
 0,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Sanja",
+"Hinic-Frlog"
+]
+],
 "meetingNumber": "LEC0901"
 },
 {
@@ -441,9 +551,19 @@
 7,
 7,
 7,
+7,
+7,
+7,
+7,
+7,
 7
 ],
-"instructors": [],
+"instructors": [
+[
+"Sanja",
+"Hinic-Frlog"
+]
+],
 "meetingNumber": "LEC0902"
 },
 {
@@ -478,9 +598,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Steven",
+"Short"
+]
+],
 "meetingNumber": "LEC1001"
 },
 {
@@ -515,9 +645,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Rob",
+"Ness"
+]
+],
 "meetingNumber": "LEC1101"
 },
 {
@@ -552,9 +692,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Ho-Sung",
+"Rhee"
+]
+],
 "meetingNumber": "LEC1201"
 },
 {
@@ -589,9 +739,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Katharina",
+"Braeutigam"
+]
+],
 "meetingNumber": "LEC1301"
 },
 {
@@ -626,9 +786,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Katharina",
+"Braeutigam"
+]
+],
 "meetingNumber": "LEC1302"
 },
 {
@@ -663,9 +833,19 @@
 1,
 1,
 1,
+1,
+1,
+1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Brandon",
+"Walters"
+]
+],
 "meetingNumber": "LEC1401"
 },
 {
@@ -700,9 +880,19 @@
 2,
 2,
 2,
+2,
+2,
+2,
+2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Robert",
+"Reisz"
+]
+],
 "meetingNumber": "LEC1501"
 },
 {
@@ -737,9 +927,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Marc",
+"Johnson"
+]
+],
 "meetingNumber": "LEC1601"
 }
 ],
@@ -773,7 +973,12 @@
 1661398005,
 1661405181,
 1661412225,
-1661440154
+1661440154,
+1661460200,
+1661473530,
+1661489189,
+1661499870,
+1661558028
 ],
 "title": "Research Opportunity Program"
 }
