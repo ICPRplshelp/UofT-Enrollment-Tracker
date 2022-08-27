@@ -43,6 +43,9 @@ loadCourseData(inputCourse)
 
   </div>
 
+
+<!--  showRemaining -->
+
   <div class="flexit03" style="padding-bottom: 5px">
     <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary"
       matTooltip="Determines whether maximum enrollment lines should be visible" [matTooltipPosition]="'below'"
@@ -54,19 +57,28 @@ loadCourseData(inputCourse)
       [matTooltipPosition]="'below'" matTooltipShowDelay="700">
       Autoformat course codes
     </mat-checkbox>
+    
     <mat-checkbox [(ngModel)]="hideSpecial" color="primary" matTooltip="Prevents LEC2000-LEC2999 sections from showing"
       [matTooltipPosition]="'below'" matTooltipShowDelay="700">
       Hide special sections
     </mat-checkbox>
-
-
+    
+<!-- showLargePoints -->
 
     <mat-checkbox [(ngModel)]="combineAll" color="primary"
       matTooltip="Combine all lecture sections normally visible on the graph into one" [matTooltipPosition]="'below'"
       matTooltipShowDelay="700">
       Combine all sections
     </mat-checkbox>
-
+    <mat-checkbox [(ngModel)]="showRemaining" color="primary"
+                  matTooltip="Displays the remaining space for this course, or the size of the smallest waiting list of this course as a negative value if no space is left"
+                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
+      Show leftover space
+    </mat-checkbox>
+    <mat-checkbox [(ngModel)]="showLargePoints" color="primary" matTooltip="Make points more visible on the chart so you can hover over them"
+    [matTooltipPosition]="'below'" matTooltipShowDelay="700">
+    Show large points
+  </mat-checkbox>
 
   </div>
 

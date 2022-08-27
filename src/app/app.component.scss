@@ -1,8 +1,15 @@
 .chRegion {
     // make the padding the lower of 10% of the screen width or 100px
-    padding-left: min(9%, 500px);
-    padding-right: min(9%, 500px);
-    // max-width: 1200px;
+
+    // if the screen resolution is wider than 4:3, then the padding is 30%, otherwise, it is 9%
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+
+
+    max-width: 1200px;
+    // max-height: 720px;
     // max-height: 65%;
     padding-bottom: 100px;
 
