@@ -42,6 +42,7 @@
 22,
 22,
 22,
+22,
 22
 ],
 "instructors": [
@@ -55,6 +56,7 @@
 {
 "enrollmentCap": 25,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -142,6 +144,7 @@
 4,
 4,
 4,
+4,
 4
 ],
 "instructors": [
@@ -192,6 +195,7 @@
 20,
 20,
 20,
+20,
 20
 ],
 "instructors": [
@@ -206,6 +210,7 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+21,
 21,
 21,
 21,
@@ -292,6 +297,7 @@
 9,
 9,
 9,
+9,
 9
 ],
 "instructors": [
@@ -341,7 +347,8 @@
 1661558028,
 1661571626,
 1661626066,
-1661632679
+1661632679,
+1661633576
 ],
 "title": "LAUNCH: Business, Commerce and Management"
 }

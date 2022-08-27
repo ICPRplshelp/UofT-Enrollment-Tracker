@@ -42,6 +42,7 @@
 178,
 178,
 178,
+178,
 178
 ],
 "instructors": [
@@ -84,6 +85,7 @@
 104,
 104,
 104,
+105,
 105,
 105,
 105,
@@ -141,7 +143,8 @@
 1661558028,
 1661571625,
 1661626066,
-1661632679
+1661632679,
+1661633576
 ],
 "title": "Introduction to Numerical Algorithms for Computational Mathematics"
 }

@@ -42,6 +42,7 @@
 73,
 73,
 73,
+73,
 73
 ],
 "instructors": [],
@@ -51,6 +52,7 @@
 "enrollmentCap": 60,
 "enrollmentLogs": [
 0,
+32,
 32,
 32,
 32,
@@ -131,7 +133,8 @@
 1661558028,
 1661571625,
 1661626066,
-1661632679
+1661632679,
+1661633576
 ],
 "title": "Remote Work , Technology and Collaboration"
 }

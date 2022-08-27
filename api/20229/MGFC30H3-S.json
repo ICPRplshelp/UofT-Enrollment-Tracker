@@ -42,6 +42,7 @@
 65,
 65,
 65,
+65,
 65
 ],
 "instructors": [
@@ -92,6 +93,7 @@
 62,
 62,
 62,
+62,
 62
 ],
 "instructors": [
@@ -105,6 +107,7 @@
 {
 "enrollmentCap": 40,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -191,7 +194,8 @@
 1661558028,
 1661571626,
 1661626066,
-1661632679
+1661632679,
+1661633576
 ],
 "title": "Introduction to Derivatives Markets"
 }
