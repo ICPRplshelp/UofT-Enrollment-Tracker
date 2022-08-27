@@ -41,6 +41,7 @@
 221,
 221,
 221,
+221,
 221
 ],
 "instructors": [
@@ -55,6 +56,7 @@
 "enrollmentCap": 170,
 "enrollmentLogs": [
 0,
+130,
 130,
 130,
 130,
@@ -138,7 +140,8 @@
 1661499870,
 1661558028,
 1661571626,
-1661626066
+1661626066,
+1661632679
 ],
 "title": "Engineering Economics and Accounting"
 }

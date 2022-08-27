@@ -41,6 +41,7 @@
 5,
 5,
 5,
+5,
 5
 ],
 "instructors": [
@@ -55,6 +56,7 @@
 "enrollmentCap": 20,
 "enrollmentLogs": [
 0,
+2,
 2,
 2,
 2,
@@ -133,7 +135,8 @@
 1661499870,
 1661558028,
 1661571626,
-1661626066
+1661626066,
+1661632679
 ],
 "title": "Topics in Comparative Politics"
 }

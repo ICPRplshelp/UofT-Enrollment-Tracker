@@ -41,6 +41,7 @@
 25,
 25,
 25,
+25,
 25
 ],
 "instructors": [],
@@ -50,6 +51,7 @@
 "enrollmentCap": 60,
 "enrollmentLogs": [
 0,
+14,
 14,
 14,
 14,
@@ -128,7 +130,8 @@
 1661499870,
 1661558028,
 1661571625,
-1661626066
+1661626066,
+1661632679
 ],
 "title": "Technology and Creative Expresssion"
 }

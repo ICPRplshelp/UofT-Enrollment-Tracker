@@ -41,6 +41,7 @@
 101,
 101,
 101,
+101,
 101
 ],
 "instructors": [
@@ -55,6 +56,7 @@
 "enrollmentCap": 100,
 "enrollmentLogs": [
 0,
+78,
 78,
 78,
 78,
@@ -138,7 +140,8 @@
 1661499870,
 1661558028,
 1661571625,
-1661626066
+1661626066,
+1661632679
 ],
 "title": "Applied Fundamentals of Deep Learning"
 }
