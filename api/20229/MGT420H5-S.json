@@ -43,6 +43,8 @@
 40,
 40,
 40,
+40,
+40,
 40
 ],
 "instructors": [
@@ -57,6 +59,8 @@
 "enrollmentCap": 40,
 "enrollmentLogs": [
 0,
+15,
+15,
 15,
 15,
 15,
@@ -145,6 +149,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -195,7 +201,9 @@
 1661571626,
 1661626066,
 1661632679,
-1661633576
+1661633576,
+1661643661,
+1661649485
 ],
 "title": "Critical Thinking, Analysis and Decision Making II"
 }
