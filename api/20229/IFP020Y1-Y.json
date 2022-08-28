@@ -180,6 +180,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -188,6 +190,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -546,6 +550,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -554,6 +560,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -912,6 +920,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -920,6 +930,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -1278,6 +1290,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -1286,6 +1300,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -1644,6 +1660,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -1652,6 +1670,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -2010,6 +2030,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -2018,6 +2040,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -2376,6 +2400,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -2384,6 +2410,8 @@
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -2742,6 +2770,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -2924,7 +2954,9 @@
 1661632679,
 1661633576,
 1661643661,
-1661649485
+1661649485,
+1661673203,
+1661699344
 ],
 "title": "Critical Reading & Writing"
 }

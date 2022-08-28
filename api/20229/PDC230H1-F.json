@@ -180,6 +180,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -201,6 +203,8 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -572,6 +576,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -593,6 +599,8 @@
 {
 "enrollmentCap": 250,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -963,7 +971,9 @@
 1661632679,
 1661633576,
 1661643661,
-1661649486
+1661649486,
+1661673203,
+1661699344
 ],
 "title": "Arts & Science Internship Program - Maximizing Your Experience"
 }

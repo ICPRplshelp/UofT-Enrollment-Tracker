@@ -45,6 +45,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -58,6 +60,8 @@
 {
 "enrollmentCap": 80,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -150,7 +154,9 @@
 1661632679,
 1661633576,
 1661643660,
-1661649485
+1661649485,
+1661673203,
+1661699344
 ],
 "title": "Integrating Your Work Term Experience Part I"
 }
