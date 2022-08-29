@@ -47,12 +47,14 @@
 40,
 40,
 40,
-40
+40,
+41,
+41
 ],
 "instructors": [
 [
-"Grace",
-"Skogstad"
+"Alexandre",
+"Fortier-Chouinard"
 ]
 ],
 "meetingNumber": "LEC01"
@@ -101,7 +103,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Intergovernmental Relations and Public Policy"
 }

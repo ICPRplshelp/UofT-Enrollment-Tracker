@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 700,
+"enrollmentCap": 710,
 "enrollmentLogs": [
 0,
 0,
@@ -170,6 +170,8 @@
 701,
 701,
 701,
+699,
+699,
 699,
 699,
 699,
@@ -372,6 +374,8 @@
 267,
 267,
 267,
+267,
+267,
 267
 ],
 "instructors": [
@@ -562,7 +566,9 @@
 13,
 13,
 13,
-13
+13,
+14,
+14
 ],
 "instructors": [
 [
@@ -751,7 +757,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Introduction to Sociology II: Sociological Inquiries"
 }

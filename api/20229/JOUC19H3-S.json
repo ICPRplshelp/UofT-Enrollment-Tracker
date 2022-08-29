@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 23,
+"enrollmentCap": 20,
 "enrollmentLogs": [
 0,
 15,
@@ -35,6 +35,8 @@
 15,
 15,
 15,
+14,
+14,
 14,
 14,
 14,
@@ -101,7 +103,9 @@
 1661643661,
 1661649485,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Social Media and Mobile Storytelling"
 }

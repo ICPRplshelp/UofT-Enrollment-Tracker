@@ -182,9 +182,16 @@
 310,
 310,
 310,
-310
+310,
+311,
+311
 ],
-"instructors": [],
+"instructors": [
+[
+"Carolyne",
+"Sumner"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -366,7 +373,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Introduction to Music History and Culture"
 }

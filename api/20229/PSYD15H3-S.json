@@ -47,7 +47,9 @@
 26,
 26,
 26,
-26
+26,
+27,
+27
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
@@ -97,7 +99,9 @@
 24,
 24,
 24,
-24
+24,
+25,
+25
 ],
 "instructors": [],
 "meetingNumber": "LEC02"
@@ -147,7 +151,9 @@
 25,
 25,
 25,
-25
+25,
+24,
+24
 ],
 "instructors": [],
 "meetingNumber": "LEC30"
@@ -196,7 +202,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Current Topics in Social Psychology"
 }

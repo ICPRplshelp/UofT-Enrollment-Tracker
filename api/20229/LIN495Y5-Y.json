@@ -1,0 +1,22 @@
+{
+"code": "LIN495Y5-Y",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 2,
+"enrollmentLogs": [
+0,
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1661792869,
+1661792870,
+1661795824
+],
+"title": "Individual Project"
+}

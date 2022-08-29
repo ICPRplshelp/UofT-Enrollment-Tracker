@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 12,
+"enrollmentCap": 20,
 "enrollmentLogs": [
 0,
 8,
@@ -47,7 +47,9 @@
 7,
 7,
 7,
-7
+7,
+14,
+15
 ],
 "instructors": [
 [
@@ -104,12 +106,7 @@
 7,
 7
 ],
-"instructors": [
-[
-"",
-"CENTENNIAL"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC02"
 }
 ],
@@ -156,7 +153,9 @@
 1661643661,
 1661649485,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Mobile Journalism"
 }

@@ -47,6 +47,8 @@
 28,
 28,
 28,
+28,
+28,
 28
 ],
 "instructors": [
@@ -102,14 +104,11 @@
 22,
 22,
 22,
-22
+22,
+23,
+23
 ],
-"instructors": [
-[
-"Sandra",
-"Daga"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC02"
 },
 {
@@ -157,20 +156,19 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [
-[
-"Sandra",
-"Daga"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC03"
 },
 {
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+17,
+17,
 17,
 17,
 17,
@@ -266,7 +264,9 @@
 1661643661,
 1661649485,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Management Communications for non Co-op"
 }

@@ -182,9 +182,16 @@
 15,
 15,
 15,
+15,
+15,
 15
 ],
-"instructors": [],
+"instructors": [
+[
+"Leah",
+"Cherniak"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -366,7 +373,9 @@
 1661643660,
 1661649485,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Special Topics in Studio Practice"
 }

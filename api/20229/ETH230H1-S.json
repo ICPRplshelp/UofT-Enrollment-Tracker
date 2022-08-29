@@ -182,9 +182,16 @@
 72,
 72,
 72,
-72
+72,
+74,
+74
 ],
-"instructors": [],
+"instructors": [
+[
+"Sarah",
+"Warren"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -366,7 +373,9 @@
 1661643661,
 1661649485,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Morality in Cross-Cultural Perspective"
 }

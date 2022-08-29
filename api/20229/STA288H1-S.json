@@ -182,6 +182,8 @@
 122,
 122,
 122,
+122,
+122,
 122
 ],
 "instructors": [],
@@ -367,7 +369,9 @@
 95,
 95,
 95,
-95
+95,
+96,
+96
 ],
 "instructors": [],
 "meetingNumber": "LEC0102"
@@ -551,7 +555,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Statistics and Scientific Inquiry in the Life Sciences"
 }

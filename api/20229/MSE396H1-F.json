@@ -47,16 +47,14 @@
 62,
 62,
 62,
+62,
+62,
 62
 ],
 "instructors": [
 [
 "Scott",
 "Ramsay"
-],
-[
-"Daniel",
-"Grozea"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -105,7 +103,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "Materials Manufact. & Design I"
 }

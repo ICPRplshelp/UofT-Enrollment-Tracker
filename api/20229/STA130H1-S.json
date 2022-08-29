@@ -182,7 +182,9 @@
 349,
 349,
 349,
-349
+349,
+351,
+351
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -367,7 +369,9 @@
 389,
 389,
 389,
-389
+389,
+390,
+390
 ],
 "instructors": [],
 "meetingNumber": "LEC0201"
@@ -551,7 +555,9 @@
 1661643661,
 1661649486,
 1661673203,
-1661699344
+1661699344,
+1661792870,
+1661795824
 ],
 "title": "An Introduction to Statistical Reasoning and Data Science"
 }
