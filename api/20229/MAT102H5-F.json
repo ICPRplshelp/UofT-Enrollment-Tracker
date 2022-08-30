@@ -3,7 +3,7 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 163,
@@ -49,7 +49,13 @@
 168,
 168,
 164,
-164
+164,
+164,
+157,
+157,
+157,
+157,
+156
 ],
 "instructors": [
 [
@@ -60,7 +66,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 152,
@@ -106,7 +112,13 @@
 160,
 160,
 157,
-157
+157,
+157,
+153,
+153,
+153,
+155,
+154
 ],
 "instructors": [
 [
@@ -117,7 +129,7 @@
 "meetingNumber": "LEC0102"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 166,
@@ -163,13 +175,19 @@
 165,
 165,
 165,
-165
+165,
+165,
+161,
+161,
+161,
+159,
+159
 ],
 "instructors": [],
 "meetingNumber": "LEC0103"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 153,
@@ -215,7 +233,13 @@
 157,
 157,
 158,
-157
+157,
+157,
+155,
+155,
+155,
+155,
+154
 ],
 "instructors": [
 [
@@ -226,7 +250,7 @@
 "meetingNumber": "LEC0104"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 153,
@@ -272,7 +296,13 @@
 158,
 158,
 154,
-154
+154,
+154,
+151,
+151,
+151,
+150,
+149
 ],
 "instructors": [
 [
@@ -285,6 +315,12 @@
 {
 "enrollmentCap": 140,
 "enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
 0,
 0,
 0,
@@ -381,6 +417,12 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -433,13 +475,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
 "instructors": [],
 "meetingNumber": "LEC0108"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 156,
@@ -485,7 +533,13 @@
 158,
 158,
 159,
-160
+160,
+160,
+155,
+155,
+155,
+154,
+154
 ],
 "instructors": [
 [
@@ -541,7 +595,13 @@
 1661673203,
 1661699344,
 1661792870,
-1661795824
+1661795824,
+1661802210,
+1661816637,
+1661826828,
+1661840080,
+1661881097,
+1661901434
 ],
 "title": "Introduction to Mathematical Proofs"
 }

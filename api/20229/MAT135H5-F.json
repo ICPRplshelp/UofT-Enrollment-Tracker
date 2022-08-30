@@ -3,7 +3,7 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 145,
@@ -49,7 +49,13 @@
 146,
 146,
 148,
-148
+148,
+147,
+145,
+145,
+145,
+142,
+143
 ],
 "instructors": [
 [
@@ -60,7 +66,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 170,
@@ -106,7 +112,13 @@
 165,
 165,
 165,
-165
+165,
+165,
+163,
+163,
+163,
+163,
+162
 ],
 "instructors": [
 [
@@ -163,7 +175,13 @@
 143,
 143,
 145,
-145
+145,
+144,
+142,
+142,
+142,
+140,
+140
 ],
 "instructors": [
 [
@@ -220,7 +238,13 @@
 158,
 158,
 157,
-157
+157,
+157,
+154,
+154,
+154,
+154,
+154
 ],
 "instructors": [
 [
@@ -231,7 +255,7 @@
 "meetingNumber": "LEC0104"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 146,
@@ -277,7 +301,13 @@
 145,
 145,
 147,
-147
+147,
+147,
+144,
+144,
+144,
+145,
+146
 ],
 "instructors": [
 [
@@ -334,13 +364,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
 "instructors": [],
 "meetingNumber": "LEC0106"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 124,
@@ -386,7 +422,13 @@
 141,
 141,
 142,
-142
+142,
+141,
+139,
+139,
+139,
+138,
+137
 ],
 "instructors": [
 [
@@ -397,7 +439,7 @@
 "meetingNumber": "LEC0107"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 144,
@@ -443,7 +485,13 @@
 145,
 145,
 144,
-144
+144,
+146,
+144,
+144,
+144,
+146,
+146
 ],
 "instructors": [
 [
@@ -456,6 +504,12 @@
 {
 "enrollmentCap": 140,
 "enrollmentLogs": [
+0,
+0,
+0,
+0,
+0,
+0,
 0,
 0,
 0,
@@ -552,6 +606,12 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -604,13 +664,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
 "instructors": [],
 "meetingNumber": "LEC0111"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 143,
@@ -656,7 +722,13 @@
 142,
 142,
 144,
-144
+144,
+143,
+141,
+141,
+141,
+142,
+143
 ],
 "instructors": [],
 "meetingNumber": "LEC0112"
@@ -708,13 +780,19 @@
 0,
 0,
 0,
+0,
+0,
+0,
+0,
+0,
+0,
 0
 ],
 "instructors": [],
 "meetingNumber": "LEC0113"
 },
 {
-"enrollmentCap": 140,
+"enrollmentCap": 150,
 "enrollmentLogs": [
 0,
 149,
@@ -760,7 +838,13 @@
 145,
 145,
 145,
-145
+145,
+144,
+142,
+142,
+142,
+143,
+141
 ],
 "instructors": [
 [
@@ -816,7 +900,13 @@
 1661673203,
 1661699344,
 1661792870,
-1661795824
+1661795824,
+1661802210,
+1661816637,
+1661826828,
+1661840080,
+1661881097,
+1661901434
 ],
 "title": "Differential Calculus"
 }

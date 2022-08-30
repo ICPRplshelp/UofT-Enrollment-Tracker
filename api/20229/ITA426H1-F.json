@@ -1,0 +1,27 @@
+{
+"code": "ITA426H1-F",
+"faculty": "ARTSC",
+"meetings": [
+{
+"enrollmentCap": 10,
+"enrollmentLogs": [
+0,
+0,
+0
+],
+"instructors": [
+[
+"Eloisa",
+"Morra"
+]
+],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1661881096,
+1661881097,
+1661901434
+],
+"title": "Special Topics in Italian Studies"
+}

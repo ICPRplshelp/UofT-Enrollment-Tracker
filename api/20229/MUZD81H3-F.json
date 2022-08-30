@@ -1,0 +1,27 @@
+{
+"code": "MUZD81H3-F",
+"faculty": "SCAR",
+"meetings": [
+{
+"enrollmentCap": 5,
+"enrollmentLogs": [
+0,
+0,
+0
+],
+"instructors": [
+[
+"",
+"FACULTY"
+]
+],
+"meetingNumber": "LEC01"
+}
+],
+"timeIntervals": [
+1661881096,
+1661881097,
+1661901434
+],
+"title": "Independent Study in Music"
+}

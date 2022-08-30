@@ -1,6 +1,6 @@
 {
 "code": "HIS383Y1-Y",
-"faculty": "ARTSC",
+"faculty": "UNKNOWN",
 "meetings": [
 {
 "enrollmentCap": 45,
@@ -184,14 +184,14 @@
 19,
 19,
 19,
+19,
+19,
+19,
+19,
+19,
 19
 ],
-"instructors": [
-[
-"Bello",
-"Taiwo"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC5101"
 }
 ],
@@ -375,7 +375,12 @@
 1661673203,
 1661699344,
 1661792870,
-1661795824
+1661795824,
+1661802210,
+1661816637,
+1661826828,
+1661840080,
+1661881097
 ],
 "title": "Women in African History"
 }

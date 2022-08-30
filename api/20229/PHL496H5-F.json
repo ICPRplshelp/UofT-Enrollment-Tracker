@@ -1,0 +1,22 @@
+{
+"code": "PHL496H5-F",
+"faculty": "ERIN",
+"meetings": [
+{
+"enrollmentCap": 1,
+"enrollmentLogs": [
+0,
+1,
+1
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1661881096,
+1661881097,
+1661901434
+],
+"title": "Individual Studies"
+}
