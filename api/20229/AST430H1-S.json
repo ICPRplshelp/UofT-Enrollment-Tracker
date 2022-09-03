@@ -6,6 +6,7 @@
 "enrollmentCap": 9999,
 "enrollmentLogs": [
 0,
+1,
 1
 ],
 "instructors": [],
@@ -14,7 +15,8 @@
 ],
 "timeIntervals": [
 1662163161,
-1662163162
+1662163162,
+1662172473
 ],
 "title": "Supervised Study in Astronomy & Astrophysics"
 }

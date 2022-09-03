@@ -57,6 +57,7 @@
 52,
 52,
 51,
+50,
 50
 ],
 "instructors": [
@@ -70,6 +71,7 @@
 {
 "enrollmentCap": 40,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -186,7 +188,8 @@
 1661881097,
 1661901434,
 1661955369,
-1662163162
+1662163162,
+1662172473
 ],
 "title": "Mergers and Acquisitions: Theory and Practice"
 }

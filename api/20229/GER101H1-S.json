@@ -192,6 +192,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [
@@ -205,6 +206,7 @@
 {
 "enrollmentCap": 5,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -592,6 +594,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [
@@ -605,6 +608,7 @@
 {
 "enrollmentCap": 5,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -992,6 +996,7 @@
 0,
 0,
 0,
+1,
 1
 ],
 "instructors": [
@@ -1005,6 +1010,7 @@
 {
 "enrollmentCap": 5,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -1392,6 +1398,7 @@
 0,
 0,
 0,
+0,
 0
 ],
 "instructors": [
@@ -1592,6 +1599,7 @@
 0,
 0,
 0,
+1,
 1
 ],
 "instructors": [
@@ -1791,7 +1799,8 @@
 1661881097,
 1661901434,
 1661955369,
-1662163162
+1662163162,
+1662172473
 ],
 "title": "Introduction to German b"
 }

@@ -57,6 +57,7 @@
 28,
 31,
 31,
+31,
 31
 ],
 "instructors": [],
@@ -65,6 +66,7 @@
 {
 "enrollmentCap": 55,
 "enrollmentLogs": [
+0,
 0,
 0,
 0,
@@ -176,7 +178,8 @@
 1661881097,
 1661901434,
 1661955369,
-1662163162
+1662163162,
+1662172473
 ],
 "title": "Advanced IT Audit and Data Analytics"
 }

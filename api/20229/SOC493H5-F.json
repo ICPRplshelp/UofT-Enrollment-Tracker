@@ -57,6 +57,7 @@
 2,
 2,
 2,
+2,
 2
 ],
 "instructors": [
@@ -71,6 +72,7 @@
 "enrollmentCap": 1,
 "enrollmentLogs": [
 0,
+1,
 1,
 1,
 1,
@@ -186,7 +188,8 @@
 1661881097,
 1661901434,
 1661955369,
-1662163162
+1662163162,
+1662172473
 ],
 "title": "Independent Research in Criminology, Law and Society"
 }
