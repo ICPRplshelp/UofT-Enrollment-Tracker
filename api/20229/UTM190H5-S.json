@@ -58,6 +58,9 @@
 24,
 24,
 22,
+22,
+22,
+22,
 22
 ],
 "instructors": [
@@ -72,6 +75,9 @@
 "enrollmentCap": 25,
 "enrollmentLogs": [
 0,
+28,
+28,
+28,
 28,
 28,
 28,
@@ -189,7 +195,10 @@
 1661901434,
 1661955369,
 1662163162,
-1662172473
+1662172473,
+1662219591,
+1662220533,
+1662220766
 ],
 "title": "utmONE Scholars: Special Topics at the Intersection of Social Science and Humanities"
 }
