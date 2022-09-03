@@ -3,7 +3,7 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 70,
+"enrollmentCap": 80,
 "enrollmentLogs": [
 0,
 94,
@@ -54,6 +54,8 @@
 94,
 94,
 94,
+92,
+92,
 92,
 92
 ],
@@ -117,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Financial Economics I"
 }

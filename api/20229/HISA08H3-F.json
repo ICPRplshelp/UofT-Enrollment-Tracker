@@ -55,9 +55,16 @@
 38,
 38,
 37,
-37
+37,
+35,
+35
 ],
-"instructors": [],
+"instructors": [
+[
+"Zubairu",
+"Wai"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -112,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Africa in the World: An Introduction"
 }

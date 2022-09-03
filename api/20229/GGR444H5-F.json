@@ -3,9 +3,11 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 20,
+"enrollmentCap": 21,
 "enrollmentLogs": [
 0,
+21,
+21,
 21,
 21,
 21,
@@ -117,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Space Time Data Analysis"
 }

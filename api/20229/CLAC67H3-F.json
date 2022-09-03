@@ -55,9 +55,16 @@
 2,
 2,
 2,
+2,
+2,
 2
 ],
-"instructors": [],
+"instructors": [
+[
+"Nadir",
+"Ansari"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -112,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Early Islam: Perspectives on the Construction of an Historical Tradition"
 }

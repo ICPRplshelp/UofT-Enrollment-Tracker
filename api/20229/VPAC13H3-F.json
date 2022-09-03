@@ -55,9 +55,16 @@
 47,
 47,
 47,
-47
+47,
+46,
+49
 ],
-"instructors": [],
+"instructors": [
+[
+"INGA L.",
+"UNTIKS (NOUTORID)"
+]
+],
 "meetingNumber": "LEC01"
 }
 ],
@@ -112,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Planning and Project Management in the Arts and Cultural Sector"
 }

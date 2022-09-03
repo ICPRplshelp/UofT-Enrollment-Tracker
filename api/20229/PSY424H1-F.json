@@ -190,7 +190,9 @@
 60,
 60,
 59,
-59
+59,
+59,
+58
 ],
 "instructors": [
 [
@@ -388,7 +390,9 @@
 60,
 60,
 60,
-60
+60,
+60,
+59
 ],
 "instructors": [
 [
@@ -586,9 +590,16 @@
 60,
 60,
 60,
+59,
+60,
 59
 ],
-"instructors": [],
+"instructors": [
+[
+"Odilia",
+"Yim"
+]
+],
 "meetingNumber": "LEC5101"
 }
 ],
@@ -778,7 +789,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Social Psychology of Interpersonal Relationships"
 }

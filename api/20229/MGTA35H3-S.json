@@ -55,14 +55,11 @@
 28,
 28,
 28,
-28
+28,
+27,
+26
 ],
-"instructors": [
-[
-"Joanna",
-"Heathcote"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC01"
 },
 {
@@ -118,7 +115,9 @@
 23,
 23,
 23,
-23
+23,
+22,
+21
 ],
 "instructors": [],
 "meetingNumber": "LEC02"
@@ -126,6 +125,8 @@
 {
 "enrollmentCap": 30,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -234,14 +235,11 @@
 17,
 17,
 18,
-18
+18,
+17,
+17
 ],
-"instructors": [
-[
-"Joanna",
-"Heathcote"
-]
-],
+"instructors": [],
 "meetingNumber": "LEC04"
 }
 ],
@@ -296,7 +294,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Management Communications for non Co-op"
 }

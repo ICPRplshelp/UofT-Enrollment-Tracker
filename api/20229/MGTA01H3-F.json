@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 350,
+"enrollmentCap": 360,
 "enrollmentLogs": [
 0,
 408,
@@ -55,7 +55,9 @@
 401,
 401,
 402,
-400
+400,
+386,
+378
 ],
 "instructors": [
 [
@@ -66,7 +68,7 @@
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 350,
+"enrollmentCap": 360,
 "enrollmentLogs": [
 0,
 401,
@@ -118,7 +120,9 @@
 390,
 390,
 389,
-389
+389,
+367,
+376
 ],
 "instructors": [
 [
@@ -180,7 +184,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Introduction to Business"
 }

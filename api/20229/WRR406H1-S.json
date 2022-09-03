@@ -190,6 +190,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [],
@@ -198,6 +200,8 @@
 {
 "enrollmentCap": 9999,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -575,7 +579,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Independent Studies in Writing and Rhetoric"
 }

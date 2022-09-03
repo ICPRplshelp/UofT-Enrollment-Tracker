@@ -190,9 +190,16 @@
 22,
 22,
 22,
+22,
+21,
 22
 ],
-"instructors": [],
+"instructors": [
+[
+"Loree",
+"Erickson"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -383,9 +390,16 @@
 22,
 22,
 22,
-22
+22,
+22,
+21
 ],
-"instructors": [],
+"instructors": [
+[
+"Doug",
+"Anderson"
+]
+],
 "meetingNumber": "LEC0201"
 }
 ],
@@ -575,7 +589,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Special Topics in Equity Studies"
 }

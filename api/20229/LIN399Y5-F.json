@@ -3,7 +3,7 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 1,
+"enrollmentCap": 2,
 "enrollmentLogs": [
 0,
 1,
@@ -55,7 +55,9 @@
 1,
 1,
 1,
-1
+1,
+1,
+2
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -63,6 +65,8 @@
 {
 "enrollmentCap": 1,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -170,7 +174,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Research Opportunity Program"
 }

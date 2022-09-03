@@ -1,0 +1,20 @@
+{
+"code": "ARC383H1-S",
+"faculty": "ARCLA",
+"meetings": [
+{
+"enrollmentCap": 120,
+"enrollmentLogs": [
+0,
+94
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1662163161,
+1662163162
+],
+"title": "Technologies of Architecture, Landscape, Urbanism, and Art II"
+}

@@ -190,7 +190,9 @@
 8,
 8,
 8,
-8
+8,
+8,
+7
 ],
 "instructors": [],
 "meetingNumber": "LEC0101"
@@ -383,7 +385,9 @@
 15,
 15,
 15,
-15
+15,
+15,
+14
 ],
 "instructors": [],
 "meetingNumber": "LEC2001"
@@ -575,7 +579,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Stochastic Methods for Actuarial Science"
 }

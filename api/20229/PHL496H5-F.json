@@ -7,16 +7,25 @@
 "enrollmentLogs": [
 0,
 1,
+1,
+1,
 1
 ],
-"instructors": [],
+"instructors": [
+[
+"Jennifer",
+"Nagel"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
 "timeIntervals": [
 1661881096,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Individual Studies"
 }

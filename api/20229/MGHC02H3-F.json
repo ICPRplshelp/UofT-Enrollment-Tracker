@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 44,
@@ -55,7 +55,9 @@
 46,
 46,
 46,
-46
+46,
+44,
+42
 ],
 "instructors": [
 [
@@ -66,7 +68,7 @@
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 56,
@@ -118,7 +120,9 @@
 54,
 54,
 54,
-54
+54,
+52,
+50
 ],
 "instructors": [
 [
@@ -129,7 +133,7 @@
 "meetingNumber": "LEC02"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 42,
@@ -181,7 +185,9 @@
 42,
 42,
 42,
-42
+42,
+41,
+39
 ],
 "instructors": [
 [
@@ -192,7 +198,7 @@
 "meetingNumber": "LEC03"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 42,
@@ -244,7 +250,9 @@
 40,
 40,
 39,
-39
+39,
+39,
+40
 ],
 "instructors": [
 [
@@ -306,7 +314,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Management Skills"
 }

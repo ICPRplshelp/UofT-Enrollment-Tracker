@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 60,
+"enrollmentCap": 65,
 "enrollmentLogs": [
 0,
 78,
@@ -55,7 +55,9 @@
 76,
 76,
 77,
-76
+76,
+75,
+73
 ],
 "instructors": [
 [
@@ -66,7 +68,7 @@
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 60,
+"enrollmentCap": 65,
 "enrollmentLogs": [
 0,
 78,
@@ -118,7 +120,9 @@
 78,
 78,
 78,
-78
+78,
+76,
+73
 ],
 "instructors": [
 [
@@ -129,7 +133,7 @@
 "meetingNumber": "LEC02"
 },
 {
-"enrollmentCap": 60,
+"enrollmentCap": 65,
 "enrollmentLogs": [
 0,
 77,
@@ -181,7 +185,9 @@
 76,
 76,
 76,
-76
+76,
+76,
+72
 ],
 "instructors": [
 [
@@ -243,7 +249,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Managing People and Groups in Organizations"
 }

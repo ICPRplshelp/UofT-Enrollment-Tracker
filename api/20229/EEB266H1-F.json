@@ -190,9 +190,16 @@
 58,
 58,
 58,
-58
+58,
+59,
+59
 ],
-"instructors": [],
+"instructors": [
+[
+"Danielle",
+"de Carle"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -382,7 +389,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Animal Diversity: Invertebrates"
 }

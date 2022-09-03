@@ -55,6 +55,8 @@
 23,
 23,
 23,
+23,
+23,
 23
 ],
 "instructors": [
@@ -69,6 +71,8 @@
 "enrollmentCap": 30,
 "enrollmentLogs": [
 0,
+24,
+24,
 24,
 24,
 24,
@@ -180,7 +184,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Application Software for Interactive Media"
 }

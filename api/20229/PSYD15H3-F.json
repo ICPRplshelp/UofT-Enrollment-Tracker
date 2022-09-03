@@ -55,9 +55,16 @@
 29,
 29,
 29,
+28,
+28,
 28
 ],
-"instructors": [],
+"instructors": [
+[
+"Florence",
+"Huang"
+]
+],
 "meetingNumber": "LEC01"
 },
 {
@@ -113,9 +120,16 @@
 29,
 29,
 29,
+28,
+27,
 28
 ],
-"instructors": [],
+"instructors": [
+[
+"Florence",
+"Huang"
+]
+],
 "meetingNumber": "LEC02"
 }
 ],
@@ -170,7 +184,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Current Topics in Social Psychology"
 }

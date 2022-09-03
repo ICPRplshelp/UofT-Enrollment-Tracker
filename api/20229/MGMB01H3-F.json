@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 45,
@@ -55,7 +55,9 @@
 46,
 46,
 46,
-46
+46,
+43,
+43
 ],
 "instructors": [
 [
@@ -66,7 +68,7 @@
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 42,
@@ -118,7 +120,9 @@
 44,
 44,
 45,
-45
+45,
+45,
+43
 ],
 "instructors": [
 [
@@ -129,7 +133,7 @@
 "meetingNumber": "LEC02"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 44,
@@ -181,7 +185,9 @@
 44,
 44,
 43,
-43
+43,
+41,
+44
 ],
 "instructors": [
 [
@@ -192,7 +198,7 @@
 "meetingNumber": "LEC03"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 41,
@@ -244,7 +250,9 @@
 42,
 42,
 42,
-42
+42,
+42,
+41
 ],
 "instructors": [
 [
@@ -255,7 +263,7 @@
 "meetingNumber": "LEC04"
 },
 {
-"enrollmentCap": 40,
+"enrollmentCap": 43,
 "enrollmentLogs": [
 0,
 41,
@@ -307,7 +315,9 @@
 43,
 43,
 42,
-42
+42,
+40,
+41
 ],
 "instructors": [
 [
@@ -369,7 +379,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Marketing Management"
 }

@@ -3,7 +3,7 @@
 "faculty": "ARTSC",
 "meetings": [
 {
-"enrollmentCap": 150,
+"enrollmentCap": 172,
 "enrollmentLogs": [
 0,
 0,
@@ -190,7 +190,9 @@
 174,
 174,
 177,
-177
+177,
+178,
+170
 ],
 "instructors": [
 [
@@ -201,7 +203,7 @@
 "meetingNumber": "LEC0101"
 },
 {
-"enrollmentCap": 150,
+"enrollmentCap": 154,
 "enrollmentLogs": [
 0,
 0,
@@ -388,7 +390,9 @@
 170,
 170,
 172,
-173
+173,
+175,
+158
 ],
 "instructors": [
 [
@@ -399,7 +403,7 @@
 "meetingNumber": "LEC0201"
 },
 {
-"enrollmentCap": 165,
+"enrollmentCap": 180,
 "enrollmentLogs": [
 0,
 0,
@@ -586,7 +590,9 @@
 187,
 187,
 190,
-189
+189,
+190,
+180
 ],
 "instructors": [
 [
@@ -597,7 +603,7 @@
 "meetingNumber": "LEC0301"
 },
 {
-"enrollmentCap": 150,
+"enrollmentCap": 167,
 "enrollmentLogs": [
 0,
 0,
@@ -784,7 +790,9 @@
 180,
 180,
 184,
-183
+183,
+184,
+167
 ],
 "instructors": [
 [
@@ -795,7 +803,7 @@
 "meetingNumber": "LEC0401"
 },
 {
-"enrollmentCap": 150,
+"enrollmentCap": 156,
 "enrollmentLogs": [
 0,
 0,
@@ -982,13 +990,15 @@
 173,
 173,
 174,
-175
+175,
+174,
+156
 ],
 "instructors": [],
 "meetingNumber": "LEC0501"
 },
 {
-"enrollmentCap": 150,
+"enrollmentCap": 156,
 "enrollmentLogs": [
 0,
 0,
@@ -1175,13 +1185,15 @@
 173,
 173,
 173,
-172
+172,
+173,
+155
 ],
 "instructors": [],
 "meetingNumber": "LEC0601"
 },
 {
-"enrollmentCap": 150,
+"enrollmentCap": 156,
 "enrollmentLogs": [
 0,
 0,
@@ -1368,13 +1380,15 @@
 170,
 170,
 173,
-172
+172,
+173,
+155
 ],
 "instructors": [],
 "meetingNumber": "LEC0701"
 },
 {
-"enrollmentCap": 156,
+"enrollmentCap": 168,
 "enrollmentLogs": [
 0,
 0,
@@ -1561,7 +1575,9 @@
 174,
 174,
 174,
-174
+174,
+175,
+163
 ],
 "instructors": [
 [
@@ -1758,7 +1774,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Multivariable Calculus"
 }

@@ -3,7 +3,7 @@
 "faculty": "APSC",
 "meetings": [
 {
-"enrollmentCap": 146,
+"enrollmentCap": 147,
 "enrollmentLogs": [
 0,
 142,
@@ -55,7 +55,9 @@
 145,
 145,
 145,
-145
+145,
+145,
+144
 ],
 "instructors": [
 [
@@ -121,7 +123,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Environmental Chemistry"
 }

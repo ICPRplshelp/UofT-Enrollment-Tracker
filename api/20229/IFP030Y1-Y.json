@@ -190,9 +190,16 @@
 0,
 0,
 0,
-0
+0,
+0,
+1
 ],
-"instructors": [],
+"instructors": [
+[
+"Janine",
+"Riviere"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -383,9 +390,16 @@
 0,
 0,
 0,
-0
+0,
+0,
+1
 ],
-"instructors": [],
+"instructors": [
+[
+"Ai",
+"Ishida"
+]
+],
 "meetingNumber": "LEC0102"
 },
 {
@@ -576,9 +590,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Charles",
+"Wotton"
+]
+],
 "meetingNumber": "LEC0103"
 },
 {
@@ -769,9 +790,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Joanna",
+"Warden-Abrahams"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -962,9 +990,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Arlene",
+"Samlalsingh"
+]
+],
 "meetingNumber": "LEC0202"
 },
 {
@@ -1155,9 +1190,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Janine",
+"Riviere"
+]
+],
 "meetingNumber": "LEC0301"
 },
 {
@@ -1348,9 +1390,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Ai",
+"Ishida"
+]
+],
 "meetingNumber": "LEC0302"
 },
 {
@@ -1541,9 +1590,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Charles",
+"Wotton"
+]
+],
 "meetingNumber": "LEC0303"
 },
 {
@@ -1734,9 +1790,16 @@
 0,
 0,
 0,
-0
+0,
+0,
+1
 ],
-"instructors": [],
+"instructors": [
+[
+"Joanna",
+"Warden-Abrahams"
+]
+],
 "meetingNumber": "LEC0401"
 },
 {
@@ -1927,14 +1990,23 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Arlene",
+"Samlalsingh"
+]
+],
 "meetingNumber": "LEC0402"
 },
 {
 "enrollmentCap": 20,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -2313,9 +2385,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Arlene",
+"Samlalsingh"
+]
+],
 "meetingNumber": "LEC0601"
 },
 {
@@ -2506,9 +2585,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Joanna",
+"Warden-Abrahams"
+]
+],
 "meetingNumber": "LEC0602"
 },
 {
@@ -2699,9 +2785,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Charles",
+"Wotton"
+]
+],
 "meetingNumber": "LEC0701"
 },
 {
@@ -2892,9 +2985,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Ai",
+"Ishida"
+]
+],
 "meetingNumber": "LEC0702"
 }
 ],
@@ -3084,7 +3184,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Academic Literacies & Identities"
 }

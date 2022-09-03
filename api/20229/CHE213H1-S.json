@@ -3,7 +3,7 @@
 "faculty": "APSC",
 "meetings": [
 {
-"enrollmentCap": 142,
+"enrollmentCap": 143,
 "enrollmentLogs": [
 0,
 139,
@@ -55,7 +55,9 @@
 141,
 141,
 141,
-141
+141,
+141,
+140
 ],
 "instructors": [
 [
@@ -117,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Applied Chemistry II - Organic Chemistry"
 }

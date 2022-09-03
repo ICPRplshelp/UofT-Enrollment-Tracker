@@ -190,9 +190,16 @@
 46,
 46,
 46,
-46
+46,
+46,
+47
 ],
-"instructors": [],
+"instructors": [
+[
+"Keith",
+"Stewart"
+]
+],
 "meetingNumber": "LEC2501"
 },
 {
@@ -383,9 +390,16 @@
 75,
 75,
 77,
-77
+77,
+78,
+78
 ],
-"instructors": [],
+"instructors": [
+[
+"Keith",
+"Stewart"
+]
+],
 "meetingNumber": "LEC5101"
 }
 ],
@@ -575,7 +589,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Energy Policy and Environment"
 }

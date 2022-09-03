@@ -3,7 +3,7 @@
 "faculty": "ERIN",
 "meetings": [
 {
-"enrollmentCap": 50,
+"enrollmentCap": 56,
 "enrollmentLogs": [
 0,
 60,
@@ -55,7 +55,9 @@
 61,
 61,
 61,
-61
+61,
+61,
+60
 ],
 "instructors": [
 [
@@ -117,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Teaching and Learning Cross-cultural Communication"
 }

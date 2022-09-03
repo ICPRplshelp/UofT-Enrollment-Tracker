@@ -190,9 +190,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Rebecca",
+"Pearson-Fischer"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -383,9 +390,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"John",
+"McGaughey"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -576,9 +590,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Conttia",
+"Lai"
+]
+],
 "meetingNumber": "LEC0301"
 },
 {
@@ -769,9 +790,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Nermine",
+"Abd Elkader"
+]
+],
 "meetingNumber": "LEC0302"
 },
 {
@@ -962,9 +990,16 @@
 0,
 0,
 0,
-0
+0,
+0,
+1
 ],
-"instructors": [],
+"instructors": [
+[
+"Farhana",
+"Ahmed"
+]
+],
 "meetingNumber": "LEC0401"
 },
 {
@@ -1155,9 +1190,16 @@
 0,
 0,
 0,
-0
+0,
+0,
+1
 ],
-"instructors": [],
+"instructors": [
+[
+"Catrinel",
+"Ionescu"
+]
+],
 "meetingNumber": "LEC0501"
 },
 {
@@ -1348,9 +1390,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Christina",
+"Cole"
+]
+],
 "meetingNumber": "LEC0601"
 },
 {
@@ -1541,9 +1590,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Rebecca",
+"Pearson-Fischer"
+]
+],
 "meetingNumber": "LEC0701"
 },
 {
@@ -1734,9 +1790,16 @@
 0,
 0,
 0,
-0
+0,
+0,
+1
 ],
-"instructors": [],
+"instructors": [
+[
+"Catrinel",
+"Ionescu"
+]
+],
 "meetingNumber": "LEC0801"
 },
 {
@@ -1927,9 +1990,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Conttia",
+"Lai"
+]
+],
 "meetingNumber": "LEC0802"
 },
 {
@@ -2120,9 +2190,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Fiore",
+"Vescio"
+]
+],
 "meetingNumber": "LEC0803"
 },
 {
@@ -2313,9 +2390,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Nermine",
+"Abd Elkader"
+]
+],
 "meetingNumber": "LEC0804"
 },
 {
@@ -2506,9 +2590,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Farhana",
+"Ahmed"
+]
+],
 "meetingNumber": "LEC0901"
 },
 {
@@ -2699,9 +2790,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Christina",
+"Cole"
+]
+],
 "meetingNumber": "LEC0902"
 },
 {
@@ -2892,9 +2990,16 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
-"instructors": [],
+"instructors": [
+[
+"Carlos",
+"Hernandez"
+]
+],
 "meetingNumber": "LEC0903"
 }
 ],
@@ -3084,7 +3189,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Critical Reading & Writing"
 }

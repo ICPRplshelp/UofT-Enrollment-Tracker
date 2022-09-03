@@ -190,9 +190,16 @@
 63,
 63,
 63,
-63
+63,
+63,
+64
 ],
-"instructors": [],
+"instructors": [
+[
+"Patricia",
+"Sanchez"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -383,9 +390,16 @@
 60,
 60,
 60,
-60
+60,
+60,
+61
 ],
-"instructors": [],
+"instructors": [
+[
+"Patricia",
+"Sanchez"
+]
+],
 "meetingNumber": "LEC0201"
 }
 ],
@@ -575,7 +589,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Intergroup Relations"
 }

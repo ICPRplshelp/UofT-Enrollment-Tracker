@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 60,
+"enrollmentCap": 65,
 "enrollmentLogs": [
 0,
 71,
@@ -55,7 +55,9 @@
 73,
 73,
 73,
-73
+73,
+71,
+69
 ],
 "instructors": [
 [
@@ -66,7 +68,7 @@
 "meetingNumber": "LEC01"
 },
 {
-"enrollmentCap": 60,
+"enrollmentCap": 65,
 "enrollmentLogs": [
 0,
 66,
@@ -118,7 +120,9 @@
 66,
 66,
 66,
-66
+66,
+64,
+65
 ],
 "instructors": [
 [
@@ -180,7 +184,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Management Ethics"
 }

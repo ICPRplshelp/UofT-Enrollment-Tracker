@@ -190,6 +190,8 @@
 41,
 41,
 41,
+41,
+41,
 41
 ],
 "instructors": [],
@@ -383,7 +385,9 @@
 31,
 31,
 31,
-31
+31,
+31,
+29
 ],
 "instructors": [],
 "meetingNumber": "LEC0102"
@@ -575,7 +579,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Virtual Worlds: Introduction to Spatial Digital Humanities"
 }

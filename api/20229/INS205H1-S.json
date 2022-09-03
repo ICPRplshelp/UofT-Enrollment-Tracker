@@ -190,9 +190,16 @@
 33,
 33,
 32,
-31
+31,
+30,
+29
 ],
-"instructors": [],
+"instructors": [
+[
+"Verne",
+"Ross"
+]
+],
 "meetingNumber": "LEC0101"
 }
 ],
@@ -382,7 +389,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Indigenous Worldviews, Spiritual and Healing Traditions"
 }

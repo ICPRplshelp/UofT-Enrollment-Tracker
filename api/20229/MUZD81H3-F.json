@@ -7,7 +7,9 @@
 "enrollmentLogs": [
 0,
 0,
-0
+0,
+0,
+2
 ],
 "instructors": [
 [
@@ -21,7 +23,9 @@
 "timeIntervals": [
 1661881096,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Independent Study in Music"
 }

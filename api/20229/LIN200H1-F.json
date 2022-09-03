@@ -190,12 +190,18 @@
 302,
 302,
 302,
-302
+302,
+303,
+304
 ],
 "instructors": [
 [
 "Radu",
 "Craioveanu"
+],
+[
+"Jessica",
+"Yeung"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -388,9 +394,20 @@
 36,
 36,
 36,
-36
+36,
+35,
+35
 ],
-"instructors": [],
+"instructors": [
+[
+"Radu",
+"Craioveanu"
+],
+[
+"Jessica",
+"Yeung"
+]
+],
 "meetingNumber": "LEC2001"
 }
 ],
@@ -580,7 +597,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Introduction to Language"
 }

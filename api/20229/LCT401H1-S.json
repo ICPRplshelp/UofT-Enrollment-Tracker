@@ -190,6 +190,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -203,6 +205,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -586,6 +590,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -599,6 +605,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -982,6 +990,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -995,6 +1005,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -1378,6 +1390,8 @@
 0,
 0,
 0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -1391,6 +1405,8 @@
 {
 "enrollmentCap": 4,
 "enrollmentLogs": [
+0,
+0,
 0,
 0,
 0,
@@ -1774,6 +1790,8 @@
 2,
 2,
 2,
+2,
+2,
 2
 ],
 "instructors": [
@@ -1971,7 +1989,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Seminar in Comparative Literature"
 }

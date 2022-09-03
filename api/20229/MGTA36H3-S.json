@@ -55,7 +55,9 @@
 40,
 40,
 40,
-40
+40,
+38,
+37
 ],
 "instructors": [],
 "meetingNumber": "LEC01"
@@ -113,7 +115,9 @@
 40,
 40,
 40,
-40
+40,
+39,
+39
 ],
 "instructors": [],
 "meetingNumber": "LEC02"
@@ -171,7 +175,9 @@
 39,
 39,
 39,
-39
+39,
+33,
+34
 ],
 "instructors": [],
 "meetingNumber": "LEC03"
@@ -229,7 +235,9 @@
 39,
 39,
 39,
-39
+39,
+38,
+38
 ],
 "instructors": [],
 "meetingNumber": "LEC04"
@@ -287,7 +295,9 @@
 38,
 38,
 38,
-38
+38,
+36,
+35
 ],
 "instructors": [],
 "meetingNumber": "LEC05"
@@ -345,7 +355,9 @@
 39,
 39,
 39,
-39
+39,
+35,
+35
 ],
 "instructors": [],
 "meetingNumber": "LEC30"
@@ -402,7 +414,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Management Communications for Co-op"
 }

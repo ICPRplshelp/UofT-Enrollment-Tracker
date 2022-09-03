@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 36,
+"enrollmentCap": 35,
 "enrollmentLogs": [
 0,
 41,
@@ -55,7 +55,9 @@
 39,
 39,
 39,
-39
+39,
+38,
+37
 ],
 "instructors": [
 [
@@ -117,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Introduction to Chemical Thermodynamics and Kinetics: Theory and Practice"
 }

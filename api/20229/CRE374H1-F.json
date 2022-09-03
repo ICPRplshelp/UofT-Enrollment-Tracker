@@ -190,9 +190,15 @@
 26,
 26,
 25,
-27
+27,
+27,
+28
 ],
 "instructors": [
+[
+"Adam",
+"Sol"
+],
 [
 "Adam",
 "Sol"
@@ -387,7 +393,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Cultural Encounters: Identity and Transformation in the Arts"
 }

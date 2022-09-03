@@ -3,7 +3,7 @@
 "faculty": "SCAR",
 "meetings": [
 {
-"enrollmentCap": 80,
+"enrollmentCap": 95,
 "enrollmentLogs": [
 0,
 91,
@@ -34,6 +34,8 @@
 93,
 93,
 93,
+92,
+92,
 92,
 92,
 92,
@@ -117,7 +119,9 @@
 1661826828,
 1661840080,
 1661881097,
-1661901434
+1661901434,
+1661955369,
+1662163162
 ],
 "title": "Semantics: The Study of Meaning"
 }
