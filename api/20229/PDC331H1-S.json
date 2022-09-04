@@ -196,6 +196,9 @@
 0,
 0,
 0,
+0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -217,6 +220,9 @@
 {
 "enrollmentCap": 2,
 "enrollmentLogs": [
+0,
+0,
+0,
 0,
 0,
 0,
@@ -620,6 +626,9 @@
 0,
 0,
 0,
+0,
+0,
+0,
 0
 ],
 "instructors": [
@@ -641,6 +650,9 @@
 {
 "enrollmentCap": 250,
 "enrollmentLogs": [
+0,
+0,
+0,
 0,
 0,
 0,
@@ -1043,7 +1055,10 @@
 1662172473,
 1662219591,
 1662220533,
-1662220766
+1662220766,
+1662245590,
+1662264451,
+1662309382
 ],
 "title": "Arts & Science Internship Program - Professional Skill Development II"
 }
