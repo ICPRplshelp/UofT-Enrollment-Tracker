@@ -203,9 +203,16 @@
 325,
 325,
 328,
-329
+329,
+329,
+328
 ],
-"instructors": [],
+"instructors": [
+[
+"Selvakkadunko",
+"Selvaratnam"
+]
+],
 "meetingNumber": "LEC0101"
 },
 {
@@ -409,9 +416,16 @@
 325,
 325,
 324,
-323
+323,
+323,
+327
 ],
-"instructors": [],
+"instructors": [
+[
+"Selvakkadunko",
+"Selvaratnam"
+]
+],
 "meetingNumber": "LEC0201"
 },
 {
@@ -615,9 +629,16 @@
 333,
 333,
 336,
+335,
+335,
 335
 ],
-"instructors": [],
+"instructors": [
+[
+"Selvakkadunko",
+"Selvaratnam"
+]
+],
 "meetingNumber": "LEC0301"
 }
 ],
@@ -820,7 +841,9 @@
 1662332726,
 1662361878,
 1662395608,
-1662417155
+1662417155,
+1662440375,
+1662497031
 ],
 "title": "Probability, Statistics and Data Analysis I"
 }

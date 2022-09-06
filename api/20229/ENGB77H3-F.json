@@ -1,6 +1,6 @@
 {
 "code": "ENGB77H3-F",
-"faculty": "SCAR",
+"faculty": "UNKNOWN",
 "meetings": [
 {
 "enrollmentCap": 55,
@@ -68,6 +68,7 @@
 45,
 45,
 45,
+44,
 44
 ],
 "instructors": [],
@@ -138,7 +139,8 @@
 1662332726,
 1662361878,
 1662395608,
-1662417155
+1662417155,
+1662440375
 ],
 "title": "Cinema and Colonialism"
 }

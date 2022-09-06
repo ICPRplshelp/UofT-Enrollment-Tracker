@@ -1,0 +1,20 @@
+{
+"code": "JAV303H1-S",
+"faculty": "ARCLA",
+"meetings": [
+{
+"enrollmentCap": 150,
+"enrollmentLogs": [
+0,
+0
+],
+"instructors": [],
+"meetingNumber": "LEC0101"
+}
+],
+"timeIntervals": [
+1662497030,
+1662497031
+],
+"title": "Cities, Society, Environment"
+}

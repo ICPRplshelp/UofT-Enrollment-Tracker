@@ -68,12 +68,18 @@
 8,
 8,
 8,
+8,
+8,
 8
 ],
 "instructors": [
 [
 "Jeffrey",
 "Reynolds"
+],
+[
+"Eun-Hae",
+"Ha"
 ]
 ],
 "meetingNumber": "LEC0101"
@@ -143,7 +149,9 @@
 1662332726,
 1662361878,
 1662395608,
-1662417155
+1662417155,
+1662440374,
+1662497031
 ],
 "title": "Instrumental Mus: Curriculum, Conducting,Rehearal & Rep. I"
 }
