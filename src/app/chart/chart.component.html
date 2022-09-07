@@ -115,7 +115,7 @@ loadCourseData(inputCourse)
         <td
           matTooltip="Students who are enrolled and waitlisted in this course. Note: Students can waitlist multiple lecture sections at once"
           [matTooltipPosition]="'left'"
-          style="padding-right: 5px;"
+          class="thick-row"
         >
           {{afterWaitlistDeadline ? "Enrolled" :  "Enrolled & Waitlisted"}}
         </td>
@@ -123,10 +123,11 @@ loadCourseData(inputCourse)
           {{ currentEnrollment }}/{{cap}}
         </td>
       </tr>
-      <tr *ngIf="finalEnrollment !==  currentEnrollment">
-        <td style="width: 75px;" matTooltip="Enrollment the day after the last day to enroll in this course"
+      <!-- *ngIf="finalEnrollment !==  currentEnrollment" -->
+      <tr >
+        <td class="thick-row" matTooltip="Enrollment the day after the last day to enroll in this course"
             [matTooltipPosition]="'left'" > Locked in </td>
-        <td> {{finalEnrollment}} </td>
+        <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
       </tr>
       <tr>
         <td matTooltip="Drops the day after the last day to enroll in this course" [matTooltipPosition]="'left'"> Drops

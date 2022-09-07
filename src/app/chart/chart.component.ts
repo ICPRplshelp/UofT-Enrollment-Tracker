@@ -226,6 +226,14 @@ export class ChartComponent implements OnInit {
   }
 
   determineCourseCode(crsCode: string): string {
+    if(crsCode.match(/^[A-Z]{3}([A-D]|\d)\d{2,3}[HY]\d?-?([FSY]\d?)$/)){
+      if(crsCode.charAt(8) !== "-")
+        crsCode = crsCode.substring(0, 8) + '-' + crsCode.substring(8);
+      return crsCode;
+      
+
+    }
+    
     if (crsCode.match(/^[A-Z]{3}[A-D0-9]\d{2}[HY]\d-?[FYS]$/)) {
       if (crsCode.match(/^[A-Z]{3}[A-D0-9]\d{2}[HY]\d[FYS]$/)) {
         crsCode = crsCode.substring(0, 8) + '-' + crsCode.substring(8);
@@ -233,6 +241,7 @@ export class ChartComponent implements OnInit {
       if (crsCode.match(/^[A-Z]{3}[A-D]\d{2}[HY]\d[FYS]$/)) {
         crsCode = crsCode.substring(0, 7) + '3' + crsCode.substring(8);
       }
+      
 
       return crsCode;
     } else if (crsCode.match(/^[A-Z]{3}[0-9]{3}.*/)) {
@@ -458,7 +467,7 @@ export class ChartComponent implements OnInit {
       let maxBumper: string = hideMax ? '' : ' - MAX';
 
       maxEnrollmentsSoFar.push({
-        data: [{x: earliest * 1000, y: mtt.enrollmentCap}, {x: latest * 1000, y: mtt.enrollmentCap},],
+        data: this._createCapPoints(mtt, earliest, latest),
         showLine: true,
         pointRadius: 0,
         backgroundColor: tempBordercolor,
@@ -467,6 +476,27 @@ export class ChartComponent implements OnInit {
         label: this.smallScreen && mtt.meetingNumber.length >= 6 ? `M${mtt.meetingNumber.substring(3)}` : `${mtt.meetingNumber}${maxBumper}`,
       });
     }
+  }
+
+  private _createCapPoints(mtt: Meeting, earliest: number, latest: number): {x: number, y: number}[]
+  {
+    if(mtt.enrollmentCapComplex === undefined || mtt.enrollmentCapComplex === null){
+      return [{x: earliest * 1000, y: mtt.enrollmentCap}, {x: latest * 1000, y: mtt.enrollmentCap}];
+    }
+    // no longer undefined
+    const firstCell = {x: earliest * 1000, y: mtt.enrollmentCapComplex.initialCap};
+    const capSeries: {x: number, y: number}[] = [firstCell];
+    let previousCap = mtt.enrollmentCapComplex.initialCap;
+    for(let temp of mtt.enrollmentCapComplex.capChanges){
+      let unix1K = temp[0] * 1000;
+      let tempCap = temp[1];
+      capSeries.push({x: unix1K - 1, y: previousCap});
+      capSeries.push({x: unix1K, y: tempCap});
+    }
+    // the last cap series
+    const lastCapSeries = mtt.enrollmentCapComplex.capChanges.length === 0 ? mtt.enrollmentCapComplex.initialCap : mtt.enrollmentCapComplex.capChanges[mtt.enrollmentCapComplex.capChanges.length - 1][1];
+    capSeries.push({x: latest * 1000, y: lastCapSeries});
+    return capSeries;
   }
 
   afterWaitlistDeadline: boolean = false;

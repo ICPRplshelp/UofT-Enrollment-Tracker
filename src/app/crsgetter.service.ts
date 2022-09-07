@@ -10,11 +10,16 @@ export class CrsgetterService {
 
   constructor(private http: HttpClient) { }
 
-  crsPath = "api/20229/";
+  localMode = false;
+
+  session = "20229";
+  crsPath = this.localMode ? "api/" : "https://raw.githubusercontent.com/ICPRplshelp/Enrollment-Data/master/";
   suffix = ".json";
   
   crsToPath(crsCode: string): string {
-    return this.crsPath + crsCode + this.suffix;
+    return this.crsPath  + this.session +
+    "/" + crsCode + this.suffix; 
+    // return this.crsPath + crsCode + this.suffix;
   }
 
 
@@ -45,7 +50,7 @@ export class CrsgetterService {
   }
 
   getImportantDates(): Observable<ImportantTimestamps> {
-    const tStampPath = this.crsPath + "20229Constants" + this.suffix;
+    const tStampPath = this.crsPath + "/" + this.session + "/" + "constants" + this.suffix;
     return this.http.get<ImportantTimestamps>(tStampPath);
   }
 

@@ -9,3 +9,7 @@ Screenshot:
 
 ![image](https://user-images.githubusercontent.com/93059453/182308380-776ba918-c2e1-4f9a-9cdf-e5b13564197a.png)
 
+## Notes
+
+This site does not update in realtime. The intention of this repository is to display enrollment data and contains no functionality
+that captures enrollment data.
