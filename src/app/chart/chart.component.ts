@@ -2,7 +2,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {CrsgetterService} from "../crsgetter.service";
 import {AllCoursesService} from "../all-courses.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {Course, ImportantTimestamps, Meeting} from "../cinterfaces";
+import {Course, ImportantTimestamps, IndividualSessionInfo, Meeting, SessionCollection} from "../cinterfaces";
 import * as pluginAnnotation from "chartjs-plugin-annotation";
 import {ChartDataset, ChartOptions, ChartType} from "chart.js";
 
@@ -23,6 +23,17 @@ export class ChartComponent implements OnInit {
 
   smallMessage = 'Your screen is small. Lecture sections are compressed. M#### means the maximum enrollment for that section. Consider rotating your device.';
   importantDates: ImportantTimestamps | null = null;
+  sessionColl: SessionCollection | null = null;
+
+  getSessions(): IndividualSessionInfo[] {
+    if(this.sessionColl !== null){
+      return this.sessionColl.sessions;
+    }
+    else return [];
+  }
+
+  selectedValue: string = "20229";
+
 
   ngOnInit() {
 
@@ -35,6 +46,16 @@ export class ChartComponent implements OnInit {
     }, () => {
 
       this.importantDates = tempData;
+    
+    });
+
+    let tempData2: SessionCollection;
+    this.crsgetter.getSessionCollection().subscribe((data) => {
+      tempData2 = data;
+    }, () => {console.log("Couldn't load session lists")},
+    () => {this.sessionColl = tempData2;
+    this.selectedValue = tempData2.sessions[tempData2.sessions.length - 1].sessionCode;
+    
     });
 
 
@@ -428,9 +449,7 @@ export class ChartComponent implements OnInit {
         waitlistDeadline = this.importantDates.winterWaitlistClosed;
       }
 
-      if (latest > waitlistDeadline) {
-        this.afterWaitlistDeadline = true;
-      }
+      this.afterWaitlistDeadline = latest > waitlistDeadline;
     }
   }
 
@@ -492,6 +511,7 @@ export class ChartComponent implements OnInit {
       let tempCap = temp[1];
       capSeries.push({x: unix1K - 1, y: previousCap});
       capSeries.push({x: unix1K, y: tempCap});
+      previousCap = tempCap;
     }
     // the last cap series
     const lastCapSeries = mtt.enrollmentCapComplex.capChanges.length === 0 ? mtt.enrollmentCapComplex.initialCap : mtt.enrollmentCapComplex.capChanges[mtt.enrollmentCapComplex.capChanges.length - 1][1];
@@ -604,13 +624,16 @@ export class ChartComponent implements OnInit {
 
       if (arrayHasNonNegativeValue) {
         for (let j = 0; j < doubleArr.length; j++) {
+          if(!isNaN(doubleArr[j][i]))
           sum += doubleArr[j][i];
         }
       } else {
         let negativeAtOnePoint = true;
         let tempArray: number[] = [];
         for (let j = 0; j < doubleArr.length; j++) {
+          if(!isNaN(doubleArr[j][i]))
           tempArray.push(doubleArr[j][i]);
+          else tempArray.push(0);
         }
         sum = Math.max(...tempArray);
       }
@@ -631,6 +654,7 @@ export class ChartComponent implements OnInit {
     for (let i = 0; i < doubleArr[0].length; i++) {
       let sum = 0;
       for (let j = 0; j < doubleArr.length; j++) {
+        if(!isNaN(doubleArr[j][i]))
         sum += doubleArr[j][i];
       }
       aggEnrollments.push(sum);
@@ -679,6 +703,7 @@ export class ChartComponent implements OnInit {
     for (let i = 0; i < enrollmentCollection[0].length; i++) {
       let sum = 0;
       for (let j = 0; j < enrollmentCollection.length; j++) {
+        if(!isNaN(enrollmentCollection[j][i]))
         sum += enrollmentCollection[j][i];
       }
       aggEnrollments.push(sum);

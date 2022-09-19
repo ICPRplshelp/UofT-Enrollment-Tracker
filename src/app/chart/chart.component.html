@@ -17,7 +17,21 @@
 <div class="center">
 
   <div class="flexit01">
-    <div class="shakeable">
+
+    <div *ngIf="getSessions().length >= 2">
+      <mat-form-field apperance="fill" class="example-form-field" >
+        <mat-label>Session</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="sess">
+          <mat-option *ngFor="let ses of getSessions()"
+          [value]="ses.sessionCode">
+          {{ses.name}}
+        </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+
+    <div>
       <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
         <mat-label>Course code</mat-label>
 
@@ -130,13 +144,13 @@ loadCourseData(inputCourse)
         <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
       </tr>
       <tr>
-        <td matTooltip="Drops the day after the last day to enroll in this course" [matTooltipPosition]="'left'"> Drops
+        <td matTooltip="Drops after the last day to enroll in this course" [matTooltipPosition]="'left'"> Drops
         </td>
         <td> {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
         </td>
       </tr>
       <tr>
-        <td matTooltip="Drops the day after the last day to drop this course" [matTooltipPosition]="'left'"> LWDs </td>
+        <td matTooltip="Drops after the last day to drop this course" [matTooltipPosition]="'left'"> LWDs </td>
         <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
       </tr>
     </table>
@@ -153,6 +167,10 @@ loadCourseData(inputCourse)
       autocomplete it for you.</p>
     <p>This site does not update in realtime and cannot tell you how quickly waitlists drop.
     </p>
+    <ul>
+      <li>As of 8&#47;18&#47;2022, courses from Applied Science and Engineering, Daniels, UTM, and UTSC are now supported. Enrollments were not captured before that time.</li>
+      <li>As of 9&#47;7&#47;2022, changes to course capacities are recorded. Any changes in course capacity before this date were not recorded.</li>
+    </ul>
   </div>
 
 

@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ChartComponent } from './chart/chart.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ChartComponent } from './chart/chart.component';
   ],
   imports: [
     MatInputModule,
+    MatSelectModule,
     MatSnackBarModule,
     FormsModule,
     MatButtonModule,

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import { Course, ImportantTimestamps } from './cinterfaces';
+import { Course, ImportantTimestamps, SessionCollection } from './cinterfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -50,8 +50,13 @@ export class CrsgetterService {
   }
 
   getImportantDates(): Observable<ImportantTimestamps> {
-    const tStampPath = this.crsPath + "/" + this.session + "/" + "constants" + this.suffix;
+    const tStampPath = this.crsPath + this.session + "/" + "constants" + this.suffix;
     return this.http.get<ImportantTimestamps>(tStampPath);
+  }
+
+  getSessionCollection(): Observable<SessionCollection> {
+    const sessionPath = this.crsPath + "sessions.json";
+    return this.http.get<SessionCollection>(sessionPath);
   }
 
 

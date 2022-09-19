@@ -50,3 +50,13 @@ export interface SessionInfo{
     sessionCode: string;  // must match the name of the folder
     name: string;  // either Fall-Winter AAAA-BBBB or Summer CCCC
 }
+
+
+export interface SessionCollection {
+    sessions: IndividualSessionInfo[];
+}
+
+export interface IndividualSessionInfo {
+    sessionCode: string;  // the session code. it must be the folder.
+    name: string;  // the user-friendly name of the session.
+}
