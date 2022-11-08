@@ -13,6 +13,7 @@ export interface EnrollmentCapComplex{
 
 export interface Meeting{
     meetingNumber: string;
+    createdAt: number;  // when the meeting is created
     instructors: string[][];
     enrollmentLogs: number[];
     enrollmentCap: number;

@@ -2,9 +2,11 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {CrsgetterService} from "../crsgetter.service";
 import {AllCoursesService} from "../all-courses.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {Course, ImportantTimestamps, IndividualSessionInfo, Meeting, SessionCollection} from "../cinterfaces";
+import {Course, EnrollmentCapComplex, ImportantTimestamps, IndividualSessionInfo, Meeting, SessionCollection} from "../cinterfaces";
 import * as pluginAnnotation from "chartjs-plugin-annotation";
 import {ChartDataset, ChartOptions, ChartType} from "chart.js";
+import { max } from 'moment';
+import { AutoCompleteService } from '../shared/auto-complete.service';
 
 @Component({
   selector: 'app-chart', templateUrl: './chart.component.html', styleUrls: ['./chart.component.scss']
@@ -14,7 +16,8 @@ export class ChartComponent implements OnInit {
 
   title = 'timetabletracker';
 
-  constructor(private crsgetter: CrsgetterService, private ac: AllCoursesService, private _snackBar: MatSnackBar) {
+  constructor(private crsgetter: CrsgetterService, private ac: AllCoursesService, private _snackBar: MatSnackBar,
+    private autoCompleter: AutoCompleteService) {
   }
 
   myFavCourses: string[] = ['EAS110Y1-Y', 'POL222H1-F', 'LIN101H1-F', 'CSC384H1-S', 'CHM247H1-S', 'LIN102H1-S', 'POL107H1-F', 'ENV200H1-S', 'FSL100H1-F', 'RSM333H1-S', 'RSM250H1-S', 'MAT237Y1-Y', 'SPA100Y1-Y', 'ENV100H1-F', 'EAS120Y1-Y', 'POL109H1-S', 'RSM222H1-F', 'POL106H1-F', 'SOC100H1-S', 'PSY100H1-F', 'MAT244H1-F', 'GGR124H1-S', 'CSC343H1-S', 'RSM219H1-F', 'PSY100H1-S', 'ECO202Y1-Y', 'POL200Y1-Y', 'ECO200Y1-Y', 'ECO105Y1-Y', 'MAT223H1-S', 'CSC263H1-S', 'STA130H1-S', 'CSC236H1-F', 'ECO204Y1-Y', 'PHY132H1-S', 'STA130H1-F', 'POL101H1-F', 'MAT224H1-S', 'CSC209H1-S', 'ANT100Y1-Y', 'CSC207H1-F', 'SOC150H1-S', 'STA238H1-S', 'PHY131H1-F', 'STA237H1-F', 'PSL301H1-S', 'ECO220Y1-Y', 'CSC108H1-S', 'AST201H1-S', 'BIO220H1-S', 'PSL300H1-F', 'MAT133Y1-Y', 'HMB265H1-F', 'MAT235Y1-Y', 'BCH210H1-F', 'BIO230H1-F', 'AST101H1-F', 'MAT223H1-F', 'MAT137Y1-Y', 'SOC100H1-F', 'CHM135H1-F', 'CSC148H1-S', 'BIO130H1-S', 'CHM136H1-S', 'BIO120H1-F', 'CSC108H1-F', 'ECO101H1-F', 'ECO102H1-S', 'MAT136H1-S', 'MAT135H1-F',];
@@ -24,6 +27,7 @@ export class ChartComponent implements OnInit {
   smallMessage = 'Your screen is small. Lecture sections are compressed. M#### means the maximum enrollment for that section. Consider rotating your device.';
   importantDates: ImportantTimestamps | null = null;
   sessionColl: SessionCollection | null = null;
+  isSummer: boolean = false;  // true if the course is offered in the summer
 
   getSessions(): IndividualSessionInfo[] {
     if(this.sessionColl !== null){
@@ -42,7 +46,7 @@ export class ChartComponent implements OnInit {
     this.crsgetter.getImportantDates().subscribe((data) => {
       tempData = data;
     }, () => {
-      console.log("Couldn't load important timestamps");
+      // console.log("Couldn't load important timestamps");
     }, () => {
 
       this.importantDates = tempData;
@@ -52,7 +56,8 @@ export class ChartComponent implements OnInit {
     let tempData2: SessionCollection;
     this.crsgetter.getSessionCollection().subscribe((data) => {
       tempData2 = data;
-    }, () => {console.log("Couldn't load session lists")},
+    }, () => {// console.log("Couldn't load session lists")
+    },
     () => {this.sessionColl = tempData2;
     this.selectedValue = tempData2.sessions[tempData2.sessions.length - 1].sessionCode;
     
@@ -247,34 +252,8 @@ export class ChartComponent implements OnInit {
   }
 
   determineCourseCode(crsCode: string): string {
-    if(crsCode.match(/^[A-Z]{3}([A-D]|\d)\d{2,3}[HY]\d?-?([FSY]\d?)$/)){
-      if(crsCode.charAt(8) !== "-")
-        crsCode = crsCode.substring(0, 8) + '-' + crsCode.substring(8);
-      return crsCode;
-      
-
-    }
-    
-    if (crsCode.match(/^[A-Z]{3}[A-D0-9]\d{2}[HY]\d-?[FYS]$/)) {
-      if (crsCode.match(/^[A-Z]{3}[A-D0-9]\d{2}[HY]\d[FYS]$/)) {
-        crsCode = crsCode.substring(0, 8) + '-' + crsCode.substring(8);
-      }
-      if (crsCode.match(/^[A-Z]{3}[A-D]\d{2}[HY]\d[FYS]$/)) {
-        crsCode = crsCode.substring(0, 7) + '3' + crsCode.substring(8);
-      }
-      
-
-      return crsCode;
-    } else if (crsCode.match(/^[A-Z]{3}[0-9]{3}.*/)) {
-
-      let temp = this.ac.autoCorrectCourse(crsCode);
-      if (temp === '') {
-        this.curErrorMessage = "This course doesn't exist or is not offered in this term";
-      }
-      return temp;
-    }
-    if (!crsCode.match(/^[A-Z]{3}[A-D\d]\d{2}/)) this.curErrorMessage = "That doesn't look like a course"; else this.curErrorMessage = "You didn't provide enough information about your course, or it doesn't exist";
-    return '';
+    // console.log("Attempting to autocomplete");
+    return this.autoCompleter.autoCompleteSearch(crsCode);
   }
 
   /**
@@ -454,6 +433,7 @@ export class ChartComponent implements OnInit {
   }
 
   private _processMeetingInfo(iterations: number, mtt: Meeting, timings: number[], chartDatasetSoFar: ChartDataset[], maxEnrollmentsSoFar: ChartDataset[], earliest: number, latest: number): void {
+    // console.log("Earliest is ", earliest);
     let tempBordercolor = this._getColorSeries(iterations);
 
     let tempShowLine = true;
@@ -466,6 +446,9 @@ export class ChartComponent implements OnInit {
     for (let i = 0; i < mtt.enrollmentLogs.length; i++) {
       let enrollment = mtt.enrollmentLogs[i];
       let timeOfEnrollment = timings[i];
+      // this captured time must be later than the time this
+      // lecture section was created
+      // if (timeOfEnrollment >= mtt.createdAt)
       chartPoints.push({x: timeOfEnrollment * 1000, y: enrollment});
     }
     if (chartPoints.length >= 1) {
@@ -486,7 +469,8 @@ export class ChartComponent implements OnInit {
       let maxBumper: string = hideMax ? '' : ' - MAX';
 
       maxEnrollmentsSoFar.push({
-        data: this._createCapPoints(mtt, earliest, latest),
+        data: this._createCapPoints(mtt, earliest, latest,
+          mtt.createdAt),
         showLine: true,
         pointRadius: 0,
         backgroundColor: tempBordercolor,
@@ -497,14 +481,20 @@ export class ChartComponent implements OnInit {
     }
   }
 
-  private _createCapPoints(mtt: Meeting, earliest: number, latest: number): {x: number, y: number}[]
+  private _createCapPoints(mtt: Meeting, earliest: number, latest: number,
+    createdAt: number): {x: number, y: number}[]
   {
     if(mtt.enrollmentCapComplex === undefined || mtt.enrollmentCapComplex === null){
       return [{x: earliest * 1000, y: mtt.enrollmentCap}, {x: latest * 1000, y: mtt.enrollmentCap}];
     }
     // no longer undefined
-    const firstCell = {x: earliest * 1000, y: mtt.enrollmentCapComplex.initialCap};
-    const capSeries: {x: number, y: number}[] = [firstCell];
+    // console.log(earliest, createdAt);
+    if(createdAt === 0){
+      createdAt = earliest;
+    }
+    const firstCell = {x: createdAt * 1000, y: mtt.enrollmentCapComplex.initialCap};
+    const notEarlyFallback = [{x: earliest * 1000, y: 0}, {x: createdAt * 1000 - 1, y: 0}];
+    const capSeries: {x: number, y: number}[] = earliest === createdAt ? [firstCell] : [...notEarlyFallback, firstCell];
     let previousCap = mtt.enrollmentCapComplex.initialCap;
     for(let temp of mtt.enrollmentCapComplex.capChanges){
       let unix1K = temp[0] * 1000;
@@ -552,11 +542,13 @@ export class ChartComponent implements OnInit {
 
     let fakeMeeting: Meeting = {
       meetingNumber: 'ALL LEFT', instructors: [['', '']], enrollmentLogs: finalArr, enrollmentCap: capSoFar,
+      createdAt: 0
     };
     let smallList = [fakeMeeting];
 
     let fakeMeeting2: Meeting = {
-      meetingNumber: 'ZERO', instructors: [['', '']], enrollmentLogs: [], enrollmentCap: 0,
+      meetingNumber: 'ZERO', instructors: [['', '']], enrollmentLogs: [], enrollmentCap: 0, createdAt: 0
+        
     };
     smallList.push(fakeMeeting2);
 
@@ -581,11 +573,92 @@ export class ChartComponent implements OnInit {
     }
     const aggEnrollments = this._flattenUnTransposedNumericalArray(doubleArr);
 
-    let fakeMeeting: Meeting = {
+    let fakeMeeting: Meeting = {createdAt: 0,
       meetingNumber: 'ALL', instructors: [['', '']], enrollmentLogs: aggEnrollments, enrollmentCap: capSoFar,
+      enrollmentCapComplex: this._createComplexEnrolData(course)
     };
 
     return [fakeMeeting];
+  }
+
+  /**
+   * Returns true if the meeting was added late.
+   * @param course the course
+   * @param mt the meeting which must be part of the course
+   */
+  private _meetingAddedLate(course: Course, mt: Meeting): boolean {
+    let firstTime = 0;
+    if(course.timeIntervals.length !== 0){
+      firstTime = course.timeIntervals[0];
+    }
+    // console.log(mt);
+    // console.log(firstTime, mt.createdAt);
+    return firstTime < mt.createdAt - 500;  // if the meeting was created 100
+    // seconds after the course. This helps prevent latency or smth
+  }
+
+  private _createComplexEnrolData(course: Course): EnrollmentCapComplex {
+    const timeSlots = this._createCapChangeTimeSeries(course);
+    let startingMaxForAll = 0;
+    for(let mt of course.meetings){
+      if(this.hideSpecial && this._isSpecialMeeting(mt.meetingNumber)){
+        continue;  // prevent special meetings from affecting the cap
+      }
+      if(mt.enrollmentCapComplex === null || mt.enrollmentCapComplex === undefined){
+        continue;  // never supposed to happen in practice
+      }
+      // 0 if the course was added late otherwise
+      if(!this._meetingAddedLate(course, mt))
+        startingMaxForAll += mt.enrollmentCapComplex.initialCap;
+    }
+    const cplxNumCap = this._createNewComplexCaps(timeSlots, startingMaxForAll);
+    // console.log(cplxNumCap);
+    const toRet: EnrollmentCapComplex = {initialCap: startingMaxForAll,
+      capChanges: cplxNumCap
+    }
+    return toRet;
+  }
+
+  private _createCapChangeTimeSeries(course: Course): number[][] {
+    let toReturn: number[][] = [];
+    for (let met of course.meetings){
+      if(met.enrollmentCapComplex === null || met.enrollmentCapComplex === undefined){
+        continue;
+      }
+      let previousCap = met.enrollmentCapComplex.initialCap;
+      if(this._meetingAddedLate(course, met)){
+        previousCap = 0;
+        toReturn.push([met.createdAt, met.enrollmentCapComplex.initialCap])
+      }
+      // if this meeting was added late, add [createdAt, initialCap] to the
+      // changelog list and the initial cap is 0.
+
+
+      
+      for(let capSeries of met.enrollmentCapComplex.capChanges){
+        toReturn.push([capSeries[0], capSeries[1] - previousCap]);
+        previousCap = capSeries[1];
+      }
+    }
+    // sort them by what was on the first index
+    toReturn.sort((elem, elem2) => elem[0] - elem2[0]);
+    // console.log("sorted", toReturn);
+    return toReturn;
+  }
+
+  private _createNewComplexCaps(timeSeries: number[][], initialCap: number): number[][] {
+    const newCaps: number[][] = [];
+    let previousCap = initialCap;  // for more readibility
+    for(let item of timeSeries){
+      if(newCaps.length === 0 || newCaps[newCaps.length - 1][0] !== item[0]){
+        newCaps.push([item[0], previousCap + item[1]]);
+      } else {
+        newCaps[newCaps.length -1][1] = newCaps[newCaps.length -1][1] + item[1];
+      }
+      // console.log(newCaps);
+      previousCap = newCaps[newCaps.length - 1][1];
+    }
+    return newCaps;
   }
 
   /**
@@ -735,14 +808,26 @@ export class ChartComponent implements OnInit {
       lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.winterLWD);
     }
 
-    this.finalEnrollment = startingTermIndex === -1 ? this.currentEnrollment : this.findMaxAfterIndex(aggEnrollments, startingTermIndex);
+
+    
+
+    this.finalEnrollment = startingTermIndex === -1 ? this.currentEnrollment : 
+    this._calculateFEnroll(enrollmentCollection, startingTermIndex);
 
 
     let enrolsAtDropDate = dropDateIndex === -1 ? this.currentEnrollment : aggEnrollments[dropDateIndex];
-    let enrolsAtLwdDate = lwdDateIndex === -1 ? this.currentEnrollment : aggEnrollments[lwdDateIndex];
+    let enrolsAtLwdDate = this.currentEnrollment;
 
     this.drops = this.finalEnrollment - enrolsAtDropDate;
     this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
+  }
+
+  private _calculateFEnroll(enrollmentCollection: number[][], startingTermIndex: number) {
+    let tempFinalEnroll = 0;
+    for (let er of enrollmentCollection) {
+      tempFinalEnroll += this.findMaxAmended(er, startingTermIndex);
+    }
+    return tempFinalEnroll;
   }
 
   /**
@@ -752,6 +837,11 @@ export class ChartComponent implements OnInit {
    * @returns the max, or 0 if the array is too short
    */
   findMaxAfterIndex(arr: number[], index: number): number {
+    if(index < 0){
+      return 0;
+    }
+
+
     let max = 0;
     for (let i = index; i < arr.length; i++) {
       if (arr[i] > max) {
@@ -759,6 +849,23 @@ export class ChartComponent implements OnInit {
       }
     }
     return max;
+  }
+
+
+  /**
+   * Finds the max of timings[firstIndex:], or timings[-1] if
+   * firstIndex >= timings.length()
+   * @param timings the timings list
+   * @param firstIndex the index corresponding to the day of closure
+   */
+  findMaxAmended(timings: number[], firstIndex: number): number {
+    if(timings.length === 0){
+      return 0;
+    }
+    if(firstIndex >= timings.length){
+      return timings[timings.length - 1];
+    }
+    return Math.max(...timings.slice(firstIndex));
   }
 
   /**

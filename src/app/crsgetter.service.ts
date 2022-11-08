@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import { Course, ImportantTimestamps, SessionCollection } from './cinterfaces';
+import { DesCol } from './shared/autocompleteinterfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -57,6 +58,11 @@ export class CrsgetterService {
   getSessionCollection(): Observable<SessionCollection> {
     const sessionPath = this.crsPath + "sessions.json";
     return this.http.get<SessionCollection>(sessionPath);
+  }
+
+  getAllCourseList(): Observable<DesCol> {
+    const tMPath = this.crsPath + this.session + "/AAclistall.json";
+    return this.http.get<DesCol>(tMPath);
   }
 
 

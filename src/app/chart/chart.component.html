@@ -127,7 +127,7 @@ loadCourseData(inputCourse)
     ">
       <tr>
         <td
-          matTooltip="Students who are enrolled and waitlisted in this course. Note: Students can waitlist multiple lecture sections at once"
+          matTooltip="Enrolled and waitlisted students. Students can waitlist multiple lecture sections at once"
           [matTooltipPosition]="'left'"
           class="thick-row"
         >
@@ -139,18 +139,40 @@ loadCourseData(inputCourse)
       </tr>
       <!-- *ngIf="finalEnrollment !==  currentEnrollment" -->
       <tr >
-        <td class="thick-row" matTooltip="Enrollment the day after the last day to enroll in this course"
+        <td class="thick-row" matTooltip="Enrollment right after enrollment closes"
             [matTooltipPosition]="'left'" > Locked in </td>
         <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
       </tr>
       <tr>
-        <td matTooltip="Drops after the last day to enroll in this course" [matTooltipPosition]="'left'"> Drops
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops between enrollment deadline and the last day to drop this course" [matTooltipPosition]="'left'"> Drops
         </td>
         <td> {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
         </td>
       </tr>
+      <tr *ngIf="isSummer">
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops during the 75% refund period">
+          75% refunded
+        </td>
+        <td>TBA</td>
+      </tr>
+      <tr *ngIf="isSummer">
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops during the 50% refund period">
+          50% refunded
+        </td>
+        <td>TBA</td>
+      </tr>
+      <tr *ngIf="isSummer">
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops during the 0% refund period but before the drop deadline">
+          0% refunded
+        </td>
+        <td>TBA</td>
+      </tr>
       <tr>
-        <td matTooltip="Drops after the last day to drop this course" [matTooltipPosition]="'left'"> LWDs </td>
+        <td matTooltip="Drops after the drop deadline" [matTooltipPosition]="'left'"> LWDs </td>
         <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
       </tr>
     </table>
@@ -158,18 +180,15 @@ loadCourseData(inputCourse)
 
   <div style="padding-top: 10px; max-width: 500px; margin: auto;">
     <p>
-      Most undergraduate courses are supported. All dates and
-      deadlines are based of the dates specified in the Faculty
-      of Arts and Science, even if the course isn't offered by FAS.
-      If a course isn't offered by the Faculty of Arts and Science,
-      you must type the entire code. For FAS courses, you can type
-      part of the course code and this site will attempt to
-      autocomplete it for you.</p>
+      All undergraduate courses from the Faculty of Arts and Science, APS and Engineering, Daniels, UTM, and UTSC
+      are supported.</p>
     <p>This site does not update in realtime and cannot tell you how quickly waitlists drop.
     </p>
     <ul>
-      <li>As of 8&#47;18&#47;2022, courses from Applied Science and Engineering, Daniels, UTM, and UTSC are now supported. Enrollments were not captured before that time.</li>
-      <li>As of 9&#47;7&#47;2022, changes to course capacities are recorded. Any changes in course capacity before this date were not recorded.</li>
+      <li>All dates and deadlines are based on the Faculty of Arts and Science, even if the course visible in the chart isn't offered by FAS.</li>
+      <li>Changes to course capacities are only recorded after 9&#47;7&#47;2022.</li>
+      <li>Course information is sourced from <a href="https://ttb.utoronto.ca/">here</a>.</li>
+      <li>If a course is added late, it will have a cap of 0 before it was added. If a course is cancelled, the enrollment line will be cut off. This may not be the case in early parts of the data.</li>
     </ul>
   </div>
 
