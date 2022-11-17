@@ -3,8 +3,10 @@ import {CrsgetterService} from "../crsgetter.service";
 import {AllCoursesService} from "../all-courses.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {Course, EnrollmentCapComplex, ImportantTimestamps, IndividualSessionInfo, Meeting, SessionCollection} from "../cinterfaces";
-import * as pluginAnnotation from "chartjs-plugin-annotation";
-import {ChartDataset, ChartOptions, ChartType} from "chart.js";
+import Annotation, * as pluginAnnotation from "chartjs-plugin-annotation";
+
+
+import {Chart, ChartDataset, ChartOptions, ChartType} from "chart.js";
 import { max } from 'moment';
 import { AutoCompleteService } from '../shared/auto-complete.service';
 
@@ -13,11 +15,16 @@ import { AutoCompleteService } from '../shared/auto-complete.service';
 })
 export class ChartComponent implements OnInit {
 
+  deadlineTimeOffset: number = 160000;  // deadlines for last day to
+  // add or drop are offset by this much to account for timetable delays.
+  // these only impact the drop rate.
+
 
   title = 'timetabletracker';
 
   constructor(private crsgetter: CrsgetterService, private ac: AllCoursesService, private _snackBar: MatSnackBar,
     private autoCompleter: AutoCompleteService) {
+      Chart.register(Annotation);
   }
 
   myFavCourses: string[] = ['EAS110Y1-Y', 'POL222H1-F', 'LIN101H1-F', 'CSC384H1-S', 'CHM247H1-S', 'LIN102H1-S', 'POL107H1-F', 'ENV200H1-S', 'FSL100H1-F', 'RSM333H1-S', 'RSM250H1-S', 'MAT237Y1-Y', 'SPA100Y1-Y', 'ENV100H1-F', 'EAS120Y1-Y', 'POL109H1-S', 'RSM222H1-F', 'POL106H1-F', 'SOC100H1-S', 'PSY100H1-F', 'MAT244H1-F', 'GGR124H1-S', 'CSC343H1-S', 'RSM219H1-F', 'PSY100H1-S', 'ECO202Y1-Y', 'POL200Y1-Y', 'ECO200Y1-Y', 'ECO105Y1-Y', 'MAT223H1-S', 'CSC263H1-S', 'STA130H1-S', 'CSC236H1-F', 'ECO204Y1-Y', 'PHY132H1-S', 'STA130H1-F', 'POL101H1-F', 'MAT224H1-S', 'CSC209H1-S', 'ANT100Y1-Y', 'CSC207H1-F', 'SOC150H1-S', 'STA238H1-S', 'PHY131H1-F', 'STA237H1-F', 'PSL301H1-S', 'ECO220Y1-Y', 'CSC108H1-S', 'AST201H1-S', 'BIO220H1-S', 'PSL300H1-F', 'MAT133Y1-Y', 'HMB265H1-F', 'MAT235Y1-Y', 'BCH210H1-F', 'BIO230H1-F', 'AST101H1-F', 'MAT223H1-F', 'MAT137Y1-Y', 'SOC100H1-F', 'CHM135H1-F', 'CSC148H1-S', 'BIO130H1-S', 'CHM136H1-S', 'BIO120H1-F', 'CSC108H1-F', 'ECO101H1-F', 'ECO102H1-S', 'MAT136H1-S', 'MAT135H1-F',];
@@ -121,14 +128,149 @@ export class ChartComponent implements OnInit {
       x: {
         type: 'time',
       },
-    }, plugins: {
+    }, 
+    plugins: {
       legend: {
         position: 'right',
       },
+      annotation: {
+        annotations: [
+          {
+            type: 'line',
+            scaleID: 'x',
+            value: 1663819200 * 1000,
+            borderColor: 'green',
+            borderWidth: 2,
+            label:{
+              display: true,
+              position: 'start',
+              content:'last day to enrol'
+              
+            }
+
+          }
+        ]
+      }
     },
-
-
   };
+
+  private _undefinedOrBefore(candidate: number | undefined,
+                              minValue: number
+    ): number {
+      if(candidate === undefined){
+        return 0;
+      }
+      else {
+        if (candidate > minValue){
+          return 0;
+        }
+        else{
+          return candidate;
+        }
+      }
+    }
+
+  /**
+   * Recalculate the annotations on this chart.
+   * This method will run AFTER the chart has been redrawn.
+   */
+  recalculateAnnotations(): void {
+    let lastEnrol: number;
+    let lastDrop: number;
+    let lastClass: number;
+
+    if(!this.showAnnotations){
+      if (this.scatterChartOptions !== undefined && 
+        this.scatterChartOptions.plugins !== undefined &&
+        this.scatterChartOptions.plugins.annotation !== undefined){
+      this.scatterChartOptions.plugins.annotation.annotations = [];
+      }
+      return;
+    }
+
+    // if these values are zero, don't do anything
+    // this.lastTime is the last time
+    if(this.fys === 'F'){
+      lastEnrol = this._undefinedOrBefore(this.importantDates?.fallEnrollmentEnd,
+        this.lastTime);
+      lastDrop = this._undefinedOrBefore(this.importantDates?.fallDrop,
+        this.lastTime);
+      lastClass = this._undefinedOrBefore(this.importantDates?.fallLWD,
+        this.lastTime);
+    } else if (this.fys === 'S'){
+      lastEnrol = this._undefinedOrBefore(this.importantDates?.winterEnrollmentEnd,
+        this.lastTime);
+      lastDrop = this._undefinedOrBefore(this.importantDates?.winterDrop,
+        this.lastTime);
+        lastClass = this._undefinedOrBefore(this.importantDates?.winterLWD,
+          this.lastTime);
+    } else {
+      lastEnrol = this._undefinedOrBefore(this.importantDates?.fallEnrollmentEnd,
+        this.lastTime);
+      lastDrop = this._undefinedOrBefore(this.importantDates?.yearDrop,
+        this.lastTime);
+        lastClass = this._undefinedOrBefore(this.importantDates?.winterLWD,
+          this.lastTime);
+    }
+
+    const annotationList: any[] = [];
+    if(lastEnrol !== 0){
+      annotationList.push(
+        {
+          type: 'line',
+          scaleID: 'x',
+          value: lastEnrol * 1000,
+          borderColor: 'green',
+          borderWidth: 2,
+          label:{
+            display: true,
+            position: 'end',
+            content:'enrollment deadline'
+            
+          }
+        }
+      )
+    }
+    if(lastDrop !== 0){
+      annotationList.push(
+        {
+          type: 'line',
+          scaleID: 'x',
+          value: (lastDrop + this.deadlineTimeOffset) * 1000,
+          borderColor: 'green',
+          borderWidth: 2,
+          label:{
+            display: true,
+            position: 'end',
+            content:'drop deadline'
+            
+          }
+        }
+      )
+    }
+    if(lastClass !== 0){
+      annotationList.push(
+        {
+          type: 'line',
+          scaleID: 'x',
+          value: lastClass * 1000,
+          borderColor: 'green',
+          borderWidth: 2,
+          label:{
+            display: true,
+            position: 'end',
+            content:'classes end'
+            
+          }
+        }
+      )
+    }
+    if (this.scatterChartOptions !== undefined && 
+      this.scatterChartOptions.plugins !== undefined &&
+      this.scatterChartOptions.plugins.annotation !== undefined){
+    this.scatterChartOptions.plugins.annotation.annotations = annotationList;
+    }
+  }
 
   inputCourse: string = 'MAT137Y1-Y';
 
@@ -245,7 +387,12 @@ export class ChartComponent implements OnInit {
   formatInstructors(ins: string[][]): string {
     let names: string[] = [];
     for (let fl of ins) {
-      names.push(`${fl[0]} ${fl[1]}`);
+      if(fl.length === 1){
+        names.push(fl[0]);
+      } else if(fl.length === 0){
+        // do nothing
+      }
+      else names.push(`${fl[0]} ${fl[1]}`);
     }
     let cand = names.join(', ');
     return cand !== '' ? cand : 'TBA';
@@ -317,6 +464,16 @@ export class ChartComponent implements OnInit {
 
   public set showLargePoints(value: boolean) {
     this._showLargePoints = value;
+    this.loadCourseData(this.inputCourse);
+  }
+
+  private _showAnnotations: boolean = true;
+  public get showAnnotations(): boolean {
+    return this._showAnnotations;
+  }
+
+  public set showAnnotations(value: boolean) {
+    this._showAnnotations = value;
     this.loadCourseData(this.inputCourse);
   }
 
@@ -448,8 +605,8 @@ export class ChartComponent implements OnInit {
       let timeOfEnrollment = timings[i];
       // this captured time must be later than the time this
       // lecture section was created
-      // if (timeOfEnrollment >= mtt.createdAt)
-      chartPoints.push({x: timeOfEnrollment * 1000, y: enrollment});
+      if (timeOfEnrollment >= mtt.createdAt)
+        chartPoints.push({x: timeOfEnrollment * 1000, y: enrollment});
     }
     if (chartPoints.length >= 1) {
 
@@ -746,6 +903,9 @@ export class ChartComponent implements OnInit {
     this.loadCourseData(this.inputCourse);
   }
 
+  fys: string = 'F';
+  lastTime: number = 0;
+
   /**
    * Updates all important counts attached to crs
    * @param crs the course information to be passed in
@@ -755,9 +915,15 @@ export class ChartComponent implements OnInit {
 
     let fys = crs.code[crs.code.length - 1];
 
+    let lastTime = 0;
+    if (crs.timeIntervals.length >= 1)
+     lastTime = crs.timeIntervals[crs.timeIntervals.length - 1];
+    this.lastTime = lastTime;
+
     if (!fys.match(/[FYS]/)) {
       return;
     }
+    this.fys = fys;  // set this to be global here
     const aggEnrollments: number[] = [];
     const enrollmentCollection: number[][] = [];
     let cap = 0;
@@ -795,16 +961,16 @@ export class ChartComponent implements OnInit {
 
     if (fys === 'F') {
       startingTermIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.fallEnrollmentEnd);
-      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.fallDrop);
+      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.fallDrop + this.deadlineTimeOffset);
       lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.fallLWD);
     } else if (fys === 'S') {
 
       startingTermIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.winterEnrollmentEnd);
-      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.winterDrop);
+      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.winterDrop + this.deadlineTimeOffset);
       lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.winterLWD);
     } else if (fys === 'Y') {
       startingTermIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.fallEnrollmentEnd);
-      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.yearDrop);
+      dropDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.yearDrop + this.deadlineTimeOffset);
       lwdDateIndex = this.findIndexFirstDay(crs.timeIntervals, this.importantDates.winterLWD);
     }
 
@@ -816,10 +982,16 @@ export class ChartComponent implements OnInit {
 
 
     let enrolsAtDropDate = dropDateIndex === -1 ? this.currentEnrollment : aggEnrollments[dropDateIndex];
-    let enrolsAtLwdDate = this.currentEnrollment;
+    let enrolsAtLwdDate = this.currentEnrollment;  // lwd is infinite as
+    // the last day to LWD is the last day to request it.
 
     this.drops = this.finalEnrollment - enrolsAtDropDate;
     this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
+
+
+    this.recalculateAnnotations()
+
+
   }
 
   private _calculateFEnroll(enrollmentCollection: number[][], startingTermIndex: number) {

@@ -59,6 +59,10 @@ loadCourseData(inputCourse)
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
       Autoformat course codes
     </mat-checkbox>
+    <mat-checkbox [(ngModel)]="showAnnotations" color="primary" matTooltip="Display vertical lines showing important dates"
+                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
+      Annotations
+    </mat-checkbox>
 
     <mat-checkbox [(ngModel)]="hideSpecial" color="primary" matTooltip="Prevents LEC2000-LEC2999 sections from showing"
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
@@ -81,6 +85,7 @@ loadCourseData(inputCourse)
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
       Show large points
     </mat-checkbox>
+    
 
   </div>
 
