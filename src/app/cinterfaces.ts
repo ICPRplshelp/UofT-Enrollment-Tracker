@@ -18,6 +18,7 @@ export interface Meeting{
     enrollmentLogs: number[];
     enrollmentCap: number;
     enrollmentCapComplex?: EnrollmentCapComplex;
+    delivery?: string;
 }
 
 export interface ImportantTimestamps {

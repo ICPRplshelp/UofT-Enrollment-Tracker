@@ -57,6 +57,7 @@ export class ChartComponent implements OnInit {
     }, () => {
 
       this.importantDates = tempData;
+      this._loadCourseDataHelper();
     
     });
 
@@ -67,7 +68,7 @@ export class ChartComponent implements OnInit {
     },
     () => {this.sessionColl = tempData2;
     this.selectedValue = tempData2.sessions[tempData2.sessions.length - 1].sessionCode;
-    
+    this._loadCourseDataHelper();
     });
 
 
@@ -144,7 +145,7 @@ export class ChartComponent implements OnInit {
             label:{
               display: true,
               position: 'start',
-              content:'last day to enrol'
+              content:'PLEASE RELOAD THE COURSE BY PRESSING ENTER'
               
             }
 
@@ -248,6 +249,28 @@ export class ChartComponent implements OnInit {
         }
       )
     }
+
+    if(this.importantDates !== null && this.importantDates !== undefined
+      && this.importantDates.general > this.earliestChartTime){
+        console.log('earliest chart time', this.earliestChartTime);
+        console.log('general time', this.importantDates.general);
+      annotationList.push(
+        {
+          type: 'line',
+          scaleID: 'x',
+          value: this.importantDates.general * 1000,
+          borderColor: 'green',
+          borderWidth: 2,
+          label:{
+            display: true,
+            position: 'end',
+            content:'general enrollment'
+            
+          }
+        }
+      )
+    }
+
     if(lastClass !== 0){
       annotationList.push(
         {
@@ -271,7 +294,7 @@ export class ChartComponent implements OnInit {
     this.scatterChartOptions.plugins.annotation.annotations = annotationList;
     }
   }
-
+  earliestChartTime: number = 0;
   inputCourse: string = 'MAT137Y1-Y';
 
   data = [{x: 0, y: 1}, {x: 1, y: 2},];
@@ -447,12 +470,13 @@ export class ChartComponent implements OnInit {
     }, () => {
       this.curErrorMessage = '';
 
-      this._loadCourseDataHelper(courseInfo);
+      
       this.previousCourseInfo = courseInfo;
       this.previousFullCourseCode = tempCourse;
       this.courseTitle = courseInfo.title;
       this.previousCourse = courseCode;
       this.previousWasError = false;
+      this._loadCourseDataHelper(courseInfo);
     });
   }
 
@@ -538,6 +562,7 @@ export class ChartComponent implements OnInit {
     const timings: number[] = course.timeIntervals;
 
     const earliest: number = timings[0];
+    this.earliestChartTime = earliest;
     const latest: number = timings[timings.length - 1];
     this.lastUpdateString = new Date(latest * 1000).toLocaleString();
 
@@ -554,6 +579,20 @@ export class ChartComponent implements OnInit {
     } else if (this.combineAll) {
       targetMeetings = this._combineAllMeetings(course);
     }
+
+    targetMeetings.sort((a, b) => {
+      let am = a.meetingNumber.slice(3);
+      let bm = b.meetingNumber.slice(3);
+      if(am.startsWith("2")){
+        am = "7" + am.slice(1);
+      }
+      if(bm.startsWith("2")){
+        bm = "7" + bm.slice(1);
+      }
+
+      return am.localeCompare(bm);
+    
+    });
 
     for (let mtt of targetMeetings) {
 
@@ -589,19 +628,50 @@ export class ChartComponent implements OnInit {
     }
   }
 
+  private _getDeliverySymbol(deliveryMode: string | undefined): string {
+    switch(deliveryMode){
+      case 'INPER':
+        return '';
+      case 'SYNC':
+        return '🌐';
+      case 'SYNIF':
+        return '📶';
+      case 'ASYNC':
+        return '💤';
+      case 'ASYIF':
+        return '📴';
+      case 'ASYNIF':
+        return '📴';
+      default:
+        return '';
+    }
+  }
+
   private _processMeetingInfo(iterations: number, mtt: Meeting, timings: number[], chartDatasetSoFar: ChartDataset[], maxEnrollmentsSoFar: ChartDataset[], earliest: number, latest: number): void {
     // console.log("Earliest is ", earliest);
-    let tempBordercolor = this._getColorSeries(iterations);
+    let tempBordercolor;
+    if(!this._isSpecialMeeting(mtt.meetingNumber) || this.toggleSeperateSpecialColors) tempBordercolor = this._getColorSeries(iterations);
+    else tempBordercolor = this._getSpecialColorSeries(iterations);
 
     let tempShowLine = true;
     let tempPointRadius = 0;
     let insStr = this.formatInstructors(mtt.instructors);
-    let tempLabel = this.smallScreen ? `L${mtt.meetingNumber.substring(3)}` : `${mtt.meetingNumber} ${insStr.trim() === '' ? '' : '-'} ${insStr}`;
+    let synSymbol = this._getDeliverySymbol(mtt.delivery);
+    if (synSymbol !== ''){
+      synSymbol = synSymbol + ' ';
+    }
+    let tempLabel = this.smallScreen ? `L${mtt.meetingNumber.substring(3)}` : `${mtt.meetingNumber} ${insStr.trim() === '' ? '' : '-'} ${synSymbol}${insStr}`;
     let chartPoints: { x: number; y: number }[] = [];
 
+    // this.earliestChartTime = earliest;
 
     for (let i = 0; i < mtt.enrollmentLogs.length; i++) {
       let enrollment = mtt.enrollmentLogs[i];
+
+      if(enrollment === 0 && i == 0){
+        continue;
+      }
+
       let timeOfEnrollment = timings[i];
       // this captured time must be later than the time this
       // lecture section was created
@@ -619,6 +689,8 @@ export class ChartComponent implements OnInit {
         borderColor: tempBordercolor,
       });
     }
+
+    
 
 
     if (this._showMaxEnrollment) {
@@ -651,7 +723,9 @@ export class ChartComponent implements OnInit {
     }
     const firstCell = {x: createdAt * 1000, y: mtt.enrollmentCapComplex.initialCap};
     const notEarlyFallback = [{x: earliest * 1000, y: 0}, {x: createdAt * 1000 - 1, y: 0}];
-    const capSeries: {x: number, y: number}[] = earliest === createdAt ? [firstCell] : [...notEarlyFallback, firstCell];
+    // was this section created the same time as the earliest section?
+    // not if the section was created late.
+    const capSeries: {x: number, y: number}[] = earliest <= createdAt ? [firstCell] : [...notEarlyFallback, firstCell];
     let previousCap = mtt.enrollmentCapComplex.initialCap;
     for(let temp of mtt.enrollmentCapComplex.capChanges){
       let unix1K = temp[0] * 1000;
@@ -1065,9 +1139,16 @@ export class ChartComponent implements OnInit {
   lastUpdateString: string = '';
 
   colors: string[] = ['#6E4DBC', '#1C996F', '#D1543B', '#C94973', '#D48A35', '#3CABB5', '#48ce00', '#d32295', '#2d89d3', '#6b4a32', '#505050', '#003b6e', '#a445c0', '#9b9100', '#cb3500', '#492100', '#000000',];
+  specialColors: string[] = ['#755F59', '#93A67E', '#C2ADA7', '#939EC2', '#5F6475'];
+
+  toggleSeperateSpecialColors: boolean = true;
 
   private _getColorSeries(colorNum: number): string {
     return this.colors[colorNum % this.colors.length];
+  }
+
+  private _getSpecialColorSeries(colorNum: number): string {
+    return this.specialColors[colorNum % this.specialColors.length];
   }
 
 }
