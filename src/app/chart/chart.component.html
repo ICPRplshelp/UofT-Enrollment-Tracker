@@ -6,7 +6,7 @@
   </h1>
 
   <p> Track the enrollment for any course
-    offered in the Fall-Winter 2022-2023 term.
+    offered in the {{getSessionName(selectedValue)}} term.
     <br>
     Click on a legend component to hide it.
     <br>
@@ -18,7 +18,7 @@
 
   <div class="flexit01">
 
-    <div *ngIf="getSessions().length >= 2">
+    <!-- <div *ngIf="getSessions().length >= 2">
       <mat-form-field apperance="fill" class="example-form-field" >
         <mat-label>Session</mat-label>
         <mat-select [(ngModel)]="selectedValue" name="sess">
@@ -28,7 +28,22 @@
         </mat-option>
         </mat-select>
       </mat-form-field>
+    </div> -->
+
+    <div *ngIf="getSessions().length >= 2">
+      <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
+        <mat-label>Session</mat-label>
+
+        <mat-select [(ngModel)]="selectedValue" name="sess">
+          <mat-option *ngFor="let ses of getSessions()"
+          [value]="ses.sessionCode">
+          {{ses.name}}
+        </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
+
+
 
 
     <div>
@@ -145,41 +160,42 @@ loadCourseData(inputCourse)
       <!-- *ngIf="finalEnrollment !==  currentEnrollment" -->
       <tr >
         <td class="thick-row" matTooltip="Enrollment right after enrollment closes"
-            [matTooltipPosition]="'left'" > Locked in </td>
+            [matTooltipPosition]="'left'" > Cutoff </td>
         <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
       </tr>
       <tr>
         <td [matTooltipPosition]="'left'"
         matTooltip="Drops between enrollment deadline and the last day to drop this course" [matTooltipPosition]="'left'"> Drops
         </td>
-        <td> {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
+        <td>  {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
         </td>
-      </tr>
-      <tr *ngIf="isSummer">
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops during the 75% refund period">
-          75% refunded
-        </td>
-        <td>TBA</td>
-      </tr>
-      <tr *ngIf="isSummer">
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops during the 50% refund period">
-          50% refunded
-        </td>
-        <td>TBA</td>
-      </tr>
-      <tr *ngIf="isSummer">
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops during the 0% refund period but before the drop deadline">
-          0% refunded
-        </td>
-        <td>TBA</td>
       </tr>
       <tr>
         <td matTooltip="Drops after the drop deadline" [matTooltipPosition]="'left'"> LWDs </td>
         <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
       </tr>
+      <tr *ngIf="isSummer && re75 !== null">
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops during the 75% refund period">
+          75 ref
+        </td>
+        <td> {{ re75 }} ({{ fmtNumAsPercent(re75 / finalEnrollment) }})  </td>
+      </tr>
+      <tr *ngIf="isSummer && re50 !== null">
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops during the 50% refund period">
+          50 ref
+        </td>
+        <td> {{ re50 }} ({{ fmtNumAsPercent(re50 / finalEnrollment) }}) </td>
+      </tr>
+      <tr *ngIf="isSummer  && re0 !== null">
+        <td [matTooltipPosition]="'left'"
+        matTooltip="Drops during the 0% refund period but before the drop deadline">
+          0 ref
+        </td>
+        <td> {{ re0 }} ({{ fmtNumAsPercent(re0 / finalEnrollment) }}) </td>
+      </tr>
+      
     </table>
   </div>
 
@@ -190,10 +206,13 @@ loadCourseData(inputCourse)
     <p>This site does not update in realtime and cannot tell you how quickly waitlists drop.
     </p>
     <ul>
-      <li>All dates and deadlines are based on the <strong>Faculty of Arts and Science, even if the course visible in the chart isn't offered by FAS.</strong> Beware, as <strong>UTSC's drop dates are later than most other faculities!</strong></li>
-      <li>Changes to course capacities are only recorded after 9&#47;7&#47;2022.</li>
+      <li>All dates and deadlines are based on the <strong>Faculty of Arts and Science, even if the course visible in the chart isn't offered by FAS.</strong> Double check if your Faculty's deadlines are the same as FAS!! UTSC tends to be inconsistent.</li>
       <li>Course information is sourced from <a href="https://ttb.utoronto.ca/">here</a>.</li>
-      <li>If a course is added late, it will have a cap of 0 before it was added. If a course is cancelled, the enrollment line will be cut off. This may not be the case in early parts of the data.</li>
+      <li>If a lecture section is added late, it will have a cap of 0 before it was added. If a lecture section is cancelled, the enrollment line will be cut off. If a course is cancelled, its respective page won't update.</li>
+      <li>Refund information is only shown for summer courses as course fees always apply there for FAS students. During the Fall-Winter term, most students pay program fees (which means students taking 4 or more credits throughout the year pay for the price of 5, and no refunds if they remain in that range)</li>
+      <li>Quickly navigate through sessions/terms by pressing COMMA (,) or PERIOD (.) on your keyboard while focused on the course input text box.</li>
+      <li>Here's another app I've made that displays all courses as presented in timetable builder: <a href="https://icprplshelp.github.io/UofT-Timetable-Prototype-V2/">HERE</a></li>
+      <li>Symbol guides: 🌐 sync | 💤 async | 📶 hybrid</li>
       <li>I claim no responsibility for what you do with this data.</li>
     </ul>
   </div>

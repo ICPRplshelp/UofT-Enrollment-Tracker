@@ -23,13 +23,11 @@ export interface Meeting{
 
 export interface ImportantTimestamps {
     start: number;
-    fourth: number;
-    third: number;
-    second: number;
-    first: number;
+    fourth?: number;
+    third?: number;
+    second?: number;
+    first?: number;
     general: number;
-    utmutsc: number;
-    feeDeadline: number;
     fallFirstDay: number;
     fallWaitlistClosed: number;
     fallEnrollmentEnd: number;
@@ -42,10 +40,18 @@ export interface ImportantTimestamps {
     winterDrop: number;
     winterLWD: number;
     endOfYear: number;
+    fall75?: number;
+    fall50?: number;  // if not present, then fall50 == fall drop
+    winter75?: number;
+    winter50?: number;
+    year75?: number;
+    year50?: number;
+    isSummer?: boolean;
 }
 
 export interface SessionsRaw{
     sessions: SessionInfo[];
+    
 }
 
 export interface SessionInfo{
@@ -56,6 +62,7 @@ export interface SessionInfo{
 
 export interface SessionCollection {
     sessions: IndividualSessionInfo[];
+    default: string;
 }
 
 export interface IndividualSessionInfo {

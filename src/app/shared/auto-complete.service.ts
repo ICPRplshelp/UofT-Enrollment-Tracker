@@ -9,17 +9,21 @@ export class AutoCompleteService {
 
   constructor(private crsgetter: CrsgetterService) {
 
+    this.reloadAutocomplete(crsgetter);
+
+   }
+
+  reloadAutocomplete(crsgetter: CrsgetterService) {
     let tempData: DesCol;
     crsgetter.getAllCourseList().subscribe((data) => {
       tempData = data;
     },
-    () => {// console.log("Couldn't get the full course list")
-    },
-    () => {
-      this.msList = tempData;
-    })
-
-   }
+      () => {
+      },
+      () => {
+        this.msList = tempData;
+      });
+  }
 
   autoCompleteSearch(courseCode: string): string {
 

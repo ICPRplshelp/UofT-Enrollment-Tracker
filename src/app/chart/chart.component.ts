@@ -124,9 +124,30 @@ export class ChartComponent implements OnInit {
     } else return [];
   }
 
-  selectedValue: string = '20229';
+  getSessionName(sesNum: string): string {
+    const temp = this.getSessions();
+    const idx = temp.map((s) => s.sessionCode).indexOf(sesNum);
+    if (idx === -1) {
+      return 'TBA';
+    } else {
+      return temp[idx].name;
+    }
+  }
 
-  ngOnInit() {
+  private _selectedValue: string = '';
+  public get selectedValue(): string {
+    return this._selectedValue;
+  }
+  public set selectedValue(value: string) {
+    this._selectedValue = value;
+    this.crsgetter.session = value;
+    this.autoCompleter.reloadAutocomplete(this.crsgetter);
+    this.reloadImportantDates();
+    this.loadCourseData(this.inputCourse);
+    // this._loadCourseDataHelper();
+  }
+
+  reloadImportantDates() {
     let tempData: ImportantTimestamps;
     this.crsgetter.getImportantDates().subscribe({
       next: (data) => {
@@ -137,11 +158,13 @@ export class ChartComponent implements OnInit {
       },
       complete: () => {
         this.importantDates = tempData;
+        // this.loadCourseData(this.inputCourse);
         this._loadCourseDataHelper();
-      }
-    }
-    );
+      },
+    });
+  }
 
+  getSessionList() {
     let tempData2: SessionCollection;
     this.crsgetter.getSessionCollection().subscribe({
       next: (data) => {
@@ -151,17 +174,24 @@ export class ChartComponent implements OnInit {
         // console.log("Couldn't load session lists")
       },
       complete: () => {
+        let randomIndex: number = Math.floor(
+          Math.random() * this.myFavCourses.length
+        );
+        let randomCourse = this.myFavCourses[randomIndex];
+        this.inputCourse = randomCourse;
+        this.selectedValue = tempData2.default;
         this.sessionColl = tempData2;
-        this.selectedValue =
-          tempData2.sessions[tempData2.sessions.length - 1].sessionCode;
+        this.reloadImportantDates();
         this._loadCourseDataHelper();
-      }}
-    );
+      },
+    });
+  }
 
-    this.inputCourse =
-      this.myFavCourses[Math.floor(Math.random() * this.myFavCourses.length)];
+  ngOnInit() {
+    this.getSessionList();
 
-    this.loadCourseData(this.inputCourse);
+    // this.inputCourse = "MAT137Y1-Y";
+    // this.loadCourseData(this.inputCourse);
     this.smallScreen = window.innerWidth < 768;
     let ref: any;
     if (this.smallScreen) {
@@ -258,6 +288,16 @@ export class ChartComponent implements OnInit {
     }
   }
 
+  calculateCourseLevel(crsCode: string): number {
+    const letter = crsCode[3];
+    console.log(letter);
+    if (letter === '4' || letter === 'D') return 4;
+    if (letter === '3' || letter === 'C') return 3;
+    if (letter === '2' || letter === 'B') return 2;
+    if (letter === '1' || letter === 'A') return 1;
+    return 0;
+  }
+
   /**
    * Recalculate the annotations on this chart.
    * This method will run AFTER the chart has been redrawn.
@@ -280,6 +320,7 @@ export class ChartComponent implements OnInit {
 
     // if these values are zero, don't do anything
     // this.lastTime is the last time
+
     if (this.fys === 'F') {
       lastEnrol = this._undefinedOrBefore(
         this.importantDates?.fallEnrollmentEnd,
@@ -351,13 +392,70 @@ export class ChartComponent implements OnInit {
       });
     }
 
+    
+
+    // console.log("About to", this.previousFullCourseCode[this.previousFullCourseCode.length - 1]);
+    const crsCodeNow = this.previousFullCourseCode.replace('-', '');
+    
+    if (
+      this.importantDates !== null &&
+      this.importantDates !== undefined &&
+      this.faculty !== 'APSC' &&
+      crsCodeNow[crsCodeNow.length - 2] === '1' &&
+      this.importantDates.first !== undefined &&
+      this.importantDates.second !== undefined &&
+      this.importantDates.third !== undefined &&
+      this.importantDates.fourth !== undefined
+    ) {
+      console.log("Got there");
+
+      const crsLv = this.calculateCourseLevel(
+        this.previousFullCourseCode
+      );
+      console.log(crsLv);
+      if (crsLv >= 1 && crsLv <= 4) {
+        let firstDayEnrol: number;
+        switch(crsLv){
+          case 1:
+            firstDayEnrol = this.importantDates.first;
+            break;
+          case 2:
+            firstDayEnrol = this.importantDates.second;
+            break;
+          case 3:
+            firstDayEnrol = this.importantDates.third;
+            break;
+          case 4:
+            firstDayEnrol = this.importantDates.fourth;
+            break;
+          default:
+            firstDayEnrol = this.importantDates.first;
+            break;
+        }
+
+
+        annotationList.push({
+          type: 'line',
+          scaleID: 'x',
+          value: firstDayEnrol * 1000,
+          borderColor: 'green',
+          borderWidth: 2,
+          // label: {
+          //   display: true,
+          //   position: 'end',
+          //   // content: 'first day',
+          // },
+        });
+      }
+    }
+
     if (
       this.importantDates !== null &&
       this.importantDates !== undefined &&
       this.importantDates.general > this.earliestChartTime
     ) {
-      console.log('earliest chart time', this.earliestChartTime);
-      console.log('general time', this.importantDates.general);
+      // console.log('earliest chart time', this.earliestChartTime);
+      // console.log('general time', this.importantDates.general);
       annotationList.push({
         type: 'line',
         scaleID: 'x',
@@ -382,7 +480,7 @@ export class ChartComponent implements OnInit {
         label: {
           display: true,
           position: 'end',
-          content: 'classes end',
+          content: 'end',
         },
       });
     }
@@ -395,7 +493,17 @@ export class ChartComponent implements OnInit {
     }
   }
   earliestChartTime: number = 0;
-  inputCourse: string = 'MAT137Y1-Y';
+  private _inputCourse: string = 'MAT137Y1Y';
+  public get inputCourse(): string {
+    return this._inputCourse;
+  }
+  public set inputCourse(value: string) {
+    this._inputCourse = value.replace(/[,.\s]+$/, ' ');
+    // if(temp[temp.length - 1] === " "){
+    //   temp = temp.slice(0, temp.length - 1);
+    // }
+    // this._inputCourse = temp;
+  }
 
   data = [
     { x: 0, y: 1 },
@@ -444,6 +552,31 @@ export class ChartComponent implements OnInit {
       let randomCourse = this.myFavCourses[randomIndex];
       this.loadCourseData(randomCourse);
       this.randomized++;
+    }
+
+    if (event.keyCode === 188) {
+      let sLI = this.getSessions().map((s) => s.sessionCode);
+      // curr session is this.selectedValue;
+      let sesInd = sLI.indexOf(this.selectedValue);
+      sesInd = sesInd - 1;
+      if (sesInd < 0) {
+        sesInd = 0;
+        return;
+      }
+      this.selectedValue = sLI[sesInd];
+      console.log(this.selectedValue);
+    }
+
+    if (event.keyCode === 190) {
+      let sLI = this.getSessions().map((s) => s.sessionCode);
+      // curr session is this.selectedValue;
+      let sesInd = sLI.indexOf(this.selectedValue);
+      sesInd = sesInd + 1;
+      if (sesInd >= sLI.length) {
+        sesInd = sLI.length - 1;
+        return;
+      }
+      this.selectedValue = sLI[sesInd];
     }
   }
 
@@ -537,6 +670,8 @@ export class ChartComponent implements OnInit {
     return this.autoCompleter.autoCompleteSearch(crsCode);
   }
 
+  previousSession: string = '';
+
   /**
    * Reloads the course and presents it to the screen,
    * done by updating scatterChartData.
@@ -558,7 +693,10 @@ export class ChartComponent implements OnInit {
 
     courseCode = tempCourse;
 
-    if (this.previousCourse === courseCode) {
+    if (
+      this.previousCourse === courseCode &&
+      this.previousSession == this.selectedValue
+    ) {
       if (!this.previousWasError) {
         this._loadCourseDataHelper();
       } else {
@@ -576,6 +714,7 @@ export class ChartComponent implements OnInit {
         this.curErrorMessage = this.courseDoesNotExist;
         this.previousWasError = true;
         this.previousCourse = courseCode;
+        this.previousSession = '';
       },
       complete: () => {
         this.curErrorMessage = '';
@@ -586,8 +725,9 @@ export class ChartComponent implements OnInit {
         this.previousCourse = courseCode;
         this.previousWasError = false;
         this._loadCourseDataHelper(courseInfo);
-      }}
-    );
+        this.previousSession = this.selectedValue;
+      },
+    });
   }
 
   largePointRadius: number = 3;
@@ -718,25 +858,29 @@ export class ChartComponent implements OnInit {
       iterations++;
     }
 
-    this.recalculateAfterWaitlistClosed(course, latest);
+    this.recalculateDeadlines(course, latest);
 
     chartDatasetSoFar.push(...maxEnrollmentsSoFar);
     this.scatterChartData = chartDatasetSoFar;
   }
 
-  private recalculateAfterWaitlistClosed(course: Course, latest: number) {
+  private recalculateDeadlines(course: Course, latest: number) {
     if (this.importantDates !== null) {
       let waitlistDeadline: number;
+      let enrollmentDeadline: number;
       if (
         course.code[course.code.length - 1] === 'F' ||
         course.code[course.code.length - 1] === 'Y'
       ) {
         waitlistDeadline = this.importantDates.fallWaitlistClosed;
+        enrollmentDeadline = this.importantDates.fallEnrollmentEnd;
       } else {
         waitlistDeadline = this.importantDates.winterWaitlistClosed;
+        enrollmentDeadline = this.importantDates.winterWaitlistClosed;
       }
 
       this.afterWaitlistDeadline = latest > waitlistDeadline;
+      this.afterEnrollmentDeadline = latest > enrollmentDeadline;
     }
   }
 
@@ -748,6 +892,8 @@ export class ChartComponent implements OnInit {
         return '🌐';
       case 'SYNIF':
         return '📶';
+      case 'HYBR':
+        return '📶';
       case 'ASYNC':
         return '💤';
       case 'ASYIF':
@@ -758,6 +904,10 @@ export class ChartComponent implements OnInit {
         return '';
     }
   }
+
+  re75: number | null = null;
+  re50: number | null = null;
+  re0: number | null = null;
 
   private _processMeetingInfo(
     iterations: number,
@@ -892,6 +1042,7 @@ export class ChartComponent implements OnInit {
   }
 
   afterWaitlistDeadline: boolean = false;
+  afterEnrollmentDeadline: boolean = false;
 
   /**
    * Converts this to:
@@ -1133,6 +1284,8 @@ export class ChartComponent implements OnInit {
     return aggEnrollments;
   }
 
+  faculty: string = '';
+
   private _combineAll: boolean = false;
   public get combineAll(): boolean {
     return this._combineAll;
@@ -1163,6 +1316,7 @@ export class ChartComponent implements OnInit {
     if (!fys.match(/[FYS]/)) {
       return;
     }
+    this.faculty = crs.faculty;
     this.fys = fys; // set this to be global here
     const aggEnrollments: number[] = [];
     const enrollmentCollection: number[][] = [];
@@ -1190,6 +1344,10 @@ export class ChartComponent implements OnInit {
     let dropDateIndex: number = 0;
     let lwdDateIndex: number = 0;
 
+    let re75Index: number | null = null;
+    let re50Index: number | null = null;
+
+
     if (this.importantDates === null) {
       return;
     }
@@ -1199,6 +1357,24 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         this.importantDates.fallEnrollmentEnd
       );
+
+      if(this.importantDates.fall75 !== undefined){
+        re75Index = this.findIndexFirstDay(
+          crs.timeIntervals,
+          this.importantDates.fall75
+        );
+        if(this.importantDates.fall50 !== undefined){
+          re50Index = this.findIndexFirstDay(
+            crs.timeIntervals,
+            this.importantDates.fall50
+          );
+        } else {
+          re50Index = null;
+        }
+      } else {
+        re75Index = null;
+        re50Index = null;
+      }
       dropDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
         this.importantDates.fallDrop + this.deadlineTimeOffset
@@ -1216,6 +1392,23 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         this.importantDates.winterDrop + this.deadlineTimeOffset
       );
+      if(this.importantDates.winter75 !== undefined){
+        re75Index = this.findIndexFirstDay(
+          crs.timeIntervals,
+          this.importantDates.winter75
+        );
+        if(this.importantDates.winter50 !== undefined){
+          re50Index = this.findIndexFirstDay(
+            crs.timeIntervals,
+            this.importantDates.winter50
+          );
+        } else {
+          re50Index = null;
+        }
+      } else {
+        re75Index = null;
+        re50Index = null;
+      }
       lwdDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
         this.importantDates.winterLWD
@@ -1225,6 +1418,23 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         this.importantDates.fallEnrollmentEnd
       );
+      if(this.importantDates.year75 !== undefined){
+        re75Index = this.findIndexFirstDay(
+          crs.timeIntervals,
+          this.importantDates.year75
+        );
+        if(this.importantDates.year50 !== undefined){
+          re50Index = this.findIndexFirstDay(
+            crs.timeIntervals,
+            this.importantDates.year50
+          );
+        } else {
+          re50Index = null;
+        }
+      } else {
+        re75Index = null;
+        re50Index = null;
+      }
       dropDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
         this.importantDates.yearDrop + this.deadlineTimeOffset
@@ -1250,6 +1460,23 @@ export class ChartComponent implements OnInit {
     this.drops = this.finalEnrollment - enrolsAtDropDate;
     this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
 
+    if(re75Index !== null){
+      let enrolsAt75 = re75Index === -1 ? this.currentEnrollment : aggEnrollments[re75Index];
+      this.re75 = this.finalEnrollment - enrolsAt75;
+      if(re50Index !== null){
+        let enrolsAt50 = re50Index === -1 ? this.currentEnrollment : aggEnrollments[re50Index];
+        this.re50 = enrolsAt75 - enrolsAt50;
+        this.re0 = enrolsAt50 - enrolsAtDropDate;
+      } else {
+        this.re50 = null;
+        this.re0 = null;
+      }
+    } else {
+      this.re75 = null;
+      this.re50 = null;
+      this.re0 = null;
+    }
+    this.isSummer = this.importantDates.isSummer === true;
     this.recalculateAnnotations();
   }
 
@@ -1343,6 +1570,29 @@ export class ChartComponent implements OnInit {
     '#492100',
     '#000000',
   ];
+
+  /*
+    '#6E4DBC',
+    '#1C996F',
+    '#D1543B',
+    '#C94973',
+    '#D48A35',
+    '#3CABB5',
+    '#48ce00',
+    '#d32295',
+    '#2d89d3',
+    '#6b4a32',
+    '#505050',
+    '#003b6e',
+    '#a445c0',
+    '#9b9100',
+    '#cb3500',
+    '#492100',
+    '#000000',
+
+
+*/
+
   specialColors: string[] = [
     '#755F59',
     '#93A67E',
