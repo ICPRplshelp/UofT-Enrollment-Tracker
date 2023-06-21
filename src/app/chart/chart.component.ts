@@ -1,6 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CrsgetterService } from '../crsgetter.service';
-import { AllCoursesService } from '../all-courses.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import {
   Course,
@@ -13,7 +12,6 @@ import {
 import Annotation, * as pluginAnnotation from 'chartjs-plugin-annotation';
 
 import { Chart, ChartDataset, ChartOptions, ChartType } from 'chart.js';
-import { max } from 'moment';
 import { AutoCompleteService } from '../shared/auto-complete.service';
 
 @Component({
@@ -30,7 +28,6 @@ export class ChartComponent implements OnInit {
 
   constructor(
     private crsgetter: CrsgetterService,
-    private ac: AllCoursesService,
     private _snackBar: MatSnackBar,
     private autoCompleter: AutoCompleteService
   ) {
