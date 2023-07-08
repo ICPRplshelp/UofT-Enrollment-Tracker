@@ -19,6 +19,7 @@ export interface Meeting{
     enrollmentCap: number;
     enrollmentCapComplex?: EnrollmentCapComplex;
     delivery?: string;
+    isCancelled?: boolean;
 }
 
 export interface ImportantTimestamps {

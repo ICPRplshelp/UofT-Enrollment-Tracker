@@ -287,7 +287,7 @@ export class ChartComponent implements OnInit {
 
   calculateCourseLevel(crsCode: string): number {
     const letter = crsCode[3];
-    console.log(letter);
+    // console.log(letter);
     if (letter === '4' || letter === 'D') return 4;
     if (letter === '3' || letter === 'C') return 3;
     if (letter === '2' || letter === 'B') return 2;
@@ -404,12 +404,12 @@ export class ChartComponent implements OnInit {
       this.importantDates.third !== undefined &&
       this.importantDates.fourth !== undefined
     ) {
-      console.log("Got there");
+      // console.log("Got there");
 
       const crsLv = this.calculateCourseLevel(
         this.previousFullCourseCode
       );
-      console.log(crsLv);
+      // console.log(crsLv);
       if (crsLv >= 1 && crsLv <= 4) {
         let firstDayEnrol: number;
         switch(crsLv){
@@ -430,7 +430,7 @@ export class ChartComponent implements OnInit {
             break;
         }
 
-
+        if(this.lastTime > firstDayEnrol){
         annotationList.push({
           type: 'line',
           scaleID: 'x',
@@ -444,12 +444,14 @@ export class ChartComponent implements OnInit {
           // },
         });
       }
+      }
     }
 
     if (
       this.importantDates !== null &&
       this.importantDates !== undefined &&
-      this.importantDates.general > this.earliestChartTime
+      this.importantDates.general > this.earliestChartTime &&
+      this.lastTime > this.importantDates.general
     ) {
       // console.log('earliest chart time', this.earliestChartTime);
       // console.log('general time', this.importantDates.general);
@@ -561,7 +563,7 @@ export class ChartComponent implements OnInit {
         return;
       }
       this.selectedValue = sLI[sesInd];
-      console.log(this.selectedValue);
+      // console.log(this.selectedValue);
     }
 
     if (event.keyCode === 190) {
@@ -931,6 +933,7 @@ export class ChartComponent implements OnInit {
     if (synSymbol !== '') {
       synSymbol = synSymbol + ' ';
     }
+
     let tempLabel = this.smallScreen
       ? `L${mtt.meetingNumber.substring(3)}`
       : `${mtt.meetingNumber} ${
@@ -939,7 +942,10 @@ export class ChartComponent implements OnInit {
     let chartPoints: { x: number; y: number }[] = [];
 
     // this.earliestChartTime = earliest;
-
+    if(mtt.isCancelled){
+      tempLabel += " - CANCELLED";
+    }
+    
     for (let i = 0; i < mtt.enrollmentLogs.length; i++) {
       let enrollment = mtt.enrollmentLogs[i];
 

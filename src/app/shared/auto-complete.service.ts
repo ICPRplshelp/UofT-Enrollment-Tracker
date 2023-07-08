@@ -122,7 +122,7 @@ export class AutoCompleteService {
       for(let cv2 of cVarList){
         ls.push(code + this.cvrToCourseSuffix(cv2));
       }
-      
+      console.log(ls);
       return ls;
     }
 

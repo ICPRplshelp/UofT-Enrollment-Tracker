@@ -3,7 +3,6 @@ import { ChartOptions, ChartDataset, ChartType } from 'chart.js';
 import { Course, ImportantTimestamps, Meeting } from './cinterfaces';
 import { CrsgetterService } from './crsgetter.service';
 import * as pluginAnnotation from 'chartjs-plugin-annotation';
-import { AllCoursesService } from './all-courses.service';
 import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
 
 @Component({
