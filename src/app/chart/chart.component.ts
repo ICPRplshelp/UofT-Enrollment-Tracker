@@ -654,6 +654,8 @@ export class ChartComponent implements OnInit {
     if(!(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY]\d[FSY]\d?$/) ||
         courseCode.match(/^[A-Z]{3}\d{4}[HY][FSY]\d?/)
     )){
+      console.log("Course regex off");
+      this.previousCourse = "placeholder";
       if(this.previousWasError){
         this.curErrorMessage += "!";
         return;
