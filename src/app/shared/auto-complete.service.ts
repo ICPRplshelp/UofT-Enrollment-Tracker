@@ -35,9 +35,9 @@ export class AutoCompleteService {
 
     if(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY][0135][FSY]/)){
       if(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY][0135][FSY].*[FSY]?$/)){
-        return courseCode.slice(0, 8) + '-' + courseCode[courseCode.length - 1];
+        return courseCode.slice(0, 8) + courseCode[courseCode.length - 1];
       }
-      return courseCode.slice(0, 8) + '-' + courseCode[9];  // all information is given, don't ask otherwise
+      return courseCode.slice(0, 8) + courseCode[9];  // all information is given, don't ask otherwise
     } else if(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY][0135]/)){
       des = courseCode.slice(0, 3);
       code = courseCode.slice(0, 6);
@@ -132,7 +132,7 @@ export class AutoCompleteService {
    * @returns the suffix of the course, no dash
    */
   cvrToCourseSuffix(cvr: CVariant){
-    return cvr.w + cvr.c + '-' + cvr.s;
+    return cvr.w + cvr.c + cvr.s;
   }
   
 

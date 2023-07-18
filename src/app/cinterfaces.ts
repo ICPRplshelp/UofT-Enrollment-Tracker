@@ -6,18 +6,42 @@ export interface Course {
     meetings: Meeting[],
 }
 
+export interface EnrollmentCapChange {
+    time: number;
+    newCapacity: number;
+}
+
+
 export interface EnrollmentCapComplex{
-    capChanges: number[][];  // [UNIX, CAP]
+    capChanges: EnrollmentCapChange[];  // [UNIX, CAP]
     initialCap: number;  // THE STARTING CAP
 }
+
+
+export interface Instructor {
+    firstName: string;
+    lastName: string;
+}
+
+export interface InstructorChangeInstance {
+    instructorsAfter: Instructor[];
+    timing: number;
+}
+
+export interface InstructorLog {
+    initinalInstructors: Instructor[];
+    instructorChanges: InstructorChangeInstance[];
+}
+
 
 export interface Meeting{
     meetingNumber: string;
     createdAt: number;  // when the meeting is created
-    instructors: string[][];
+    instructors: Instructor[];
     enrollmentLogs: number[];
     enrollmentCap: number;
     enrollmentCapComplex?: EnrollmentCapComplex;
+    instructorLog?: InstructorLog;
     delivery?: string;
     isCancelled?: boolean;
 }
@@ -69,4 +93,8 @@ export interface SessionCollection {
 export interface IndividualSessionInfo {
     sessionCode: string;  // the session code. it must be the folder.
     name: string;  // the user-friendly name of the session.
+}
+
+export interface TopCourses {
+    courses: string[];
 }

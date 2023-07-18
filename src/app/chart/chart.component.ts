@@ -3,11 +3,14 @@ import { CrsgetterService } from '../crsgetter.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import {
   Course,
+  EnrollmentCapChange,
   EnrollmentCapComplex,
   ImportantTimestamps,
   IndividualSessionInfo,
+  Instructor,
   Meeting,
   SessionCollection,
+  TopCourses,
 } from '../cinterfaces';
 import Annotation, * as pluginAnnotation from 'chartjs-plugin-annotation';
 
@@ -23,7 +26,7 @@ export class ChartComponent implements OnInit {
   deadlineTimeOffset: number = 160000; // deadlines for last day to
   // add or drop are offset by this much to account for timetable delays.
   // these only impact the drop rate.
-
+  firstTimeRun: boolean = true;
   title = 'timetabletracker';
 
   constructor(
@@ -35,76 +38,7 @@ export class ChartComponent implements OnInit {
   }
 
   myFavCourses: string[] = [
-    'EAS110Y1-Y',
-    'POL222H1-F',
-    'LIN101H1-F',
-    'CSC384H1-S',
-    'CHM247H1-S',
-    'LIN102H1-S',
-    'POL107H1-F',
-    'ENV200H1-S',
-    'FSL100H1-F',
-    'RSM333H1-S',
-    'RSM250H1-S',
-    'MAT237Y1-Y',
-    'SPA100Y1-Y',
-    'ENV100H1-F',
-    'EAS120Y1-Y',
-    'POL109H1-S',
-    'RSM222H1-F',
-    'POL106H1-F',
-    'SOC100H1-S',
-    'PSY100H1-F',
-    'MAT244H1-F',
-    'GGR124H1-S',
-    'CSC343H1-S',
-    'RSM219H1-F',
-    'PSY100H1-S',
-    'ECO202Y1-Y',
-    'POL200Y1-Y',
-    'ECO200Y1-Y',
-    'ECO105Y1-Y',
-    'MAT223H1-S',
-    'CSC263H1-S',
-    'STA130H1-S',
-    'CSC236H1-F',
-    'ECO204Y1-Y',
-    'PHY132H1-S',
-    'STA130H1-F',
-    'POL101H1-F',
-    'MAT224H1-S',
-    'CSC209H1-S',
-    'ANT100Y1-Y',
-    'CSC207H1-F',
-    'SOC150H1-S',
-    'STA238H1-S',
-    'PHY131H1-F',
-    'STA237H1-F',
-    'PSL301H1-S',
-    'ECO220Y1-Y',
-    'CSC108H1-S',
-    'AST201H1-S',
-    'BIO220H1-S',
-    'PSL300H1-F',
-    'MAT133Y1-Y',
-    'HMB265H1-F',
-    'MAT235Y1-Y',
-    'BCH210H1-F',
-    'BIO230H1-F',
-    'AST101H1-F',
-    'MAT223H1-F',
-    'MAT137Y1-Y',
-    'SOC100H1-F',
-    'CHM135H1-F',
-    'CSC148H1-S',
-    'BIO130H1-S',
-    'CHM136H1-S',
-    'BIO120H1-F',
-    'CSC108H1-F',
-    'ECO101H1-F',
-    'ECO102H1-S',
-    'MAT136H1-S',
-    'MAT135H1-F',
+    
   ];
 
   courseTitle: string = 'TITLE';
@@ -139,12 +73,12 @@ export class ChartComponent implements OnInit {
     this._selectedValue = value;
     this.crsgetter.session = value;
     this.autoCompleter.reloadAutocomplete(this.crsgetter);
-    this.reloadImportantDates();
+    this.reloadImportantDatesAndValues();
     this.loadCourseData(this.inputCourse);
     // this._loadCourseDataHelper();
   }
 
-  reloadImportantDates() {
+  reloadImportantDatesAndValues() {
     let tempData: ImportantTimestamps;
     this.crsgetter.getImportantDates().subscribe({
       next: (data) => {
@@ -156,9 +90,25 @@ export class ChartComponent implements OnInit {
       complete: () => {
         this.importantDates = tempData;
         // this.loadCourseData(this.inputCourse);
-        this._loadCourseDataHelper();
+        // this._loadCourseDataHelper();
       },
     });
+    let tempData2: TopCourses;
+    this.crsgetter.getTopCoursesList().subscribe({
+      next: (data) => {
+        tempData2 = data;
+      },
+      error: () => {
+        // could not load top courses
+      },
+      complete: () => {
+        this.myFavCourses = tempData2.courses;
+        if(this.firstTimeRun){
+          this.chooseRandomCourse();
+          this.firstTimeRun = false;
+        }
+      }
+    })
   }
 
   getSessionList() {
@@ -171,17 +121,25 @@ export class ChartComponent implements OnInit {
         // console.log("Couldn't load session lists")
       },
       complete: () => {
-        let randomIndex: number = Math.floor(
-          Math.random() * this.myFavCourses.length
-        );
-        let randomCourse = this.myFavCourses[randomIndex];
-        this.inputCourse = randomCourse;
+        
         this.selectedValue = tempData2.default;
         this.sessionColl = tempData2;
-        this.reloadImportantDates();
-        this._loadCourseDataHelper();
+
+        
+
+        this.reloadImportantDatesAndValues();
+        
       },
     });
+  }
+
+  private chooseRandomCourse() {
+    let randomIndex: number = Math.floor(
+      Math.random() * this.myFavCourses.length
+    );
+    let randomCourse = this.myFavCourses[randomIndex];
+    this.inputCourse = randomCourse;
+    this.loadCourseData(this.inputCourse);
   }
 
   ngOnInit() {
@@ -392,7 +350,7 @@ export class ChartComponent implements OnInit {
     
 
     // console.log("About to", this.previousFullCourseCode[this.previousFullCourseCode.length - 1]);
-    const crsCodeNow = this.previousFullCourseCode.replace('-', '');
+    const crsCodeNow = this.previousFullCourseCode;
     
     if (
       this.importantDates !== null &&
@@ -429,7 +387,8 @@ export class ChartComponent implements OnInit {
             firstDayEnrol = this.importantDates.first;
             break;
         }
-
+        const numSuffix = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th"];
+        firstDayEnrol += 25200;
         if(this.lastTime > firstDayEnrol){
         annotationList.push({
           type: 'line',
@@ -437,11 +396,11 @@ export class ChartComponent implements OnInit {
           value: firstDayEnrol * 1000,
           borderColor: 'green',
           borderWidth: 2,
-          // label: {
-          //   display: true,
-          //   position: 'end',
-          //   // content: 'first day',
-          // },
+          label: {
+            display: true,
+            position: 'end',
+            content: `${crsLv}${numSuffix[crsLv]} yr start`,
+          },
         });
       }
       }
@@ -492,7 +451,7 @@ export class ChartComponent implements OnInit {
     }
   }
   earliestChartTime: number = 0;
-  private _inputCourse: string = 'MAT137Y1Y';
+  private _inputCourse: string = '';
   public get inputCourse(): string {
     return this._inputCourse;
   }
@@ -584,6 +543,7 @@ export class ChartComponent implements OnInit {
   invalidCourseRegexWarning: string = "This isn't a course code";
   courseDoesNotExist: string =
     "This course doesn't exist or is not offered in this term";
+  courseNotOffered: string = "This course is not offered in this term";
   missingSuffix: string = 'You need the -F/-Y/-S suffix for this';
   missingHY: string =
     'You need the -H/-Y suffix, the campus code, and the -F/-S/-Y suffix for this';
@@ -614,17 +574,8 @@ export class ChartComponent implements OnInit {
 
   hasFailed: boolean = false;
 
-  shakeClass() {
-    let shakeableClasses = document.getElementsByClassName('shakeable');
-    for (let i = 0; i < shakeableClasses.length; i++) {
-      shakeableClasses[i].classList.add('shake');
-    }
-
-    setTimeout(() => {
-      for (let i = 0; i < shakeableClasses.length; i++) {
-        shakeableClasses[i].classList.remove('shake');
-      }
-    }, 1000);
+  shakeClass(): void {
+    // we did not implement anything here.
   }
 
   previousFullCourseCode = '';
@@ -651,14 +602,10 @@ export class ChartComponent implements OnInit {
     this.loadCourseData(this.inputCourse);
   }
 
-  formatInstructors(ins: string[][]): string {
+  formatInstructors(ins: Instructor[]): string {
     let names: string[] = [];
     for (let fl of ins) {
-      if (fl.length === 1) {
-        names.push(fl[0]);
-      } else if (fl.length === 0) {
-        // do nothing
-      } else names.push(`${fl[0]} ${fl[1]}`);
+      names.push(`${fl.firstName} ${fl.lastName}`.trim());
     }
     let cand = names.join(', ');
     return cand !== '' ? cand : 'TBA';
@@ -688,7 +635,7 @@ export class ChartComponent implements OnInit {
       return;
     }
 
-    if (this.autoFormat) this.inputCourse = tempCourse.replace('-', '');
+    if (this.autoFormat) this.inputCourse = tempCourse;
 
     courseCode = tempCourse;
 
@@ -703,6 +650,25 @@ export class ChartComponent implements OnInit {
       }
       return;
     }
+
+    if(!(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY]\d[FSY]\d?$/) ||
+        courseCode.match(/^[A-Z]{3}\d{4}[HY][FSY]\d?/)
+    )){
+      if(this.previousWasError){
+        this.curErrorMessage += "!";
+        return;
+      }
+
+
+      if(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2,3}/)){
+        this.curErrorMessage = this.courseDoesNotExist;
+      } else {
+      this.curErrorMessage = this.invalidCourseRegexWarning;
+      }
+      this.previousWasError = true;
+      return;
+    }
+
 
     let courseInfo: Course;
     this.crsgetter.getCourse(courseCode).subscribe({
@@ -1027,8 +993,8 @@ export class ChartComponent implements OnInit {
         : [...notEarlyFallback, firstCell];
     let previousCap = mtt.enrollmentCapComplex.initialCap;
     for (let temp of mtt.enrollmentCapComplex.capChanges) {
-      let unix1K = temp[0] * 1000;
-      let tempCap = temp[1];
+      let unix1K = temp.time * 1000;
+      let tempCap = temp.newCapacity;
       capSeries.push({ x: unix1K - 1, y: previousCap });
       capSeries.push({ x: unix1K, y: tempCap });
       previousCap = tempCap;
@@ -1039,7 +1005,7 @@ export class ChartComponent implements OnInit {
         ? mtt.enrollmentCapComplex.initialCap
         : mtt.enrollmentCapComplex.capChanges[
             mtt.enrollmentCapComplex.capChanges.length - 1
-          ][1];
+          ].newCapacity;
     capSeries.push({ x: latest * 1000, y: lastCapSeries });
     return capSeries;
   }
@@ -1065,6 +1031,9 @@ export class ChartComponent implements OnInit {
         continue;
       }
       let cap = mtt.enrollmentCap;
+      if(cap === 0){
+        continue;
+      }
       capSoFar += cap;
       let tempLsf: number[] = mtt.enrollmentLogs.map((x) => cap - x);
       spacesLeftArray.push(tempLsf);
@@ -1072,25 +1041,26 @@ export class ChartComponent implements OnInit {
 
     const temp = this._flattenUnTransposedNumericalArray2(spacesLeftArray);
 
-    const finalArr = temp.ar;
+    const fMax = Math.max(...temp.ar);
+    const finalArr = temp.ar.map((x) => fMax - x);
 
     let fakeMeeting: Meeting = {
-      meetingNumber: 'ALL LEFT',
-      instructors: [['', '']],
+      meetingNumber: '',
+      instructors: [],  // {firstName: "", lastName: ""}
       enrollmentLogs: finalArr,
       enrollmentCap: capSoFar,
       createdAt: 0,
     };
     let smallList = [fakeMeeting];
 
-    let fakeMeeting2: Meeting = {
-      meetingNumber: 'ZERO',
-      instructors: [['', '']],
-      enrollmentLogs: [],
-      enrollmentCap: 0,
-      createdAt: 0,
-    };
-    smallList.push(fakeMeeting2);
+    // let fakeMeeting2: Meeting = {
+    //   meetingNumber: 'ZERO',
+    //   instructors: [['', '']],
+    //   enrollmentLogs: [],
+    //   enrollmentCap: 0,
+    //   createdAt: 0,
+    // };
+    // smallList.push(fakeMeeting2);
 
     return smallList;
   }
@@ -1116,7 +1086,7 @@ export class ChartComponent implements OnInit {
     let fakeMeeting: Meeting = {
       createdAt: 0,
       meetingNumber: 'ALL',
-      instructors: [['', '']],
+      instructors: [],
       enrollmentLogs: aggEnrollments,
       enrollmentCap: capSoFar,
       enrollmentCapComplex: this._createComplexEnrolData(course),
@@ -1167,8 +1137,9 @@ export class ChartComponent implements OnInit {
     return toRet;
   }
 
-  private _createCapChangeTimeSeries(course: Course): number[][] {
-    let toReturn: number[][] = [];
+  private _createCapChangeTimeSeries(course: Course): EnrollmentCapChange[] {
+    // [TIME, CAP]
+    let toReturn: EnrollmentCapChange[] = [];
     for (let met of course.meetings) {
       if (
         met.enrollmentCapComplex === null ||
@@ -1179,37 +1150,42 @@ export class ChartComponent implements OnInit {
       let previousCap = met.enrollmentCapComplex.initialCap;
       if (this._meetingAddedLate(course, met)) {
         previousCap = 0;
-        toReturn.push([met.createdAt, met.enrollmentCapComplex.initialCap]);
+        toReturn.push({time: met.createdAt, newCapacity: met.enrollmentCapComplex.initialCap});
+        // toReturn.push([met.createdAt, met.enrollmentCapComplex.initialCap]);
       }
       // if this meeting was added late, add [createdAt, initialCap] to the
       // changelog list and the initial cap is 0.
 
       for (let capSeries of met.enrollmentCapComplex.capChanges) {
-        toReturn.push([capSeries[0], capSeries[1] - previousCap]);
-        previousCap = capSeries[1];
+        toReturn.push({time: capSeries.time, newCapacity: capSeries.newCapacity - previousCap})
+        // toReturn.push([capSeries[0], capSeries[1] - previousCap]);
+        previousCap = capSeries.newCapacity;
+        // previousCap = capSeries[1];
       }
     }
     // sort them by what was on the first index
-    toReturn.sort((elem, elem2) => elem[0] - elem2[0]);
+    toReturn.sort((elem, elem2) => elem.time - elem2.time);
     // console.log("sorted", toReturn);
     return toReturn;
   }
 
   private _createNewComplexCaps(
-    timeSeries: number[][],
+    // [TIME, CAP]
+    timeSeries: EnrollmentCapChange[],
     initialCap: number
-  ): number[][] {
-    const newCaps: number[][] = [];
+  ): EnrollmentCapChange[] {
+    const newCaps: EnrollmentCapChange[] = [];
     let previousCap = initialCap; // for more readibility
     for (let item of timeSeries) {
-      if (newCaps.length === 0 || newCaps[newCaps.length - 1][0] !== item[0]) {
-        newCaps.push([item[0], previousCap + item[1]]);
+      if (newCaps.length === 0 || newCaps[newCaps.length - 1].time !== item.time) {
+        newCaps.push({time: item.time, newCapacity: previousCap + item.newCapacity})
+        // newCaps.push([item[0], previousCap + item[1]]);
       } else {
-        newCaps[newCaps.length - 1][1] =
-          newCaps[newCaps.length - 1][1] + item[1];
+        // newCaps[newCaps.length - 1][1] = newCaps[newCaps.length - 1][1] + item[1];
+        newCaps[newCaps.length - 1].newCapacity = newCaps[newCaps.length - 1].newCapacity + item.newCapacity;
       }
       // console.log(newCaps);
-      previousCap = newCaps[newCaps.length - 1][1];
+      previousCap = newCaps[newCaps.length - 1].newCapacity;
     }
     return newCaps;
   }
