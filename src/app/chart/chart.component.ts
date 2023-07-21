@@ -73,12 +73,12 @@ export class ChartComponent implements OnInit {
     this._selectedValue = value;
     this.crsgetter.session = value;
     this.autoCompleter.reloadAutocomplete(this.crsgetter);
-    this.reloadImportantDatesAndValues();
-    this.loadCourseData(this.inputCourse);
+    const courseDataLoader = () => this.loadCourseData(this.inputCourse);
+    this.reloadImportantDatesAndValues(courseDataLoader);
     // this._loadCourseDataHelper();
   }
 
-  reloadImportantDatesAndValues() {
+  reloadImportantDatesAndValues(done: (() => void)): void {
     let tempData: ImportantTimestamps;
     this.crsgetter.getImportantDates().subscribe({
       next: (data) => {
@@ -89,6 +89,7 @@ export class ChartComponent implements OnInit {
       },
       complete: () => {
         this.importantDates = tempData;
+        done();
         // this.loadCourseData(this.inputCourse);
         // this._loadCourseDataHelper();
       },
@@ -124,10 +125,7 @@ export class ChartComponent implements OnInit {
         
         this.selectedValue = tempData2.default;
         this.sessionColl = tempData2;
-
-        
-
-        this.reloadImportantDatesAndValues();
+        this.reloadImportantDatesAndValues(() => {});
         
       },
     });
@@ -1536,7 +1534,7 @@ export class ChartComponent implements OnInit {
     '#6E4DBC',
     '#1C996F',
     '#D1543B',
-    '#C94973',
+    '#e160e6',
     '#D48A35',
     '#3CABB5',
     '#48ce00',
