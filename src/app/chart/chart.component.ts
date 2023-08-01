@@ -28,6 +28,7 @@ export class ChartComponent implements OnInit {
   // these only impact the drop rate.
   firstTimeRun: boolean = true;
   title = 'timetabletracker';
+  backCapNudge: number = 1;  // seconds to nudge the cap change backwards.
 
   constructor(
     private crsgetter: CrsgetterService,
@@ -259,6 +260,7 @@ export class ChartComponent implements OnInit {
     let lastEnrol: number;
     let lastDrop: number;
     let lastClass: number;
+    let firstClass: number;
 
     if (!this.showAnnotations) {
       if (
@@ -287,6 +289,10 @@ export class ChartComponent implements OnInit {
         this.importantDates?.fallLWD,
         this.lastTime
       );
+      firstClass = this._undefinedOrBefore(
+        this.importantDates?.fallFirstDay,
+        this.lastTime
+      )
     } else if (this.fys === 'S') {
       lastEnrol = this._undefinedOrBefore(
         this.importantDates?.winterEnrollmentEnd,
@@ -300,6 +306,10 @@ export class ChartComponent implements OnInit {
         this.importantDates?.winterLWD,
         this.lastTime
       );
+      firstClass = this._undefinedOrBefore(
+        this.importantDates?.winterStart,
+        this.lastTime
+      )
     } else {
       lastEnrol = this._undefinedOrBefore(
         this.importantDates?.fallEnrollmentEnd,
@@ -313,6 +323,10 @@ export class ChartComponent implements OnInit {
         this.importantDates?.winterLWD,
         this.lastTime
       );
+      firstClass = this._undefinedOrBefore(
+        this.importantDates?.fallFirstDay,
+        this.lastTime
+      )
     }
 
     const annotationList: any[] = [];
@@ -326,7 +340,21 @@ export class ChartComponent implements OnInit {
         label: {
           display: true,
           position: 'end',
-          content: 'enrollment deadline',
+          content: 'enrol end',
+        },
+      });
+    }
+    if(firstClass !== 0){
+      annotationList.push({
+        type: 'line',
+        scaleID: 'x',
+        value: firstClass * 1000,
+        borderColor: 'green',
+        borderWidth: 2,
+        label: {
+          display: true,
+          position: 'end',
+          content: '',
         },
       });
     }
@@ -349,7 +377,13 @@ export class ChartComponent implements OnInit {
 
     // console.log("About to", this.previousFullCourseCode[this.previousFullCourseCode.length - 1]);
     const crsCodeNow = this.previousFullCourseCode;
-    
+    if(
+      this.importantDates !== null && 
+      this.importantDates !== undefined
+    ){
+
+
+    }
     if (
       this.importantDates !== null &&
       this.importantDates !== undefined &&
@@ -421,7 +455,7 @@ export class ChartComponent implements OnInit {
         label: {
           display: true,
           position: 'end',
-          content: 'general enrollment',
+          content: 'gen. enroll',
         },
       });
     }
@@ -671,19 +705,27 @@ export class ChartComponent implements OnInit {
 
 
     let courseInfo: Course;
+    const curSession = this.crsgetter.session;
     this.crsgetter.getCourse(courseCode).subscribe({
       next: (data) => {
         courseInfo = data;
       },
       error: () => {
+        if(curSession !== this.crsgetter.session){
+          return;
+        }
         this.curErrorMessage = this.courseDoesNotExist;
         this.previousWasError = true;
         this.previousCourse = courseCode;
         this.previousSession = '';
       },
       complete: () => {
-        this.curErrorMessage = '';
+        if(curSession !== this.crsgetter.session){
+          return;
+        }
 
+
+        this.curErrorMessage = '';
         this.previousCourseInfo = courseInfo;
         this.previousFullCourseCode = tempCourse;
         this.courseTitle = courseInfo.title;
@@ -995,7 +1037,7 @@ export class ChartComponent implements OnInit {
     for (let temp of mtt.enrollmentCapComplex.capChanges) {
       let unix1K = temp.time * 1000;
       let tempCap = temp.newCapacity;
-      capSeries.push({ x: unix1K - 1, y: previousCap });
+      capSeries.push({ x: unix1K - this.backCapNudge, y: previousCap });
       capSeries.push({ x: unix1K, y: tempCap });
       previousCap = tempCap;
     }
@@ -1534,7 +1576,7 @@ export class ChartComponent implements OnInit {
     '#6E4DBC',
     '#1C996F',
     '#D1543B',
-    '#e160e6',
+    '#ac3ebd',
     '#D48A35',
     '#3CABB5',
     '#48ce00',
@@ -1543,7 +1585,7 @@ export class ChartComponent implements OnInit {
     '#6b4a32',
     '#505050',
     '#003b6e',
-    '#a445c0',
+    '#8105a6',
     '#9b9100',
     '#cb3500',
     '#492100',
