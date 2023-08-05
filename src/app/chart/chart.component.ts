@@ -29,6 +29,7 @@ export class ChartComponent implements OnInit {
   firstTimeRun: boolean = true;
   title = 'timetabletracker';
   backCapNudge: number = 1;  // seconds to nudge the cap change backwards.
+  // sessionWasLastYear: boolean = false;
 
   constructor(
     private crsgetter: CrsgetterService,
@@ -90,6 +91,12 @@ export class ChartComponent implements OnInit {
       },
       complete: () => {
         this.importantDates = tempData;
+        // const curSession = this.crsgetter.session;
+        // const curSessionIndex = this.sessionColl?.sessions.map(s => s.sessionCode).indexOf(curSession) ?? -1;
+        // this.sessionWasLastYear = 2 <= (curSessionIndex - (this.sessionColl?.sessions.length ?? 0));
+        // console.log("IsLastYear", this.sessionWasLastYear);
+
+
         done();
         // this.loadCourseData(this.inputCourse);
         // this._loadCourseDataHelper();
@@ -272,6 +279,35 @@ export class ChartComponent implements OnInit {
       }
       return;
     }
+    const annotationList: any[] = [];
+
+    const currentUnixTime = Math.floor(Date.now() / 1000);
+    const secondsInAYear = 31536000;
+    let currentLookBackTime = currentUnixTime - secondsInAYear;
+    if(currentLookBackTime > this.firstTime && this.firstTime !== 0 && this.lastTime !== 0){
+      let iters = 0;
+      const itersCap = 100;
+      while(!(currentLookBackTime < this.firstTime) && !(this.firstTime <= currentLookBackTime && currentLookBackTime <= this.lastTime)){
+        currentLookBackTime - secondsInAYear;
+        iters++;
+      }
+      if(iters !== itersCap && (this.firstTime <= currentLookBackTime && currentLookBackTime <= this.lastTime)){
+        annotationList.push({
+          type: 'line',
+          scaleID: 'x',
+          value: currentLookBackTime * 1000,
+          borderColor: 'red',
+          borderWidth: 2,
+          label: {
+            display: true,
+            position: 'start',
+            content: '',
+          },
+        });
+      }
+    }
+
+
 
     // if these values are zero, don't do anything
     // this.lastTime is the last time
@@ -329,7 +365,6 @@ export class ChartComponent implements OnInit {
       )
     }
 
-    const annotationList: any[] = [];
     if (lastEnrol !== 0) {
       annotationList.push({
         type: 'line',
@@ -416,7 +451,7 @@ export class ChartComponent implements OnInit {
             firstDayEnrol = this.importantDates.fourth;
             break;
           default:
-            firstDayEnrol = this.importantDates.first;
+            firstDayEnrol = this.importantDates.fourth;
             break;
         }
         const numSuffix = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th"];
@@ -1320,7 +1355,7 @@ export class ChartComponent implements OnInit {
 
   fys: string = 'F';
   lastTime: number = 0;
-
+  firstTime: number = 0;
   /**
    * Updates all important counts attached to crs
    * @param crs the course information to be passed in
@@ -1330,10 +1365,13 @@ export class ChartComponent implements OnInit {
     let fys = crs.code[crs.code.length - 1];
 
     let lastTime = 0;
+    let firstTime = 0;
     if (crs.timeIntervals.length >= 1)
-      lastTime = crs.timeIntervals[crs.timeIntervals.length - 1];
+      {lastTime = crs.timeIntervals[crs.timeIntervals.length - 1];
+      firstTime = crs.timeIntervals[0];}
     this.lastTime = lastTime;
-
+    this.firstTime = firstTime;
+    
     if (!fys.match(/[FYS]/)) {
       return;
     }
