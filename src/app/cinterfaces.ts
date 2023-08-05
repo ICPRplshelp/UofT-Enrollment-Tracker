@@ -74,6 +74,8 @@ export interface ImportantTimestamps {
     isSummer?: boolean;
 }
 
+export type ImportantTimestampsByFaculty = Record<string, ImportantTimestamps>;
+
 export interface SessionsRaw{
     sessions: SessionInfo[];
     

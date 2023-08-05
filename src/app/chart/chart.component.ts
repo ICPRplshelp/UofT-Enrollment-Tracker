@@ -6,6 +6,7 @@ import {
   EnrollmentCapChange,
   EnrollmentCapComplex,
   ImportantTimestamps,
+  ImportantTimestampsByFaculty,
   IndividualSessionInfo,
   Instructor,
   Meeting,
@@ -47,6 +48,7 @@ export class ChartComponent implements OnInit {
 
   smallMessage =
     'Your screen is small. Lecture sections are compressed. M#### means the maximum enrollment for that section. Consider rotating your device.';
+  importantDatesByFaculty: ImportantTimestampsByFaculty | null = null;
   importantDates: ImportantTimestamps | null = null;
   sessionColl: SessionCollection | null = null;
   isSummer: boolean = false; // true if the course is offered in the summer
@@ -81,7 +83,7 @@ export class ChartComponent implements OnInit {
   }
 
   reloadImportantDatesAndValues(done: (() => void)): void {
-    let tempData: ImportantTimestamps;
+    let tempData: ImportantTimestampsByFaculty;
     this.crsgetter.getImportantDates().subscribe({
       next: (data) => {
         tempData = data;
@@ -90,7 +92,7 @@ export class ChartComponent implements OnInit {
         // console.log("Couldn't load important timestamps");
       },
       complete: () => {
-        this.importantDates = tempData;
+        this.importantDatesByFaculty = tempData;
         // const curSession = this.crsgetter.session;
         // const curSessionIndex = this.sessionColl?.sessions.map(s => s.sessionCode).indexOf(curSession) ?? -1;
         // this.sessionWasLastYear = 2 <= (curSessionIndex - (this.sessionColl?.sessions.length ?? 0));
@@ -423,7 +425,8 @@ export class ChartComponent implements OnInit {
       this.importantDates !== null &&
       this.importantDates !== undefined &&
       this.faculty !== 'APSC' &&
-      crsCodeNow[crsCodeNow.length - 2] === '1' &&
+      // StG and UTSC
+      ['1', '3'].includes(crsCodeNow[crsCodeNow.length - 2]) &&
       this.importantDates.first !== undefined &&
       this.importantDates.second !== undefined &&
       this.importantDates.third !== undefined &&
@@ -1376,6 +1379,10 @@ export class ChartComponent implements OnInit {
       return;
     }
     this.faculty = crs.faculty;
+    this.importantDates =
+      this.importantDatesByFaculty?.[this.faculty] ??
+      this.importantDatesByFaculty?.['ARTSC'] ??
+      null;
     this.fys = fys; // set this to be global here
     const aggEnrollments: number[] = [];
     const enrollmentCollection: number[][] = [];
