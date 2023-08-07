@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import { Course, ImportantTimestamps, SessionCollection, TopCourses } from './cinterfaces';
+import { Course, ImportantTimestamps, ImportantTimestampsBundle, SessionCollection, TopCourses } from './cinterfaces';
 import { DesCol } from './shared/autocompleteinterfaces';
 
 @Injectable({
@@ -50,9 +50,17 @@ export class CrsgetterService {
     return this.http.get<Course>(cPath);
   }
 
+  // remember, get requests are cached by default. This means
+  // you do not need to worry about sending too many requests
+  // to the same URL.
   getImportantDates(): Observable<ImportantTimestamps> {
     const tStampPath = this.crsPath + this.session + "/" + "constants" + this.suffix;
     return this.http.get<ImportantTimestamps>(tStampPath);
+  }
+
+  getImportantDatesBundle(): Observable<ImportantTimestampsBundle[]> {
+    const tStampRequestPath = this.crsPath + this.session + "/" + "AAtcconstants" + this.suffix;
+    return this.http.get<ImportantTimestampsBundle[]>(tStampRequestPath);
   }
 
   getSessionCollection(): Observable<SessionCollection> {

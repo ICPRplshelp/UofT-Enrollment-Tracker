@@ -46,6 +46,12 @@ export interface Meeting{
     isCancelled?: boolean;
 }
 
+
+export interface ImportantTimestampsBundle {
+    faculty: string; // target faculty, or blank for the default
+    importantTimestamps: ImportantTimestamps;
+}
+
 export interface ImportantTimestamps {
     start: number;
     fourth?: number;
