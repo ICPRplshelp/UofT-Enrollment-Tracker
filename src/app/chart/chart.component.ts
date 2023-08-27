@@ -17,6 +17,7 @@ import Annotation, * as pluginAnnotation from 'chartjs-plugin-annotation';
 
 import { Chart, ChartDataset, ChartOptions, ChartType } from 'chart.js';
 import { AutoCompleteService } from '../shared/auto-complete.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-chart',
@@ -29,7 +30,7 @@ export class ChartComponent implements OnInit {
   // these only impact the drop rate.
   firstTimeRun: boolean = true;
   title = 'timetabletracker';
-  backCapNudge: number = 1;  // seconds to nudge the cap change backwards.
+  backCapNudge: number = 1; // seconds to nudge the cap change backwards.
   // sessionWasLastYear: boolean = false;
 
   constructor(
@@ -40,9 +41,7 @@ export class ChartComponent implements OnInit {
     Chart.register(Annotation);
   }
 
-  myFavCourses: string[] = [
-    
-  ];
+  myFavCourses: string[] = [];
 
   courseTitle: string = 'TITLE';
 
@@ -83,7 +82,7 @@ export class ChartComponent implements OnInit {
 
   importantDatesBucket: ImportantTimestampsBundle[] = [];
 
-  reloadImportantDatesAndValues(done: (() => void)): void {
+  reloadImportantDatesAndValues(done: () => void): void {
     // let tempData: ImportantTimestamps;
     let tempDataBundleLocal: ImportantTimestampsBundle[] = [];
     this.crsgetter.getImportantDatesBundle().subscribe({
@@ -94,10 +93,8 @@ export class ChartComponent implements OnInit {
       complete: () => {
         this.importantDatesBucket = tempDataBundleLocal;
         done();
-      }
-    })
-
-
+      },
+    });
 
     // this.crsgetter.getImportantDates().subscribe({
     //   next: (data) => {
@@ -111,7 +108,6 @@ export class ChartComponent implements OnInit {
     //   },
     // });
 
-
     let tempData2: TopCourses;
     this.crsgetter.getTopCoursesList().subscribe({
       next: (data) => {
@@ -122,12 +118,12 @@ export class ChartComponent implements OnInit {
       },
       complete: () => {
         this.myFavCourses = tempData2.courses;
-        if(this.firstTimeRun){
+        if (this.firstTimeRun) {
           this.chooseRandomCourse();
           this.firstTimeRun = false;
         }
-      }
-    })
+      },
+    });
   }
 
   getSessionList() {
@@ -140,11 +136,9 @@ export class ChartComponent implements OnInit {
         // console.log("Couldn't load session lists")
       },
       complete: () => {
-        
         this.selectedValue = tempData2.default;
         this.sessionColl = tempData2;
         this.reloadImportantDatesAndValues(() => {});
-        
       },
     });
   }
@@ -269,31 +263,35 @@ export class ChartComponent implements OnInit {
     return 0;
   }
 
+  getImportantDatesBasedOnFaculty(
+    faculty: string
+  ): ImportantTimestamps | undefined {
+    let curTimestamp = this.importantDatesBucket.find(
+      (item) => item.faculty === faculty
+    );
 
-  getImportantDatesBasedOnFaculty(faculty: string): ImportantTimestamps | undefined {
-    let curTimestamp = this.importantDatesBucket.find((item) => item.faculty === faculty);
-  
     if (curTimestamp === undefined) {
       // Define the order in which faculties should be searched
-      const facultyOrder = ["UNKNOWN", "ARTSCI"];
-  
+      const facultyOrder = ['UNKNOWN', 'ARTSCI'];
+
       // Find the first faculty from the predefined order that exists in the importantDatesBucket
       const fallbackFaculty = facultyOrder.find((faculty) =>
         this.importantDatesBucket.some((item) => item.faculty === faculty)
       );
-  
+
       // If a fallback faculty is found, use it; otherwise, just return undefined
-      curTimestamp = this.importantDatesBucket.find((item) => item.faculty === fallbackFaculty);
-  
+      curTimestamp = this.importantDatesBucket.find(
+        (item) => item.faculty === fallbackFaculty
+      );
+
       // If no fallback faculty is found, return undefined
       if (curTimestamp === undefined) {
         return this.importantDatesBucket[0].importantTimestamps;
       }
     }
-  
+
     return curTimestamp.importantTimestamps;
   }
-  
 
   /**
    * Recalculate the annotations on this chart.
@@ -305,9 +303,11 @@ export class ChartComponent implements OnInit {
     let lastClass: number;
     let firstClass: number;
 
-    const targetImportantDates = this.getImportantDatesBasedOnFaculty(this.faculty);
-    if(targetImportantDates === undefined){
-      console.log("Pratically, this should never happen.");
+    const targetImportantDates = this.getImportantDatesBasedOnFaculty(
+      this.faculty
+    );
+    if (targetImportantDates === undefined) {
+      console.log('Pratically, this should never happen.');
       return;
     }
 
@@ -326,14 +326,28 @@ export class ChartComponent implements OnInit {
     const currentUnixTime = Math.floor(Date.now() / 1000);
     const secondsInAYear = 31536000;
     let currentLookBackTime = currentUnixTime - secondsInAYear;
-    if(currentLookBackTime > this.firstTime && this.firstTime !== 0 && this.lastTime !== 0){
+    if (
+      currentLookBackTime > this.firstTime &&
+      this.firstTime !== 0 &&
+      this.lastTime !== 0
+    ) {
       let iters = 0;
       const itersCap = 100;
-      while(!(currentLookBackTime < this.firstTime) && !(this.firstTime <= currentLookBackTime && currentLookBackTime <= this.lastTime)){
+      while (
+        !(currentLookBackTime < this.firstTime) &&
+        !(
+          this.firstTime <= currentLookBackTime &&
+          currentLookBackTime <= this.lastTime
+        )
+      ) {
         currentLookBackTime - secondsInAYear;
         iters++;
       }
-      if(iters !== itersCap && (this.firstTime <= currentLookBackTime && currentLookBackTime <= this.lastTime)){
+      if (
+        iters !== itersCap &&
+        this.firstTime <= currentLookBackTime &&
+        currentLookBackTime <= this.lastTime
+      ) {
         annotationList.push({
           type: 'line',
           scaleID: 'x',
@@ -348,8 +362,6 @@ export class ChartComponent implements OnInit {
         });
       }
     }
-
-
 
     // if these values are zero, don't do anything
     // this.lastTime is the last time
@@ -370,7 +382,7 @@ export class ChartComponent implements OnInit {
       firstClass = this._undefinedOrBefore(
         targetImportantDates.fallFirstDay,
         this.lastTime
-      )
+      );
     } else if (this.fys === 'S') {
       lastEnrol = this._undefinedOrBefore(
         targetImportantDates.winterEnrollmentEnd,
@@ -387,7 +399,7 @@ export class ChartComponent implements OnInit {
       firstClass = this._undefinedOrBefore(
         targetImportantDates.winterStart,
         this.lastTime
-      )
+      );
     } else {
       lastEnrol = this._undefinedOrBefore(
         targetImportantDates.fallEnrollmentEnd,
@@ -404,7 +416,7 @@ export class ChartComponent implements OnInit {
       firstClass = this._undefinedOrBefore(
         targetImportantDates.fallFirstDay,
         this.lastTime
-      )
+      );
     }
 
     if (lastEnrol !== 0) {
@@ -421,7 +433,7 @@ export class ChartComponent implements OnInit {
         },
       });
     }
-    if(firstClass !== 0){
+    if (firstClass !== 0) {
       annotationList.push({
         type: 'line',
         scaleID: 'x',
@@ -450,16 +462,9 @@ export class ChartComponent implements OnInit {
       });
     }
 
-    
-
     // console.log("About to", this.previousFullCourseCode[this.previousFullCourseCode.length - 1]);
     const crsCodeNow = this.previousFullCourseCode;
-    if(
-      targetImportantDates !== null && 
-      targetImportantDates !== undefined
-    ){
-
-
+    if (targetImportantDates !== null && targetImportantDates !== undefined) {
     }
     if (
       targetImportantDates !== null &&
@@ -472,13 +477,11 @@ export class ChartComponent implements OnInit {
     ) {
       // console.log("Got there");
 
-      const crsLv = this.calculateCourseLevel(
-        this.previousFullCourseCode
-      );
+      const crsLv = this.calculateCourseLevel(this.previousFullCourseCode);
       // console.log(crsLv);
       if (crsLv >= 1 && crsLv <= 4) {
         let firstDayEnrol: number;
-        switch(crsLv){
+        switch (crsLv) {
           case 1:
             firstDayEnrol = targetImportantDates.first;
             break;
@@ -495,22 +498,32 @@ export class ChartComponent implements OnInit {
             firstDayEnrol = targetImportantDates.fourth;
             break;
         }
-        const numSuffix = ["th", "st", "nd", "rd", "th", "th", "th", "th", "th"];
+        const numSuffix = [
+          'th',
+          'st',
+          'nd',
+          'rd',
+          'th',
+          'th',
+          'th',
+          'th',
+          'th',
+        ];
         firstDayEnrol += 25200;
-        if(this.lastTime > firstDayEnrol && this.firstTime < firstDayEnrol){
-        annotationList.push({
-          type: 'line',
-          scaleID: 'x',
-          value: firstDayEnrol * 1000,
-          borderColor: 'green',
-          borderWidth: 2,
-          label: {
-            display: true,
-            position: 'end',
-            content: `${crsLv}${numSuffix[crsLv]} yr start`,
-          },
-        });
-      }
+        if (this.lastTime > firstDayEnrol && this.firstTime < firstDayEnrol) {
+          annotationList.push({
+            type: 'line',
+            scaleID: 'x',
+            value: firstDayEnrol * 1000,
+            borderColor: 'green',
+            borderWidth: 2,
+            label: {
+              display: true,
+              position: 'end',
+              content: `${crsLv}${numSuffix[crsLv]} yr start`,
+            },
+          });
+        }
       }
     }
 
@@ -651,7 +664,7 @@ export class ChartComponent implements OnInit {
   invalidCourseRegexWarning: string = "This isn't a course code";
   courseDoesNotExist: string =
     "This course doesn't exist or is not offered in this term";
-  courseNotOffered: string = "This course is not offered in this term";
+  courseNotOffered: string = 'This course is not offered in this term';
   missingSuffix: string = 'You need the -F/-Y/-S suffix for this';
   missingHY: string =
     'You need the -H/-Y suffix, the campus code, and the -F/-S/-Y suffix for this';
@@ -759,26 +772,27 @@ export class ChartComponent implements OnInit {
       return;
     }
 
-    if(!(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY]\d[FSY]\d?$/) ||
+    if (
+      !(
+        courseCode.match(/^[A-Z]{3}[A-D\d]\d{2}[HY]\d[FSY]\d?$/) ||
         courseCode.match(/^[A-Z]{3}\d{4}[HY][FSY]\d?/)
-    )){
-      console.log("Course regex off");
-      this.previousCourse = "placeholder";
-      if(this.previousWasError){
-        this.curErrorMessage += "!";
+      )
+    ) {
+      console.log('Course regex off');
+      this.previousCourse = 'placeholder';
+      if (this.previousWasError) {
+        this.curErrorMessage += '!';
         return;
       }
 
-
-      if(courseCode.match(/^[A-Z]{3}[A-D\d]\d{2,3}/)){
+      if (courseCode.match(/^[A-Z]{3}[A-D\d]\d{2,3}/)) {
         this.curErrorMessage = this.courseDoesNotExist;
       } else {
-      this.curErrorMessage = this.invalidCourseRegexWarning;
+        this.curErrorMessage = this.invalidCourseRegexWarning;
       }
       this.previousWasError = true;
       return;
     }
-
 
     let courseInfo: Course;
     const curSession = this.crsgetter.session;
@@ -786,20 +800,32 @@ export class ChartComponent implements OnInit {
       next: (data) => {
         courseInfo = data;
       },
-      error: () => {
-        if(curSession !== this.crsgetter.session){
+      error: (err: HttpErrorResponse) => {
+        if (curSession !== this.crsgetter.session) {
           return;
         }
-        this.curErrorMessage = this.courseDoesNotExist;
+
+        if (err.status === 404)
+          this.curErrorMessage = this.courseDoesNotExist;
+        else if (err.status === 403)
+          this.curErrorMessage =
+            "You're not doing anything weird with your browser, aren't you?";
+        else if (err.status >= 500)
+          this.curErrorMessage = `Server-side error: ${err.status}`;
+        else if (err.status === 0)
+          this.curErrorMessage =
+            'You are offline or your connection is really bad';
+        else this.curErrorMessage = `Something went wrong: ${err.status}`;
+
+
         this.previousWasError = true;
         this.previousCourse = courseCode;
         this.previousSession = '';
       },
       complete: () => {
-        if(curSession !== this.crsgetter.session){
+        if (curSession !== this.crsgetter.session) {
           return;
         }
-
 
         this.curErrorMessage = '';
         this.previousCourseInfo = courseInfo;
@@ -948,9 +974,11 @@ export class ChartComponent implements OnInit {
   }
 
   private recalculateDeadlines(course: Course, latest: number): void {
-    const targetImportantDates = this.getImportantDatesBasedOnFaculty(this.faculty);
-    if(targetImportantDates === undefined){
-      console.log("Pratically, this should never happen.");
+    const targetImportantDates = this.getImportantDatesBasedOnFaculty(
+      this.faculty
+    );
+    if (targetImportantDates === undefined) {
+      console.log('Pratically, this should never happen.');
       return;
     }
     if (targetImportantDates !== null) {
@@ -1031,10 +1059,10 @@ export class ChartComponent implements OnInit {
     let chartPoints: { x: number; y: number }[] = [];
 
     // this.earliestChartTime = earliest;
-    if(mtt.isCancelled){
-      tempLabel += " - CANCELLED";
+    if (mtt.isCancelled) {
+      tempLabel += ' - CANCELLED';
     }
-    
+
     for (let i = 0; i < mtt.enrollmentLogs.length; i++) {
       let enrollment = mtt.enrollmentLogs[i];
 
@@ -1154,7 +1182,7 @@ export class ChartComponent implements OnInit {
         continue;
       }
       let cap = mtt.enrollmentCap;
-      if(cap === 0){
+      if (cap === 0) {
         continue;
       }
       capSoFar += cap;
@@ -1169,7 +1197,7 @@ export class ChartComponent implements OnInit {
 
     let fakeMeeting: Meeting = {
       meetingNumber: '',
-      instructors: [],  // {firstName: "", lastName: ""}
+      instructors: [], // {firstName: "", lastName: ""}
       enrollmentLogs: finalArr,
       enrollmentCap: capSoFar,
       createdAt: 0,
@@ -1273,14 +1301,20 @@ export class ChartComponent implements OnInit {
       let previousCap = met.enrollmentCapComplex.initialCap;
       if (this._meetingAddedLate(course, met)) {
         previousCap = 0;
-        toReturn.push({time: met.createdAt, newCapacity: met.enrollmentCapComplex.initialCap});
+        toReturn.push({
+          time: met.createdAt,
+          newCapacity: met.enrollmentCapComplex.initialCap,
+        });
         // toReturn.push([met.createdAt, met.enrollmentCapComplex.initialCap]);
       }
       // if this meeting was added late, add [createdAt, initialCap] to the
       // changelog list and the initial cap is 0.
 
       for (let capSeries of met.enrollmentCapComplex.capChanges) {
-        toReturn.push({time: capSeries.time, newCapacity: capSeries.newCapacity - previousCap})
+        toReturn.push({
+          time: capSeries.time,
+          newCapacity: capSeries.newCapacity - previousCap,
+        });
         // toReturn.push([capSeries[0], capSeries[1] - previousCap]);
         previousCap = capSeries.newCapacity;
         // previousCap = capSeries[1];
@@ -1300,12 +1334,19 @@ export class ChartComponent implements OnInit {
     const newCaps: EnrollmentCapChange[] = [];
     let previousCap = initialCap; // for more readibility
     for (let item of timeSeries) {
-      if (newCaps.length === 0 || newCaps[newCaps.length - 1].time !== item.time) {
-        newCaps.push({time: item.time, newCapacity: previousCap + item.newCapacity})
+      if (
+        newCaps.length === 0 ||
+        newCaps[newCaps.length - 1].time !== item.time
+      ) {
+        newCaps.push({
+          time: item.time,
+          newCapacity: previousCap + item.newCapacity,
+        });
         // newCaps.push([item[0], previousCap + item[1]]);
       } else {
         // newCaps[newCaps.length - 1][1] = newCaps[newCaps.length - 1][1] + item[1];
-        newCaps[newCaps.length - 1].newCapacity = newCaps[newCaps.length - 1].newCapacity + item.newCapacity;
+        newCaps[newCaps.length - 1].newCapacity =
+          newCaps[newCaps.length - 1].newCapacity + item.newCapacity;
       }
       // console.log(newCaps);
       previousCap = newCaps[newCaps.length - 1].newCapacity;
@@ -1410,17 +1451,17 @@ export class ChartComponent implements OnInit {
    */
   fallbackFacultyIfUnknown(crsCode: string): string {
     // console.log(crsCode);
-    if(crsCode.match(/^[A-Z]{3}([A-D]|\d)\d{2}[HY]\d/)){
+    if (crsCode.match(/^[A-Z]{3}([A-D]|\d)\d{2}[HY]\d/)) {
       const campusNum = crsCode[7];
-      if(campusNum === '3'){
-        return "SCAR";
-      } else if (campusNum === '5'){
-        return "ERIN";
+      if (campusNum === '3') {
+        return 'SCAR';
+      } else if (campusNum === '5') {
+        return 'ERIN';
       } else {
-        return "UNKNOWN";
+        return 'UNKNOWN';
       }
     }
-    return "UNKNOWN";
+    return 'UNKNOWN';
   }
 
   /**
@@ -1433,16 +1474,20 @@ export class ChartComponent implements OnInit {
 
     let lastTime = 0;
     let firstTime = 0;
-    if (crs.timeIntervals.length >= 1)
-      {lastTime = crs.timeIntervals[crs.timeIntervals.length - 1];
-      firstTime = crs.timeIntervals[0];}
+    if (crs.timeIntervals.length >= 1) {
+      lastTime = crs.timeIntervals[crs.timeIntervals.length - 1];
+      firstTime = crs.timeIntervals[0];
+    }
     this.lastTime = lastTime;
     this.firstTime = firstTime;
-    
+
     if (!fys.match(/[FYS]/)) {
       return;
     }
-    this.faculty = crs.faculty === "UNKNOWN" ? this.fallbackFacultyIfUnknown(crs.code) : crs.faculty;
+    this.faculty =
+      crs.faculty === 'UNKNOWN'
+        ? this.fallbackFacultyIfUnknown(crs.code)
+        : crs.faculty;
     // console.log(this.faculty);
     this.fys = fys; // set this to be global here
     const aggEnrollments: number[] = [];
@@ -1474,9 +1519,11 @@ export class ChartComponent implements OnInit {
     let re75Index: number | null = null;
     let re50Index: number | null = null;
 
-    const targetImportantDates = this.getImportantDatesBasedOnFaculty(this.faculty);
-    if(targetImportantDates === undefined){
-      console.log("Pratically, this should never happen.");
+    const targetImportantDates = this.getImportantDatesBasedOnFaculty(
+      this.faculty
+    );
+    if (targetImportantDates === undefined) {
+      console.log('Pratically, this should never happen.');
       return;
     }
 
@@ -1490,12 +1537,12 @@ export class ChartComponent implements OnInit {
         targetImportantDates.fallEnrollmentEnd
       );
 
-      if(targetImportantDates.fall75 !== undefined){
+      if (targetImportantDates.fall75 !== undefined) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
           targetImportantDates.fall75
         );
-        if(targetImportantDates.fall50 !== undefined){
+        if (targetImportantDates.fall50 !== undefined) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
             targetImportantDates.fall50
@@ -1524,12 +1571,12 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         targetImportantDates.winterDrop + this.deadlineTimeOffset
       );
-      if(targetImportantDates.winter75 !== undefined){
+      if (targetImportantDates.winter75 !== undefined) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
           targetImportantDates.winter75
         );
-        if(targetImportantDates.winter50 !== undefined){
+        if (targetImportantDates.winter50 !== undefined) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
             targetImportantDates.winter50
@@ -1550,12 +1597,12 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         targetImportantDates.fallEnrollmentEnd
       );
-      if(targetImportantDates.year75 !== undefined){
+      if (targetImportantDates.year75 !== undefined) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
           targetImportantDates.year75
         );
-        if(targetImportantDates.year50 !== undefined){
+        if (targetImportantDates.year50 !== undefined) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
             targetImportantDates.year50
@@ -1592,11 +1639,13 @@ export class ChartComponent implements OnInit {
     this.drops = this.finalEnrollment - enrolsAtDropDate;
     this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
 
-    if(re75Index !== null){
-      let enrolsAt75 = re75Index === -1 ? this.currentEnrollment : aggEnrollments[re75Index];
+    if (re75Index !== null) {
+      let enrolsAt75 =
+        re75Index === -1 ? this.currentEnrollment : aggEnrollments[re75Index];
       this.re75 = this.finalEnrollment - enrolsAt75;
-      if(re50Index !== null){
-        let enrolsAt50 = re50Index === -1 ? this.currentEnrollment : aggEnrollments[re50Index];
+      if (re50Index !== null) {
+        let enrolsAt50 =
+          re50Index === -1 ? this.currentEnrollment : aggEnrollments[re50Index];
         this.re50 = enrolsAt75 - enrolsAt50;
         this.re0 = enrolsAt50 - enrolsAtDropDate;
       } else {
