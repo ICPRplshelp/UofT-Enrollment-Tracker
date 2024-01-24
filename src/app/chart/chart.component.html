@@ -6,11 +6,7 @@
   </h1>
 
   <p> Track the enrollment for any course
-    offered in the {{getSessionName(selectedValue)}} term.
-    <br>
-    Click on a legend component to hide it.
-    <br>
-    Last updated: {{ lastUpdateString }}
+    offered recently. Last updated: {{ lastUpdateString }}
   </p>
 
 </div>
@@ -67,12 +63,12 @@ loadCourseData(inputCourse)
     <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary"
                   matTooltip="Determines whether maximum enrollment lines should be visible" [matTooltipPosition]="'below'"
                   matTooltipShowDelay="700">
-      Show maximum enrollments
+      Max
     </mat-checkbox>
     <mat-checkbox [(ngModel)]="autoFormat" color="primary"
                   matTooltip="Input course codes will be formatted when a search is done. Use this for screenshots."
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Autoformat course codes
+      Autoformat
     </mat-checkbox>
     <mat-checkbox [(ngModel)]="showAnnotations" color="primary" matTooltip="Display vertical lines showing important dates"
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
@@ -81,7 +77,7 @@ loadCourseData(inputCourse)
 
     <mat-checkbox [(ngModel)]="hideSpecial" color="primary" matTooltip="Prevents LEC2000-LEC2999 sections from showing"
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Hide special sections
+      Hide special
     </mat-checkbox>
 
     <!-- showLargePoints -->
@@ -89,16 +85,16 @@ loadCourseData(inputCourse)
     <mat-checkbox [(ngModel)]="combineAll" color="primary"
                   matTooltip="Combine all lecture sections normally visible on the graph into one" [matTooltipPosition]="'below'"
                   matTooltipShowDelay="700">
-      Combine all sections
+      Combine all
     </mat-checkbox>
     <mat-checkbox [(ngModel)]="showRemaining" color="primary"
                   matTooltip="Combines enrollment across all sections, without counting waitlisted students. If all enrollment sections are capped, the quantity of the smallest waitlist will overshoot the cap."
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Show leftover space
+      Show leftover
     </mat-checkbox>
     <mat-checkbox [(ngModel)]="showLargePoints" color="primary" matTooltip="Make points more visible on the chart so you can hover over them"
                   [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Show large points
+      Large points
     </mat-checkbox>
     
 
@@ -124,10 +120,12 @@ loadCourseData(inputCourse)
     line-height: 1.2;">
       {{courseTitle}} ({{previousFullCourseCode.replace("-", "")}})</div>
   </div>
-
-  <canvas baseChart [datasets]="scatterChartData" [options]="scatterChartOptions" [type]="scatterChartType"
-          [plugins]="chartPlugins">
-  </canvas>
+  <div class="canvas-holder center-me">
+    <canvas  baseChart [datasets]="scatterChartData" [options]="scatterChartOptions" [type]="scatterChartType"
+    [plugins]="chartPlugins">
+</canvas>
+</div>
+  
 
   <div style="padding-top: 25px;" *ngIf="true">
     <!-- <p class="center4">

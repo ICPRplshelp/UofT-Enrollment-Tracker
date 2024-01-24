@@ -32,7 +32,7 @@ export class ChartComponent implements OnInit {
   title = 'timetabletracker';
   backCapNudge: number = 1; // seconds to nudge the cap change backwards.
   // sessionWasLastYear: boolean = false;
-
+  noWidthLimit: boolean = false;
   constructor(
     private crsgetter: CrsgetterService,
     private _snackBar: MatSnackBar,
@@ -96,18 +96,7 @@ export class ChartComponent implements OnInit {
       },
     });
 
-    // this.crsgetter.getImportantDates().subscribe({
-    //   next: (data) => {
-    //     tempData = data;
-    //   },
-    //   error: () => {
-    //   },
-    //   complete: () => {
-    //     this.importantDates = tempData;
-    //     done();
-    //   },
-    // });
-
+  
     let tempData2: TopCourses;
     this.crsgetter.getTopCoursesList().subscribe({
       next: (data) => {
@@ -333,14 +322,17 @@ export class ChartComponent implements OnInit {
     ) {
       let iters = 0;
       const itersCap = 100;
-      while (
-        !(currentLookBackTime < this.firstTime) &&
+      while (iters < itersCap && 
         !(
+          // stop decrementing if this is true
+          (currentLookBackTime < this.firstTime) 
+          ||
+        (
           this.firstTime <= currentLookBackTime &&
           currentLookBackTime <= this.lastTime
-        )
+        ))
       ) {
-        currentLookBackTime - secondsInAYear;
+        currentLookBackTime -= secondsInAYear;
         iters++;
       }
       if (

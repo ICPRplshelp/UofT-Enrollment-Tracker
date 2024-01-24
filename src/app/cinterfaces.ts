@@ -29,7 +29,7 @@ export interface InstructorChangeInstance {
 }
 
 export interface InstructorLog {
-    initinalInstructors: Instructor[];
+    initialInstructors: Instructor[];
     instructorChanges: InstructorChangeInstance[];
 }
 
