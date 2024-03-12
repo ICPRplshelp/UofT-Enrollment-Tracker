@@ -1,3 +1,36 @@
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.force-text-white {
+  color: white !important;
+}
+.mat-form-field-label {
+  color: white !important;
+}
+
+
+::ng-deep .dark-mode .mat-select-value {
+  color: white;
+}
+
+::ng-deep .dark-mode .mat-form-field-label {
+  color: white;
+}
+
+.dark-mode a {
+  color: rgb(169, 254, 240) ; /* or any color you want */
+}
+.dark-mode a:active {
+  color: rgb(123, 209, 194) ; /* or any color you want */
+}
+.dark-mode a:visited {
+  color: rgb(169, 230, 254) !important; /* or any color you want */
+}
+
+
+
 .chRegion {
   padding-left: 10%;
   padding-right: 10%;

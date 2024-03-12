@@ -18,6 +18,7 @@ import Annotation, * as pluginAnnotation from 'chartjs-plugin-annotation';
 import { Chart, ChartDataset, ChartOptions, ChartType } from 'chart.js';
 import { AutoCompleteService } from '../shared/auto-complete.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import { AnnotationOptions } from 'chartjs-plugin-annotation';
 
 @Component({
   selector: 'app-chart',
@@ -96,7 +97,6 @@ export class ChartComponent implements OnInit {
       },
     });
 
-  
     let tempData2: TopCourses;
     this.crsgetter.getTopCoursesList().subscribe({
       next: (data) => {
@@ -282,6 +282,14 @@ export class ChartComponent implements OnInit {
     return curTimestamp.importantTimestamps;
   }
 
+  getLookbackTime(): number {
+    const currentUnixTime = Math.floor(Date.now() / 1000);
+    const secondsInAYear = 31536000;
+    let currentLookBackTime = currentUnixTime - secondsInAYear;
+
+    return 42069;
+  }
+
   /**
    * Recalculate the annotations on this chart.
    * This method will run AFTER the chart has been redrawn.
@@ -302,57 +310,31 @@ export class ChartComponent implements OnInit {
 
     if (!this.showAnnotations) {
       if (
-        this.scatterChartOptions !== undefined &&
-        this.scatterChartOptions.plugins !== undefined &&
-        this.scatterChartOptions.plugins.annotation !== undefined
+        notNullorUndefined(this.scatterChartOptions) &&
+        notNullorUndefined(this.scatterChartOptions.plugins) &&
+        notNullorUndefined(this.scatterChartOptions.plugins.annotation)
       ) {
         this.scatterChartOptions.plugins.annotation.annotations = [];
       }
       return;
     }
-    const annotationList: any[] = [];
-
-    const currentUnixTime = Math.floor(Date.now() / 1000);
-    const secondsInAYear = 31536000;
-    let currentLookBackTime = currentUnixTime - secondsInAYear;
-    if (
-      currentLookBackTime > this.firstTime &&
-      this.firstTime !== 0 &&
-      this.lastTime !== 0
-    ) {
-      let iters = 0;
-      const itersCap = 100;
-      while (iters < itersCap && 
-        !(
-          // stop decrementing if this is true
-          (currentLookBackTime < this.firstTime) 
-          ||
-        (
-          this.firstTime <= currentLookBackTime &&
-          currentLookBackTime <= this.lastTime
-        ))
-      ) {
-        currentLookBackTime -= secondsInAYear;
-        iters++;
-      }
-      if (
-        iters !== itersCap &&
-        this.firstTime <= currentLookBackTime &&
-        currentLookBackTime <= this.lastTime
-      ) {
-        annotationList.push({
-          type: 'line',
-          scaleID: 'x',
-          value: currentLookBackTime * 1000,
-          borderColor: 'red',
-          borderWidth: 2,
-          label: {
-            display: true,
-            position: 'start',
-            content: '',
-          },
-        });
-      }
+    const annotationList:
+      | AnnotationOptions[]
+      | Record<string, AnnotationOptions> = [];
+    const lb = this.lookBack();
+    if (lb !== null) {
+      annotationList.push({
+        type: 'line',
+        scaleID: 'x',
+        value: lb * 1000,
+        borderColor: 'red',
+        borderWidth: 2,
+        label: {
+          display: true,
+          position: 'start',
+          content: '',
+        },
+      });
     }
 
     // if these values are zero, don't do anything
@@ -449,23 +431,26 @@ export class ChartComponent implements OnInit {
         label: {
           display: true,
           position: 'end',
-          content: 'drop deadline',
+          content: 'drop ddl',
         },
       });
     }
 
     // console.log("About to", this.previousFullCourseCode[this.previousFullCourseCode.length - 1]);
     const crsCodeNow = this.previousFullCourseCode;
-    if (targetImportantDates !== null && targetImportantDates !== undefined) {
+    if (
+      targetImportantDates !== null &&
+      notNullorUndefined(targetImportantDates)
+    ) {
     }
     if (
       targetImportantDates !== null &&
-      targetImportantDates !== undefined &&
+      notNullorUndefined(targetImportantDates) &&
       this.faculty !== 'APSC' &&
-      targetImportantDates.first !== undefined &&
-      targetImportantDates.second !== undefined &&
-      targetImportantDates.third !== undefined &&
-      targetImportantDates.fourth !== undefined
+      notNullorUndefined(targetImportantDates.first) &&
+      notNullorUndefined(targetImportantDates.second) &&
+      notNullorUndefined(targetImportantDates.third) &&
+      notNullorUndefined(targetImportantDates.fourth)
     ) {
       // console.log("Got there");
 
@@ -512,7 +497,7 @@ export class ChartComponent implements OnInit {
             label: {
               display: true,
               position: 'end',
-              content: `${crsLv}${numSuffix[crsLv]} yr start`,
+              content: `${crsLv}${numSuffix[crsLv]} yr`,
             },
           });
         }
@@ -521,7 +506,7 @@ export class ChartComponent implements OnInit {
 
     if (
       targetImportantDates !== null &&
-      targetImportantDates !== undefined &&
+      notNullorUndefined(targetImportantDates) &&
       targetImportantDates.general > this.earliestChartTime &&
       this.lastTime > targetImportantDates.general
     ) {
@@ -536,7 +521,7 @@ export class ChartComponent implements OnInit {
         label: {
           display: true,
           position: 'end',
-          content: 'gen. enroll',
+          content: 'gen',
         },
       });
     }
@@ -556,20 +541,58 @@ export class ChartComponent implements OnInit {
       });
     }
     if (
-      this.scatterChartOptions !== undefined &&
-      this.scatterChartOptions.plugins !== undefined &&
-      this.scatterChartOptions.plugins.annotation !== undefined
+      notNullorUndefined(this.scatterChartOptions) &&
+      notNullorUndefined(this.scatterChartOptions.plugins) &&
+      notNullorUndefined(this.scatterChartOptions.plugins.annotation)
     ) {
       this.scatterChartOptions.plugins.annotation.annotations = annotationList;
     }
   }
   earliestChartTime: number = 0;
   private _inputCourse: string = '';
+
+  private lookBack(): number | null {
+    const currentUnixTime = Math.floor(Date.now() / 1000);
+    const secondsInAYear = 31536000;
+    let currentLookBackTime = currentUnixTime - secondsInAYear;
+    if (
+      currentLookBackTime > this.firstTime &&
+      this.firstTime !== 0 &&
+      this.lastTime !== 0
+    ) {
+      let iters = 0;
+      const itersCap = 100;
+      while (
+        iters < itersCap &&
+        !(
+          // stop decrementing if this is true
+          (
+            currentLookBackTime < this.firstTime ||
+            (this.firstTime <= currentLookBackTime &&
+              currentLookBackTime <= this.lastTime)
+          )
+        )
+      ) {
+        currentLookBackTime -= secondsInAYear;
+        iters++;
+      }
+
+      if (
+        iters !== itersCap &&
+        this.firstTime <= currentLookBackTime &&
+        currentLookBackTime <= this.lastTime
+      ) {
+        return currentLookBackTime;
+      }
+    }
+    return null;
+  }
+
   public get inputCourse(): string {
     return this._inputCourse;
   }
   public set inputCourse(value: string) {
-    this._inputCourse = value.replace(/[,.\s]+$/, ' ');
+    this._inputCourse = value.replace(/[,.\s\/\[\]\-=';]+$/, ' ');
     // if(temp[temp.length - 1] === " "){
     //   temp = temp.slice(0, temp.length - 1);
     // }
@@ -606,7 +629,7 @@ export class ChartComponent implements OnInit {
   ];
   public scatterChartType: ChartType = 'scatter';
 
-  keyDownFunction(event: { keyCode: number }) {
+  keyDownFunction(event: { keyCode: number; shiftKey: boolean }) {
     if (event.keyCode === 13) {
       this.loadCourseData(this.inputCourse);
       if (this.randomized >= 2) {
@@ -624,30 +647,68 @@ export class ChartComponent implements OnInit {
       this.loadCourseData(randomCourse);
       this.randomized++;
     }
-
-    if (event.keyCode === 188) {
+    const icf = (inc: number) => {
       let sLI = this.getSessions().map((s) => s.sessionCode);
       // curr session is this.selectedValue;
       let sesInd = sLI.indexOf(this.selectedValue);
-      sesInd = sesInd - 1;
-      if (sesInd < 0) {
-        sesInd = 0;
-        return;
-      }
-      this.selectedValue = sLI[sesInd];
-      // console.log(this.selectedValue);
-    }
-
-    if (event.keyCode === 190) {
-      let sLI = this.getSessions().map((s) => s.sessionCode);
-      // curr session is this.selectedValue;
-      let sesInd = sLI.indexOf(this.selectedValue);
-      sesInd = sesInd + 1;
+      sesInd = sesInd + inc;
       if (sesInd >= sLI.length) {
         sesInd = sLI.length - 1;
         return;
+      } else if (sesInd < 0){
+        sesInd = 0;
       }
       this.selectedValue = sLI[sesInd];
+    };
+    if (event.keyCode === 188) {
+      icf(-1);
+    }
+
+    if (event.keyCode === 190) {
+      icf(1);
+    }
+    if (event.keyCode === 186) {
+      icf(-2);
+    }
+    if (event.keyCode === 222) {
+      icf(2);
+    }
+
+
+
+    if (this.inputCourse.length >= 9) {
+      const allCoursesThatExist: string[] = [];
+      let indexOfCurrent = -1;
+      let i = 0;
+      for (const suf of ['F', 'S', 'Y']) {
+        const tc2 = this.inputCourse.slice(0, 8) + suf;
+        if (this.autoCompleter.validateCourseExistence(tc2)) {
+          allCoursesThatExist.push(tc2);
+          if (suf === this.inputCourse[8]) {
+            indexOfCurrent = i;
+          }
+        }
+        i++;
+      }
+
+      if (indexOfCurrent === -1 || allCoursesThatExist.length === 0) {
+        return;
+      }
+
+      if (event.keyCode === 219) {
+        const newIndex = pythonModulus(
+          indexOfCurrent - 1,
+          allCoursesThatExist.length
+        );
+        this.loadCourseData(allCoursesThatExist[newIndex]);
+      }
+      if (event.keyCode === 221) {
+        const newIndex = pythonModulus(
+          indexOfCurrent + 1,
+          allCoursesThatExist.length
+        );
+        this.loadCourseData(allCoursesThatExist[newIndex]);
+      }
     }
   }
 
@@ -699,6 +760,14 @@ export class ChartComponent implements OnInit {
     }
 
     return (num * 100).toFixed(2) + '%';
+  }
+
+  fmtNumAsPercentShort(num: number): string {
+    if (isNaN(num) || Math.abs(num) === Infinity) {
+      return '0.00%';
+    }
+
+    return Math.floor(num * 100) + '%';
   }
 
   private previousCourse: string = '';
@@ -797,8 +866,7 @@ export class ChartComponent implements OnInit {
           return;
         }
 
-        if (err.status === 404)
-          this.curErrorMessage = this.courseDoesNotExist;
+        if (err.status === 404) this.curErrorMessage = this.courseDoesNotExist;
         else if (err.status === 403)
           this.curErrorMessage =
             "You're not doing anything weird with your browser, aren't you?";
@@ -808,7 +876,6 @@ export class ChartComponent implements OnInit {
           this.curErrorMessage =
             'You are offline or your connection is really bad';
         else this.curErrorMessage = `Something went wrong: ${err.status}`;
-
 
         this.previousWasError = true;
         this.previousCourse = courseCode;
@@ -830,6 +897,24 @@ export class ChartComponent implements OnInit {
       },
     });
   }
+
+  _darkMode: boolean = false;
+
+  public get darkMode(): boolean {
+    return this._darkMode;
+  }
+
+  public set darkMode(dm: boolean) {
+    this._darkMode = dm;
+
+    this.loadCourseData(this.inputCourse);
+  }
+
+  chartColors: any[] = [
+    {
+      backgroundColor: ['#FF7360', '#6FC8CE', '#FAFFF2', '#FFFCC4', '#B9E8E0'],
+    },
+  ];
 
   largePointRadius: number = 3;
   private _showLargePoints: boolean = false;
@@ -918,6 +1003,8 @@ export class ChartComponent implements OnInit {
 
     const maxEnrollmentsSoFar: ChartDataset[] = [];
     let iterations = 0;
+    this.recalculateDeadlines(course, latest);
+
     this.updateImportantCounts(course);
 
     let targetMeetings = course.meetings;
@@ -959,11 +1046,12 @@ export class ChartComponent implements OnInit {
       iterations++;
     }
 
-    this.recalculateDeadlines(course, latest);
-
     chartDatasetSoFar.push(...maxEnrollmentsSoFar);
     this.scatterChartData = chartDatasetSoFar;
   }
+
+  waitlistDeadline = 0;
+  enrollmentDeadline = 0;
 
   private recalculateDeadlines(course: Course, latest: number): void {
     const targetImportantDates = this.getImportantDatesBasedOnFaculty(
@@ -984,11 +1072,13 @@ export class ChartComponent implements OnInit {
         enrollmentDeadline = targetImportantDates.fallEnrollmentEnd;
       } else {
         waitlistDeadline = targetImportantDates.winterWaitlistClosed;
-        enrollmentDeadline = targetImportantDates.winterWaitlistClosed;
+        enrollmentDeadline = targetImportantDates.winterEnrollmentEnd;
       }
 
       this.afterWaitlistDeadline = latest > waitlistDeadline;
       this.afterEnrollmentDeadline = latest > enrollmentDeadline;
+      this.waitlistDeadline = waitlistDeadline;
+      this.enrollmentDeadline = enrollmentDeadline;
     }
   }
 
@@ -1456,6 +1546,8 @@ export class ChartComponent implements OnInit {
     return 'UNKNOWN';
   }
 
+  lastAfterEnrollmentDeadline = false;
+
   /**
    * Updates all important counts attached to crs
    * @param crs the course information to be passed in
@@ -1529,12 +1621,12 @@ export class ChartComponent implements OnInit {
         targetImportantDates.fallEnrollmentEnd
       );
 
-      if (targetImportantDates.fall75 !== undefined) {
+      if (notNullorUndefined(targetImportantDates.fall75)) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
           targetImportantDates.fall75
         );
-        if (targetImportantDates.fall50 !== undefined) {
+        if (notNullorUndefined(targetImportantDates.fall50)) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
             targetImportantDates.fall50
@@ -1563,12 +1655,12 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         targetImportantDates.winterDrop + this.deadlineTimeOffset
       );
-      if (targetImportantDates.winter75 !== undefined) {
+      if (notNullorUndefined(targetImportantDates.winter75)) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
           targetImportantDates.winter75
         );
-        if (targetImportantDates.winter50 !== undefined) {
+        if (notNullorUndefined(targetImportantDates.winter50)) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
             targetImportantDates.winter50
@@ -1589,12 +1681,12 @@ export class ChartComponent implements OnInit {
         crs.timeIntervals,
         targetImportantDates.fallEnrollmentEnd
       );
-      if (targetImportantDates.year75 !== undefined) {
+      if (notNullorUndefined(targetImportantDates.year75)) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
           targetImportantDates.year75
         );
-        if (targetImportantDates.year50 !== undefined) {
+        if (notNullorUndefined(targetImportantDates.year50)) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
             targetImportantDates.year50
@@ -1630,6 +1722,19 @@ export class ChartComponent implements OnInit {
 
     this.drops = this.finalEnrollment - enrolsAtDropDate;
     this.lwds = enrolsAtDropDate - enrolsAtLwdDate;
+    this.lastAfterEnrollmentDeadline = false;
+    this.etd = null;
+    const lookBackTime = this.lookBack();
+    if (lookBackTime !== null) {
+      const fdi = this.findIndexFirstDay(crs.timeIntervals, lookBackTime);
+      if (fdi !== -1) {
+        this.etd = aggEnrollments[fdi];
+      }
+      if (lookBackTime > this.enrollmentDeadline) {
+        // console.log('LBT-ED', lookBackTime, this.enrollmentDeadline);
+        this.lastAfterEnrollmentDeadline = true;
+      }
+    }
 
     if (re75Index !== null) {
       let enrolsAt75 =
@@ -1721,6 +1826,8 @@ export class ChartComponent implements OnInit {
   drops: number = 0;
   lwds: number = 0;
   cap: number = 0;
+  etd: number | null = null;
+  dtd: number | null = null;
 
   lastUpdateString: string = '';
 
@@ -1744,7 +1851,7 @@ export class ChartComponent implements OnInit {
     '#000000',
   ];
 
-  /*
+  colors2 = [
     '#6E4DBC',
     '#1C996F',
     '#D1543B',
@@ -1762,9 +1869,7 @@ export class ChartComponent implements OnInit {
     '#cb3500',
     '#492100',
     '#000000',
-
-
-*/
+  ];
 
   specialColors: string[] = [
     '#755F59',
@@ -1783,4 +1888,11 @@ export class ChartComponent implements OnInit {
   private _getSpecialColorSeries(colorNum: number): string {
     return this.specialColors[colorNum % this.specialColors.length];
   }
+}
+
+function notNullorUndefined<T>(val: T | null | undefined): val is T {
+  return val !== null && val !== undefined;
+}
+function pythonModulus(a: number, b: number): number {
+  return ((a % b) + b) % b;
 }

@@ -25,7 +25,22 @@ export class AutoCompleteService {
       });
   }
 
-  autoCompleteSearch(courseCode: string): string {
+  validateCourseExistence(courseCode: string): boolean {
+    if (courseCode.length < 9){
+      return false;
+    }
+
+    let des = courseCode.substring(0, 3);
+    let code = courseCode.substring(0, 6);
+    let campus = courseCode[7];
+    let weight = courseCode[6];
+    let session = courseCode[8];
+    // console.log(des, code, campus , weight, session);
+    let candidates = this._autoCompleteSearchHelper(des, code, campus , weight, session);
+    return candidates.length >= 1;
+  }
+
+  autoCompleteSearch(courseCode: string, failEmpty: boolean = false): string {
 
     let des = '';
     let code = '';
@@ -62,10 +77,12 @@ export class AutoCompleteService {
       code = courseCode.slice(0, 6);
       
     }
-
     let candidates = this._autoCompleteSearchHelper(des, code, campus , weight, session);
     if(candidates.length === 0){
       // console.log("Candidates empty, sorry");
+      if(failEmpty){
+        return "";
+      }
       return courseCode;
     }
 
@@ -89,18 +106,24 @@ export class AutoCompleteService {
     weight: string | null, session: string | null): string[] {
       if(this.msList === undefined){
         // console.log("MSLIST NOT LOADED YET");
+        // console.log("msList");
+
         return [];
       }
       let unwrappedList = this.msList.liDes;
       let foundDes = unwrappedList.find(x => x.des === des);
       // console.log("reach unwrapped", foundDes);
       if(foundDes === undefined){
+        // console.log("FoundDES");
+
         return [];
       }  // and that's how we know finddes is not undefined
 
-      // console.log(code);
+      // // console.log(code);
+     
       let foundCrs = foundDes.courses.find(x => x.n === code);
       if(foundCrs === undefined){
+        // console.log("FoundCRS");
         return [];
       }
       // console.log("reach COURSES", foundCrs);
@@ -122,7 +145,7 @@ export class AutoCompleteService {
       for(let cv2 of cVarList){
         ls.push(code + this.cvrToCourseSuffix(cv2));
       }
-      console.log(ls);
+      // console.log(ls);
       return ls;
     }
 

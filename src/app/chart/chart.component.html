@@ -1,20 +1,23 @@
-<div class="center" style="padding-top: 30px">
+<div [ngClass]="{'dark-mode': darkMode}">
 
-  <h1 style="font-size: 35px">
-    <strong>
-      UofT Timetable Tracker </strong>
-  </h1>
 
-  <p> Track the enrollment for any course
-    offered recently. Last updated: {{ lastUpdateString }}
-  </p>
+  <div class="center" style="padding-top: 30px">
 
-</div>
-<div class="center">
+    <h1 style="font-size: 35px">
+      <strong>
+        UofT Timetable Tracker </strong>
+    </h1>
 
-  <div class="flexit01">
+    <p> Track the enrollment for any course
+      offered recently. Last updated: {{ lastUpdateString }}
+    </p>
 
-    <!-- <div *ngIf="getSessions().length >= 2">
+  </div>
+  <div class="center">
+
+    <div class="flexit01">
+
+      <!-- <div *ngIf="getSessions().length >= 2">
       <mat-form-field apperance="fill" class="example-form-field" >
         <mat-label>Session</mat-label>
         <mat-select [(ngModel)]="selectedValue" name="sess">
@@ -26,109 +29,119 @@
       </mat-form-field>
     </div> -->
 
-    <div *ngIf="getSessions().length >= 2">
-      <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
-        <mat-label>Session</mat-label>
+      <div    *ngIf="getSessions().length >= 2">
+        <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
+          <mat-label   >Session</mat-label>
 
-        <mat-select [(ngModel)]="selectedValue" name="sess">
-          <mat-option *ngFor="let ses of getSessions()"
-          [value]="ses.sessionCode">
-          {{ses.name}}
-        </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-
-
+          <mat-select [(ngModel)]="selectedValue" name="sess">
+            <mat-option    *ngFor="let ses of getSessions()" [value]="ses.sessionCode">
+              
+              {{ses.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
 
 
-    <div>
-      <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
-        <mat-label>Course code</mat-label>
 
-        <input matInput type="text" [(ngModel)]="inputCourse">
-      </mat-form-field>
-    </div>
 
-    <button id="reloadit" type="button" mat-stroked-button (click)="
+      <div>
+        <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
+          <mat-label>Course code</mat-label>
+
+          <input matInput type="text" [(ngModel)]="inputCourse">
+        </mat-form-field>
+      </div>
+
+      <button id="reloadit" type="button" mat-stroked-button (click)="
 loadCourseData(inputCourse)
 ">RELOAD IT</button>
 
+    </div>
+
+
+    <!--  showRemaining -->
+
+    <div class="flexit03" style="padding-bottom: 5px">
+      <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary"
+        matTooltip="Determines whether maximum enrollment lines should be visible" [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700">
+        Max
+      </mat-checkbox>
+      <mat-checkbox [(ngModel)]="autoFormat" color="primary"
+        matTooltip="Input course codes will be formatted when a search is done. Use this for screenshots."
+        [matTooltipPosition]="'below'" matTooltipShowDelay="700">
+        Autoformat
+      </mat-checkbox>
+      <mat-checkbox [(ngModel)]="showAnnotations" color="primary"
+        matTooltip="Display vertical lines showing important dates" [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700">
+        Annotations
+      </mat-checkbox>
+
+      <mat-checkbox [(ngModel)]="hideSpecial" color="primary"
+        matTooltip="Prevents LEC2000-LEC2999 sections from showing" [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700">
+        Hide special
+      </mat-checkbox>
+
+      <!-- showLargePoints -->
+
+      <mat-checkbox [(ngModel)]="combineAll" color="primary"
+        matTooltip="Combine all lecture sections normally visible on the graph into one" [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700">
+        Combine all
+      </mat-checkbox>
+      <mat-checkbox [(ngModel)]="showRemaining" color="primary"
+        matTooltip="Combines enrollment across all sections, without counting waitlisted students. If all enrollment sections are capped, the quantity of the smallest waitlist will overshoot the cap."
+        [matTooltipPosition]="'below'" matTooltipShowDelay="700">
+        Show leftover
+      </mat-checkbox>
+      <mat-checkbox [(ngModel)]="showLargePoints" color="primary"
+        matTooltip="Make points more visible on the chart so you can hover over them" [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700">
+        Large points
+      </mat-checkbox>
+
+
+      <!-- <mat-checkbox [(ngModel)]="darkMode" color="primary"
+        matTooltip="Toggle dark mode" [matTooltipPosition]="'below'"
+        matTooltipShowDelay="700">
+        Dark Mode
+      </mat-checkbox> -->
+
+
+    </div>
+
+
+    <!-- combineAll -->
+
+    <div *ngIf="curErrorMessage !== ''" style="padding-bottom: 10px" class="center">
+      <div class="red"> {{curErrorMessage}} </div>
+    </div>
   </div>
 
+  <div *ngIf="searched" class="chRegion" style="display: block;">
 
-  <!--  showRemaining -->
-
-  <div class="flexit03" style="padding-bottom: 5px">
-    <mat-checkbox [(ngModel)]="showMaxEnrollment" color="primary"
-                  matTooltip="Determines whether maximum enrollment lines should be visible" [matTooltipPosition]="'below'"
-                  matTooltipShowDelay="700">
-      Max
-    </mat-checkbox>
-    <mat-checkbox [(ngModel)]="autoFormat" color="primary"
-                  matTooltip="Input course codes will be formatted when a search is done. Use this for screenshots."
-                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Autoformat
-    </mat-checkbox>
-    <mat-checkbox [(ngModel)]="showAnnotations" color="primary" matTooltip="Display vertical lines showing important dates"
-                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Annotations
-    </mat-checkbox>
-
-    <mat-checkbox [(ngModel)]="hideSpecial" color="primary" matTooltip="Prevents LEC2000-LEC2999 sections from showing"
-                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Hide special
-    </mat-checkbox>
-
-    <!-- showLargePoints -->
-
-    <mat-checkbox [(ngModel)]="combineAll" color="primary"
-                  matTooltip="Combine all lecture sections normally visible on the graph into one" [matTooltipPosition]="'below'"
-                  matTooltipShowDelay="700">
-      Combine all
-    </mat-checkbox>
-    <mat-checkbox [(ngModel)]="showRemaining" color="primary"
-                  matTooltip="Combines enrollment across all sections, without counting waitlisted students. If all enrollment sections are capped, the quantity of the smallest waitlist will overshoot the cap."
-                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Show leftover
-    </mat-checkbox>
-    <mat-checkbox [(ngModel)]="showLargePoints" color="primary" matTooltip="Make points more visible on the chart so you can hover over them"
-                  [matTooltipPosition]="'below'" matTooltipShowDelay="700">
-      Large points
-    </mat-checkbox>
-    
-
-  </div>
-
-
-  <!-- combineAll -->
-
-  <div *ngIf="curErrorMessage !== ''" style="padding-bottom: 10px" class="center">
-    <div class="red"> {{curErrorMessage}} </div>
-  </div>
-</div>
-
-<div *ngIf="searched" class="chRegion" style="display: block;">
-
-  <div class="crstitle" style="font-size: 18px;
+    <div class="crstitle" style="font-size: 18px;
   ">
 
-    <div style="padding-bottom: 5px;">Enrollment over time for </div>
-    <!-- {{previousFullCourseCode}} -->
-    <div style="font-size: 22px; font-weight: bold;
+      <div style="padding-bottom: 5px;">Enrollment over time for </div>
+      <!-- {{previousFullCourseCode}} -->
+      <div style="font-size: 22px; font-weight: bold;
     padding-bottom: 5px;
     line-height: 1.2;">
-      {{courseTitle}} ({{previousFullCourseCode.replace("-", "")}})</div>
-  </div>
-  <div class="canvas-holder center-me">
-    <canvas  baseChart [datasets]="scatterChartData" [options]="scatterChartOptions" [type]="scatterChartType"
-    [plugins]="chartPlugins">
-</canvas>
-</div>
-  
+        {{courseTitle}} ({{previousFullCourseCode.replace("-", "")}})</div>
+    </div>
+    <div class="canvas-holder center-me">
+      <canvas baseChart [datasets]="scatterChartData" [options]="scatterChartOptions" [type]="scatterChartType"
+        [plugins]="chartPlugins">
+      </canvas>
+    </div>
 
-  <div style="padding-top: 25px;" *ngIf="true">
-    <!-- <p class="center4">
+
+    <div style="padding-top: 25px;" *ngIf="true">
+      <!-- <p class="center4">
       Enrollment: {{currentEnrollment}}/{{cap}}
       <br>
       Final enrollment: {{finalEnrollment}}
@@ -139,89 +152,104 @@ loadCourseData(inputCourse)
 
     </p> -->
 
-    <table style="
+      <table style="
     margin-left: auto;
     margin-right: auto;
     ">
-      <tr>
-        <td
-          matTooltip="Enrolled and waitlisted students. Students can waitlist multiple lecture sections at once"
-          [matTooltipPosition]="'left'"
-          class="thick-row"
-        >
-          {{afterWaitlistDeadline ? "Enrolled" :  "Enrolled & Waitlisted"}}
-        </td>
-        <td>
-          {{ currentEnrollment }}/{{cap}}
-        </td>
-      </tr>
-      <!-- *ngIf="finalEnrollment !==  currentEnrollment" -->
-      <tr >
-        <td class="thick-row" matTooltip="Enrollment right after enrollment closes"
-            [matTooltipPosition]="'left'" > Cutoff </td>
-        <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
-      </tr>
-      <tr>
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops after enrollment deadline including LWDs" [matTooltipPosition]="'left'"> Drops
-        </td>
-        <td>  {{drops + lwds}} ({{ fmtNumAsPercent((drops + lwds) / finalEnrollment) }})
-        </td>
-      </tr>
+        <tr>
+          <td matTooltip="Enrolled and waitlisted students. Students can waitlist multiple lecture sections at once"
+            [matTooltipPosition]="'left'" class="thick-row">
+            {{afterWaitlistDeadline ? "Enrolled" : "Enrolled & Waitlisted"}}
+          </td>
+          <td>
+            {{ currentEnrollment }}/{{cap}}
+          </td>
+        </tr>
+        <!-- *ngIf="finalEnrollment !==  currentEnrollment" -->
+        <tr>
+          <td class="thick-row" matTooltip="Enrollment right after enrollment closes" [matTooltipPosition]="'left'">
+            Cutoff </td>
+          <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
+        </tr>
+        <tr *ngIf="etd !== null && !lastAfterEnrollmentDeadline">
+          <td class="thick-row" matTooltip="Enrollment to date - Enrollment on the red line" [matTooltipPosition]="'left'">
+            ETD </td>
+            <td>
+              {{ etd }} ({{fmtNumAsPercent(etd/cap)}})
+            </td>
+        </tr>
+        <tr *ngIf="etd !== null && lastAfterEnrollmentDeadline">
+          <td class="thick-row" matTooltip="Drops to date - Drops at the point of the red line" [matTooltipPosition]="'left'">
+            DTD </td>
+            <td>
+              {{ finalEnrollment - etd }} ({{fmtNumAsPercent(1-etd/finalEnrollment)}})
+            </td>
+        </tr>
+        <tr>
+          <td [matTooltipPosition]="'left'" matTooltip="Drops after enrollment deadline including LWDs"
+            [matTooltipPosition]="'left'"> Drops
+          </td>
+          <td> {{drops + lwds}} ({{ fmtNumAsPercent((drops + lwds) / finalEnrollment) }})
+          </td>
+        </tr>
 
-      <!-- <tr *ngIf="lwds > 0">
+        <!-- <tr *ngIf="lwds > 0">
         <td [matTooltipPosition]="'left'"
         matTooltip="Drops after enrollment deadline not including LWDs" [matTooltipPosition]="'left'"> Cancels
         </td>
         <td>  {{drops}} ({{ fmtNumAsPercent(drops / finalEnrollment) }})
         </td>
       </tr> -->
-      <tr>
-        <td matTooltip="Drops after the drop deadline" [matTooltipPosition]="'left'"> LWDs </td>
-        <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
-      </tr>
-      <tr *ngIf="isSummer && re75 !== null">
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops during the 75% refund period">
-          75 ref
-        </td>
-        <td> {{ re75 }} ({{ fmtNumAsPercent(re75 / finalEnrollment) }})  </td>
-      </tr>
-      <tr *ngIf="isSummer && re50 !== null">
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops during the 50% refund period">
-          50 ref
-        </td>
-        <td> {{ re50 }} ({{ fmtNumAsPercent(re50 / finalEnrollment) }}) </td>
-      </tr>
-      <tr *ngIf="isSummer  && re0 !== null">
-        <td [matTooltipPosition]="'left'"
-        matTooltip="Drops during the 0% refund period but before the drop deadline">
-          0 ref
-        </td>
-        <td> {{ re0 }} ({{ fmtNumAsPercent(re0 / finalEnrollment) }}) </td>
-      </tr>
-      
-    </table>
+        <tr>
+          <td matTooltip="Drops after the drop deadline" [matTooltipPosition]="'left'"> LWDs </td>
+          <td> {{lwds}} ({{ fmtNumAsPercent(lwds / finalEnrollment) }}) </td>
+        </tr>
+        <tr *ngIf="isSummer && re75 !== null">
+          <td [matTooltipPosition]="'left'" matTooltip="Drops during the 75% refund period">
+            75 ref
+          </td>
+          <td> {{ re75 }} ({{ fmtNumAsPercent(re75 / finalEnrollment) }}) </td>
+        </tr>
+        <tr *ngIf="isSummer && re50 !== null">
+          <td [matTooltipPosition]="'left'" matTooltip="Drops during the 50% refund period">
+            50 ref
+          </td>
+          <td> {{ re50 }} ({{ fmtNumAsPercent(re50 / finalEnrollment) }}) </td>
+        </tr>
+        <tr *ngIf="isSummer  && re0 !== null">
+          <td [matTooltipPosition]="'left'" matTooltip="Drops during the 0% refund period but before the drop deadline">
+            0 ref
+          </td>
+          <td> {{ re0 }} ({{ fmtNumAsPercent(re0 / finalEnrollment) }}) </td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div style="padding-top: 10px; max-width: 500px; margin: auto;">
+      <p>
+        All undergraduate courses from the Faculty of Arts and Science, APS and Engineering, Daniels, UTM, and UTSC
+        are supported.</p>
+      <p>This site does not update in realtime and cannot tell you how quickly waitlists drop.
+      </p>
+      <ul>
+        <li>All dates and deadlines should be based on the faculty this course is offered in, except for very obscure
+          faculties.</li>
+        <li><a href="https://ttb.utoronto.ca/">Source of course information</a></li>
+        <li><a href="https://icprplshelp.github.io/UofT-Timetable-Prototype-V2/">Timetable Prototype</a></li>
+        <li>Unless it's the summer, <strong>there is NO refund for dropping courses</strong> after the enrollment
+          deadline for most students. <a href="https://studentaccount.utoronto.ca/tuition-fees/current-fall-winter-fee-refund-schedules/">Refund schedule</a></li>
+        <li>Symbol guides: 🌐 sync | 💤 async | 📶 hybrid</li>
+        <li>When focused on the text box: Use COMMA(,) PERIOD(.) to navigate sessions, and square brackets to navigate between the F, S, Y offerings of a course.</li>
+        <li>My GitHub profile is <a href="https://github.com/ICPRplshelp">https://github.com/ICPRplshelp/</a></li>
+        <li><a
+            href="https://github.com/ICPRplshelp/UofT-Enrollment-Tracker/wiki/UofT-Enrollment-Tracker-Frequently-asked-questions">Additional notes</a>
+        </li>
+        <li>I claim no responsibility for what you do with this data.</li>
+      </ul>
+    </div>
+
+
+
   </div>
-
-  <div style="padding-top: 10px; max-width: 500px; margin: auto;">
-    <p>
-      All undergraduate courses from the Faculty of Arts and Science, APS and Engineering, Daniels, UTM, and UTSC
-      are supported.</p>
-    <p>This site does not update in realtime and cannot tell you how quickly waitlists drop.
-    </p>
-    <ul>
-      <li>All dates and deadlines should be based on the faculty this course is offered in, except for very obscure faculties.</li>
-      <li>Course information is sourced from <a href="https://ttb.utoronto.ca/">here</a>.</li>
-      <li>Timetable Prototype is an app I've made that works as an alternative to Timetable Builder: <a href="https://icprplshelp.github.io/UofT-Timetable-Prototype-V2/">HERE</a></li>
-      <li>Symbol guides: 🌐 sync | 💤 async | 📶 hybrid</li>
-      <li>My GitHub profile is <a href="https://github.com/ICPRplshelp">https://github.com/ICPRplshelp/</a></li>
-      <li>For additional notes, click <a href="https://github.com/ICPRplshelp/UofT-Enrollment-Tracker/wiki/UofT-Enrollment-Tracker-Frequently-asked-questions">here.</a></li>
-      <li>I claim no responsibility for what you do with this data.</li>
-    </ul>
-  </div>
-
-
-
 </div>
