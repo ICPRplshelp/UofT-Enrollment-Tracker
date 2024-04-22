@@ -171,6 +171,16 @@ loadCourseData(inputCourse)
             Cutoff </td>
           <td> {{finalEnrollment}} ({{fmtNumAsPercent(finalEnrollment / cap)}}) </td>
         </tr>
+
+        <tr>
+          <td [matTooltipPosition]="'left'" matTooltip="Drops after enrollment deadline including LWDs"
+            [matTooltipPosition]="'left'"> Drops
+          </td>
+          <td> {{drops + lwds}} ({{ fmtNumAsPercent((drops + lwds) / finalEnrollment) }})
+          </td>
+        </tr>
+
+
         <tr *ngIf="etd !== null && !lastAfterEnrollmentDeadline">
           <td class="thick-row" matTooltip="Enrollment to date - Enrollment on the red line" [matTooltipPosition]="'left'">
             ETD </td>
@@ -185,13 +195,7 @@ loadCourseData(inputCourse)
               {{ finalEnrollment - etd }} ({{fmtNumAsPercent(1-etd/finalEnrollment)}})
             </td>
         </tr>
-        <tr>
-          <td [matTooltipPosition]="'left'" matTooltip="Drops after enrollment deadline including LWDs"
-            [matTooltipPosition]="'left'"> Drops
-          </td>
-          <td> {{drops + lwds}} ({{ fmtNumAsPercent((drops + lwds) / finalEnrollment) }})
-          </td>
-        </tr>
+
 
         <!-- <tr *ngIf="lwds > 0">
         <td [matTooltipPosition]="'left'"
