@@ -262,7 +262,7 @@ export class ChartComponent implements OnInit {
       case "SCAR": return "UTSC";
       case "ERIN": return "UTM";
       case "FPEH": return "KPE";
-      default: return "Unknown, fallback to Artsci"
+      default: return "Artsci"
     }
   }
 
