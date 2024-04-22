@@ -252,6 +252,20 @@ export class ChartComponent implements OnInit {
     return 0;
   }
 
+
+  getFacultyName(faculty: string) {
+    switch(faculty) {
+      case "APSC": return "Eng";
+      case "ARCLA": return "Daniels";
+      case "ARTSC": return "Artsci";
+      case "MUSIC": return "Music";
+      case "SCAR": return "UTSC";
+      case "ERIN": return "UTM";
+      case "FPEH": return "KPE";
+      default: return "Unknown, fallback to Artsci"
+    }
+  }
+
   getImportantDatesBasedOnFaculty(
     faculty: string
   ): ImportantTimestamps | undefined {
@@ -277,8 +291,10 @@ export class ChartComponent implements OnInit {
       if (curTimestamp === undefined) {
         return this.importantDatesBucket[0].importantTimestamps;
       }
+      if(fallbackFaculty)
+        this.faculty = fallbackFaculty;
     }
-
+    
     return curTimestamp.importantTimestamps;
   }
 

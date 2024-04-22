@@ -1,0 +1,30 @@
+<div class="center-me-this">
+    All deadlines are based on the time (12AM ET) the opportunity to
+    drop courses have passed, not the last day to do so.
+</div>
+
+<div class="center-me-this">
+    <table mat-table [dataSource]="currentCells">
+        <!-- Position Column -->
+        <ng-container matColumnDef="val">
+            <th mat-header-cell *matHeaderCellDef> Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.val}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef> Description </th>
+            <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="relative">
+            <th mat-header-cell *matHeaderCellDef> Relative </th>
+            <td mat-cell *matCellDef="let element"> {{element.relative}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</div>

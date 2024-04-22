@@ -251,7 +251,34 @@ loadCourseData(inputCourse)
         </li>
         <li>I claim no responsibility for what you do with this data.</li>
       </ul>
+
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Important Dates
+          </mat-panel-title>
+          <mat-panel-description>
+            {{ getFacultyName(faculty) }}
+          </mat-panel-description>
+
+        </mat-expansion-panel-header>
+        <app-important-dates 
+        
+        [importantDates]="getImportantDatesBasedOnFaculty(faculty)"></app-important-dates>
+      </mat-expansion-panel>
+
     </div>
+
+    <div>
+
+
+
+
+
+    </div>
+
+ 
 
 
 

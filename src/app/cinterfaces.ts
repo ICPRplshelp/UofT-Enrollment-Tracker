@@ -54,11 +54,13 @@ export interface ImportantTimestampsBundle {
 
 export interface ImportantTimestamps {
     start: number;
+    summerPriority?: number;
     fourth?: number;
     third?: number;
     second?: number;
     first?: number;
     general: number;
+    otherCampus: number;
     fallFirstDay: number;
     fallWaitlistClosed: number;
     fallEnrollmentEnd: number;
@@ -80,7 +82,7 @@ export interface ImportantTimestamps {
     isSummer?: boolean;
 }
 
-export interface SessionsRaw{
+export interface SessionsRaw {
     sessions: SessionInfo[];
     
 }

@@ -19,12 +19,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ChartComponent } from './chart/chart.component';
 import {MatSelectModule} from '@angular/material/select';
+import { ImportantDatesComponent } from './important-dates/important-dates.component';
+import { MatTableModule } from '@angular/material/table';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChartComponent
+    ChartComponent,
+    ImportantDatesComponent
   ],
   imports: [
     MatInputModule,
@@ -35,7 +39,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatCheckboxModule,
     ReactiveFormsModule,
     BrowserModule,
+    MatTableModule,
     AppRoutingModule,
+    MatExpansionModule,
     NgChartsModule,
     HttpClientModule,
     BrowserAnimationsModule,
