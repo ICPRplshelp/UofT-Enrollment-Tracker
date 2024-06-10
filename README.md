@@ -13,3 +13,10 @@ Screenshot:
 
 This site does not update in realtime. The intention of this repository is to display enrollment data and contains no functionality
 that captures enrollment data.
+
+## Self-hosting
+
+In `src/app/crsgetter.service.ts`, set `crsPath` to be the lead URL to where all
+the timing information can be found. It must have a trailing slash.
+
+For example: `${this.crsPath}20249/CSC110Y1F.json` should link to that corresponding file.

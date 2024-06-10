@@ -53,26 +53,26 @@ export interface ImportantTimestampsBundle {
 }
 
 export interface ImportantTimestamps {
-    start: number;
+    start?: number;
     summerPriority?: number;
     fourth?: number;
     third?: number;
     second?: number;
     first?: number;
-    general: number;
-    otherCampus: number;
-    fallFirstDay: number;
-    fallWaitlistClosed: number;
-    fallEnrollmentEnd: number;
-    fallDrop: number;
-    fallLWD: number;
-    winterStart: number;
-    winterWaitlistClosed: number;
-    winterEnrollmentEnd: number;
-    yearDrop: number;
-    winterDrop: number;
-    winterLWD: number;
-    endOfYear: number;
+    general?: number;
+    otherCampus?: number;
+    fallFirstDay?: number;
+    fallWaitlistClosed?: number;
+    fallEnrollmentEnd?: number;
+    fallDrop?: number;
+    fallLWD?: number;
+    winterStart?: number;
+    winterWaitlistClosed?: number;
+    winterEnrollmentEnd?: number;
+    yearDrop?: number;
+    winterDrop?: number;
+    winterLWD?: number;
+    endOfYear?: number;
     fall75?: number;
     fall50?: number;  // if not present, then fall50 == fall drop
     winter75?: number;

@@ -133,6 +133,9 @@ export class ChartComponent implements OnInit {
   }
 
   private chooseRandomCourse() {
+    if (this.myFavCourses.length === 0) {
+      return ;
+    }
     let randomIndex: number = Math.floor(
       Math.random() * this.myFavCourses.length
     );
@@ -252,17 +255,24 @@ export class ChartComponent implements OnInit {
     return 0;
   }
 
-
   getFacultyName(faculty: string) {
-    switch(faculty) {
-      case "APSC": return "Eng";
-      case "ARCLA": return "Daniels";
-      case "ARTSC": return "Artsci";
-      case "MUSIC": return "Music";
-      case "SCAR": return "UTSC";
-      case "ERIN": return "UTM";
-      case "FPEH": return "KPE";
-      default: return "Artsci"
+    switch (faculty) {
+      case 'APSC':
+        return 'Eng';
+      case 'ARCLA':
+        return 'Daniels';
+      case 'ARTSC':
+        return 'Artsci';
+      case 'MUSIC':
+        return 'Music';
+      case 'SCAR':
+        return 'UTSC';
+      case 'ERIN':
+        return 'UTM';
+      case 'FPEH':
+        return 'KPE';
+      default:
+        return 'Unknown (using Artsci)';
     }
   }
 
@@ -291,10 +301,9 @@ export class ChartComponent implements OnInit {
       if (curTimestamp === undefined) {
         return this.importantDatesBucket[0].importantTimestamps;
       }
-      if(fallbackFaculty)
-        this.faculty = fallbackFaculty;
+      if (fallbackFaculty) this.faculty = fallbackFaculty;
     }
-    
+
     return curTimestamp.importantTimestamps;
   }
 
@@ -319,10 +328,6 @@ export class ChartComponent implements OnInit {
     const targetImportantDates = this.getImportantDatesBasedOnFaculty(
       this.faculty
     );
-    if (targetImportantDates === undefined) {
-      console.log('Pratically, this should never happen.');
-      return;
-    }
 
     if (!this.showAnnotations) {
       if (
@@ -334,6 +339,19 @@ export class ChartComponent implements OnInit {
       }
       return;
     }
+
+    if (targetImportantDates === undefined) {
+      if (
+        notNullorUndefined(this.scatterChartOptions) &&
+        notNullorUndefined(this.scatterChartOptions.plugins) &&
+        notNullorUndefined(this.scatterChartOptions.plugins.annotation)
+      ) {
+        this.scatterChartOptions.plugins.annotation.annotations = [];
+      }
+
+      return;
+    }
+
     const annotationList:
       | AnnotationOptions[]
       | Record<string, AnnotationOptions> = [];
@@ -523,6 +541,7 @@ export class ChartComponent implements OnInit {
     if (
       targetImportantDates !== null &&
       notNullorUndefined(targetImportantDates) &&
+      notNullorUndefined(targetImportantDates.general) &&
       targetImportantDates.general > this.earliestChartTime &&
       this.lastTime > targetImportantDates.general
     ) {
@@ -656,12 +675,14 @@ export class ChartComponent implements OnInit {
       if (this.randomized >= 100) {
         return;
       }
-      let randomIndex: number = Math.floor(
-        Math.random() * this.myFavCourses.length
-      );
-      let randomCourse = this.myFavCourses[randomIndex];
-      this.loadCourseData(randomCourse);
-      this.randomized++;
+      if (this.myFavCourses.length > 0) {
+        let randomIndex: number = Math.floor(
+          Math.random() * this.myFavCourses.length
+        );
+        let randomCourse = this.myFavCourses[randomIndex];
+        this.loadCourseData(randomCourse);
+        this.randomized++;
+      }
     }
     const icf = (inc: number) => {
       let sLI = this.getSessions().map((s) => s.sessionCode);
@@ -671,7 +692,7 @@ export class ChartComponent implements OnInit {
       if (sesInd >= sLI.length) {
         sesInd = sLI.length - 1;
         return;
-      } else if (sesInd < 0){
+      } else if (sesInd < 0) {
         sesInd = 0;
       }
       this.selectedValue = sLI[sesInd];
@@ -689,8 +710,6 @@ export class ChartComponent implements OnInit {
     if (event.keyCode === 222) {
       icf(2);
     }
-
-
 
     if (this.inputCourse.length >= 9) {
       const allCoursesThatExist: string[] = [];
@@ -1084,11 +1103,13 @@ export class ChartComponent implements OnInit {
         course.code[course.code.length - 1] === 'F' ||
         course.code[course.code.length - 1] === 'Y'
       ) {
-        waitlistDeadline = targetImportantDates.fallWaitlistClosed;
-        enrollmentDeadline = targetImportantDates.fallEnrollmentEnd;
+        waitlistDeadline = targetImportantDates.fallWaitlistClosed ?? Infinity;
+        enrollmentDeadline = targetImportantDates.fallEnrollmentEnd ?? Infinity;
       } else {
-        waitlistDeadline = targetImportantDates.winterWaitlistClosed;
-        enrollmentDeadline = targetImportantDates.winterEnrollmentEnd;
+        waitlistDeadline =
+          targetImportantDates.winterWaitlistClosed ?? Infinity;
+        enrollmentDeadline =
+          targetImportantDates.winterEnrollmentEnd ?? Infinity;
       }
 
       this.afterWaitlistDeadline = latest > waitlistDeadline;
@@ -1622,30 +1643,31 @@ export class ChartComponent implements OnInit {
     const targetImportantDates = this.getImportantDatesBasedOnFaculty(
       this.faculty
     );
-    if (targetImportantDates === undefined) {
-      console.log('Pratically, this should never happen.');
-      return;
-    }
-
-    if (targetImportantDates === null) {
+    if (targetImportantDates === undefined || targetImportantDates === null) {
+      this.finalEnrollment = this.currentEnrollment;
+      this.drops = 0;
+      this.lwds = 0;
+      this.re75 = null;
+      this.re50 = null;
+      this.re0 = null;
       return;
     }
 
     if (fys === 'F') {
       startingTermIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.fallEnrollmentEnd
+        targetImportantDates.fallEnrollmentEnd ?? Infinity
       );
 
       if (notNullorUndefined(targetImportantDates.fall75)) {
         re75Index = this.findIndexFirstDay(
           crs.timeIntervals,
-          targetImportantDates.fall75
+          targetImportantDates.fall75 ?? Infinity
         );
         if (notNullorUndefined(targetImportantDates.fall50)) {
           re50Index = this.findIndexFirstDay(
             crs.timeIntervals,
-            targetImportantDates.fall50
+            targetImportantDates.fall50 ?? Infinity
           );
         } else {
           re50Index = null;
@@ -1656,20 +1678,20 @@ export class ChartComponent implements OnInit {
       }
       dropDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.fallDrop + this.deadlineTimeOffset
+        (targetImportantDates.fallDrop ?? Infinity) + this.deadlineTimeOffset
       );
       lwdDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.fallLWD
+        targetImportantDates.fallLWD ?? Infinity
       );
     } else if (fys === 'S') {
       startingTermIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.winterEnrollmentEnd
+        targetImportantDates.winterEnrollmentEnd ?? Infinity
       );
       dropDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.winterDrop + this.deadlineTimeOffset
+        (targetImportantDates.winterDrop ?? Infinity) + this.deadlineTimeOffset
       );
       if (notNullorUndefined(targetImportantDates.winter75)) {
         re75Index = this.findIndexFirstDay(
@@ -1690,12 +1712,12 @@ export class ChartComponent implements OnInit {
       }
       lwdDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.winterLWD
+        targetImportantDates.winterLWD ?? Infinity
       );
     } else if (fys === 'Y') {
       startingTermIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.fallEnrollmentEnd
+        targetImportantDates.fallEnrollmentEnd ?? Infinity
       );
       if (notNullorUndefined(targetImportantDates.year75)) {
         re75Index = this.findIndexFirstDay(
@@ -1716,11 +1738,11 @@ export class ChartComponent implements OnInit {
       }
       dropDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.yearDrop + this.deadlineTimeOffset
+        (targetImportantDates.yearDrop ?? Infinity) + this.deadlineTimeOffset
       );
       lwdDateIndex = this.findIndexFirstDay(
         crs.timeIntervals,
-        targetImportantDates.winterLWD
+        targetImportantDates.winterLWD ?? Infinity
       );
     }
 
@@ -1823,7 +1845,8 @@ export class ChartComponent implements OnInit {
 
   /**
    * Returns the first index in timings where timingCap is
-   * greater or equal to timings at index.
+   * greater or equal to timings at index, or the last
+   * index if it can't find any.
    *
    * @param timings a list of timings
    * @param timingCap the first to detect
@@ -1834,7 +1857,7 @@ export class ChartComponent implements OnInit {
         return i;
       }
     }
-    return -1;
+    return timings.length - 1;
   }
 
   currentEnrollment: number = 0;
