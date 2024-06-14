@@ -5,6 +5,6 @@ export interface DeadlineCell {
 }
 
 export interface IntermediateDeadlineCell {
-    val: number | boolean;
+    val: number | boolean ;
     description: string;
 }

@@ -68,7 +68,7 @@ export class ImportantDatesComponent implements OnInit {
         const desc = this.details[key as keyof ImportantTimestamps];
         const tgDate = dates[key as keyof ImportantTimestamps];
         return { val: tgDate, description: desc };
-      }) as IntermediateDeadlineCell[];
+      }).filter(x => x.val !== null && x.val !== undefined) as IntermediateDeadlineCell[];
 
     cells.sort((a, b) => {
       if (typeof a.val === 'boolean' || typeof b.val === 'boolean') {
