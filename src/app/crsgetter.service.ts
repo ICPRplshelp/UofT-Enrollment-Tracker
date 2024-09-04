@@ -17,8 +17,17 @@ export class CrsgetterService {
   crsPath = this.localMode ? "api/" : "https://raw.githubusercontent.com/ICPRplshelp/Enrollment-Data/master/";
   suffix = ".json";
   
+
+  sanitizeSession(): string {
+    if(this.session.match(/^\d{5}$/)){
+      return this.session;
+    } else {
+      return "20229";
+    }
+  }
+
   crsToPath(crsCode: string): string {
-    return this.crsPath  + this.session +
+    return this.crsPath  + this.sanitizeSession() +
     "/" + crsCode + this.suffix; 
     // return this.crsPath + crsCode + this.suffix;
   }
@@ -54,12 +63,12 @@ export class CrsgetterService {
   // you do not need to worry about sending too many requests
   // to the same URL.
   getImportantDates(): Observable<ImportantTimestamps> {
-    const tStampPath = this.crsPath + this.session + "/" + "constants" + this.suffix;
+    const tStampPath = this.crsPath + this.sanitizeSession() + "/" + "constants" + this.suffix;
     return this.http.get<ImportantTimestamps>(tStampPath);
   }
 
   getImportantDatesBundle(): Observable<ImportantTimestampsBundle[]> {
-    const tStampRequestPath = this.crsPath + this.session + "/" + "AAtcconstants" + this.suffix;
+    const tStampRequestPath = this.crsPath + this.sanitizeSession() + "/" + "AAtcconstants" + this.suffix;
     return this.http.get<ImportantTimestampsBundle[]>(tStampRequestPath);
   }
 
@@ -69,12 +78,12 @@ export class CrsgetterService {
   }
 
   getAllCourseList(): Observable<DesCol> {
-    const tMPath = this.crsPath + this.session + "/AAclistall.json";
+    const tMPath = this.crsPath + this.sanitizeSession() + "/AAclistall.json";
     return this.http.get<DesCol>(tMPath);
   }
 
   getTopCoursesList(): Observable<TopCourses> {
-    const tMPath = this.crsPath + this.session + "/aaTopCourses.json";
+    const tMPath = this.crsPath + this.sanitizeSession() + "/aaTopCourses.json";
     return this.http.get<TopCourses>(tMPath);
   }
 

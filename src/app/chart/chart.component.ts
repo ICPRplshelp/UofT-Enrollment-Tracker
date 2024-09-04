@@ -14,11 +14,13 @@ import {
   TopCourses,
 } from '../cinterfaces';
 import Annotation, * as pluginAnnotation from 'chartjs-plugin-annotation';
-
+import { ActivatedRoute } from '@angular/router';
 import { Chart, ChartDataset, ChartOptions, ChartType } from 'chart.js';
 import { AutoCompleteService } from '../shared/auto-complete.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { AnnotationOptions } from 'chartjs-plugin-annotation';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-chart',
@@ -35,12 +37,16 @@ export class ChartComponent implements OnInit {
   // sessionWasLastYear: boolean = false;
   noWidthLimit: boolean = false;
   constructor(
+    private location: Location,
+    private route: ActivatedRoute,
     private crsgetter: CrsgetterService,
     private _snackBar: MatSnackBar,
     private autoCompleter: AutoCompleteService
   ) {
     Chart.register(Annotation);
   }
+
+
 
   myFavCourses: string[] = [];
 
@@ -57,6 +63,8 @@ export class ChartComponent implements OnInit {
       return this.sessionColl.sessions;
     } else return [];
   }
+
+  
 
   getSessionName(sesNum: string): string {
     const temp = this.getSessions();
@@ -125,7 +133,9 @@ export class ChartComponent implements OnInit {
         // console.log("Couldn't load session lists")
       },
       complete: () => {
-        this.selectedValue = tempData2.default;
+        if(this.selectedValue === ""){
+          this.selectedValue = tempData2.default;
+        }
         this.sessionColl = tempData2;
         this.reloadImportantDatesAndValues(() => {});
       },
@@ -141,11 +151,23 @@ export class ChartComponent implements OnInit {
     );
     let randomCourse = this.myFavCourses[randomIndex];
     this.inputCourse = randomCourse;
-    this.loadCourseData(this.inputCourse);
+    this.loadCourseData(this.inputCourse, false);
   }
 
   ngOnInit() {
     this.getSessionList();
+    this.route.queryParams.subscribe(params => {
+      const code: string = params["code"];
+      const ses = params["ses"];
+      // console.log(ses, code);
+      if(ses !== undefined && code !== undefined && ses.match(/^\d{5}$/) && code.toUpperCase().match(/^[A-Z]{3}([A-D]|\d)\d{2,3}([HY])?(\d)?([FSY])?(\d)?$/)){
+        this.firstTimeRun = false;
+        this.selectedValue = ses;
+        this.inputCourse = code;
+      } else {
+        // this.clearUrlParams();
+      }
+    })
 
     // this.inputCourse = "MAT137Y1-Y";
     // this.loadCourseData(this.inputCourse);
@@ -841,7 +863,7 @@ export class ChartComponent implements OnInit {
    *
    * @param courseCode a course code like CSC110Y1-F
    */
-  loadCourseData(courseCode: string): void {
+  loadCourseData(courseCode: string, updateUrl: boolean = true): void {
     courseCode = courseCode.toUpperCase();
 
     courseCode = courseCode.replace(/\s/g, '');
@@ -862,6 +884,7 @@ export class ChartComponent implements OnInit {
     ) {
       if (!this.previousWasError) {
         this._loadCourseDataHelper();
+        this.updateUrlParams(this.selectedValue, courseCode);
       } else {
         this._curErrorMessage += '!';
       }
@@ -874,7 +897,7 @@ export class ChartComponent implements OnInit {
         courseCode.match(/^[A-Z]{3}\d{4}[HY][FSY]\d?/)
       )
     ) {
-      console.log('Course regex off');
+      // console.log('Course regex off');
       this.previousCourse = 'placeholder';
       if (this.previousWasError) {
         this.curErrorMessage += '!';
@@ -929,8 +952,23 @@ export class ChartComponent implements OnInit {
         this.previousWasError = false;
         this._loadCourseDataHelper(courseInfo);
         this.previousSession = this.selectedValue;
+        if(updateUrl)
+          this.updateUrlParams(curSession, courseInfo.code);
+
       },
     });
+  }
+
+  updateUrlParams(session: string, code: string) {
+    if(session.match(/^\d{5}$/) && code.toUpperCase().match(/^[A-Z]{3}([A-D]|\d)\d{2,3}([HY])?(\d)?([FSY])?(\d)?$/)){
+      const newUrl = this.location.path().split("?")[0] + `?ses=${session}&code=${code}`;
+      this.location.replaceState(newUrl);
+    }
+  }
+
+  clearUrlParams() {
+    const newUrl = this.location.path().split("?")[0];
+    this.location.replaceState(newUrl);
   }
 
   _darkMode: boolean = false;
