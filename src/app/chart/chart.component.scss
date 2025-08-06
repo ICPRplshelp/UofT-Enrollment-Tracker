@@ -58,9 +58,9 @@
   padding-left: 0.25em;
   padding-right: 0.25em;
 
-  @media (min-width: 600px) {
-    padding-left: calc((100vw - 600px) * 0.2);
-    padding-right: calc((100vw - 600px) * 0.2);
+  @media (min-width: 700px) {
+    padding-left: calc((100vw - 700px) * 0.2);
+    padding-right: calc((100vw - 700px) * 0.2);
   }
 
   max-width: 1200px;

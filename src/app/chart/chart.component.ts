@@ -20,6 +20,7 @@ import { AutoCompleteService } from '../shared/auto-complete.service';
 import { HttpErrorResponse } from '@angular/common/http';
 import { AnnotationOptions } from 'chartjs-plugin-annotation';
 import { Location } from '@angular/common';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -89,35 +90,50 @@ export class ChartComponent implements OnInit {
   }
 
   importantDatesBucket: ImportantTimestampsBundle[] = [];
-
+  _importantDatesSub: Subscription | undefined = undefined;
+  _topCoursesSub: Subscription | undefined = undefined
   reloadImportantDatesAndValues(done: () => void): void {
     // let tempData: ImportantTimestamps;
     let tempDataBundleLocal: ImportantTimestampsBundle[] = [];
-    this.crsgetter.getImportantDatesBundle().subscribe({
+    // Cancel previous subscription if it exists
+    if (this._importantDatesSub) {
+      this._importantDatesSub.unsubscribe();
+    }
+    this._importantDatesSub = this.crsgetter.getImportantDatesBundle().subscribe({
       next: (data) => {
-        tempDataBundleLocal = data;
+      tempDataBundleLocal = data;
       },
       error: () => {},
       complete: () => {
-        this.importantDatesBucket = tempDataBundleLocal;
-        done();
+      this.importantDatesBucket = tempDataBundleLocal;
+      done();
       },
     });
 
     let tempData2: TopCourses;
-    this.crsgetter.getTopCoursesList().subscribe({
+    // Cancel previous subscription if it exists
+    if (this._topCoursesSub) {
+      this._topCoursesSub.unsubscribe();
+    }
+    this._topCoursesSub = this.crsgetter.getTopCoursesList().subscribe({
       next: (data) => {
-        tempData2 = data;
+      tempData2 = data;
       },
       error: () => {
-        // could not load top courses
+      // could not load top courses
       },
       complete: () => {
+      // Only update if this is the latest subscription
+      if (true) {
         this.myFavCourses = tempData2.courses;
         if (this.firstTimeRun) {
           this.chooseRandomCourse();
           this.firstTimeRun = false;
+        } else {
+          this.loadCourseData(this.inputCourse, false);
+
         }
+      }
       },
     });
   }
