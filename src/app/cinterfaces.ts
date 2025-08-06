@@ -34,7 +34,7 @@ export interface InstructorLog {
 }
 
 
-export interface Meeting{
+export interface Meeting {
     meetingNumber: string;
     createdAt: number;  // when the meeting is created
     instructors: Instructor[];

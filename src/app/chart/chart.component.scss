@@ -1,7 +1,30 @@
-.dark-mode {
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
+
+// @use '@angular/material' as mat;
+
+// @include mat.core();
+
+// $light-theme: mat.define-light-theme((
+//   color: (
+//     primary: mat.define-palette(mat.$indigo-palette),
+//     accent: mat.define-palette(mat.$pink-palette, A200, A100, A400),
+//   )
+// ));
+
+// $dark-theme: mat.define-dark-theme((
+//   color: (
+//     primary: mat.define-palette(mat.$indigo-palette),
+//     accent: mat.define-palette(mat.$pink-palette, A200, A100, A400),
+//   )
+// ));
+
+// @include mat.all-component-themes($light-theme);
+
+// .dark-mode {
+//   @include mat.all-component-colors($dark-theme);
+//   background-color: #020202;
+//   color: #ddd;
+// }
+
 
 .force-text-white {
   color: white !important;
@@ -32,8 +55,14 @@
 
 
 .chRegion {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+
+  @media (min-width: 600px) {
+    padding-left: calc((100vw - 600px) * 0.2);
+    padding-right: calc((100vw - 600px) * 0.2);
+  }
+
   max-width: 1200px;
   padding-bottom: 100px;
   margin: auto;
@@ -57,8 +86,21 @@
   padding-bottom: 5px;
 }
 
+.slight-pad {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.slight-more-pad {
+  padding-left: 1.0em;
+  padding-right: 1.0em;
+}
+
 .canvas-holder {
-  // height: 50vh;
+  // width: 100vw;
+  height: max(300px, calc(100vw * 0.75));
+  max-width: 1200px;
+  max-height: max(400px, min(60vh, calc(1200px * 0.75)));
   // width: 120vh;
   // width: min(120vh, 100%);
 }

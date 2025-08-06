@@ -40,7 +40,6 @@ export class ChartComponent implements OnInit {
     private location: Location,
     private route: ActivatedRoute,
     private crsgetter: CrsgetterService,
-    private _snackBar: MatSnackBar,
     private autoCompleter: AutoCompleteService
   ) {
     Chart.register(Annotation);
@@ -155,10 +154,25 @@ export class ChartComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    // DARK MODE STUFF
+  // 
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      this.darkMode = prefersDark.matches;
+
+      prefersDark.addEventListener('change', (event) => {
+        this.darkMode = event.matches;
+      });
+
+
+    // END OF DARK MODE STUFF
+
+
     this.getSessionList();
     this.route.queryParams.subscribe(params => {
       const code: string = params["code"];
       const ses = params["ses"];
+      this._loadCourseDataHelper();
       // console.log(ses, code);
       if(ses !== undefined && code !== undefined && ses.match(/^\d{5}$/) && code.toUpperCase().match(/^[A-Z]{3}([A-D]|\d)\d{2,3}([HY])?(\d)?([FSY])?(\d)?$/)){
         this.firstTimeRun = false;
@@ -167,18 +181,19 @@ export class ChartComponent implements OnInit {
       } else {
         // this.clearUrlParams();
       }
-    })
+    });
 
     // this.inputCourse = "MAT137Y1-Y";
     // this.loadCourseData(this.inputCourse);
-    this.smallScreen = window.innerWidth < 768;
-    let ref: any;
-    if (this.smallScreen) {
-      ref = this._snackBar.open(this.smallMessage, 'GOT IT', {
-        duration: 7000,
-      });
-      this.ref = ref;
-    }
+    this.smallScreen = window.innerWidth < 480;
+
+    // let ref: any;
+    // if (this.smallScreen) {
+    //   ref = this._snackBar.open(this.smallMessage, 'GOT IT', {
+    //     duration: 7000,
+    //   });
+    //   this.ref = ref;
+    // }
   }
 
   ref: any;
@@ -197,21 +212,40 @@ export class ChartComponent implements OnInit {
 
   smallActivated = 0;
 
+
+
+
+  private debounce(func: (...args: any[]) => void, wait: number) {
+    let timeout: any;
+    return (...args: any[]) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  }
+
+  toBeDebouncedScreenAction() {
+    this._loadCourseDataHelper();
+  }
+
+  debouncedScreenAction = this.debounce(this.toBeDebouncedScreenAction.bind(this), 150);
+
+
   @HostListener('window:resize', ['$event']) onWindowResize() {
+    // console.log("Window resized");
+    // this.debouncedScreenAction();
+
     if (window.innerWidth < 480) {
       let originalState = this.smallScreen;
       this.smallScreen = true;
       let ref: any;
       if (this.smallScreen && !originalState && this.smallActivated <= 0) {
         this.smallActivated++;
-        ref = this._snackBar.open(this.smallMessage, 'GOT IT', {
-          duration: 5000,
-        });
-        this.ref = ref;
       }
     } else {
       if (this.smallScreen) {
-        this.ref.dismiss();
+        if(this.ref !== undefined) {
+          this.ref.dismiss();
+        }
       }
       this.smallScreen = false;
     }
@@ -221,6 +255,7 @@ export class ChartComponent implements OnInit {
 
   public scatterChartOptions: ChartOptions = {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: {
         type: 'time',
@@ -232,6 +267,15 @@ export class ChartComponent implements OnInit {
     plugins: {
       legend: {
         position: 'right',
+        maxHeight: 90,
+        // align: 'start',
+        labels: {
+          textAlign: 'left',
+          filter(item, data) {
+            // console.log(item);
+            return item.lineDash === undefined || (item.lineDash.length === 0);
+          },
+        }
       },
       annotation: {
         annotations: [
@@ -266,6 +310,8 @@ export class ChartComponent implements OnInit {
       }
     }
   }
+
+
 
   calculateCourseLevel(crsCode: string): number {
     const letter = crsCode[3];
@@ -448,21 +494,6 @@ export class ChartComponent implements OnInit {
         this.lastTime
       );
     }
-
-    if (lastEnrol !== 0) {
-      annotationList.push({
-        type: 'line',
-        scaleID: 'x',
-        value: lastEnrol * 1000,
-        borderColor: 'green',
-        borderWidth: 2,
-        label: {
-          display: true,
-          position: 'end',
-          content: 'enrol end',
-        },
-      });
-    }
     if (firstClass !== 0) {
       annotationList.push({
         type: 'line',
@@ -477,6 +508,21 @@ export class ChartComponent implements OnInit {
         },
       });
     }
+    if (lastEnrol !== 0) {
+      annotationList.push({
+        type: 'line',
+        scaleID: 'x',
+        value: lastEnrol * 1000,
+        borderColor: 'green',
+        borderWidth: 2,
+        label: {
+          display: true,
+          position: 'end',
+          content: 'enrol end',
+        },
+      });
+    }
+
     if (lastDrop !== 0) {
       annotationList.push({
         type: 'line',
@@ -498,6 +544,30 @@ export class ChartComponent implements OnInit {
       targetImportantDates !== null &&
       notNullorUndefined(targetImportantDates)
     ) {
+    }
+    
+
+    if (
+      targetImportantDates !== null &&
+      notNullorUndefined(targetImportantDates) &&
+      notNullorUndefined(targetImportantDates.general) &&
+      targetImportantDates.general > this.earliestChartTime &&
+      this.lastTime > targetImportantDates.general
+    ) {
+      // console.log('earliest chart time', this.earliestChartTime);
+      // console.log('general time', targetImportantDates.general);
+      annotationList.push({
+        type: 'line',
+        scaleID: 'x',
+        value: targetImportantDates.general * 1000,
+        borderColor: 'green',
+        borderWidth: 2,
+        label: {
+          display: false,
+          position: 'end',
+          content: 'gen',
+        },
+      });
     }
     if (
       targetImportantDates !== null &&
@@ -551,36 +621,13 @@ export class ChartComponent implements OnInit {
             borderColor: 'green',
             borderWidth: 2,
             label: {
-              display: true,
+              display: !this.smallScreen,
               position: 'end',
               content: `${crsLv}${numSuffix[crsLv]} yr`,
             },
           });
         }
       }
-    }
-
-    if (
-      targetImportantDates !== null &&
-      notNullorUndefined(targetImportantDates) &&
-      notNullorUndefined(targetImportantDates.general) &&
-      targetImportantDates.general > this.earliestChartTime &&
-      this.lastTime > targetImportantDates.general
-    ) {
-      // console.log('earliest chart time', this.earliestChartTime);
-      // console.log('general time', targetImportantDates.general);
-      annotationList.push({
-        type: 'line',
-        scaleID: 'x',
-        value: targetImportantDates.general * 1000,
-        borderColor: 'green',
-        borderWidth: 2,
-        label: {
-          display: true,
-          position: 'end',
-          content: 'gen',
-        },
-      });
     }
 
     if (lastClass !== 0) {
@@ -591,7 +638,7 @@ export class ChartComponent implements OnInit {
         borderColor: 'green',
         borderWidth: 2,
         label: {
-          display: true,
+          display: !this.smallScreen,
           position: 'end',
           content: 'end',
         },
@@ -1064,6 +1111,10 @@ export class ChartComponent implements OnInit {
       return;
     }
 
+    // this.scatterChartOptions.
+    if(this.scatterChartOptions && this.scatterChartOptions?.plugins?.legend?.position) {
+      this.scatterChartOptions.plugins.legend.position = this.smallScreen ? 'bottom' : 'right';
+    }
     this.searched = true;
 
     const chartDatasetSoFar: ChartDataset[] = [];
@@ -1208,8 +1259,17 @@ export class ChartComponent implements OnInit {
       synSymbol = synSymbol + ' ';
     }
 
+    const shortInsStr = insStr.trim() === '' ? '' : insStr;
+    const shortMeetingNumber = `${mtt.meetingNumber.substring(0, 1)}${mtt.meetingNumber.substring(3)}`;
+    
+    const shortInstructor = [
+      shortMeetingNumber,
+      // shortInsStr
+    ].join(' - ');
+    
+    
     let tempLabel = this.smallScreen
-      ? `L${mtt.meetingNumber.substring(3)}`
+      ? shortInstructor
       : `${mtt.meetingNumber} ${
           insStr.trim() === '' ? '' : '-'
         } ${synSymbol}${insStr}`;
@@ -1226,6 +1286,7 @@ export class ChartComponent implements OnInit {
       if (enrollment === 0 && i == 0) {
         continue;
       }
+      
 
       let timeOfEnrollment = timings[i];
       // this captured time must be later than the time this

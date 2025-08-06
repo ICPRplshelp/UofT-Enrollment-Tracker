@@ -1,4 +1,4 @@
-<div [ngClass]="{'dark-mode': darkMode}">
+<div [ngClass]="{'dark-mode': false}">
 
 
   <div class="center" style="padding-top: 30px">
@@ -16,26 +16,13 @@
   <div class="center">
 
     <div class="flexit01">
-
-      <!-- <div *ngIf="getSessions().length >= 2">
-      <mat-form-field apperance="fill" class="example-form-field" >
-        <mat-label>Session</mat-label>
-        <mat-select [(ngModel)]="selectedValue" name="sess">
-          <mat-option *ngFor="let ses of getSessions()"
-          [value]="ses.sessionCode">
-          {{ses.name}}
-        </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div> -->
-
-      <div    *ngIf="getSessions().length >= 2">
+      <div *ngIf="getSessions().length >= 2">
         <mat-form-field class="example-form-field" appearance="fill" (keydown)="keyDownFunction($event)">
-          <mat-label   >Session</mat-label>
+          <mat-label>Session</mat-label>
 
           <mat-select [(ngModel)]="selectedValue" name="sess">
-            <mat-option    *ngFor="let ses of getSessions()" [value]="ses.sessionCode">
-              
+            <mat-option *ngFor="let ses of getSessions()" [value]="ses.sessionCode">
+
               {{ses.name}}
             </mat-option>
           </mat-select>
@@ -128,7 +115,7 @@ loadCourseData(inputCourse)
 
       <div style="padding-bottom: 5px;">Enrollment over time for </div>
       <!-- {{previousFullCourseCode}} -->
-      <div style="font-size: 22px; font-weight: bold;
+      <div class="slight-pad" style="font-size: 22px; font-weight: bold;
     padding-bottom: 5px;
     line-height: 1.2;">
         {{courseTitle}} ({{previousFullCourseCode.replace("-", "")}})</div>
@@ -182,18 +169,20 @@ loadCourseData(inputCourse)
 
 
         <tr *ngIf="etd !== null && !lastAfterEnrollmentDeadline">
-          <td class="thick-row" matTooltip="Enrollment to date - Enrollment on the red line" [matTooltipPosition]="'left'">
+          <td class="thick-row" matTooltip="Enrollment to date - Enrollment on the red line"
+            [matTooltipPosition]="'left'">
             ETD </td>
-            <td>
-              {{ etd }} ({{fmtNumAsPercent(etd/cap)}})
-            </td>
+          <td>
+            {{ etd }} ({{fmtNumAsPercent(etd/cap)}})
+          </td>
         </tr>
         <tr *ngIf="etd !== null && lastAfterEnrollmentDeadline">
-          <td class="thick-row" matTooltip="Drops to date - Drops at the point of the red line" [matTooltipPosition]="'left'">
+          <td class="thick-row" matTooltip="Drops to date - Drops at the point of the red line"
+            [matTooltipPosition]="'left'">
             DTD </td>
-            <td>
-              {{ finalEnrollment - etd }} ({{fmtNumAsPercent(1-etd/finalEnrollment)}})
-            </td>
+          <td>
+            {{ finalEnrollment - etd }} ({{fmtNumAsPercent(1-etd/finalEnrollment)}})
+          </td>
         </tr>
 
 
@@ -230,7 +219,7 @@ loadCourseData(inputCourse)
       </table>
     </div>
 
-    <div style="padding-top: 10px; max-width: 500px; margin: auto;">
+    <div class="slight-more-pad" style="padding-top: 10px; max-width: 500px; margin: auto;">
       <p>
         All undergraduate courses from the Faculty of Arts and Science, APS and Engineering, Daniels, UTM, and UTSC
         are supported.</p>
@@ -242,12 +231,16 @@ loadCourseData(inputCourse)
         <li><a href="https://ttb.utoronto.ca/">Source of course information</a></li>
         <li><a href="https://icprplshelp.github.io/UofT-Timetable-Prototype-V2/">Timetable Prototype</a></li>
         <li>Unless it's the summer, <strong>there is NO refund for dropping courses</strong> after the enrollment
-          deadline for most students. <a href="https://studentaccount.utoronto.ca/tuition-fees/current-fall-winter-fee-refund-schedules/">Refund schedule</a></li>
+          deadline for most students. <a
+            href="https://studentaccount.utoronto.ca/tuition-fees/current-fall-winter-fee-refund-schedules/">Refund
+            schedule</a></li>
         <li>Symbol guides: 🌐 sync | 💤 async | 📶 hybrid</li>
-        <li>When focused on the text box: Use COMMA(,) PERIOD(.) to navigate sessions, and square brackets to navigate between the F, S, Y offerings of a course.</li>
+        <li>When focused on the text box: Use COMMA(,) PERIOD(.) to navigate sessions, and square brackets to navigate
+          between the F, S, Y offerings of a course.</li>
         <li>My GitHub profile is <a href="https://github.com/ICPRplshelp">https://github.com/ICPRplshelp/</a></li>
         <li><a
-            href="https://github.com/ICPRplshelp/UofT-Enrollment-Tracker/wiki/UofT-Enrollment-Tracker-Frequently-asked-questions">Additional notes</a>
+            href="https://github.com/ICPRplshelp/UofT-Enrollment-Tracker/wiki/UofT-Enrollment-Tracker-Frequently-asked-questions">Additional
+            notes</a>
         </li>
         <li>I claim no responsibility for what you do with this data.</li>
       </ul>
@@ -263,9 +256,7 @@ loadCourseData(inputCourse)
           </mat-panel-description>
 
         </mat-expansion-panel-header>
-        <app-important-dates 
-        
-        [importantDates]="getImportantDatesBasedOnFaculty(faculty)"></app-important-dates>
+        <app-important-dates [importantDates]="getImportantDatesBasedOnFaculty(faculty)"></app-important-dates>
       </mat-expansion-panel>
 
     </div>
@@ -278,7 +269,7 @@ loadCourseData(inputCourse)
 
     </div>
 
- 
+
 
 
 

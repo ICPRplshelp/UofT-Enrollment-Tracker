@@ -4,6 +4,10 @@ import {HttpClient} from '@angular/common/http';
 import { Course, ImportantTimestamps, ImportantTimestampsBundle, SessionCollection, TopCourses } from './cinterfaces';
 import { DesCol } from './shared/autocompleteinterfaces';
 
+function removeTrailingSlash(str: string): string {
+  return str.replace(/\/+$/, '');
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,7 +31,7 @@ export class CrsgetterService {
   }
 
   crsToPath(crsCode: string): string {
-    return this.crsPath  + this.sanitizeSession() +
+    return removeTrailingSlash(this.crsPath) + "/"  + this.sanitizeSession() +
     "/" + crsCode + this.suffix; 
     // return this.crsPath + crsCode + this.suffix;
   }
