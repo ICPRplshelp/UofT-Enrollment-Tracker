@@ -223,7 +223,9 @@ export class ChartComponent implements OnInit {
     let switched = value !== this.smallScreen;
 
     this._smallScreen = value;
-    if (switched) this._loadCourseDataHelper();
+    if (switched) {
+      this._loadCourseDataHelper(null, false);
+    }
   }
 
   smallActivated = 0;
@@ -249,7 +251,6 @@ export class ChartComponent implements OnInit {
   @HostListener('window:resize', ['$event']) onWindowResize() {
     // console.log("Window resized");
     // this.debouncedScreenAction();
-
     if (window.innerWidth < 480) {
       let originalState = this.smallScreen;
       this.smallScreen = true;
@@ -271,6 +272,7 @@ export class ChartComponent implements OnInit {
 
   public scatterChartOptions: ChartOptions = {
     responsive: true,
+    animation: undefined,
     maintainAspectRatio: false,
     scales: {
       x: {
@@ -1116,7 +1118,9 @@ export class ChartComponent implements OnInit {
    *
    * @param course the course information.
    */
-  private _loadCourseDataHelper(course: Course | null = null): void {
+  private _loadCourseDataHelper(course: Course | null = null, withAnimation: boolean = true): void {
+    this.scatterChartOptions.animation = withAnimation ? undefined : false;
+
     if (course === undefined) {
       return;
     }
