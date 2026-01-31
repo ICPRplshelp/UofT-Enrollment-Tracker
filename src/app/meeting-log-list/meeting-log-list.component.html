@@ -9,7 +9,7 @@
         </mat-panel-title>
         <mat-panel-description>
           <span *ngIf="meeting.isCancelled" class="cancelled-tag">Cancelled</span>
-          <span  style="min-width: 6em;" *ngIf="!meeting.isCancelled">{{ getDeliverySymbol(meeting.delivery) }}</span>
+          <span  style="min-width: 6em;" *ngIf="!meeting.isCancelled"> {{noOnZero(getChangeCount(meeting.instructorLog))}} change{{sq(getChangeCount(meeting.instructorLog))}} </span>
         </mat-panel-description>
       </mat-expansion-panel-header>
 
