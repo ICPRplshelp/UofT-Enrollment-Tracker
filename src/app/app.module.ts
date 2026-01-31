@@ -22,15 +22,24 @@ import {MatSelectModule} from '@angular/material/select';
 import { ImportantDatesComponent } from './important-dates/important-dates.component';
 import { MatTableModule } from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import { InstructorLogViewerComponent } from './instructor-log-viewer/instructor-log-viewer.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
+import { MeetingLogListComponent } from './meeting-log-list/meeting-log-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChartComponent,
-    ImportantDatesComponent
+    ImportantDatesComponent,
+    InstructorLogViewerComponent,
+    MeetingLogListComponent
   ],
   imports: [
+    MatCardModule,
+    MatChipsModule,
+    MatIconModule,
     MatInputModule,
     MatSelectModule,
     MatSnackBarModule,

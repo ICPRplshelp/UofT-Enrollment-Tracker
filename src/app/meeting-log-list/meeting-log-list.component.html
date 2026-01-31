@@ -1,0 +1,31 @@
+<div class="list-container" *ngIf="meetings && meetings.length > 0; else noMeetings">
+  
+  <mat-accordion multi="true" displayMode="flat">
+    <mat-expansion-panel *ngFor="let meeting of meetings">
+      
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span class="meeting-code">{{ meeting.meetingNumber }}</span>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span *ngIf="meeting.isCancelled" class="cancelled-tag">Cancelled</span>
+          <span  style="min-width: 6em;" *ngIf="!meeting.isCancelled">{{ getDeliverySymbol(meeting.delivery) }}</span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div class="panel-content">
+        <app-instructor-log-viewer 
+            [log]="meeting.instructorLog">
+        </app-instructor-log-viewer>
+      </div>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>
+
+<ng-template #noMeetings>
+  <div class="empty-state">
+    <p> N/A.</p>
+  </div>
+</ng-template>

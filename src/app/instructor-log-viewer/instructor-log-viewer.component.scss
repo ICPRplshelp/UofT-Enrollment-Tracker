@@ -1,0 +1,90 @@
+.log-card {
+  max-width: 600px;
+//   margin: 16px 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 24px;
+}
+
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 7px; /* Align with center of marker */
+  top: 10px;
+  bottom: -10px;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-marker.initial {
+  background-color: #4caf50;
+}
+
+.timeline-marker.change {
+  background-color: #ff9800;
+  border: 2px solid white;
+  width: 14px;
+  height: 14px;
+}
+
+.timestamp-label {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.instructor-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label-text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.tba-label {
+  font-style: italic;
+  color: #999;
+}
+
+.no-changes-msg {
+  margin-top: 16px;
+  color: #666;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mat-mdc-chip-set-stacked {
+    padding-top: 5px;
+}
+
+.mat-mdc-chip:focus,
+.mat-mdc-chip:active {
+  background-color: inherit !important;
+  box-shadow: none !important;
+}

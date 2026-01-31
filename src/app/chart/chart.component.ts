@@ -1143,7 +1143,64 @@ export class ChartComponent implements OnInit {
     const earliest: number = timings[0];
     this.earliestChartTime = earliest;
     const latest: number = timings[timings.length - 1];
-    this.lastUpdateString = new Date(latest * 1000).toLocaleString();
+    function formatEastern(date: Date) {
+      return new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/New_York',
+        day: '2-digit',
+        month: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      }).format(date);
+    }
+
+    function timeAgo(date: Date) {
+      const now = Date.now();
+      const then = date instanceof Date ? date.getTime() : date;
+      let diff = Math.max(0, now - then);
+
+      const MIN = 60 * 1000;
+      const HOUR = 60 * MIN;
+      const DAY = 24 * HOUR;
+      const YEAR = 365 * DAY;
+
+      if (diff < MIN) return "just now";
+
+      const years = Math.floor(diff / YEAR);
+      if (years >= 1) return `${years}y ago`;
+      diff %= YEAR;
+
+      const days = Math.floor(diff / DAY);
+      if (days >= 10) return `${days}d ago`;
+      diff %= DAY;
+
+      const hours = Math.floor(diff / HOUR);
+      diff %= HOUR;
+
+      const minutes = Math.floor(diff / MIN);
+
+      if (days > 0) {
+        return hours > 0
+          ? `${days}d${hours}h ago`
+          : `${days}d ago`;
+      }
+
+      if (hours > 0) {
+        return minutes > 0
+          ? `${hours}h${minutes}m ago`
+          : `${hours}h ago`;
+      }
+
+      return `${minutes}m ago`;
+    }
+    function isOverAMonthAgo(date: Date) {
+      const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000;
+      return Date.now() - new Date(date).getTime() > THIRTY_DAYS;
+    }
+    const dateObjAgo = new Date(latest * 1000);
+
+    this.lastUpdateString = formatEastern(dateObjAgo) + (isOverAMonthAgo(dateObjAgo) ? '' : " (" + timeAgo(dateObjAgo) +  ")");
 
     const maxEnrollmentsSoFar: ChartDataset[] = [];
     let iterations = 0;
@@ -1279,12 +1336,19 @@ export class ChartComponent implements OnInit {
       synSymbol = synSymbol + ' ';
     }
 
-    const shortInsStr = insStr.trim() === '' ? '' : insStr;
+    let shortInsStr = insStr.trim() === '' ? '' : this.formatInstructors(mtt.instructors.length >= 1 ? (
+      mtt.instructors.length >= 2 ? [mtt.instructors[0], {
+        firstName: "...",
+        lastName: ""
+      }] : [mtt.instructors[0]]
+    ) : []);
+
+    shortInsStr = "";
     const shortMeetingNumber = `${mtt.meetingNumber.substring(0, 1)}${mtt.meetingNumber.substring(3)}`;
     
-    const shortInstructor = [
+    const shortInstructor = shortInsStr === "" ? shortMeetingNumber : [
       shortMeetingNumber,
-      // shortInsStr
+      shortInsStr
     ].join(' - ');
     
     

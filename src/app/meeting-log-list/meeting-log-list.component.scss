@@ -1,0 +1,32 @@
+.list-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px; 
+}
+
+.meeting-code {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #3f51b5;
+}
+
+.cancelled-tag {
+  color: #d32f2f;
+  font-weight: bold;
+  background: #ffebee;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.panel-content {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-state {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}

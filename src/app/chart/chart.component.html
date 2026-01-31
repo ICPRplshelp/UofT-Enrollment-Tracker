@@ -246,6 +246,22 @@ loadCourseData(inputCourse)
       </ul>
 
 
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Instructor changes
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div>
+          <app-meeting-log-list 
+            [meetings]="(previousCourseInfo?.meetings || [])">
+          </app-meeting-log-list>
+        </div>
+      </mat-expansion-panel>
+      <div style="margin-top: 1em">
+
+      </div>
       <mat-expansion-panel hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>

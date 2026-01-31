@@ -1,0 +1,82 @@
+<div *ngIf="log; else noData">
+  <mat-card-header>
+    <mat-icon mat-card-avatar>history_edu</mat-icon>
+    <mat-card-title>Instructor Changes</mat-card-title>
+    <!-- <mat-card-subtitle>Audit Log (Eastern Time)</mat-card-subtitle> -->
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="timeline-item start-node">
+      <div class="timeline-marker initial"></div>
+      <div class="timeline-content">
+        <h3 class="timestamp-label">Initially</h3>
+        
+        <div class="instructor-group" *ngIf="log.initialInstructors && log.initialInstructors.length > 0; else noInstructors">
+          <mat-chip-list>
+            <mat-chip *ngFor="let inst of log.initialInstructors">
+              {{ inst.firstName }} {{ inst.lastName }}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+        
+        <ng-template #noInstructors>
+          <span class="tba-label">TBA (Blank)</span>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="timeline-item change-node" *ngFor="let change of sortedChanges">
+      <div class="timeline-connector"></div>
+      <div class="timeline-marker change"></div>
+      
+      <div class="timeline-content">
+        <h3 class="timestamp-label">
+            Changed no later than <span>{{ change.timing * 1000 | date:'mediumDate':'America/New_York' }} 
+            <small>({{ change.timing * 1000 | date:'shortTime':'America/New_York' }} ET) </small></span>
+        </h3>
+        
+        <div class="instructor-group">
+            <span class="label-text">
+                <ng-container *ngIf="change.instructorsAfter.length <= 1">
+                    New Assignment:
+
+                </ng-container>
+                
+                <ng-container *ngIf="change.instructorsAfter.length > 1">
+                    New Assignments:
+
+                </ng-container>
+    
+            </span>
+            
+            <div *ngIf="change.instructorsAfter.length > 0; else emptyAfter">
+                <mat-chip-list selectable="false">
+                    <mat-chip   [disableRipple]="true"
+                    [selectable]="false"
+                    tabindex="-1" 
+                    
+                    *ngFor="let inst of change.instructorsAfter" color="primary" selectable="false">
+                        {{ inst.firstName }} {{ inst.lastName }}
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+
+            <ng-template #emptyAfter>
+                <span class="tba-label">Removed</span>
+            </ng-template>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="sortedChanges.length === 0" class="no-changes-msg">
+      <mat-icon inline>info</mat-icon> No changes recorded after initial assignment.
+    </div>
+
+  </mat-card-content>
+</div>
+
+<ng-template #noData>
+  <div class="empty-state">
+    <p>No instructor log available.</p>
+  </div>
+</ng-template>
